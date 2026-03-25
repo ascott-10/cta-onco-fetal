@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.h5ad
+*.mtx
+*.csv
+*.tsv
+*.png
+*.txt
+results/
+datasets/
+errors/
+logs/
+.env
