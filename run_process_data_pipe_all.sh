@@ -11,17 +11,13 @@ conda activate rnaseq-pipe
 
 cd /data/scottaa/cta_onco_fetal
 
-#!/bin/bash
+PROJECTS=("fetal_gonad" "ovarian_cancer_ccca" "embryos_mixed")
 
-source /data/scottaa/conda/etc/profile.d/conda.sh
-conda activate rnaseq-pipe
-
-cd /data/scottaa/cta_onco_fetal
-
-PROJECT=$1
-
-python python_common_scripts/main.py process ${PROJECT}
-python python_common_scripts/main.py refine ${PROJECT}
+for PROJECT in "${PROJECTS[@]}"; do
+    echo "Processing $PROJECT"
+    python python_common_scripts/main.py process ${PROJECT}
+    python python_common_scripts/main.py refine ${PROJECT}
+done
 
 # To run (example):
-# sbatch run_process_data_pipe.sh embryos_mixed
+# sbatch run_process_data_pipe.sh

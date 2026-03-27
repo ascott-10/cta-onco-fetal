@@ -81,8 +81,21 @@ def get_cell_type(sample_id, adata, markers_df, cell_type_label_col="predicted_c
     
     # copy the Leiden cluster assignments from the main 'adata' object to our temporary object so that the ranking step knows which cells belong to which cluster.
     adata_for_ulm.obs['leiden'] = adata.obs['leiden'].copy()
-    
+
+    source_sizes = net.groupby("source")["target"].nunique()
+    valid_sources = source_sizes[source_sizes >= 3].index
+    net = net[net["source"].isin(valid_sources)].copy()
+
+    print(f"[{sample_id}] Sources kept: {len(valid_sources)} / {len(source_sizes)}")  
+
+    X = adata_for_ulm.X
+    if hasattr(X, "toarray"):
+        X = X.toarray()
+
+    noise = np.random.normal(0, 1e-6, size=X.shape)
+    adata_for_ulm.X = X + noise
     # Run ULM on the temporary object that contains all genes.
+
     try:
         dc.mt.ulm(data=adata_for_ulm, net=net, tmin=0)
     except AssertionError as e:

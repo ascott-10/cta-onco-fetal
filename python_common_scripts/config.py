@@ -6,6 +6,7 @@ import pandas as pd
 BASE_DIR = "/data/scottaa/cta_onco_fetal"
 
 REFERENCE_DIR = os.path.join(BASE_DIR, "reference_data_common")
+ALL_RESULTS_DIR = os.path.join(BASE_DIR, "all_results")
 
 
 ALL_CELL_MARKERS_FILE_PATH = os.path.join(REFERENCE_DIR, "markers", "cellmarker2_all_sexes_filtered_oncofetal_markers_df.csv")
@@ -84,6 +85,63 @@ PROJECT_CONFIG = {
             'G6_A_Mixed': ALL_CELL_ANNOTATION_FILE_PATH, 
             'G6_B_Mixed': ALL_CELL_ANNOTATION_FILE_PATH,
         },
+    },
+
+    "embryos_mixed": {
+        
+        "sample_col": "sample_id",
+        
+        "sample_meta_cols": ['sample_id','developmental_stage','sex','cell_type_descript'],
+        "sample_meta_filename": "embryos_mixed_concat_sample_meta.csv",
+        "cell_meta_cols": None,
+        "cell_meta_filename": None,
+        "processing_type": "counts_txt",
+        "cell_markers_file_path": {
+            'F_10W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_11W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_12W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_14W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_18W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_20W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_23W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_24W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_26W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_5W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_7W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'F_8W': FEMALE_CELL_MARKERS_FILE_PATH,
+            'M_10W': MALE_CELL_MARKERS_FILE_PATH,
+            'M_12W': MALE_CELL_MARKERS_FILE_PATH,
+            'M_19W': MALE_CELL_MARKERS_FILE_PATH,
+            'M_20W': MALE_CELL_MARKERS_FILE_PATH,
+            'M_21W': MALE_CELL_MARKERS_FILE_PATH,
+            'M_25W': MALE_CELL_MARKERS_FILE_PATH,
+            'M_4W': MALE_CELL_MARKERS_FILE_PATH,
+            'M_9W': MALE_CELL_MARKERS_FILE_PATH
+        },
+        
+        "cell_annotation_file_path": {
+            'F_10W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_11W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_12W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_14W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_18W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_20W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_23W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_24W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_26W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_5W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_7W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'F_8W': FEMALE_CELL_ANNOTATION_FILE_PATH,
+            'M_10W': MALE_CELL_ANNOTATION_FILE_PATH,
+            'M_12W': MALE_CELL_ANNOTATION_FILE_PATH,
+            'M_19W': MALE_CELL_ANNOTATION_FILE_PATH,
+            'M_20W': MALE_CELL_ANNOTATION_FILE_PATH,
+            'M_21W': MALE_CELL_ANNOTATION_FILE_PATH,
+            'M_25W': MALE_CELL_ANNOTATION_FILE_PATH,
+            'M_4W': MALE_CELL_ANNOTATION_FILE_PATH,
+            'M_9W': MALE_CELL_ANNOTATION_FILE_PATH
+        },
+        
     },
 
     "ovarian_cancer_ccca": {

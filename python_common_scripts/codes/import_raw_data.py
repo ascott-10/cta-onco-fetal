@@ -65,9 +65,36 @@ def import_raw_data_fetal_gonad(sample_id, gse_id, original_data_dir,adata_init_
 
     return adata
 
+def import_raw_data_csv(project_name, sample_id, original_data_dir,adata_init_path, sample_meta_df):
+    """    ["embryos_mixed"] """
+    
+    if project_name in ["embryos_mixed"]:
+        raw_counts_path = os.path.join(original_data_dir, f"{sample_id}_concat_gene_expression.txt")
+    df = pd.read_csv(raw_counts_path, index_col = 0).T
+    
+    adata = sc.AnnData(df)
+    adata.var_names_make_unique()
+ 
+    adata.layers["raw_counts"] = adata.X.copy()
+    adata.raw = adata.copy()
+
+    adata.obs["sample_id"] = sample_id
+    meta_row = sample_meta_df.set_index("sample_id").loc[sample_id]
+
+    for col in sample_meta_df.columns:
+        if col == "sample_id":
+            continue
+        adata.obs[col] = meta_row[col]
+    
+    adata.write(adata_init_path)
+
+    return adata
+    
+  
 
 def import_raw_data_10x(subproject, original_data_dir,adata_init_path):
 
+    """["ovarian_cancer_ccca"]"""
 
     if subproject in ["Izar2020"]:
         matrix_path = os.path.join(original_data_dir, f"Data_{subproject}_Ovarian", "Exp_data_TPM.mtx")
@@ -80,17 +107,14 @@ def import_raw_data_10x(subproject, original_data_dir,adata_init_path):
 
     X = mmread(matrix_path).tocsr().T
 
-    genes = pd.read_csv(genes_path, header=None, sep="\t", engine="python", on_bad_lines="skip")
-    genes = genes.iloc[:, -1].astype(str).str.replace('"', '', regex=False)
-    
+    genes = pd.read_csv(genes_path, header=None)[0].astype(str).str.replace('"', '', regex=False)
     barcodes = pd.read_csv(barcodes_path, sep=None, engine="python")
 
     adata = sc.AnnData(X)
-
-    adata.var_names = genes.value
+    adata.var_names = genes.values
     adata.obs_names = barcodes["cell_name"].astype(str).values
-
     adata.obs = barcodes.set_index("cell_name")
+
 
     sample_meta_df = pd.read_csv(sample_meta_path)
     sample_meta_df = sample_meta_df.dropna(axis=1, how="all")
