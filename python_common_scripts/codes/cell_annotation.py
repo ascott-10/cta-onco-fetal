@@ -16,13 +16,13 @@ from config import *
 
 def get_markers_df(markers_file_path):
 
-    """markers_df = get_markers_df(markers_file_path)
+    """markers_df, cellmarkers_annotation_df = get_markers_df(markers_file_path)
     """
     if os.path.exists(markers_file_path):
-        markers_df = pd.read_csv(markers_file_path)
-        if not set(["source", "target"]).issubset(markers_df.columns):
+        cellmarkers_annotation_df = pd.read_csv(markers_file_path)
+        if not set(["source", "target"]).issubset(cellmarkers_annotation_df.columns):
             raise ValueError("markers_file must have columns: ['source','target']")
-        markers_df = markers_df[["source", "target"]]
+        markers_df = cellmarkers_annotation_df[["source", "target"]]
     
     else:
         # Use "PanglaoDB" to create a markers_df
@@ -40,8 +40,11 @@ def get_markers_df(markers_file_path):
             columns={"cell_type": "source", "genesymbol": "target"}
         )[["source", "target"]]
         markers_df.to_csv(os.path.join("reference_data_common", "markers", "PanglaoDB_markers.csv"))
+        cellmarkers_annotation_df = markers_df.copy()
+        markers_df.to_csv(os.path.join("reference_data_common", "markers", "PanglaoDB_markers_annotation.csv"))
 
-    return markers_df
+
+    return markers_df, cellmarkers_annotation_df
 
 
 
@@ -139,37 +142,31 @@ def get_cell_type(sample_id, adata, markers_df, cell_type_label_col="predicted_c
     return adata
 
 
-def annotate_cells(adata, cell_annotation_file_path, cell_type_label_col="predicted_cell_type"):
+def annotate_cells(adata, cellmarkers_annotation_df, cell_type_label_col="predicted_cell_type"):
+    hierarchy_cols = ["target", "Lineage", "tissue_class", "tissue_type", "Cell_Category"]
 
-    """adata = annotate_cells(adata, cell_annotation_file_path, cell_type_label_col="predicted_cell_type")"""
+    # keep only columns that actually exist
+    available_cols = [col for col in hierarchy_cols if col in cellmarkers_annotation_df.columns]
 
-    cellmarkers_annotation_df = pd.read_csv(cell_annotation_file_path)
-    hierarchy_cols = ["full_cell_name","cell_type","tissue_class","tissue_type", "cancer_type"]
+    # must have at least the key column to proceed
+    if "target" not in available_cols:
+        return adata
 
     def most_common(x):
         return x.mode().iloc[0] if not x.mode().empty else None
 
     annotation_df = (
-        cellmarkers_annotation_df[hierarchy_cols]
-        .groupby("full_cell_name", as_index=False)
+        cellmarkers_annotation_df[available_cols]
+        .groupby("target", as_index=False)
         .agg(most_common)
     )
 
+    annotation_df[cell_type_label_col] = annotation_df["target"]
+    annotation_df = annotation_df.set_index(cell_type_label_col, drop=False)
 
-    # Renaming the lookup table's version of "predicted cell type" [i.e. full_cell_name] to the label col "predicted cell type"
-    annotation_df[cell_type_label_col] = annotation_df["full_cell_name"]
-
-    # set lookup index
-    annotation_df = annotation_df.set_index(cell_type_label_col, drop = False)
-
-    # For each column in the lookup table
     for col in annotation_df.columns:
-
-        # if it matches the "predicted cell type"
         if col == cell_type_label_col:
             continue
-
-        
         adata.obs[col] = adata.obs[cell_type_label_col].map(annotation_df[col])
 
     return adata
@@ -237,11 +234,11 @@ def set_obs_colors(adata, palette, cell_type_colors, gene_color_map):
 
     return adata, gene_color_map, cell_type_colors
 
-def cell_annotation_wrapper(sample_id, adata_qc, adata_annotated_path, markers_file_path, cell_annotation_file_path,gene_color_map, cell_type_colors, genes_list, cell_type_label_col = "predicted_cell_type", palette="glasbey"):
+def cell_annotation_wrapper(sample_id, adata_qc, adata_annotated_path, markers_file_path, gene_color_map, cell_type_colors, genes_list, cell_type_label_col = "predicted_cell_type", palette="glasbey"):
     adata = adata_qc.copy()
-    markers_df = get_markers_df(markers_file_path)
+    markers_df, cellmarkers_annotation_df = get_markers_df(markers_file_path)
     adata = get_cell_type(sample_id, adata, markers_df, cell_type_label_col="predicted_cell_type")
-    adata = annotate_cells(adata, cell_annotation_file_path, cell_type_label_col="predicted_cell_type")
+    adata = annotate_cells(adata, cellmarkers_annotation_df, cell_type_label_col="predicted_cell_type")
     adata = add_gene_binary_columns(adata, genes_list, threshold=0.1)
     adata, gene_color_map, cell_type_colors = set_obs_colors(adata, palette, cell_type_colors, gene_color_map)
 

@@ -1,4 +1,4 @@
-﻿,tissue_class,tissue_type,original_name,target,Lineage,Cell_Category,cell_fine_category,source,Symbol,Genetype,Sex
+﻿,tissue_class,tissue_type,original_name,source,Lineage,Cell_Category,cell_fine_category,source,target,Genetype,Sex
 1,Bladder,Bladder,Cancer stem cell,Cancer stem cell,Cancer cell,Stem-Progenitor Cell,Stem cell,Cancer cell,KRT5,protein_coding,Both
 2,Bladder,Bladder,Cancer stem cell,Cancer stem cell,Cancer cell,Stem-Progenitor Cell,Stem cell,Cancer cell,CD44,protein_coding,Both
 3,Bladder,Bladder,Cancer stem cell,Cancer stem cell,Cancer cell,Stem-Progenitor Cell,Stem cell,Cancer cell,KRT20,protein_coding,Both

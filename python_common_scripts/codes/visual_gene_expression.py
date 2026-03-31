@@ -79,13 +79,13 @@ def make_umaps(sample_id, adata, umap_dir, gene_color_map, cell_type_colors, col
 def cta_genes_expression(sample_id, adata, tables_dir, figures_dir, cta_genes_file_path, top_n, plot_always=False):
     """No return"""
 
-    cta_table_save_dir = os.path.join(tables_dir, "cta_genes")
+    cta_table_save_dir = os.path.join(tables_dir, "cta_genes_2")
     os.makedirs(cta_table_save_dir, exist_ok = True)
-    cta_figure_save_dir = os.path.join(figures_dir, "cta_genes")
+    cta_figure_save_dir = os.path.join(figures_dir, "cta_genes_2")
     os.makedirs(cta_figure_save_dir, exist_ok = True)
 
-    all_expression_save_path = os.path.join(cta_table_save_dir, f"{sample_id}_cta_genes_all_expression.csv")
-    dotplot_save_path = os.path.join(cta_figure_save_dir,f"{sample_id}_cta_genes_dotplot.png")
+    all_expression_save_path = os.path.join(cta_table_save_dir, f"{sample_id}_cta_genes_all_expression_2a.csv")
+    dotplot_save_path = os.path.join(cta_figure_save_dir,f"{sample_id}_cta_genes_dotplot_2a.png")
     
     if os.path.exists(all_expression_save_path):
         df_save = pd.read_csv(all_expression_save_path)
@@ -121,7 +121,7 @@ def cta_genes_expression(sample_id, adata, tables_dir, figures_dir, cta_genes_fi
 
                 n_ct = mask.sum()
                 n_pos = (expr_ct > 0).sum()
-                mean_expr = expr_ct.mean() if n_ct > 0 else 0.0
+                mean_expr = expr_ct[expr_ct > 0].mean() if n_pos > 0 else np.nan
                 frac_pos = n_pos / n_ct if n_ct > 0 else 0.0
 
                 rows.append({
@@ -140,15 +140,26 @@ def cta_genes_expression(sample_id, adata, tables_dir, figures_dir, cta_genes_fi
     if (not os.path.exists(dotplot_save_path) or plot_always == True):
        
         # 2. To visualize CTA genes across dataset
-        gene_dataset = (df_save.groupby(["gene", "predicted_cell_type"])
-                        .agg({"mean_expression": "mean", "frac_positive_cells": "mean"})
-                        .reset_index())
+        gene_dataset = (
+        df_save.groupby(["gene", "predicted_cell_type"])
+        .apply(lambda x: pd.Series({
+            "n_cells": x["n_cells"].sum(),
+            "n_positive_cells": x["n_positive_cells"].sum(),
+            "frac_positive_cells": x["n_positive_cells"].sum() / x["n_cells"].sum(),
+            "mean_expression": (
+                (x["mean_expression"] * x["n_positive_cells"]).sum() / x["n_positive_cells"].sum()
+                if x["n_positive_cells"].sum() > 0 else np.nan
+            )
+        }))
+        .reset_index()
+    )
         
         
         gene_order = (gene_dataset.groupby("gene")["mean_expression"].max().sort_values(ascending=False).index) # Order by max expression
 
         # Create df for dotplot
         dotplot_df = gene_dataset.copy()
+        dotplot_df = dotplot_df[dotplot_df["n_positive_cells"] > 0].copy()
         
         gene_order_top = gene_order[:top_n]
 
@@ -170,7 +181,13 @@ def cta_genes_expression(sample_id, adata, tables_dir, figures_dir, cta_genes_fi
         # Apply order
         dotplot_df["predicted_cell_type"] = pd.Categorical(dotplot_df["predicted_cell_type"],categories=cell_order,ordered=True)
 
-        # Make the Dotplot 
+        from matplotlib.colors import PowerNorm
+
+        vmin = dotplot_df["mean_expression"].quantile(0.05)
+        vmax = dotplot_df["mean_expression"].quantile(0.95)
+
+        norm = PowerNorm(gamma=0.5, vmin=vmin, vmax=vmax)
+
         plt.figure(figsize=(top_n * 0.3, len(cell_order) * 0.5))
 
         sns.scatterplot(
@@ -179,12 +196,12 @@ def cta_genes_expression(sample_id, adata, tables_dir, figures_dir, cta_genes_fi
             y="predicted_cell_type",
             size="frac_positive_cells",
             hue="mean_expression",
-            sizes=(10, 200),
+            sizes=(20, 200),
             palette="Purples",
-            hue_norm=(0, dotplot_df["mean_expression"].quantile(0.95)),
-            edgecolor="none"
+            edgecolor=None,
+            linewidth=0,
+            hue_norm=norm
         )
-
         plt.xticks(rotation=45, ha="right", fontsize=8)
         plt.yticks(fontsize=9)
 
@@ -205,80 +222,89 @@ def cta_genes_expression(sample_id, adata, tables_dir, figures_dir, cta_genes_fi
     return df_save
 
     
-def cta_genes_expression_all_samples(project_name):
+def cta_genes_expression_all_samples(project_name,df_project_cta_gene_expression_save_path, all_figures_dir, top_n=25):
 
-    df = pd.read_csv(f"all_results/tables/cta_genes/{project_name}_cta_gene_expression.csv")
+    df = pd.read_csv(df_project_cta_gene_expression_save_path)
 
-    dotplot_save_dir = "all_results/figures/cta_genes"
+    dotplot_save_dir = os.path.join(all_figures_dir, "cta_genes", "dotplot")
     os.makedirs(dotplot_save_dir, exist_ok = True)
-    df = pd.read_csv(f"all_results/tables/cta_genes/{project_name}_cta_gene_expression.csv")
+
+    dotplot_save_path = os.path.join(dotplot_save_dir,f"{project_name}_cta_genes_dotplot.png")
+    
     # Collapse to sample x gene
-    sample_gene_df = (
-        df.groupby(["sample_id", "gene"])
+    # To visualize CTA genes across dataset
+    gene_dataset = (
+        df.groupby(["sample_id", "gene"]) 
         .apply(lambda x: pd.Series({
             "n_cells": x["n_cells"].sum(),
             "n_positive_cells": x["n_positive_cells"].sum(),
             "frac_positive_cells": x["n_positive_cells"].sum() / x["n_cells"].sum(),
-            "mean_expression": (x["mean_expression"] * x["n_cells"]).sum() / x["n_cells"].sum()
+            "mean_expression": (
+                (x["mean_expression"] * x["n_positive_cells"]).sum() / x["n_positive_cells"].sum()
+                if x["n_positive_cells"].sum() > 0 else np.nan
+            )
         }))
         .reset_index()
     )
 
-    # Pick genes
-    top_n = 25
-
     gene_order = (
-        sample_gene_df.groupby("gene")["mean_expression"]
+        gene_dataset.groupby("gene")["mean_expression"]
         .max()
         .sort_values(ascending=False)
         .index
     )
 
+    # Create df for dotplot
+    dotplot_df = gene_dataset.copy()
+    dotplot_df = dotplot_df[dotplot_df["n_positive_cells"] > 0].copy()
+
     gene_order_top = gene_order[:top_n]
 
-    plot_df = sample_gene_df[sample_gene_df["gene"].isin(gene_order_top)].copy()
-
-    # Set ordering
-    plot_df["gene"] = pd.Categorical(
-        plot_df["gene"],
+    dotplot_df = dotplot_df[dotplot_df["gene"].isin(gene_order_top)]
+    dotplot_df["gene"] = pd.Categorical(
+        dotplot_df["gene"],
         categories=gene_order_top,
         ordered=True
     )
 
-    # Cluster samples - optional but useful
-    from scipy.cluster.hierarchy import linkage, leaves_list
-
+    # Cluster for matrix - mean expression
     cluster_df = (
-        plot_df.pivot(index="sample_id", columns="gene", values="mean_expression")
+        dotplot_df.pivot(index="sample_id", columns="gene", values="mean_expression")  # changed
         .fillna(0)
     )
 
-    Z = linkage(cluster_df.values, method="average", metric="correlation")
+    # Cluster samples
+    X = cluster_df.values
+    Z = linkage(X, method="average", metric="correlation")
     sample_order = cluster_df.index[leaves_list(Z)]
 
-    plot_df["sample_id"] = pd.Categorical(
-        plot_df["sample_id"],
+    # Apply order
+    dotplot_df["sample_id"] = pd.Categorical(   # changed
+        dotplot_df["sample_id"],
         categories=sample_order,
         ordered=True
     )
 
-    import matplotlib.pyplot as plt
-    import seaborn as sns
+    from matplotlib.colors import PowerNorm
 
-    height = max(4, len(cell_order) * 0.6)
+    vmin = dotplot_df["mean_expression"].quantile(0.05)
+    vmax = dotplot_df["mean_expression"].quantile(0.95)
 
-    plt.figure(figsize=(top_n * 0.35, height))
+    norm = PowerNorm(gamma=0.5, vmin=vmin, vmax=vmax)
+
+    plt.figure(figsize=(top_n * 0.3, len(sample_order) * 0.5))
 
     sns.scatterplot(
-        data=plot_df,
+        data=dotplot_df,
         x="gene",
-        y="sample_id",
+        y="sample_id",   # changed
         size="frac_positive_cells",
         hue="mean_expression",
-        sizes=(10, 200),
+        sizes=(20, 200),
         palette="Purples",
-        edgecolor="none",
-        hue_norm=(0, plot_df["mean_expression"].quantile(0.95))
+        edgecolor=None,
+        linewidth=0,
+        hue_norm=norm
     )
 
     plt.xticks(rotation=45, ha="right", fontsize=8)
@@ -286,10 +312,14 @@ def cta_genes_expression_all_samples(project_name):
 
     plt.xlabel("")
     plt.ylabel("")
-    plt.title(f"{project_name}\nCTA Gene Expression Across Samples")
+    plt.title(f"{project_name}\nCTA Gene Expression", fontsize=12)
+
+    plt.grid(True, axis="x", linewidth=0.3, alpha=0.3)
+    plt.grid(False, axis="y")
 
     plt.legend([], [], frameon=False)
 
     plt.tight_layout()
-    plt.savefig(os.path.join(dotplot_save_dir, f"{project_name}_cta_all_samples_dotplot.png"),dpi=300, bbox_inches="tight")
+
+    plt.savefig(dotplot_save_path, dpi=300, bbox_inches="tight")
     plt.close()

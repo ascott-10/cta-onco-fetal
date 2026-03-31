@@ -3,6 +3,7 @@
 #### Libraries ###
 import os
 import glob
+from io import StringIO
 import pandas as pd
 import numpy as np
 import scanpy as sc
@@ -66,11 +67,18 @@ def import_raw_data_fetal_gonad(sample_id, gse_id, original_data_dir,adata_init_
     return adata
 
 def import_raw_data_csv(project_name, sample_id, original_data_dir,adata_init_path, sample_meta_df):
-    """    ["embryos_mixed"] """
+    """    ["embryos_mixed", "cell_populations"] """
     
     if project_name in ["embryos_mixed"]:
         raw_counts_path = os.path.join(original_data_dir, f"{sample_id}_concat_gene_expression.txt")
-    df = pd.read_csv(raw_counts_path, index_col = 0).T
+        with open(raw_counts_path) as f:
+            lines = [line.strip().strip('"') for line in f]
+            df = pd.read_csv(StringIO("\n".join(lines)), sep=',', index_col=0).T
+    elif project_name in ["cell_populations"]:
+        subject_id = sample_id
+        raw_counts_path = os.path.join(original_data_dir, f"subject_{subject_id}_concat_umiCounts.table.csv")
+        df = pd.read_csv(raw_counts_path, index_col=0)
+
     
     adata = sc.AnnData(df)
     adata.var_names_make_unique()
@@ -78,13 +86,26 @@ def import_raw_data_csv(project_name, sample_id, original_data_dir,adata_init_pa
     adata.layers["raw_counts"] = adata.X.copy()
     adata.raw = adata.copy()
 
-    adata.obs["sample_id"] = sample_id
-    meta_row = sample_meta_df.set_index("sample_id").loc[sample_id]
+    if project_name in ["embryos_mixed"]:
+        adata.obs["sample_id"] = sample_id
+        meta_row = sample_meta_df.set_index("sample_id").loc[sample_id]
 
-    for col in sample_meta_df.columns:
-        if col == "sample_id":
-            continue
-        adata.obs[col] = meta_row[col]
+        for col in sample_meta_df.columns:
+            if col == "sample_id":
+                continue
+            adata.obs[col] = meta_row[col]
+
+    elif project_name in ["cell_populations"]:
+        adata.obs["sample_id"] = adata.obs.index.str.split("_").str[-1]
+
+        meta_df = sample_meta_df.set_index("sample_id")
+
+        for col in sample_meta_df.columns:
+            if col == "sample_id":
+                continue
+            adata.obs[col] = adata.obs["sample_id"].map(meta_df[col])
+        
+
     
     adata.write(adata_init_path)
 
@@ -92,7 +113,7 @@ def import_raw_data_csv(project_name, sample_id, original_data_dir,adata_init_pa
     
   
 
-def import_raw_data_10x(subproject, original_data_dir,adata_init_path):
+def import_raw_data_10x_subprojects(subproject, original_data_dir,adata_init_path):
 
     """["ovarian_cancer_ccca"]"""
 
@@ -115,6 +136,8 @@ def import_raw_data_10x(subproject, original_data_dir,adata_init_path):
     adata.obs_names = barcodes["cell_name"].astype(str).values
     adata.obs = barcodes.set_index("cell_name")
 
+    adata.layers["raw_counts"] = adata.X.copy()
+    adata.raw = adata.copy()
 
     sample_meta_df = pd.read_csv(sample_meta_path)
     sample_meta_df = sample_meta_df.dropna(axis=1, how="all")
@@ -130,6 +153,80 @@ def import_raw_data_10x(subproject, original_data_dir,adata_init_path):
 
     adata.obs = adata.obs.reset_index().merge(sample_meta_df[cols_to_add], on="sample", how="left").set_index("cell_name")
     adata.obs = adata.obs.rename(columns={"sample": "sample_id"})
+    
+    adata.write(adata_init_path)
+
+    return adata
+
+
+def import_raw_data_10x(project_name, sample_id, gse_id, original_data_dir,adata_init_path, sample_meta_df):
+
+    """["subtype_evolution", "hgsoc_subtype_define", "hgsoc_tissue_architecture", "gyne_malignant"]"""
+
+    
+    if project_name in ["subtype_evolution"]:
+        
+        matrix_path = os.path.join(original_data_dir, f"{gse_id}_{sample_id}_matrix.mtx")
+        genes_path = os.path.join(original_data_dir, f"{gse_id}_{sample_id}_genes.tsv")
+        barcodes_path = os.path.join(original_data_dir, f"{gse_id}_{sample_id}_barcodes.tsv")
+        
+    elif project_name in ["hgsoc_subtype_define"]:
+
+        matrix_path = os.path.join(original_data_dir, f"{gse_id}_matrix_{sample_id}.mtx")
+        genes_path = os.path.join(original_data_dir, f"{gse_id}_features_{sample_id}.tsv")
+        barcodes_path = os.path.join(original_data_dir, f"{gse_id}_barcodes_{sample_id}.tsv")
+        
+    elif project_name in ["hgsoc_tissue_architecture"]:
+
+        matrix_path = os.path.join(original_data_dir, f"{gse_id}_{sample_id}.matrix.mtx")
+        genes_path = os.path.join(original_data_dir, f"{gse_id}_{sample_id}.genes.tsv")
+        barcodes_path = os.path.join(original_data_dir, f"{gse_id}_{sample_id}.barcodes.tsv")
+
+    elif project_name in ["gyne_malignant"]:
+
+        matrix_path = os.path.join(original_data_dir, f"{gse_id}_matrix-{sample_id}.mtx")
+        genes_path = os.path.join(original_data_dir, f"{gse_id}_features-{sample_id}.tsv")
+        barcodes_path = os.path.join(original_data_dir, f"{gse_id}_barcodes-{sample_id}.tsv")
+        
+        
+    genes = pd.read_csv(genes_path, sep='\t', header=None)
+    barcodes = pd.read_csv(barcodes_path, sep='\t', header=None)
+    barcodes.columns = ["cell_id"]
+
+    X = mmread(matrix_path).tocsr().T
+
+    # shape checks
+    assert X.shape[1] == genes.shape[0], f"Mismatch: {X.shape[1]} genes in matrix vs {genes.shape[0]} in genes.tsv"
+    assert X.shape[0] == barcodes.shape[0], f"Mismatch: {X.shape[0]} cells in matrix vs {barcodes.shape[0]} in barcodes.tsv"
+
+    adata = sc.AnnData(X)
+
+    
+    adata.var["ensembl_id"] = genes[0].astype(str).values
+    adata.var["gene_symbol"] = genes[1].astype(str).values
+    adata.var["gene_type"] = genes[2].astype(str).values
+
+    adata.var_names = adata.var["gene_symbol"]
+    adata.var_names.name = None
+
+    adata.var.drop(columns="gene_symbol", inplace=True)
+    
+    adata.var_names_make_unique()
+
+    adata.obs_names = barcodes["cell_id"].astype(str).values
+    adata.obs = barcodes.set_index("cell_id")
+
+    adata.layers["raw_counts"] = adata.X.copy()
+    adata.raw = adata.copy()
+
+    adata.obs["sample_id"] = sample_id
+    
+    sample_meta_df = sample_meta_df.copy()
+    sample_meta_df.set_index("sample_id", drop=False, inplace=True)
+
+    row = sample_meta_df.loc[sample_id]
+    for col, value in row.items():
+        adata.obs[col] = value
     
     adata.write(adata_init_path)
 
