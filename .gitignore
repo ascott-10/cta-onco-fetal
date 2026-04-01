@@ -2,12 +2,14 @@ __pycache__/
 *.pyc
 *.h5ad
 *.mtx
-*.csv
 *.tsv
 *.png
 *.txt
-results/
-datasets/
+original_data/
+raw_data/
+working_adata/
+original_original_data/
+
 errors/
 logs/
 .env

@@ -1,0 +1,92 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Cancer6,Microglial cell,CCDC62,299,0,0.0,
+Cancer6,Fibroblast,CCDC62,1215,4,0.0032921810699588477,9.288373135066053
+Cancer6,Epithelial cell,CCDC62,1118,6,0.005366726296958855,5.821036632380008
+Cancer6,Decidual cell,CCDC62,186,0,0.0,
+Cancer6,Natural killer (NK) cell,CCDC62,95,0,0.0,
+Cancer6,Trophectoderm cell,CCDC62,649,6,0.009244992295839754,4.850942599089531
+Cancer6,Macrophage,CCDC62,194,1,0.005154639175257732,10.0
+Cancer6,Epithelial-mesenchymal cell,CCDC62,347,1,0.002881844380403458,10.0
+Cancer6,T cell,CCDC62,416,0,0.0,
+Cancer6,Endothelial progenitor cell,CCDC62,30,0,0.0,
+Cancer6,Neutrophil,CCDC62,137,1,0.0072992700729927005,10.0
+Cancer6,Mitotic arrest phase fetal germ cell,CCDC62,20,0,0.0,
+Cancer6,B cell,CCDC62,22,0,0.0,
+Cancer6,Microglial cell,CTCFL,299,4,0.013377926421404682,1.1988827812242935
+Cancer6,Fibroblast,CTCFL,1215,23,0.018930041152263374,1.9341107218870826
+Cancer6,Epithelial cell,CTCFL,1118,495,0.44275491949910556,1.7575978915273325
+Cancer6,Decidual cell,CTCFL,186,19,0.10215053763440861,3.870744253397641
+Cancer6,Natural killer (NK) cell,CTCFL,95,3,0.031578947368421054,3.66055929216963
+Cancer6,Trophectoderm cell,CTCFL,649,288,0.4437596302003082,1.3996825148609897
+Cancer6,Macrophage,CTCFL,194,7,0.03608247422680412,3.3591380146464487
+Cancer6,Epithelial-mesenchymal cell,CTCFL,347,3,0.008645533141210375,1.9247816878433326
+Cancer6,T cell,CTCFL,416,4,0.009615384615384616,5.051423199795106
+Cancer6,Endothelial progenitor cell,CTCFL,30,0,0.0,
+Cancer6,Neutrophil,CTCFL,137,1,0.0072992700729927005,5.299612784081101
+Cancer6,Mitotic arrest phase fetal germ cell,CTCFL,20,11,0.55,0.9112578026414139
+Cancer6,B cell,CTCFL,22,0,0.0,
+Cancer6,Microglial cell,LDHC,299,0,0.0,
+Cancer6,Fibroblast,LDHC,1215,0,0.0,
+Cancer6,Epithelial cell,LDHC,1118,4,0.0035778175313059034,6.072016384152997
+Cancer6,Decidual cell,LDHC,186,0,0.0,
+Cancer6,Natural killer (NK) cell,LDHC,95,0,0.0,
+Cancer6,Trophectoderm cell,LDHC,649,2,0.0030816640986132513,1.917198093326639
+Cancer6,Macrophage,LDHC,194,3,0.015463917525773196,10.0
+Cancer6,Epithelial-mesenchymal cell,LDHC,347,2,0.005763688760806916,10.0
+Cancer6,T cell,LDHC,416,0,0.0,
+Cancer6,Endothelial progenitor cell,LDHC,30,0,0.0,
+Cancer6,Neutrophil,LDHC,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,LDHC,20,0,0.0,
+Cancer6,B cell,LDHC,22,0,0.0,
+Cancer6,Microglial cell,PAGE2B,299,0,0.0,
+Cancer6,Fibroblast,PAGE2B,1215,0,0.0,
+Cancer6,Epithelial cell,PAGE2B,1118,0,0.0,
+Cancer6,Decidual cell,PAGE2B,186,0,0.0,
+Cancer6,Natural killer (NK) cell,PAGE2B,95,0,0.0,
+Cancer6,Trophectoderm cell,PAGE2B,649,4,0.0061633281972265025,7.1899157292076294
+Cancer6,Macrophage,PAGE2B,194,0,0.0,
+Cancer6,Epithelial-mesenchymal cell,PAGE2B,347,0,0.0,
+Cancer6,T cell,PAGE2B,416,1,0.002403846153846154,10.0
+Cancer6,Endothelial progenitor cell,PAGE2B,30,1,0.03333333333333333,10.0
+Cancer6,Neutrophil,PAGE2B,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,PAGE2B,20,0,0.0,
+Cancer6,B cell,PAGE2B,22,0,0.0,
+Cancer6,Microglial cell,PAGE5,299,0,0.0,
+Cancer6,Fibroblast,PAGE5,1215,0,0.0,
+Cancer6,Epithelial cell,PAGE5,1118,1,0.0008944543828264759,10.0
+Cancer6,Decidual cell,PAGE5,186,0,0.0,
+Cancer6,Natural killer (NK) cell,PAGE5,95,0,0.0,
+Cancer6,Trophectoderm cell,PAGE5,649,1,0.0015408320493066256,10.0
+Cancer6,Macrophage,PAGE5,194,0,0.0,
+Cancer6,Epithelial-mesenchymal cell,PAGE5,347,1,0.002881844380403458,10.0
+Cancer6,T cell,PAGE5,416,2,0.004807692307692308,10.0
+Cancer6,Endothelial progenitor cell,PAGE5,30,0,0.0,
+Cancer6,Neutrophil,PAGE5,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,PAGE5,20,0,0.0,
+Cancer6,B cell,PAGE5,22,0,0.0,
+Cancer6,Microglial cell,SAGE1,299,0,0.0,
+Cancer6,Fibroblast,SAGE1,1215,0,0.0,
+Cancer6,Epithelial cell,SAGE1,1118,19,0.01699463327370304,6.379305112303722
+Cancer6,Decidual cell,SAGE1,186,1,0.005376344086021506,10.0
+Cancer6,Natural killer (NK) cell,SAGE1,95,0,0.0,
+Cancer6,Trophectoderm cell,SAGE1,649,11,0.01694915254237288,4.238985356444753
+Cancer6,Macrophage,SAGE1,194,1,0.005154639175257732,10.0
+Cancer6,Epithelial-mesenchymal cell,SAGE1,347,0,0.0,
+Cancer6,T cell,SAGE1,416,0,0.0,
+Cancer6,Endothelial progenitor cell,SAGE1,30,0,0.0,
+Cancer6,Neutrophil,SAGE1,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,SAGE1,20,0,0.0,
+Cancer6,B cell,SAGE1,22,0,0.0,
+Cancer6,Microglial cell,SPANXB1,299,0,0.0,
+Cancer6,Fibroblast,SPANXB1,1215,3,0.0024691358024691358,10.0
+Cancer6,Epithelial cell,SPANXB1,1118,0,0.0,
+Cancer6,Decidual cell,SPANXB1,186,0,0.0,
+Cancer6,Natural killer (NK) cell,SPANXB1,95,0,0.0,
+Cancer6,Trophectoderm cell,SPANXB1,649,0,0.0,
+Cancer6,Macrophage,SPANXB1,194,0,0.0,
+Cancer6,Epithelial-mesenchymal cell,SPANXB1,347,0,0.0,
+Cancer6,T cell,SPANXB1,416,0,0.0,
+Cancer6,Endothelial progenitor cell,SPANXB1,30,0,0.0,
+Cancer6,Neutrophil,SPANXB1,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,SPANXB1,20,0,0.0,
+Cancer6,B cell,SPANXB1,22,0,0.0,

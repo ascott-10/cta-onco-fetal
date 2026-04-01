@@ -1,0 +1,163 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Zhang2019,Granulosa cell,ARX,128,72,0.5625,2.1046769817790523
+Zhang2019,Trophectoderm cell,ARX,670,6,0.008955223880597015,0.7448788207346403
+Zhang2019,T cell,ARX,21,1,0.047619047619047616,1.8524025161446342
+Zhang2019,Mesenchymal cell,ARX,161,1,0.006211180124223602,0.8840206803072232
+Zhang2019,Endothelial cell,ARX,306,3,0.00980392156862745,2.2738398390131613
+Zhang2019,CD4+ T cell,ARX,652,265,0.40644171779141103,3.2372156075185856
+Zhang2019,Fibroblast,ARX,249,87,0.3493975903614458,1.7962556981034383
+Zhang2019,Squamous cell,ARX,136,1,0.007352941176470588,1.0742299257362595
+Zhang2019,Dendritic cell,ARX,83,1,0.012048192771084338,1.3059433759392542
+Zhang2019,Migration phase fetal germ cell,ARX,97,4,0.041237113402061855,1.2614197546560666
+Zhang2019,Basal epithelial cell,ARX,87,4,0.04597701149425287,1.9355453923827644
+Zhang2019,Mesodermal embryonic stem cell,ARX,24,0,0.0,
+Zhang2019,Plasmacytoid dendritic cell,ARX,11,0,0.0,
+Zhang2019,Luminal epithelial cell,ARX,584,1,0.0017123287671232876,0.9838224479195005
+Zhang2019,Mitotic fetal germ cell,ARX,303,0,0.0,
+Zhang2019,Erythrocyte,ARX,359,0,0.0,
+Zhang2019,Embryonic stem cell,ARX,366,0,0.0,
+Zhang2019,Plasma cell,ARX,14,0,0.0,
+Zhang2019,Granulosa cell,CEP55,128,1,0.0078125,2.746600476956729
+Zhang2019,Trophectoderm cell,CEP55,670,31,0.04626865671641791,1.7109634681277666
+Zhang2019,T cell,CEP55,21,6,0.2857142857142857,4.554917368312496
+Zhang2019,Mesenchymal cell,CEP55,161,16,0.09937888198757763,5.61118371652813
+Zhang2019,Endothelial cell,CEP55,306,8,0.026143790849673203,4.449253996664515
+Zhang2019,CD4+ T cell,CEP55,652,3,0.004601226993865031,5.318510511474388
+Zhang2019,Fibroblast,CEP55,249,1,0.004016064257028112,2.3618747781343474
+Zhang2019,Squamous cell,CEP55,136,16,0.11764705882352941,3.305036789654077
+Zhang2019,Dendritic cell,CEP55,83,3,0.03614457831325301,1.9313084453436995
+Zhang2019,Migration phase fetal germ cell,CEP55,97,88,0.9072164948453608,4.582363866557185
+Zhang2019,Basal epithelial cell,CEP55,87,2,0.022988505747126436,4.16136144792222
+Zhang2019,Mesodermal embryonic stem cell,CEP55,24,0,0.0,
+Zhang2019,Plasmacytoid dendritic cell,CEP55,11,0,0.0,
+Zhang2019,Luminal epithelial cell,CEP55,584,36,0.06164383561643835,1.7391634344751987
+Zhang2019,Mitotic fetal germ cell,CEP55,303,2,0.006600660066006601,1.4737237809038999
+Zhang2019,Erythrocyte,CEP55,359,3,0.008356545961002786,2.255808698465326
+Zhang2019,Embryonic stem cell,CEP55,366,4,0.01092896174863388,1.3430212106337054
+Zhang2019,Plasma cell,CEP55,14,0,0.0,
+Zhang2019,Granulosa cell,CTCFL,128,1,0.0078125,10.0
+Zhang2019,Trophectoderm cell,CTCFL,670,11,0.016417910447761194,10.0
+Zhang2019,T cell,CTCFL,21,0,0.0,
+Zhang2019,Mesenchymal cell,CTCFL,161,0,0.0,
+Zhang2019,Endothelial cell,CTCFL,306,0,0.0,
+Zhang2019,CD4+ T cell,CTCFL,652,0,0.0,
+Zhang2019,Fibroblast,CTCFL,249,0,0.0,
+Zhang2019,Squamous cell,CTCFL,136,3,0.022058823529411766,10.0
+Zhang2019,Dendritic cell,CTCFL,83,0,0.0,
+Zhang2019,Migration phase fetal germ cell,CTCFL,97,0,0.0,
+Zhang2019,Basal epithelial cell,CTCFL,87,0,0.0,
+Zhang2019,Mesodermal embryonic stem cell,CTCFL,24,0,0.0,
+Zhang2019,Plasmacytoid dendritic cell,CTCFL,11,0,0.0,
+Zhang2019,Luminal epithelial cell,CTCFL,584,1,0.0017123287671232876,10.0
+Zhang2019,Mitotic fetal germ cell,CTCFL,303,0,0.0,
+Zhang2019,Erythrocyte,CTCFL,359,0,0.0,
+Zhang2019,Embryonic stem cell,CTCFL,366,0,0.0,
+Zhang2019,Plasma cell,CTCFL,14,0,0.0,
+Zhang2019,Granulosa cell,IL13RA2,128,0,0.0,
+Zhang2019,Trophectoderm cell,IL13RA2,670,7,0.010447761194029851,5.930748702097809
+Zhang2019,T cell,IL13RA2,21,1,0.047619047619047616,6.480836485907194
+Zhang2019,Mesenchymal cell,IL13RA2,161,1,0.006211180124223602,8.026928886483471
+Zhang2019,Endothelial cell,IL13RA2,306,16,0.05228758169934641,8.07284288037846
+Zhang2019,CD4+ T cell,IL13RA2,652,0,0.0,
+Zhang2019,Fibroblast,IL13RA2,249,0,0.0,
+Zhang2019,Squamous cell,IL13RA2,136,17,0.125,6.343245920812705
+Zhang2019,Dendritic cell,IL13RA2,83,0,0.0,
+Zhang2019,Migration phase fetal germ cell,IL13RA2,97,3,0.030927835051546393,6.050264255149109
+Zhang2019,Basal epithelial cell,IL13RA2,87,0,0.0,
+Zhang2019,Mesodermal embryonic stem cell,IL13RA2,24,1,0.041666666666666664,10.0
+Zhang2019,Plasmacytoid dendritic cell,IL13RA2,11,0,0.0,
+Zhang2019,Luminal epithelial cell,IL13RA2,584,1,0.0017123287671232876,4.203414680859005
+Zhang2019,Mitotic fetal germ cell,IL13RA2,303,0,0.0,
+Zhang2019,Erythrocyte,IL13RA2,359,0,0.0,
+Zhang2019,Embryonic stem cell,IL13RA2,366,0,0.0,
+Zhang2019,Plasma cell,IL13RA2,14,0,0.0,
+Zhang2019,Granulosa cell,LEMD1,128,1,0.0078125,2.800682458570845
+Zhang2019,Trophectoderm cell,LEMD1,670,134,0.2,4.585670871045086
+Zhang2019,T cell,LEMD1,21,0,0.0,
+Zhang2019,Mesenchymal cell,LEMD1,161,0,0.0,
+Zhang2019,Endothelial cell,LEMD1,306,0,0.0,
+Zhang2019,CD4+ T cell,LEMD1,652,4,0.006134969325153374,3.9143080543212605
+Zhang2019,Fibroblast,LEMD1,249,1,0.004016064257028112,4.678905771038027
+Zhang2019,Squamous cell,LEMD1,136,3,0.022058823529411766,2.009030052395936
+Zhang2019,Dendritic cell,LEMD1,83,0,0.0,
+Zhang2019,Migration phase fetal germ cell,LEMD1,97,9,0.09278350515463918,2.927079291608837
+Zhang2019,Basal epithelial cell,LEMD1,87,0,0.0,
+Zhang2019,Mesodermal embryonic stem cell,LEMD1,24,0,0.0,
+Zhang2019,Plasmacytoid dendritic cell,LEMD1,11,0,0.0,
+Zhang2019,Luminal epithelial cell,LEMD1,584,1,0.0017123287671232876,3.841977944688642
+Zhang2019,Mitotic fetal germ cell,LEMD1,303,0,0.0,
+Zhang2019,Erythrocyte,LEMD1,359,1,0.002785515320334262,3.052695253992533
+Zhang2019,Embryonic stem cell,LEMD1,366,0,0.0,
+Zhang2019,Plasma cell,LEMD1,14,0,0.0,
+Zhang2019,Granulosa cell,LY6K,128,1,0.0078125,5.002053048844321
+Zhang2019,Trophectoderm cell,LY6K,670,1,0.0014925373134328358,2.309420997827401
+Zhang2019,T cell,LY6K,21,0,0.0,
+Zhang2019,Mesenchymal cell,LY6K,161,0,0.0,
+Zhang2019,Endothelial cell,LY6K,306,16,0.05228758169934641,8.700197108866279
+Zhang2019,CD4+ T cell,LY6K,652,9,0.013803680981595092,9.949800612495586
+Zhang2019,Fibroblast,LY6K,249,2,0.008032128514056224,7.852796493701932
+Zhang2019,Squamous cell,LY6K,136,0,0.0,
+Zhang2019,Dendritic cell,LY6K,83,0,0.0,
+Zhang2019,Migration phase fetal germ cell,LY6K,97,1,0.010309278350515464,1.3175516646732655
+Zhang2019,Basal epithelial cell,LY6K,87,1,0.011494252873563218,6.078331651588454
+Zhang2019,Mesodermal embryonic stem cell,LY6K,24,1,0.041666666666666664,10.0
+Zhang2019,Plasmacytoid dendritic cell,LY6K,11,0,0.0,
+Zhang2019,Luminal epithelial cell,LY6K,584,0,0.0,
+Zhang2019,Mitotic fetal germ cell,LY6K,303,0,0.0,
+Zhang2019,Erythrocyte,LY6K,359,0,0.0,
+Zhang2019,Embryonic stem cell,LY6K,366,0,0.0,
+Zhang2019,Plasma cell,LY6K,14,0,0.0,
+Zhang2019,Granulosa cell,MORC1,128,1,0.0078125,10.0
+Zhang2019,Trophectoderm cell,MORC1,670,0,0.0,
+Zhang2019,T cell,MORC1,21,0,0.0,
+Zhang2019,Mesenchymal cell,MORC1,161,0,0.0,
+Zhang2019,Endothelial cell,MORC1,306,1,0.0032679738562091504,10.0
+Zhang2019,CD4+ T cell,MORC1,652,3,0.004601226993865031,10.0
+Zhang2019,Fibroblast,MORC1,249,0,0.0,
+Zhang2019,Squamous cell,MORC1,136,0,0.0,
+Zhang2019,Dendritic cell,MORC1,83,1,0.012048192771084338,10.0
+Zhang2019,Migration phase fetal germ cell,MORC1,97,0,0.0,
+Zhang2019,Basal epithelial cell,MORC1,87,0,0.0,
+Zhang2019,Mesodermal embryonic stem cell,MORC1,24,0,0.0,
+Zhang2019,Plasmacytoid dendritic cell,MORC1,11,0,0.0,
+Zhang2019,Luminal epithelial cell,MORC1,584,0,0.0,
+Zhang2019,Mitotic fetal germ cell,MORC1,303,0,0.0,
+Zhang2019,Erythrocyte,MORC1,359,0,0.0,
+Zhang2019,Embryonic stem cell,MORC1,366,0,0.0,
+Zhang2019,Plasma cell,MORC1,14,0,0.0,
+Zhang2019,Granulosa cell,OTOA,128,0,0.0,
+Zhang2019,Trophectoderm cell,OTOA,670,7,0.010447761194029851,3.9152001837922197
+Zhang2019,T cell,OTOA,21,0,0.0,
+Zhang2019,Mesenchymal cell,OTOA,161,0,0.0,
+Zhang2019,Endothelial cell,OTOA,306,4,0.013071895424836602,7.973640502487985
+Zhang2019,CD4+ T cell,OTOA,652,0,0.0,
+Zhang2019,Fibroblast,OTOA,249,0,0.0,
+Zhang2019,Squamous cell,OTOA,136,3,0.022058823529411766,4.736667069605455
+Zhang2019,Dendritic cell,OTOA,83,15,0.18072289156626506,8.96573572423829
+Zhang2019,Migration phase fetal germ cell,OTOA,97,3,0.030927835051546393,3.0038929924684177
+Zhang2019,Basal epithelial cell,OTOA,87,0,0.0,
+Zhang2019,Mesodermal embryonic stem cell,OTOA,24,0,0.0,
+Zhang2019,Plasmacytoid dendritic cell,OTOA,11,0,0.0,
+Zhang2019,Luminal epithelial cell,OTOA,584,1,0.0017123287671232876,2.9153524365072334
+Zhang2019,Mitotic fetal germ cell,OTOA,303,2,0.006600660066006601,2.9440558689457266
+Zhang2019,Erythrocyte,OTOA,359,0,0.0,
+Zhang2019,Embryonic stem cell,OTOA,366,1,0.00273224043715847,2.7615027311229126
+Zhang2019,Plasma cell,OTOA,14,0,0.0,
+Zhang2019,Granulosa cell,PAGE4,128,1,0.0078125,9.665710245639897
+Zhang2019,Trophectoderm cell,PAGE4,670,0,0.0,
+Zhang2019,T cell,PAGE4,21,0,0.0,
+Zhang2019,Mesenchymal cell,PAGE4,161,0,0.0,
+Zhang2019,Endothelial cell,PAGE4,306,0,0.0,
+Zhang2019,CD4+ T cell,PAGE4,652,4,0.006134969325153374,10.0
+Zhang2019,Fibroblast,PAGE4,249,1,0.004016064257028112,9.5101670512553
+Zhang2019,Squamous cell,PAGE4,136,2,0.014705882352941176,6.70669458406284
+Zhang2019,Dendritic cell,PAGE4,83,0,0.0,
+Zhang2019,Migration phase fetal germ cell,PAGE4,97,0,0.0,
+Zhang2019,Basal epithelial cell,PAGE4,87,0,0.0,
+Zhang2019,Mesodermal embryonic stem cell,PAGE4,24,0,0.0,
+Zhang2019,Plasmacytoid dendritic cell,PAGE4,11,0,0.0,
+Zhang2019,Luminal epithelial cell,PAGE4,584,2,0.003424657534246575,5.869489661283101
+Zhang2019,Mitotic fetal germ cell,PAGE4,303,0,0.0,
+Zhang2019,Erythrocyte,PAGE4,359,1,0.002785515320334262,7.832018208688035
+Zhang2019,Embryonic stem cell,PAGE4,366,1,0.00273224043715847,6.942957769655397
+Zhang2019,Plasma cell,PAGE4,14,0,0.0,

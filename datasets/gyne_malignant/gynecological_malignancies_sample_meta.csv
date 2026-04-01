@@ -1,0 +1,12 @@
+sample_id	gse_id	donor_id	sample_tissue	sample_tissue_description	donor_ethnicity	tumor_site	tumor_histology	metastatic_status
+3533EL	GSM5276933	Patient_1_3533EL	Tumor	Tumor of the endometrium	African American	Endometrium	Endometrioid	Primary/Non-metastatic
+3571DL	GSM5276934	Patient_2_3571DL	Tumor	Tumor of the endometrium	Caucasian	Endometrium	Endometrioid	Primary/Non-metastatic
+36186L	GSM5276935	Patient_3_36186L	Tumor	Tumor of the endometrium	Caucasian	Endometrium	Endometrioid	Primary/Non-metastatic
+36639L	GSM5276936	Patient_4_36639L	Tumor	Tumor of the endometrium	Caucasian	Endometrium	Endometrioid	Primary/Non-metastatic
+366C5L	GSM5276937	Patient_5_366C5L	Tumor	Tumor of the endometrium	Caucasian	Endometrium	Endometrioid	Primary/Non-metastatic
+37EACL	GSM5276938	Patient_6_37EACL	Tumor	Tumor of the ovary	Caucasian	Ovary	Serous	Metastatic
+38FE7L	GSM5276939	Patient_7_38FE7L	Tumor	Tumor of the ovary	Caucasian	Ovary	Endometrioid	Primary/Non-metastatic
+3BAE2L	GSM5276940	Patient_8_3BAE2L	Tumor	Tumor of the ovary	Caucasian	Ovary	High-Grade Serous	Primary/Non-metastatic
+3CCF1L	GSM5276941	Patient_10_3CCF1L	Tumor	Tumor of the ovary	Caucasian	Ovary	Carcinosarcoma	Primary/Non-metastatic
+3E4D1L	GSM5276942	Patient_11_3E4D1L	Tumor	Tumor of the ovary	Caucasian	Ovary	GIST	Metastatic
+3E5CFL	GSM5276943	Patient_9_3E5CFL	Tumor	Tumor of the ovary	Asian	Ovary	High-Grade Serous	Primary/Non-metastatic

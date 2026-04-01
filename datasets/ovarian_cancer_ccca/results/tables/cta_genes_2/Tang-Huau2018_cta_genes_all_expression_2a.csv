@@ -1,0 +1,79 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Tang-Huau2018,Dendritic cell,CTCFL,554,1,0.0018050541516245488,10.0
+Tang-Huau2018,T cell,CTCFL,23,0,0.0,
+Tang-Huau2018,Natural killer (NK) cell,CTCFL,69,0,0.0,
+Tang-Huau2018,Squamous cell,CTCFL,1679,0,0.0,
+Tang-Huau2018,B cell,CTCFL,112,0,0.0,
+Tang-Huau2018,Zygote,CTCFL,221,0,0.0,
+Tang-Huau2018,Macrophage,CTCFL,1815,0,0.0,
+Tang-Huau2018,Endothelial cell,CTCFL,37,0,0.0,
+Tang-Huau2018,Mitotic fetal germ cell,CTCFL,2078,0,0.0,
+Tang-Huau2018,Fibroblast,CTCFL,14,0,0.0,
+Tang-Huau2018,Migration phase fetal germ cell,CTCFL,322,0,0.0,
+Tang-Huau2018,CD4+ T cell,CTCFL,421,0,0.0,
+Tang-Huau2018,Retinoid acid signaling-responsive fetal germ cell,CTCFL,176,0,0.0,
+Tang-Huau2018,Dendritic cell,GPAT2,554,1,0.0018050541516245488,7.260719279139146
+Tang-Huau2018,T cell,GPAT2,23,0,0.0,
+Tang-Huau2018,Natural killer (NK) cell,GPAT2,69,3,0.043478260869565216,4.659512663981004
+Tang-Huau2018,Squamous cell,GPAT2,1679,7,0.004169148302561048,10.0
+Tang-Huau2018,B cell,GPAT2,112,1,0.008928571428571428,10.0
+Tang-Huau2018,Zygote,GPAT2,221,1,0.004524886877828055,8.781358866973903
+Tang-Huau2018,Macrophage,GPAT2,1815,18,0.009917355371900827,9.991855507623189
+Tang-Huau2018,Endothelial cell,GPAT2,37,1,0.02702702702702703,10.0
+Tang-Huau2018,Mitotic fetal germ cell,GPAT2,2078,15,0.007218479307025986,4.827590963138973
+Tang-Huau2018,Fibroblast,GPAT2,14,0,0.0,
+Tang-Huau2018,Migration phase fetal germ cell,GPAT2,322,1,0.003105590062111801,9.28743641710633
+Tang-Huau2018,CD4+ T cell,GPAT2,421,1,0.0023752969121140144,4.325389923634039
+Tang-Huau2018,Retinoid acid signaling-responsive fetal germ cell,GPAT2,176,7,0.03977272727272727,4.1795217548320265
+Tang-Huau2018,Dendritic cell,LY6K,554,0,0.0,
+Tang-Huau2018,T cell,LY6K,23,0,0.0,
+Tang-Huau2018,Natural killer (NK) cell,LY6K,69,0,0.0,
+Tang-Huau2018,Squamous cell,LY6K,1679,7,0.004169148302561048,10.0
+Tang-Huau2018,B cell,LY6K,112,0,0.0,
+Tang-Huau2018,Zygote,LY6K,221,0,0.0,
+Tang-Huau2018,Macrophage,LY6K,1815,6,0.003305785123966942,10.0
+Tang-Huau2018,Endothelial cell,LY6K,37,0,0.0,
+Tang-Huau2018,Mitotic fetal germ cell,LY6K,2078,2,0.0009624639076034649,8.155214021880175
+Tang-Huau2018,Fibroblast,LY6K,14,0,0.0,
+Tang-Huau2018,Migration phase fetal germ cell,LY6K,322,0,0.0,
+Tang-Huau2018,CD4+ T cell,LY6K,421,0,0.0,
+Tang-Huau2018,Retinoid acid signaling-responsive fetal germ cell,LY6K,176,0,0.0,
+Tang-Huau2018,Dendritic cell,OTOA,554,3,0.005415162454873646,4.158205462233681
+Tang-Huau2018,T cell,OTOA,23,0,0.0,
+Tang-Huau2018,Natural killer (NK) cell,OTOA,69,1,0.014492753623188406,0.8967067255004918
+Tang-Huau2018,Squamous cell,OTOA,1679,15,0.008933889219773675,8.269544089783478
+Tang-Huau2018,B cell,OTOA,112,0,0.0,
+Tang-Huau2018,Zygote,OTOA,221,0,0.0,
+Tang-Huau2018,Macrophage,OTOA,1815,82,0.045179063360881545,8.446468150140204
+Tang-Huau2018,Endothelial cell,OTOA,37,1,0.02702702702702703,5.469461575296733
+Tang-Huau2018,Mitotic fetal germ cell,OTOA,2078,9,0.004331087584215592,3.162647731988039
+Tang-Huau2018,Fibroblast,OTOA,14,0,0.0,
+Tang-Huau2018,Migration phase fetal germ cell,OTOA,322,1,0.003105590062111801,3.898634194116827
+Tang-Huau2018,CD4+ T cell,OTOA,421,1,0.0023752969121140144,2.9454537258027123
+Tang-Huau2018,Retinoid acid signaling-responsive fetal germ cell,OTOA,176,1,0.005681818181818182,0.8433083539914004
+Tang-Huau2018,Dendritic cell,SPAG17,554,0,0.0,
+Tang-Huau2018,T cell,SPAG17,23,0,0.0,
+Tang-Huau2018,Natural killer (NK) cell,SPAG17,69,0,0.0,
+Tang-Huau2018,Squamous cell,SPAG17,1679,3,0.001786777843954735,10.0
+Tang-Huau2018,B cell,SPAG17,112,0,0.0,
+Tang-Huau2018,Zygote,SPAG17,221,0,0.0,
+Tang-Huau2018,Macrophage,SPAG17,1815,2,0.0011019283746556473,10.0
+Tang-Huau2018,Endothelial cell,SPAG17,37,0,0.0,
+Tang-Huau2018,Mitotic fetal germ cell,SPAG17,2078,1,0.00048123195380173246,10.0
+Tang-Huau2018,Fibroblast,SPAG17,14,0,0.0,
+Tang-Huau2018,Migration phase fetal germ cell,SPAG17,322,0,0.0,
+Tang-Huau2018,CD4+ T cell,SPAG17,421,0,0.0,
+Tang-Huau2018,Retinoid acid signaling-responsive fetal germ cell,SPAG17,176,0,0.0,
+Tang-Huau2018,Dendritic cell,SPAG8,554,1,0.0018050541516245488,10.0
+Tang-Huau2018,T cell,SPAG8,23,0,0.0,
+Tang-Huau2018,Natural killer (NK) cell,SPAG8,69,1,0.014492753623188406,5.7429122373291985
+Tang-Huau2018,Squamous cell,SPAG8,1679,2,0.0011911852293031567,10.0
+Tang-Huau2018,B cell,SPAG8,112,0,0.0,
+Tang-Huau2018,Zygote,SPAG8,221,0,0.0,
+Tang-Huau2018,Macrophage,SPAG8,1815,1,0.0005509641873278236,10.0
+Tang-Huau2018,Endothelial cell,SPAG8,37,0,0.0,
+Tang-Huau2018,Mitotic fetal germ cell,SPAG8,2078,34,0.016361886429258902,8.444107774140448
+Tang-Huau2018,Fibroblast,SPAG8,14,0,0.0,
+Tang-Huau2018,Migration phase fetal germ cell,SPAG8,322,3,0.009316770186335404,10.0
+Tang-Huau2018,CD4+ T cell,SPAG8,421,6,0.014251781472684086,8.278182558729815
+Tang-Huau2018,Retinoid acid signaling-responsive fetal germ cell,SPAG8,176,5,0.028409090909090908,3.9499325686591407

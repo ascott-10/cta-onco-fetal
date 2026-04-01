@@ -1,0 +1,11 @@
+﻿sample_id,developmental_stage,sex,cell_type_descript
+F_3_8W,3-8 week gestation,female,Primordial Germ Cells
+F_9_12W,9-12 week gestation,female,Primordial Germ Cells
+F_13_16W,13-16 week gestation,female,Primordial Germ Cells
+F_17_21W,17-21 week gestation,female,Primordial Germ Cells
+F_22_26W,22-26 week gestation,female,Primordial Germ Cells
+M_3_8W,3-8 week gestation,male,Primordial Germ Cells
+M_9_12W,9-12 week gestation,male,Primordial Germ Cells
+M_17_21W,17-21 week gestation,male,Primordial Germ Cells
+M_22_26W,22-26 week gestation,male,Primordial Germ Cells
+

@@ -1,0 +1,109 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Cancer1,T cell,ADAM29,1085,2,0.0018433179723502304,10.0
+Cancer1,Luminal progenitor cell,ADAM29,330,0,0.0,
+Cancer1,Trophectoderm cell,ADAM29,483,0,0.0,
+Cancer1,Monocyte,ADAM29,551,0,0.0,
+Cancer1,Natural killer (NK) cell,ADAM29,1028,0,0.0,
+Cancer1,Microglial cell,ADAM29,785,0,0.0,
+Cancer1,Epithelial cell,ADAM29,1257,0,0.0,
+Cancer1,Trophoblast cell,ADAM29,445,0,0.0,
+Cancer1,Fibroblast,ADAM29,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,ADAM29,484,0,0.0,
+Cancer1,Granulocyte-monocyte progenitor,ADAM29,305,0,0.0,
+Cancer1,Lymphoid progenitor cell,ADAM29,207,1,0.004830917874396135,10.0
+Cancer1,Migration phase fetal germ cell,ADAM29,120,0,0.0,
+Cancer1,Decidual cell,ADAM29,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,ADAM29,261,0,0.0,
+Cancer1,B cell,ADAM29,62,0,0.0,
+Cancer1,CD8+ T cell,ADAM29,104,0,0.0,
+Cancer1,Endothelial cell,ADAM29,90,0,0.0,
+Cancer1,T cell,CTCFL,1085,5,0.004608294930875576,9.917338585008878
+Cancer1,Luminal progenitor cell,CTCFL,330,123,0.37272727272727274,3.208624365953935
+Cancer1,Trophectoderm cell,CTCFL,483,124,0.2567287784679089,3.3134620068050302
+Cancer1,Monocyte,CTCFL,551,2,0.003629764065335753,5.919857953937022
+Cancer1,Natural killer (NK) cell,CTCFL,1028,2,0.0019455252918287938,8.449832527484913
+Cancer1,Microglial cell,CTCFL,785,3,0.003821656050955414,8.947538499280379
+Cancer1,Epithelial cell,CTCFL,1257,99,0.07875894988066826,3.7558491725496355
+Cancer1,Trophoblast cell,CTCFL,445,1,0.0022471910112359553,5.8140243223229575
+Cancer1,Fibroblast,CTCFL,37,1,0.02702702702702703,2.2238417635831524
+Cancer1,Epithelial-mesenchymal cell,CTCFL,484,4,0.008264462809917356,2.5201474062747184
+Cancer1,Granulocyte-monocyte progenitor,CTCFL,305,1,0.003278688524590164,2.7214145461417787
+Cancer1,Lymphoid progenitor cell,CTCFL,207,0,0.0,
+Cancer1,Migration phase fetal germ cell,CTCFL,120,6,0.05,7.98127917729386
+Cancer1,Decidual cell,CTCFL,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,CTCFL,261,3,0.011494252873563218,2.9508420178707877
+Cancer1,B cell,CTCFL,62,0,0.0,
+Cancer1,CD8+ T cell,CTCFL,104,0,0.0,
+Cancer1,Endothelial cell,CTCFL,90,0,0.0,
+Cancer1,T cell,DDX43,1085,4,0.003686635944700461,10.0
+Cancer1,Luminal progenitor cell,DDX43,330,0,0.0,
+Cancer1,Trophectoderm cell,DDX43,483,1,0.002070393374741201,2.605955270981918
+Cancer1,Monocyte,DDX43,551,4,0.007259528130671506,9.30998119605739
+Cancer1,Natural killer (NK) cell,DDX43,1028,1,0.0009727626459143969,10.0
+Cancer1,Microglial cell,DDX43,785,2,0.0025477707006369425,10.0
+Cancer1,Epithelial cell,DDX43,1257,1,0.0007955449482895784,5.362835682113672
+Cancer1,Trophoblast cell,DDX43,445,0,0.0,
+Cancer1,Fibroblast,DDX43,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,DDX43,484,2,0.004132231404958678,6.7667923951476165
+Cancer1,Granulocyte-monocyte progenitor,DDX43,305,3,0.009836065573770493,6.8355944693167165
+Cancer1,Lymphoid progenitor cell,DDX43,207,2,0.00966183574879227,7.671230198352449
+Cancer1,Migration phase fetal germ cell,DDX43,120,0,0.0,
+Cancer1,Decidual cell,DDX43,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,DDX43,261,1,0.0038314176245210726,5.4613359335611165
+Cancer1,B cell,DDX43,62,2,0.03225806451612903,10.0
+Cancer1,CD8+ T cell,DDX43,104,1,0.009615384615384616,10.0
+Cancer1,Endothelial cell,DDX43,90,1,0.011111111111111112,10.0
+Cancer1,T cell,SAGE1,1085,0,0.0,
+Cancer1,Luminal progenitor cell,SAGE1,330,0,0.0,
+Cancer1,Trophectoderm cell,SAGE1,483,0,0.0,
+Cancer1,Monocyte,SAGE1,551,2,0.003629764065335753,10.0
+Cancer1,Natural killer (NK) cell,SAGE1,1028,0,0.0,
+Cancer1,Microglial cell,SAGE1,785,6,0.007643312101910828,10.0
+Cancer1,Epithelial cell,SAGE1,1257,0,0.0,
+Cancer1,Trophoblast cell,SAGE1,445,0,0.0,
+Cancer1,Fibroblast,SAGE1,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,SAGE1,484,0,0.0,
+Cancer1,Granulocyte-monocyte progenitor,SAGE1,305,2,0.006557377049180328,9.675902588093882
+Cancer1,Lymphoid progenitor cell,SAGE1,207,1,0.004830917874396135,10.0
+Cancer1,Migration phase fetal germ cell,SAGE1,120,0,0.0,
+Cancer1,Decidual cell,SAGE1,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,SAGE1,261,0,0.0,
+Cancer1,B cell,SAGE1,62,0,0.0,
+Cancer1,CD8+ T cell,SAGE1,104,0,0.0,
+Cancer1,Endothelial cell,SAGE1,90,0,0.0,
+Cancer1,T cell,TEX14,1085,2,0.0018433179723502304,7.455976231600957
+Cancer1,Luminal progenitor cell,TEX14,330,4,0.012121212121212121,1.6391207140803665
+Cancer1,Trophectoderm cell,TEX14,483,3,0.006211180124223602,0.7749822277993336
+Cancer1,Monocyte,TEX14,551,6,0.010889292196007259,6.092216968655824
+Cancer1,Natural killer (NK) cell,TEX14,1028,1,0.0009727626459143969,9.268203491501527
+Cancer1,Microglial cell,TEX14,785,41,0.05222929936305733,8.758854245038615
+Cancer1,Epithelial cell,TEX14,1257,10,0.007955449482895784,2.1417363321369516
+Cancer1,Trophoblast cell,TEX14,445,0,0.0,
+Cancer1,Fibroblast,TEX14,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,TEX14,484,6,0.012396694214876033,5.678636834105158
+Cancer1,Granulocyte-monocyte progenitor,TEX14,305,8,0.02622950819672131,6.099647145056107
+Cancer1,Lymphoid progenitor cell,TEX14,207,8,0.03864734299516908,4.701688929792438
+Cancer1,Migration phase fetal germ cell,TEX14,120,0,0.0,
+Cancer1,Decidual cell,TEX14,300,1,0.0033333333333333335,10.0
+Cancer1,Plasmacytoid dendritic cell,TEX14,261,14,0.05363984674329502,4.1412874975316845
+Cancer1,B cell,TEX14,62,0,0.0,
+Cancer1,CD8+ T cell,TEX14,104,0,0.0,
+Cancer1,Endothelial cell,TEX14,90,0,0.0,
+Cancer1,T cell,TSSK6,1085,1,0.0009216589861751152,10.0
+Cancer1,Luminal progenitor cell,TSSK6,330,0,0.0,
+Cancer1,Trophectoderm cell,TSSK6,483,0,0.0,
+Cancer1,Monocyte,TSSK6,551,1,0.0018148820326678765,10.0
+Cancer1,Natural killer (NK) cell,TSSK6,1028,2,0.0019455252918287938,10.0
+Cancer1,Microglial cell,TSSK6,785,0,0.0,
+Cancer1,Epithelial cell,TSSK6,1257,1,0.0007955449482895784,4.539311431064697
+Cancer1,Trophoblast cell,TSSK6,445,0,0.0,
+Cancer1,Fibroblast,TSSK6,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,TSSK6,484,0,0.0,
+Cancer1,Granulocyte-monocyte progenitor,TSSK6,305,1,0.003278688524590164,10.0
+Cancer1,Lymphoid progenitor cell,TSSK6,207,2,0.00966183574879227,10.0
+Cancer1,Migration phase fetal germ cell,TSSK6,120,0,0.0,
+Cancer1,Decidual cell,TSSK6,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,TSSK6,261,1,0.0038314176245210726,3.497017125712445
+Cancer1,B cell,TSSK6,62,0,0.0,
+Cancer1,CD8+ T cell,TSSK6,104,0,0.0,
+Cancer1,Endothelial cell,TSSK6,90,0,0.0,

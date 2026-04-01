@@ -1,0 +1,46 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Norm2,Granulocyte-monocyte progenitor,CAGE1,378,0,0.0,
+Norm2,Basal epithelial cell,CAGE1,1318,0,0.0,
+Norm2,Fibroblast,CAGE1,1077,2,0.0018570102135561746,10.0
+Norm2,Decidual cell,CAGE1,404,0,0.0,
+Norm2,T cell,CAGE1,283,0,0.0,
+Norm2,Endothelial cell,CAGE1,158,1,0.006329113924050633,9.381298532033208
+Norm2,Monocyte,CAGE1,123,0,0.0,
+Norm2,Mesenchymal cell,CAGE1,384,0,0.0,
+Norm2,Embryonic stem cell,CAGE1,189,0,0.0,
+Norm2,Oogenesis phase fetal germ cell,CAGE1,86,0,0.0,
+Norm2,Dendritic cell,CAGE1,109,0,0.0,
+Norm2,B cell,CAGE1,25,0,0.0,
+Norm2,Eosinophil,CAGE1,14,0,0.0,
+Norm2,CD8+ T cell,CAGE1,166,2,0.012048192771084338,10.0
+Norm2,Granulosa cell,CAGE1,63,0,0.0,
+Norm2,Granulocyte-monocyte progenitor,CEP55,378,1,0.0026455026455026454,3.7584479965370594
+Norm2,Basal epithelial cell,CEP55,1318,1,0.0007587253414264037,7.9439595776848915
+Norm2,Fibroblast,CEP55,1077,1,0.0009285051067780873,3.440010148362362
+Norm2,Decidual cell,CEP55,404,1,0.0024752475247524753,4.690322239767231
+Norm2,T cell,CEP55,283,2,0.007067137809187279,10.0
+Norm2,Endothelial cell,CEP55,158,7,0.04430379746835443,6.3022819110284205
+Norm2,Monocyte,CEP55,123,0,0.0,
+Norm2,Mesenchymal cell,CEP55,384,10,0.026041666666666668,8.426886384337951
+Norm2,Embryonic stem cell,CEP55,189,1,0.005291005291005291,4.83099987298233
+Norm2,Oogenesis phase fetal germ cell,CEP55,86,0,0.0,
+Norm2,Dendritic cell,CEP55,109,4,0.03669724770642202,9.603920392103346
+Norm2,B cell,CEP55,25,0,0.0,
+Norm2,Eosinophil,CEP55,14,0,0.0,
+Norm2,CD8+ T cell,CEP55,166,0,0.0,
+Norm2,Granulosa cell,CEP55,63,0,0.0,
+Norm2,Granulocyte-monocyte progenitor,OTOA,378,0,0.0,
+Norm2,Basal epithelial cell,OTOA,1318,0,0.0,
+Norm2,Fibroblast,OTOA,1077,0,0.0,
+Norm2,Decidual cell,OTOA,404,0,0.0,
+Norm2,T cell,OTOA,283,0,0.0,
+Norm2,Endothelial cell,OTOA,158,0,0.0,
+Norm2,Monocyte,OTOA,123,1,0.008130081300813009,10.0
+Norm2,Mesenchymal cell,OTOA,384,0,0.0,
+Norm2,Embryonic stem cell,OTOA,189,0,0.0,
+Norm2,Oogenesis phase fetal germ cell,OTOA,86,0,0.0,
+Norm2,Dendritic cell,OTOA,109,4,0.03669724770642202,10.0
+Norm2,B cell,OTOA,25,0,0.0,
+Norm2,Eosinophil,OTOA,14,0,0.0,
+Norm2,CD8+ T cell,OTOA,166,0,0.0,
+Norm2,Granulosa cell,OTOA,63,0,0.0,

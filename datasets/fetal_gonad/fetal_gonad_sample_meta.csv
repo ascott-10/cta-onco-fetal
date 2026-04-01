@@ -1,0 +1,11 @@
+﻿ID_REF,gse_id,Description,new_name,tissue_source,sex,trimester,number_donors,age_gestation,sample_id
+GSM5506062,GSM5506062_G1,G1_1st trimester female gonad,G1_1_Ovary,Fetal ovary tissue,Female,1,2,"10, 11wks",G1_1_Ovary
+GSM5506063,GSM5506063_G2,G2_2nd trimester female gonad,G2_2_Ovary,Fetal ovary tissue,Female,2,1,18wks,G2_2_Ovary
+GSM5506064,GSM5506064_G3,G3 _1st trimester male gonad,G3_1_Testis,Fetal testis tissue,Male,1,2,"10, 11wks",G3_1_Testis
+GSM5506065,GSM5506065_G4,G4_2nd trimester male gonad,G4_2_Testis,Fetal testis tissue,Male,2,1,20wks,G4_2_Testis
+GSM5704349,GSM5704349_mesonephros,1st and 2nd trimester male mesonephros,G_1_2_M_Mesonephros,Fetal mesonephros tissue,Male,"1, 2",3,"9, 13, 19wks",G_1_2_M_Mesonephros
+GSM6703999,GSM6703999_mesonephros_F,2nd trimester female mesonephros,G_2_F_Mesonephros,Fetal mesonephros tissue,Female,2,2,"16, 18wks",G_2_F_Mesonephros
+GSM6704000,GSM6704000_G5_A,2nd trimester female gonads A,G5_A_2_Ovary,Fetal ovary tissue,Female,2,2,17-19wks,G5_A_2_Ovary
+GSM6704001,GSM6704001_G5_B,2nd trimester female gonads B,G5_B_2_Ovary,Fetal ovary tissue,Female,2,2,17-19wks,G5_B_2_Ovary
+GSM6704002,GSM6704002_G6_A,1st and 2nd trimester male and female gonads and mesonephros A,G6_A_Mixed,"Fetal tests, ovary and mesonephros tissue",Mixed,"1, 2",10,8-20wks,G6_A_Mixed
+GSM6704003,GSM6704003_G6_B,1st and 2nd trimester male and female gonads and mesonephros B,G6_B_Mixed,"Fetal tests, ovary and mesonephros tissue",Mixed,"1, 2",10,8-20wks,G6_B_Mixed

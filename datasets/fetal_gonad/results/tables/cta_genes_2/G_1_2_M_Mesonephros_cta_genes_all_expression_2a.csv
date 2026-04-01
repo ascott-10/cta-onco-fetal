@@ -1,0 +1,385 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+G_1_2_M_Mesonephros,Embryonic stem cell,BRDT,1221,1,0.000819000819000819,10.0
+G_1_2_M_Mesonephros,Neutrophil,BRDT,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,BRDT,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,BRDT,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,BRDT,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,BRDT,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,BRDT,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,BRDT,439,6,0.01366742596810934,10.0
+G_1_2_M_Mesonephros,Granulosa cell,BRDT,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,BRDT,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,BRDT,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,BRDT,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,BRDT,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,BRDT,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,BRDT,107,1,0.009345794392523364,10.0
+G_1_2_M_Mesonephros,Microglial cell,BRDT,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,CTAG2,1221,6,0.004914004914004914,9.098266923242155
+G_1_2_M_Mesonephros,Neutrophil,CTAG2,696,7,0.010057471264367816,9.869858467623079
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,CTAG2,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,CTAG2,386,2,0.0051813471502590676,8.248668642026228
+G_1_2_M_Mesonephros,Macrophage,CTAG2,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,CTAG2,740,4,0.005405405405405406,8.394546551871603
+G_1_2_M_Mesonephros,Trophectoderm cell,CTAG2,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,CTAG2,439,2,0.004555808656036446,7.867562341826442
+G_1_2_M_Mesonephros,Granulosa cell,CTAG2,471,7,0.014861995753715499,9.18648575474008
+G_1_2_M_Mesonephros,Leydig precursor cell,CTAG2,1906,11,0.005771248688352571,9.527922596850065
+G_1_2_M_Mesonephros,Sertoli cell,CTAG2,1103,1,0.0009066183136899365,3.8661728854377975
+G_1_2_M_Mesonephros,Neural progenitor cell,CTAG2,327,2,0.0061162079510703364,7.9555390515950375
+G_1_2_M_Mesonephros,Mesenchymal stem cell,CTAG2,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,CTAG2,71,1,0.014084507042253521,10.0
+G_1_2_M_Mesonephros,Dendritic cell progenitor,CTAG2,107,2,0.018691588785046728,7.206883086985226
+G_1_2_M_Mesonephros,Microglial cell,CTAG2,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,CTCFL,1221,1,0.000819000819000819,10.0
+G_1_2_M_Mesonephros,Neutrophil,CTCFL,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,CTCFL,492,2,0.0040650406504065045,10.0
+G_1_2_M_Mesonephros,Fibroblast,CTCFL,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,CTCFL,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,CTCFL,740,2,0.002702702702702703,10.0
+G_1_2_M_Mesonephros,Trophectoderm cell,CTCFL,572,1,0.0017482517482517483,10.0
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,CTCFL,439,4,0.009111617312072893,10.0
+G_1_2_M_Mesonephros,Granulosa cell,CTCFL,471,1,0.0021231422505307855,10.0
+G_1_2_M_Mesonephros,Leydig precursor cell,CTCFL,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,CTCFL,1103,1,0.0009066183136899365,10.0
+G_1_2_M_Mesonephros,Neural progenitor cell,CTCFL,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,CTCFL,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,CTCFL,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,CTCFL,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,CTCFL,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,DMRT1,1221,9,0.007371007371007371,5.402182510983035
+G_1_2_M_Mesonephros,Neutrophil,DMRT1,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,DMRT1,492,2,0.0040650406504065045,4.783963764166698
+G_1_2_M_Mesonephros,Fibroblast,DMRT1,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,DMRT1,154,2,0.012987012987012988,5.175539433762577
+G_1_2_M_Mesonephros,Erythrocyte,DMRT1,740,4,0.005405405405405406,4.712052706632336
+G_1_2_M_Mesonephros,Trophectoderm cell,DMRT1,572,1,0.0017482517482517483,2.9501779703429816
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,DMRT1,439,9,0.02050113895216401,9.135725847771303
+G_1_2_M_Mesonephros,Granulosa cell,DMRT1,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,DMRT1,1906,1,0.0005246589716684155,4.49850958329871
+G_1_2_M_Mesonephros,Sertoli cell,DMRT1,1103,76,0.06890299184043518,7.913671690847327
+G_1_2_M_Mesonephros,Neural progenitor cell,DMRT1,327,2,0.0061162079510703364,4.325123996902358
+G_1_2_M_Mesonephros,Mesenchymal stem cell,DMRT1,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,DMRT1,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,DMRT1,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,DMRT1,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,FAM133A,1221,6,0.004914004914004914,8.51837373426037
+G_1_2_M_Mesonephros,Neutrophil,FAM133A,696,1,0.0014367816091954023,7.368157703614432
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,FAM133A,492,2,0.0040650406504065045,8.346731701099644
+G_1_2_M_Mesonephros,Fibroblast,FAM133A,386,1,0.0025906735751295338,10.0
+G_1_2_M_Mesonephros,Macrophage,FAM133A,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,FAM133A,740,2,0.002702702702702703,7.426218982050656
+G_1_2_M_Mesonephros,Trophectoderm cell,FAM133A,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,FAM133A,439,12,0.02733485193621868,9.68851238873139
+G_1_2_M_Mesonephros,Granulosa cell,FAM133A,471,1,0.0021231422505307855,10.0
+G_1_2_M_Mesonephros,Leydig precursor cell,FAM133A,1906,3,0.0015739769150052466,9.591238985167662
+G_1_2_M_Mesonephros,Sertoli cell,FAM133A,1103,8,0.007252946509519492,9.163782572171812
+G_1_2_M_Mesonephros,Neural progenitor cell,FAM133A,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,FAM133A,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,FAM133A,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,FAM133A,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,FAM133A,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,FATE1,1221,1,0.000819000819000819,3.0807449429978537
+G_1_2_M_Mesonephros,Neutrophil,FATE1,696,2,0.0028735632183908046,2.406435482174887
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,FATE1,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,FATE1,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,FATE1,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,FATE1,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,FATE1,572,1,0.0017482517482517483,1.0209963585009265
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,FATE1,439,3,0.00683371298405467,3.994312507991976
+G_1_2_M_Mesonephros,Granulosa cell,FATE1,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,FATE1,1906,4,0.002098635886673662,3.935219244124607
+G_1_2_M_Mesonephros,Sertoli cell,FATE1,1103,282,0.2556663644605621,4.70154987941969
+G_1_2_M_Mesonephros,Neural progenitor cell,FATE1,327,2,0.0061162079510703364,3.876355775912889
+G_1_2_M_Mesonephros,Mesenchymal stem cell,FATE1,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,FATE1,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,FATE1,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,FATE1,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,GAGE12H,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,GAGE12H,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,GAGE12H,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,GAGE12H,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,GAGE12H,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,GAGE12H,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,GAGE12H,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,GAGE12H,439,4,0.009111617312072893,10.0
+G_1_2_M_Mesonephros,Granulosa cell,GAGE12H,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,GAGE12H,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,GAGE12H,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,GAGE12H,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,GAGE12H,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,GAGE12H,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,GAGE12H,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,GAGE12H,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,GAGE2A,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,GAGE2A,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,GAGE2A,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,GAGE2A,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,GAGE2A,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,GAGE2A,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,GAGE2A,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,GAGE2A,439,5,0.011389521640091117,10.0
+G_1_2_M_Mesonephros,Granulosa cell,GAGE2A,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,GAGE2A,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,GAGE2A,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,GAGE2A,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,GAGE2A,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,GAGE2A,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,GAGE2A,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,GAGE2A,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,IL13RA2,1221,167,0.13677313677313677,1.0641354465150525
+G_1_2_M_Mesonephros,Neutrophil,IL13RA2,696,204,0.29310344827586204,1.7613184889338034
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,IL13RA2,492,135,0.27439024390243905,1.4578407256657597
+G_1_2_M_Mesonephros,Fibroblast,IL13RA2,386,172,0.44559585492227977,1.8177101208189557
+G_1_2_M_Mesonephros,Macrophage,IL13RA2,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,IL13RA2,740,28,0.03783783783783784,0.6827947137179037
+G_1_2_M_Mesonephros,Trophectoderm cell,IL13RA2,572,79,0.1381118881118881,0.6075870624437543
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,IL13RA2,439,28,0.06378132118451026,1.8553662536469293
+G_1_2_M_Mesonephros,Granulosa cell,IL13RA2,471,83,0.1762208067940552,1.100999018890613
+G_1_2_M_Mesonephros,Leydig precursor cell,IL13RA2,1906,732,0.38405036726128017,2.010425874634845
+G_1_2_M_Mesonephros,Sertoli cell,IL13RA2,1103,20,0.01813236627379873,1.0719436941418445
+G_1_2_M_Mesonephros,Neural progenitor cell,IL13RA2,327,122,0.3730886850152905,1.730322762007862
+G_1_2_M_Mesonephros,Mesenchymal stem cell,IL13RA2,318,68,0.2138364779874214,1.707240223226303
+G_1_2_M_Mesonephros,Endothelial cell,IL13RA2,71,6,0.08450704225352113,0.9339730508154499
+G_1_2_M_Mesonephros,Dendritic cell progenitor,IL13RA2,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,IL13RA2,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,LUZP4,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,LUZP4,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,LUZP4,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,LUZP4,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,LUZP4,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,LUZP4,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,LUZP4,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,LUZP4,439,9,0.02050113895216401,10.0
+G_1_2_M_Mesonephros,Granulosa cell,LUZP4,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,LUZP4,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,LUZP4,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,LUZP4,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,LUZP4,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,LUZP4,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,LUZP4,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,LUZP4,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,LY6K,1221,48,0.03931203931203931,2.714286372001061
+G_1_2_M_Mesonephros,Neutrophil,LY6K,696,46,0.06609195402298851,5.143649369100851
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,LY6K,492,26,0.052845528455284556,3.2715802777992717
+G_1_2_M_Mesonephros,Fibroblast,LY6K,386,27,0.06994818652849741,4.035334255673953
+G_1_2_M_Mesonephros,Macrophage,LY6K,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,LY6K,740,61,0.08243243243243244,2.79510963356344
+G_1_2_M_Mesonephros,Trophectoderm cell,LY6K,572,21,0.03671328671328671,2.3424777335963456
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,LY6K,439,15,0.03416856492027335,5.271460666838324
+G_1_2_M_Mesonephros,Granulosa cell,LY6K,471,25,0.05307855626326964,3.0170939005467687
+G_1_2_M_Mesonephros,Leydig precursor cell,LY6K,1906,173,0.09076600209863589,4.185131458980106
+G_1_2_M_Mesonephros,Sertoli cell,LY6K,1103,6,0.005439709882139619,2.4767194511253687
+G_1_2_M_Mesonephros,Neural progenitor cell,LY6K,327,20,0.06116207951070336,2.9209930573457923
+G_1_2_M_Mesonephros,Mesenchymal stem cell,LY6K,318,14,0.0440251572327044,3.9243525857013224
+G_1_2_M_Mesonephros,Endothelial cell,LY6K,71,2,0.028169014084507043,2.470650437189658
+G_1_2_M_Mesonephros,Dendritic cell progenitor,LY6K,107,2,0.018691588785046728,3.7201297200165357
+G_1_2_M_Mesonephros,Microglial cell,LY6K,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,MAGEA4,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,MAGEA4,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,MAGEA4,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,MAGEA4,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,MAGEA4,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,MAGEA4,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,MAGEA4,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,MAGEA4,439,4,0.009111617312072893,10.0
+G_1_2_M_Mesonephros,Granulosa cell,MAGEA4,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,MAGEA4,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,MAGEA4,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,MAGEA4,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,MAGEA4,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,MAGEA4,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,MAGEA4,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,MAGEA4,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,MAGEB2,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,MAGEB2,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,MAGEB2,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,MAGEB2,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,MAGEB2,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,MAGEB2,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,MAGEB2,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,MAGEB2,439,5,0.011389521640091117,10.0
+G_1_2_M_Mesonephros,Granulosa cell,MAGEB2,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,MAGEB2,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,MAGEB2,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,MAGEB2,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,MAGEB2,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,MAGEB2,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,MAGEB2,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,MAGEB2,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,MAGEC2,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,MAGEC2,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,MAGEC2,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,MAGEC2,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,MAGEC2,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,MAGEC2,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,MAGEC2,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,MAGEC2,439,5,0.011389521640091117,10.0
+G_1_2_M_Mesonephros,Granulosa cell,MAGEC2,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,MAGEC2,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,MAGEC2,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,MAGEC2,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,MAGEC2,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,MAGEC2,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,MAGEC2,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,MAGEC2,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,MORC1,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,MORC1,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,MORC1,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,MORC1,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,MORC1,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,MORC1,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,MORC1,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,MORC1,439,4,0.009111617312072893,10.0
+G_1_2_M_Mesonephros,Granulosa cell,MORC1,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,MORC1,1906,1,0.0005246589716684155,10.0
+G_1_2_M_Mesonephros,Sertoli cell,MORC1,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,MORC1,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,MORC1,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,MORC1,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,MORC1,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,MORC1,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,PAGE1,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,PAGE1,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,PAGE1,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,PAGE1,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,PAGE1,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,PAGE1,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,PAGE1,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE1,439,3,0.00683371298405467,10.0
+G_1_2_M_Mesonephros,Granulosa cell,PAGE1,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,PAGE1,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,PAGE1,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,PAGE1,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,PAGE1,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,PAGE1,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,PAGE1,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,PAGE1,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,PAGE2,1221,1,0.000819000819000819,10.0
+G_1_2_M_Mesonephros,Neutrophil,PAGE2,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,PAGE2,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,PAGE2,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,PAGE2,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,PAGE2,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,PAGE2,572,1,0.0017482517482517483,10.0
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE2,439,3,0.00683371298405467,10.0
+G_1_2_M_Mesonephros,Granulosa cell,PAGE2,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,PAGE2,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,PAGE2,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,PAGE2,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,PAGE2,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,PAGE2,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,PAGE2,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,PAGE2,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,PAGE2B,1221,1,0.000819000819000819,9.954909984117824
+G_1_2_M_Mesonephros,Neutrophil,PAGE2B,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,PAGE2B,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,PAGE2B,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,PAGE2B,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,PAGE2B,740,3,0.004054054054054054,10.0
+G_1_2_M_Mesonephros,Trophectoderm cell,PAGE2B,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE2B,439,7,0.015945330296127564,10.0
+G_1_2_M_Mesonephros,Granulosa cell,PAGE2B,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,PAGE2B,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,PAGE2B,1103,1,0.0009066183136899365,5.6475975819730815
+G_1_2_M_Mesonephros,Neural progenitor cell,PAGE2B,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,PAGE2B,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,PAGE2B,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,PAGE2B,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,PAGE2B,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,PAGE4,1221,2,0.001638001638001638,4.783914157205821
+G_1_2_M_Mesonephros,Neutrophil,PAGE4,696,13,0.01867816091954023,7.709554111974797
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,PAGE4,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,PAGE4,386,25,0.06476683937823834,7.485634452461373
+G_1_2_M_Mesonephros,Macrophage,PAGE4,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,PAGE4,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,PAGE4,572,1,0.0017482517482517483,2.886794319014691
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE4,439,3,0.00683371298405467,10.0
+G_1_2_M_Mesonephros,Granulosa cell,PAGE4,471,3,0.006369426751592357,9.542570595524795
+G_1_2_M_Mesonephros,Leydig precursor cell,PAGE4,1906,50,0.026232948583420776,7.858521482852541
+G_1_2_M_Mesonephros,Sertoli cell,PAGE4,1103,1,0.0009066183136899365,2.92606394955587
+G_1_2_M_Mesonephros,Neural progenitor cell,PAGE4,327,2,0.0061162079510703364,9.808854706834923
+G_1_2_M_Mesonephros,Mesenchymal stem cell,PAGE4,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,PAGE4,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,PAGE4,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,PAGE4,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,PAGE5,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,PAGE5,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,PAGE5,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,PAGE5,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,PAGE5,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,PAGE5,740,0,0.0,
+G_1_2_M_Mesonephros,Trophectoderm cell,PAGE5,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE5,439,5,0.011389521640091117,10.0
+G_1_2_M_Mesonephros,Granulosa cell,PAGE5,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,PAGE5,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,PAGE5,1103,0,0.0,
+G_1_2_M_Mesonephros,Neural progenitor cell,PAGE5,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,PAGE5,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,PAGE5,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,PAGE5,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,PAGE5,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,PLAC1,1221,4,0.003276003276003276,4.556541845790523
+G_1_2_M_Mesonephros,Neutrophil,PLAC1,696,3,0.004310344827586207,5.949759153474408
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,PLAC1,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,PLAC1,386,6,0.015544041450777202,5.428896934481295
+G_1_2_M_Mesonephros,Macrophage,PLAC1,154,9,0.05844155844155844,5.5500994625935824
+G_1_2_M_Mesonephros,Erythrocyte,PLAC1,740,4,0.005405405405405406,3.5929607877514043
+G_1_2_M_Mesonephros,Trophectoderm cell,PLAC1,572,2,0.0034965034965034965,3.012618601202729
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PLAC1,439,12,0.02733485193621868,7.845010780278066
+G_1_2_M_Mesonephros,Granulosa cell,PLAC1,471,1,0.0021231422505307855,1.7447807634799153
+G_1_2_M_Mesonephros,Leydig precursor cell,PLAC1,1906,28,0.014690451206715634,5.313629002992974
+G_1_2_M_Mesonephros,Sertoli cell,PLAC1,1103,103,0.09338168631006347,6.214806947338142
+G_1_2_M_Mesonephros,Neural progenitor cell,PLAC1,327,5,0.01529051987767584,3.885152141940252
+G_1_2_M_Mesonephros,Mesenchymal stem cell,PLAC1,318,4,0.012578616352201259,7.1616643858256674
+G_1_2_M_Mesonephros,Endothelial cell,PLAC1,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,PLAC1,107,4,0.037383177570093455,7.68642079462502
+G_1_2_M_Mesonephros,Microglial cell,PLAC1,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,PRAME,1221,1,0.000819000819000819,7.625015488488176
+G_1_2_M_Mesonephros,Neutrophil,PRAME,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,PRAME,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,PRAME,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,PRAME,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,PRAME,740,2,0.002702702702702703,4.196673131308653
+G_1_2_M_Mesonephros,Trophectoderm cell,PRAME,572,0,0.0,
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PRAME,439,10,0.022779043280182234,9.67981698131992
+G_1_2_M_Mesonephros,Granulosa cell,PRAME,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,PRAME,1906,0,0.0,
+G_1_2_M_Mesonephros,Sertoli cell,PRAME,1103,17,0.015412511332728921,9.211804141988479
+G_1_2_M_Mesonephros,Neural progenitor cell,PRAME,327,1,0.0030581039755351682,4.260649924873353
+G_1_2_M_Mesonephros,Mesenchymal stem cell,PRAME,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,PRAME,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,PRAME,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,PRAME,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,SPAG6,1221,0,0.0,
+G_1_2_M_Mesonephros,Neutrophil,SPAG6,696,0,0.0,
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,SPAG6,492,0,0.0,
+G_1_2_M_Mesonephros,Fibroblast,SPAG6,386,0,0.0,
+G_1_2_M_Mesonephros,Macrophage,SPAG6,154,0,0.0,
+G_1_2_M_Mesonephros,Erythrocyte,SPAG6,740,1,0.0013513513513513514,10.0
+G_1_2_M_Mesonephros,Trophectoderm cell,SPAG6,572,24,0.04195804195804196,8.965225212537716
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,SPAG6,439,0,0.0,
+G_1_2_M_Mesonephros,Granulosa cell,SPAG6,471,0,0.0,
+G_1_2_M_Mesonephros,Leydig precursor cell,SPAG6,1906,1,0.0005246589716684155,10.0
+G_1_2_M_Mesonephros,Sertoli cell,SPAG6,1103,3,0.0027198549410698096,10.0
+G_1_2_M_Mesonephros,Neural progenitor cell,SPAG6,327,0,0.0,
+G_1_2_M_Mesonephros,Mesenchymal stem cell,SPAG6,318,0,0.0,
+G_1_2_M_Mesonephros,Endothelial cell,SPAG6,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,SPAG6,107,0,0.0,
+G_1_2_M_Mesonephros,Microglial cell,SPAG6,35,0,0.0,
+G_1_2_M_Mesonephros,Embryonic stem cell,TMEFF2,1221,108,0.08845208845208845,2.9933414727086873
+G_1_2_M_Mesonephros,Neutrophil,TMEFF2,696,38,0.05459770114942529,3.9052367500118086
+G_1_2_M_Mesonephros,Mesodermal embryonic stem cell,TMEFF2,492,30,0.06097560975609756,2.7037514555458086
+G_1_2_M_Mesonephros,Fibroblast,TMEFF2,386,27,0.06994818652849741,3.3136783243135386
+G_1_2_M_Mesonephros,Macrophage,TMEFF2,154,1,0.006493506493506494,2.481307852010828
+G_1_2_M_Mesonephros,Erythrocyte,TMEFF2,740,27,0.03648648648648649,2.4297171007471126
+G_1_2_M_Mesonephros,Trophectoderm cell,TMEFF2,572,4,0.006993006993006993,1.939395446906103
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,TMEFF2,439,42,0.09567198177676538,4.081996161461307
+G_1_2_M_Mesonephros,Granulosa cell,TMEFF2,471,18,0.03821656050955414,2.817638081990081
+G_1_2_M_Mesonephros,Leydig precursor cell,TMEFF2,1906,198,0.10388247639034627,4.199978662456524
+G_1_2_M_Mesonephros,Sertoli cell,TMEFF2,1103,8,0.007252946509519492,2.9502743681380403
+G_1_2_M_Mesonephros,Neural progenitor cell,TMEFF2,327,30,0.09174311926605505,3.1748618061302616
+G_1_2_M_Mesonephros,Mesenchymal stem cell,TMEFF2,318,8,0.025157232704402517,4.474991669243163
+G_1_2_M_Mesonephros,Endothelial cell,TMEFF2,71,0,0.0,
+G_1_2_M_Mesonephros,Dendritic cell progenitor,TMEFF2,107,1,0.009345794392523364,1.9607315025867111
+G_1_2_M_Mesonephros,Microglial cell,TMEFF2,35,0,0.0,

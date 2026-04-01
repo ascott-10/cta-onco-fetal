@@ -1,0 +1,248 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+G4_2_Testis,Leydig precursor cell,ARX,1081,350,0.32377428307123035,3.30195239519736
+G4_2_Testis,Sertoli cell,ARX,3076,4,0.0013003901170351106,2.409480539409548
+G4_2_Testis,Muscle cell,ARX,389,1,0.002570694087403599,3.4307453863505564
+G4_2_Testis,Neural progenitor cell,ARX,396,0,0.0,
+G4_2_Testis,Dendritic cell,ARX,451,3,0.0066518847006651885,2.3281438959441574
+G4_2_Testis,Endothelial cell,ARX,135,35,0.25925925925925924,2.849371604165536
+G4_2_Testis,Fibroblast,ARX,305,79,0.25901639344262295,3.216924784848364
+G4_2_Testis,Leydig cell,ARX,157,52,0.33121019108280253,2.011209037421011
+G4_2_Testis,Meiotic prophase fetal germ cell,ARX,55,1,0.01818181818181818,0.5896597288439366
+G4_2_Testis,Spermatogonial stem cell,ARX,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,ARX,7,0,0.0,
+G4_2_Testis,Microglial cell,ARX,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,ARX,12,2,0.16666666666666666,3.2273054475971836
+G4_2_Testis,Leydig precursor cell,CTCFL,1081,0,0.0,
+G4_2_Testis,Sertoli cell,CTCFL,3076,0,0.0,
+G4_2_Testis,Muscle cell,CTCFL,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,CTCFL,396,0,0.0,
+G4_2_Testis,Dendritic cell,CTCFL,451,0,0.0,
+G4_2_Testis,Endothelial cell,CTCFL,135,0,0.0,
+G4_2_Testis,Fibroblast,CTCFL,305,0,0.0,
+G4_2_Testis,Leydig cell,CTCFL,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,CTCFL,55,2,0.03636363636363636,10.0
+G4_2_Testis,Spermatogonial stem cell,CTCFL,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,CTCFL,7,0,0.0,
+G4_2_Testis,Microglial cell,CTCFL,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,CTCFL,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,DDX43,1081,1,0.0009250693802035153,10.0
+G4_2_Testis,Sertoli cell,DDX43,3076,7,0.0022756827048114434,9.941156752010302
+G4_2_Testis,Muscle cell,DDX43,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,DDX43,396,0,0.0,
+G4_2_Testis,Dendritic cell,DDX43,451,0,0.0,
+G4_2_Testis,Endothelial cell,DDX43,135,0,0.0,
+G4_2_Testis,Fibroblast,DDX43,305,0,0.0,
+G4_2_Testis,Leydig cell,DDX43,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,DDX43,55,24,0.43636363636363634,8.492447938852854
+G4_2_Testis,Spermatogonial stem cell,DDX43,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,DDX43,7,0,0.0,
+G4_2_Testis,Microglial cell,DDX43,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,DDX43,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,FATE1,1081,25,0.02312673450508788,0.9364214490510574
+G4_2_Testis,Sertoli cell,FATE1,3076,1605,0.5217815344603381,1.377336707885134
+G4_2_Testis,Muscle cell,FATE1,389,70,0.17994858611825193,1.656596529448345
+G4_2_Testis,Neural progenitor cell,FATE1,396,196,0.494949494949495,1.060127708476193
+G4_2_Testis,Dendritic cell,FATE1,451,148,0.328159645232816,1.059070926849917
+G4_2_Testis,Endothelial cell,FATE1,135,5,0.037037037037037035,0.928226302350529
+G4_2_Testis,Fibroblast,FATE1,305,14,0.04590163934426229,0.7682670119480817
+G4_2_Testis,Leydig cell,FATE1,157,34,0.21656050955414013,0.6481616736423862
+G4_2_Testis,Meiotic prophase fetal germ cell,FATE1,55,1,0.01818181818181818,0.08922603775557521
+G4_2_Testis,Spermatogonial stem cell,FATE1,98,8,0.08163265306122448,0.6431440059785896
+G4_2_Testis,Oligodendrocyte progenitor cell,FATE1,7,0,0.0,
+G4_2_Testis,Microglial cell,FATE1,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,FATE1,12,1,0.08333333333333333,0.9304821102619399
+G4_2_Testis,Leydig precursor cell,GAGE1,1081,0,0.0,
+G4_2_Testis,Sertoli cell,GAGE1,3076,1,0.00032509752925877764,10.0
+G4_2_Testis,Muscle cell,GAGE1,389,1,0.002570694087403599,10.0
+G4_2_Testis,Neural progenitor cell,GAGE1,396,0,0.0,
+G4_2_Testis,Dendritic cell,GAGE1,451,0,0.0,
+G4_2_Testis,Endothelial cell,GAGE1,135,0,0.0,
+G4_2_Testis,Fibroblast,GAGE1,305,0,0.0,
+G4_2_Testis,Leydig cell,GAGE1,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,GAGE1,55,15,0.2727272727272727,9.18642041351836
+G4_2_Testis,Spermatogonial stem cell,GAGE1,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,GAGE1,7,0,0.0,
+G4_2_Testis,Microglial cell,GAGE1,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,GAGE1,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,GAGE13,1081,0,0.0,
+G4_2_Testis,Sertoli cell,GAGE13,3076,0,0.0,
+G4_2_Testis,Muscle cell,GAGE13,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,GAGE13,396,0,0.0,
+G4_2_Testis,Dendritic cell,GAGE13,451,0,0.0,
+G4_2_Testis,Endothelial cell,GAGE13,135,0,0.0,
+G4_2_Testis,Fibroblast,GAGE13,305,0,0.0,
+G4_2_Testis,Leydig cell,GAGE13,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,GAGE13,55,4,0.07272727272727272,10.0
+G4_2_Testis,Spermatogonial stem cell,GAGE13,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,GAGE13,7,0,0.0,
+G4_2_Testis,Microglial cell,GAGE13,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,GAGE13,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,HORMAD1,1081,0,0.0,
+G4_2_Testis,Sertoli cell,HORMAD1,3076,0,0.0,
+G4_2_Testis,Muscle cell,HORMAD1,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,HORMAD1,396,0,0.0,
+G4_2_Testis,Dendritic cell,HORMAD1,451,0,0.0,
+G4_2_Testis,Endothelial cell,HORMAD1,135,0,0.0,
+G4_2_Testis,Fibroblast,HORMAD1,305,0,0.0,
+G4_2_Testis,Leydig cell,HORMAD1,157,1,0.006369426751592357,10.0
+G4_2_Testis,Meiotic prophase fetal germ cell,HORMAD1,55,8,0.14545454545454545,9.508930049872923
+G4_2_Testis,Spermatogonial stem cell,HORMAD1,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,HORMAD1,7,0,0.0,
+G4_2_Testis,Microglial cell,HORMAD1,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,HORMAD1,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,MAGEA10,1081,0,0.0,
+G4_2_Testis,Sertoli cell,MAGEA10,3076,1,0.00032509752925877764,10.0
+G4_2_Testis,Muscle cell,MAGEA10,389,1,0.002570694087403599,10.0
+G4_2_Testis,Neural progenitor cell,MAGEA10,396,0,0.0,
+G4_2_Testis,Dendritic cell,MAGEA10,451,0,0.0,
+G4_2_Testis,Endothelial cell,MAGEA10,135,0,0.0,
+G4_2_Testis,Fibroblast,MAGEA10,305,0,0.0,
+G4_2_Testis,Leydig cell,MAGEA10,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,MAGEA10,55,2,0.03636363636363636,9.346404494269441
+G4_2_Testis,Spermatogonial stem cell,MAGEA10,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,MAGEA10,7,0,0.0,
+G4_2_Testis,Microglial cell,MAGEA10,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,MAGEA10,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,MAGEA4,1081,0,0.0,
+G4_2_Testis,Sertoli cell,MAGEA4,3076,0,0.0,
+G4_2_Testis,Muscle cell,MAGEA4,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,MAGEA4,396,0,0.0,
+G4_2_Testis,Dendritic cell,MAGEA4,451,0,0.0,
+G4_2_Testis,Endothelial cell,MAGEA4,135,0,0.0,
+G4_2_Testis,Fibroblast,MAGEA4,305,0,0.0,
+G4_2_Testis,Leydig cell,MAGEA4,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,MAGEA4,55,17,0.3090909090909091,8.862697660244129
+G4_2_Testis,Spermatogonial stem cell,MAGEA4,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,MAGEA4,7,0,0.0,
+G4_2_Testis,Microglial cell,MAGEA4,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,MAGEA4,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,MAGEB2,1081,0,0.0,
+G4_2_Testis,Sertoli cell,MAGEB2,3076,7,0.0022756827048114434,10.0
+G4_2_Testis,Muscle cell,MAGEB2,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,MAGEB2,396,0,0.0,
+G4_2_Testis,Dendritic cell,MAGEB2,451,0,0.0,
+G4_2_Testis,Endothelial cell,MAGEB2,135,1,0.007407407407407408,9.467397080478174
+G4_2_Testis,Fibroblast,MAGEB2,305,1,0.003278688524590164,10.0
+G4_2_Testis,Leydig cell,MAGEB2,157,1,0.006369426751592357,8.95073378547064
+G4_2_Testis,Meiotic prophase fetal germ cell,MAGEB2,55,18,0.32727272727272727,9.501175840800013
+G4_2_Testis,Spermatogonial stem cell,MAGEB2,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,MAGEB2,7,0,0.0,
+G4_2_Testis,Microglial cell,MAGEB2,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,MAGEB2,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,NOL4,1081,0,0.0,
+G4_2_Testis,Sertoli cell,NOL4,3076,0,0.0,
+G4_2_Testis,Muscle cell,NOL4,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,NOL4,396,1,0.0025252525252525255,10.0
+G4_2_Testis,Dendritic cell,NOL4,451,0,0.0,
+G4_2_Testis,Endothelial cell,NOL4,135,0,0.0,
+G4_2_Testis,Fibroblast,NOL4,305,1,0.003278688524590164,10.0
+G4_2_Testis,Leydig cell,NOL4,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,NOL4,55,3,0.05454545454545454,10.0
+G4_2_Testis,Spermatogonial stem cell,NOL4,98,1,0.01020408163265306,10.0
+G4_2_Testis,Oligodendrocyte progenitor cell,NOL4,7,0,0.0,
+G4_2_Testis,Microglial cell,NOL4,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,NOL4,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,PAGE1,1081,0,0.0,
+G4_2_Testis,Sertoli cell,PAGE1,3076,0,0.0,
+G4_2_Testis,Muscle cell,PAGE1,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,PAGE1,396,0,0.0,
+G4_2_Testis,Dendritic cell,PAGE1,451,0,0.0,
+G4_2_Testis,Endothelial cell,PAGE1,135,0,0.0,
+G4_2_Testis,Fibroblast,PAGE1,305,0,0.0,
+G4_2_Testis,Leydig cell,PAGE1,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,PAGE1,55,8,0.14545454545454545,9.450403571190819
+G4_2_Testis,Spermatogonial stem cell,PAGE1,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,PAGE1,7,0,0.0,
+G4_2_Testis,Microglial cell,PAGE1,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,PAGE1,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,PAGE2,1081,0,0.0,
+G4_2_Testis,Sertoli cell,PAGE2,3076,0,0.0,
+G4_2_Testis,Muscle cell,PAGE2,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,PAGE2,396,0,0.0,
+G4_2_Testis,Dendritic cell,PAGE2,451,0,0.0,
+G4_2_Testis,Endothelial cell,PAGE2,135,0,0.0,
+G4_2_Testis,Fibroblast,PAGE2,305,0,0.0,
+G4_2_Testis,Leydig cell,PAGE2,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,PAGE2,55,10,0.18181818181818182,10.0
+G4_2_Testis,Spermatogonial stem cell,PAGE2,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,PAGE2,7,0,0.0,
+G4_2_Testis,Microglial cell,PAGE2,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,PAGE2,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,PAGE4,1081,1,0.0009250693802035153,10.0
+G4_2_Testis,Sertoli cell,PAGE4,3076,1,0.00032509752925877764,10.0
+G4_2_Testis,Muscle cell,PAGE4,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,PAGE4,396,0,0.0,
+G4_2_Testis,Dendritic cell,PAGE4,451,0,0.0,
+G4_2_Testis,Endothelial cell,PAGE4,135,0,0.0,
+G4_2_Testis,Fibroblast,PAGE4,305,1,0.003278688524590164,10.0
+G4_2_Testis,Leydig cell,PAGE4,157,1,0.006369426751592357,10.0
+G4_2_Testis,Meiotic prophase fetal germ cell,PAGE4,55,0,0.0,
+G4_2_Testis,Spermatogonial stem cell,PAGE4,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,PAGE4,7,0,0.0,
+G4_2_Testis,Microglial cell,PAGE4,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,PAGE4,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,PAGE5,1081,0,0.0,
+G4_2_Testis,Sertoli cell,PAGE5,3076,5,0.001625487646293888,10.0
+G4_2_Testis,Muscle cell,PAGE5,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,PAGE5,396,0,0.0,
+G4_2_Testis,Dendritic cell,PAGE5,451,0,0.0,
+G4_2_Testis,Endothelial cell,PAGE5,135,0,0.0,
+G4_2_Testis,Fibroblast,PAGE5,305,0,0.0,
+G4_2_Testis,Leydig cell,PAGE5,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,PAGE5,55,11,0.2,9.399432020568792
+G4_2_Testis,Spermatogonial stem cell,PAGE5,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,PAGE5,7,0,0.0,
+G4_2_Testis,Microglial cell,PAGE5,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,PAGE5,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,PIWIL2,1081,12,0.011100832562442183,7.951276294496175
+G4_2_Testis,Sertoli cell,PIWIL2,3076,36,0.011703511053315995,7.102255564070037
+G4_2_Testis,Muscle cell,PIWIL2,389,1,0.002570694087403599,8.803915037100486
+G4_2_Testis,Neural progenitor cell,PIWIL2,396,9,0.022727272727272728,6.1321558061850885
+G4_2_Testis,Dendritic cell,PIWIL2,451,9,0.019955654101995565,6.635929973862591
+G4_2_Testis,Endothelial cell,PIWIL2,135,0,0.0,
+G4_2_Testis,Fibroblast,PIWIL2,305,2,0.006557377049180328,9.180586752984983
+G4_2_Testis,Leydig cell,PIWIL2,157,1,0.006369426751592357,4.916640093578409
+G4_2_Testis,Meiotic prophase fetal germ cell,PIWIL2,55,29,0.5272727272727272,6.828193099069078
+G4_2_Testis,Spermatogonial stem cell,PIWIL2,98,2,0.02040816326530612,8.672578238035037
+G4_2_Testis,Oligodendrocyte progenitor cell,PIWIL2,7,0,0.0,
+G4_2_Testis,Microglial cell,PIWIL2,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,PIWIL2,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,PLAC1,1081,365,0.33765032377428306,3.173918938687871
+G4_2_Testis,Sertoli cell,PLAC1,3076,76,0.0247074122236671,2.696403577565321
+G4_2_Testis,Muscle cell,PLAC1,389,0,0.0,
+G4_2_Testis,Neural progenitor cell,PLAC1,396,22,0.05555555555555555,1.9056580608713887
+G4_2_Testis,Dendritic cell,PLAC1,451,15,0.03325942350332594,2.694226509882389
+G4_2_Testis,Endothelial cell,PLAC1,135,44,0.32592592592592595,2.4562928223341123
+G4_2_Testis,Fibroblast,PLAC1,305,16,0.05245901639344262,2.9020820223983943
+G4_2_Testis,Leydig cell,PLAC1,157,63,0.4012738853503185,2.312466135934707
+G4_2_Testis,Meiotic prophase fetal germ cell,PLAC1,55,0,0.0,
+G4_2_Testis,Spermatogonial stem cell,PLAC1,98,6,0.061224489795918366,2.319398285835352
+G4_2_Testis,Oligodendrocyte progenitor cell,PLAC1,7,0,0.0,
+G4_2_Testis,Microglial cell,PLAC1,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,PLAC1,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,TDRD6,1081,0,0.0,
+G4_2_Testis,Sertoli cell,TDRD6,3076,6,0.0019505851755526658,9.823601444441175
+G4_2_Testis,Muscle cell,TDRD6,389,2,0.005141388174807198,10.0
+G4_2_Testis,Neural progenitor cell,TDRD6,396,1,0.0025252525252525255,10.0
+G4_2_Testis,Dendritic cell,TDRD6,451,0,0.0,
+G4_2_Testis,Endothelial cell,TDRD6,135,0,0.0,
+G4_2_Testis,Fibroblast,TDRD6,305,0,0.0,
+G4_2_Testis,Leydig cell,TDRD6,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,TDRD6,55,11,0.2,8.396851485669997
+G4_2_Testis,Spermatogonial stem cell,TDRD6,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,TDRD6,7,0,0.0,
+G4_2_Testis,Microglial cell,TDRD6,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,TDRD6,12,0,0.0,
+G4_2_Testis,Leydig precursor cell,TEX14,1081,1,0.0009250693802035153,10.0
+G4_2_Testis,Sertoli cell,TEX14,3076,9,0.002925877763328999,9.893893265577056
+G4_2_Testis,Muscle cell,TEX14,389,1,0.002570694087403599,10.0
+G4_2_Testis,Neural progenitor cell,TEX14,396,1,0.0025252525252525255,10.0
+G4_2_Testis,Dendritic cell,TEX14,451,3,0.0066518847006651885,10.0
+G4_2_Testis,Endothelial cell,TEX14,135,0,0.0,
+G4_2_Testis,Fibroblast,TEX14,305,0,0.0,
+G4_2_Testis,Leydig cell,TEX14,157,0,0.0,
+G4_2_Testis,Meiotic prophase fetal germ cell,TEX14,55,6,0.10909090909090909,9.561665331402201
+G4_2_Testis,Spermatogonial stem cell,TEX14,98,0,0.0,
+G4_2_Testis,Oligodendrocyte progenitor cell,TEX14,7,0,0.0,
+G4_2_Testis,Microglial cell,TEX14,17,0,0.0,
+G4_2_Testis,Natural killer (NK) cell,TEX14,12,0,0.0,

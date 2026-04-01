@@ -1,0 +1,14 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+589,Mitotic fetal germ cell,CTCFL,52,1,0.019230769230769232,10.0
+589,4,CTCFL,36,0,0.0,
+589,13,CTCFL,18,0,0.0,
+589,11,CTCFL,19,0,0.0,
+589,10,CTCFL,20,0,0.0,
+589,Hemangioblast,CTCFL,183,0,0.0,
+589,5,CTCFL,31,0,0.0,
+589,3,CTCFL,48,0,0.0,
+589,9,CTCFL,23,0,0.0,
+589,7,CTCFL,27,0,0.0,
+589,14,CTCFL,15,0,0.0,
+589,8,CTCFL,24,0,0.0,
+589,12,CTCFL,18,0,0.0,

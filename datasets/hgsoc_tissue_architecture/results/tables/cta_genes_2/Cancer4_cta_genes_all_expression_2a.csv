@@ -1,0 +1,106 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Cancer4,Luminal epithelial cell,CAGE1,306,3,0.00980392156862745,2.6892886383738284
+Cancer4,Neutrophil,CAGE1,267,3,0.011235955056179775,10.0
+Cancer4,Epithelial cell,CAGE1,1023,17,0.016617790811339198,3.283917432454976
+Cancer4,T cell,CAGE1,517,3,0.005802707930367505,10.0
+Cancer4,Luminal progenitor cell,CAGE1,537,9,0.01675977653631285,1.9689723947376225
+Cancer4,Basophil,CAGE1,301,0,0.0,
+Cancer4,Natural killer (NK) cell,CAGE1,99,0,0.0,
+Cancer4,Dendritic cell,CAGE1,168,0,0.0,
+Cancer4,Erythroid progenitor,CAGE1,37,0,0.0,
+Cancer4,Microglial cell,CAGE1,301,14,0.046511627906976744,7.672307591857563
+Cancer4,Fibroblast,CAGE1,84,2,0.023809523809523808,2.75442548938582
+Cancer4,CD8+ T cell,CAGE1,24,0,0.0,
+Cancer4,Endothelial cell,CAGE1,22,0,0.0,
+Cancer4,Mast cell,CAGE1,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,CAGE1,21,0,0.0,
+Cancer4,Luminal epithelial cell,CTCFL,306,1,0.0032679738562091504,6.485712398350245
+Cancer4,Neutrophil,CTCFL,267,0,0.0,
+Cancer4,Epithelial cell,CTCFL,1023,4,0.0039100684261974585,10.0
+Cancer4,T cell,CTCFL,517,0,0.0,
+Cancer4,Luminal progenitor cell,CTCFL,537,7,0.01303538175046555,2.9488300262111298
+Cancer4,Basophil,CTCFL,301,0,0.0,
+Cancer4,Natural killer (NK) cell,CTCFL,99,0,0.0,
+Cancer4,Dendritic cell,CTCFL,168,0,0.0,
+Cancer4,Erythroid progenitor,CTCFL,37,1,0.02702702702702703,1.6084822355133679
+Cancer4,Microglial cell,CTCFL,301,0,0.0,
+Cancer4,Fibroblast,CTCFL,84,0,0.0,
+Cancer4,CD8+ T cell,CTCFL,24,0,0.0,
+Cancer4,Endothelial cell,CTCFL,22,0,0.0,
+Cancer4,Mast cell,CTCFL,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,CTCFL,21,0,0.0,
+Cancer4,Luminal epithelial cell,DDX43,306,0,0.0,
+Cancer4,Neutrophil,DDX43,267,1,0.003745318352059925,10.0
+Cancer4,Epithelial cell,DDX43,1023,0,0.0,
+Cancer4,T cell,DDX43,517,5,0.009671179883945842,9.37257469321313
+Cancer4,Luminal progenitor cell,DDX43,537,0,0.0,
+Cancer4,Basophil,DDX43,301,0,0.0,
+Cancer4,Natural killer (NK) cell,DDX43,99,1,0.010101010101010102,8.600578049132269
+Cancer4,Dendritic cell,DDX43,168,0,0.0,
+Cancer4,Erythroid progenitor,DDX43,37,0,0.0,
+Cancer4,Microglial cell,DDX43,301,0,0.0,
+Cancer4,Fibroblast,DDX43,84,3,0.03571428571428571,4.713113062328133
+Cancer4,CD8+ T cell,DDX43,24,0,0.0,
+Cancer4,Endothelial cell,DDX43,22,0,0.0,
+Cancer4,Mast cell,DDX43,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,DDX43,21,1,0.047619047619047616,9.221385323375857
+Cancer4,Luminal epithelial cell,HORMAD1,306,0,0.0,
+Cancer4,Neutrophil,HORMAD1,267,1,0.003745318352059925,10.0
+Cancer4,Epithelial cell,HORMAD1,1023,2,0.0019550342130987292,9.477908123029753
+Cancer4,T cell,HORMAD1,517,0,0.0,
+Cancer4,Luminal progenitor cell,HORMAD1,537,4,0.0074487895716946,4.691593654684841
+Cancer4,Basophil,HORMAD1,301,0,0.0,
+Cancer4,Natural killer (NK) cell,HORMAD1,99,0,0.0,
+Cancer4,Dendritic cell,HORMAD1,168,2,0.011904761904761904,10.0
+Cancer4,Erythroid progenitor,HORMAD1,37,0,0.0,
+Cancer4,Microglial cell,HORMAD1,301,0,0.0,
+Cancer4,Fibroblast,HORMAD1,84,0,0.0,
+Cancer4,CD8+ T cell,HORMAD1,24,0,0.0,
+Cancer4,Endothelial cell,HORMAD1,22,0,0.0,
+Cancer4,Mast cell,HORMAD1,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,HORMAD1,21,0,0.0,
+Cancer4,Luminal epithelial cell,PAGE5,306,0,0.0,
+Cancer4,Neutrophil,PAGE5,267,0,0.0,
+Cancer4,Epithelial cell,PAGE5,1023,0,0.0,
+Cancer4,T cell,PAGE5,517,3,0.005802707930367505,10.0
+Cancer4,Luminal progenitor cell,PAGE5,537,0,0.0,
+Cancer4,Basophil,PAGE5,301,0,0.0,
+Cancer4,Natural killer (NK) cell,PAGE5,99,0,0.0,
+Cancer4,Dendritic cell,PAGE5,168,0,0.0,
+Cancer4,Erythroid progenitor,PAGE5,37,0,0.0,
+Cancer4,Microglial cell,PAGE5,301,0,0.0,
+Cancer4,Fibroblast,PAGE5,84,0,0.0,
+Cancer4,CD8+ T cell,PAGE5,24,0,0.0,
+Cancer4,Endothelial cell,PAGE5,22,0,0.0,
+Cancer4,Mast cell,PAGE5,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,PAGE5,21,0,0.0,
+Cancer4,Luminal epithelial cell,TDRD1,306,0,0.0,
+Cancer4,Neutrophil,TDRD1,267,0,0.0,
+Cancer4,Epithelial cell,TDRD1,1023,4,0.0039100684261974585,7.455578673373671
+Cancer4,T cell,TDRD1,517,2,0.0038684719535783366,10.0
+Cancer4,Luminal progenitor cell,TDRD1,537,0,0.0,
+Cancer4,Basophil,TDRD1,301,0,0.0,
+Cancer4,Natural killer (NK) cell,TDRD1,99,0,0.0,
+Cancer4,Dendritic cell,TDRD1,168,0,0.0,
+Cancer4,Erythroid progenitor,TDRD1,37,0,0.0,
+Cancer4,Microglial cell,TDRD1,301,2,0.006644518272425249,9.435682162707627
+Cancer4,Fibroblast,TDRD1,84,1,0.011904761904761904,3.8597075884614114
+Cancer4,CD8+ T cell,TDRD1,24,0,0.0,
+Cancer4,Endothelial cell,TDRD1,22,0,0.0,
+Cancer4,Mast cell,TDRD1,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,TDRD1,21,0,0.0,
+Cancer4,Luminal epithelial cell,TEX101,306,0,0.0,
+Cancer4,Neutrophil,TEX101,267,0,0.0,
+Cancer4,Epithelial cell,TEX101,1023,3,0.002932551319648094,8.977299529749791
+Cancer4,T cell,TEX101,517,0,0.0,
+Cancer4,Luminal progenitor cell,TEX101,537,2,0.0037243947858473,3.128503970124953
+Cancer4,Basophil,TEX101,301,1,0.0033222591362126247,10.0
+Cancer4,Natural killer (NK) cell,TEX101,99,0,0.0,
+Cancer4,Dendritic cell,TEX101,168,0,0.0,
+Cancer4,Erythroid progenitor,TEX101,37,1,0.02702702702702703,4.6761393163910565
+Cancer4,Microglial cell,TEX101,301,0,0.0,
+Cancer4,Fibroblast,TEX101,84,0,0.0,
+Cancer4,CD8+ T cell,TEX101,24,0,0.0,
+Cancer4,Endothelial cell,TEX101,22,0,0.0,
+Cancer4,Mast cell,TEX101,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,TEX101,21,0,0.0,

@@ -1,0 +1,181 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+T90,Monocyte,BRDT,292,0,0.0,
+T90,Natural killer T (NKT) cell,BRDT,807,6,0.007434944237918215,10.0
+T90,T cell,BRDT,280,0,0.0,
+T90,Mesenchymal cell,BRDT,63,0,0.0,
+T90,Epithelial cell,BRDT,974,2,0.002053388090349076,3.586451763914706
+T90,Fibroblast,BRDT,191,0,0.0,
+T90,Decidual cell,BRDT,487,1,0.002053388090349076,10.0
+T90,Plasma cell,BRDT,172,0,0.0,
+T90,CD4+ T cell,BRDT,673,4,0.005943536404160475,10.0
+T90,Natural killer (NK) cell,BRDT,137,0,0.0,
+T90,Hematopoietic stem cell,BRDT,29,0,0.0,
+T90,Endothelial cell,BRDT,79,0,0.0,
+T90,Plasmacytoid dendritic cell,BRDT,68,0,0.0,
+T90,Dendritic cell,BRDT,59,0,0.0,
+T90,Luminal progenitor cell,BRDT,52,0,0.0,
+T90,Monocyte,CCDC36,292,0,0.0,
+T90,Natural killer T (NKT) cell,CCDC36,807,0,0.0,
+T90,T cell,CCDC36,280,0,0.0,
+T90,Mesenchymal cell,CCDC36,63,0,0.0,
+T90,Epithelial cell,CCDC36,974,2,0.002053388090349076,6.495106371577047
+T90,Fibroblast,CCDC36,191,0,0.0,
+T90,Decidual cell,CCDC36,487,1,0.002053388090349076,10.0
+T90,Plasma cell,CCDC36,172,0,0.0,
+T90,CD4+ T cell,CCDC36,673,0,0.0,
+T90,Natural killer (NK) cell,CCDC36,137,0,0.0,
+T90,Hematopoietic stem cell,CCDC36,29,0,0.0,
+T90,Endothelial cell,CCDC36,79,1,0.012658227848101266,10.0
+T90,Plasmacytoid dendritic cell,CCDC36,68,0,0.0,
+T90,Dendritic cell,CCDC36,59,0,0.0,
+T90,Luminal progenitor cell,CCDC36,52,0,0.0,
+T90,Monocyte,COX6B2,292,0,0.0,
+T90,Natural killer T (NKT) cell,COX6B2,807,2,0.0024783147459727386,10.0
+T90,T cell,COX6B2,280,2,0.007142857142857143,10.0
+T90,Mesenchymal cell,COX6B2,63,0,0.0,
+T90,Epithelial cell,COX6B2,974,6,0.006160164271047228,6.684251448501986
+T90,Fibroblast,COX6B2,191,2,0.010471204188481676,7.918371672363369
+T90,Decidual cell,COX6B2,487,0,0.0,
+T90,Plasma cell,COX6B2,172,0,0.0,
+T90,CD4+ T cell,COX6B2,673,1,0.0014858841010401188,10.0
+T90,Natural killer (NK) cell,COX6B2,137,0,0.0,
+T90,Hematopoietic stem cell,COX6B2,29,0,0.0,
+T90,Endothelial cell,COX6B2,79,0,0.0,
+T90,Plasmacytoid dendritic cell,COX6B2,68,0,0.0,
+T90,Dendritic cell,COX6B2,59,0,0.0,
+T90,Luminal progenitor cell,COX6B2,52,1,0.019230769230769232,2.0969859811510343
+T90,Monocyte,CTCFL,292,3,0.010273972602739725,5.085864337439805
+T90,Natural killer T (NKT) cell,CTCFL,807,2,0.0024783147459727386,5.734685965155455
+T90,T cell,CTCFL,280,2,0.007142857142857143,5.316285014983158
+T90,Mesenchymal cell,CTCFL,63,1,0.015873015873015872,3.954382454427124
+T90,Epithelial cell,CTCFL,974,111,0.11396303901437371,3.7423709222944064
+T90,Fibroblast,CTCFL,191,2,0.010471204188481676,3.6599030545447726
+T90,Decidual cell,CTCFL,487,12,0.024640657084188913,9.521314590003294
+T90,Plasma cell,CTCFL,172,1,0.005813953488372093,7.314984300877398
+T90,CD4+ T cell,CTCFL,673,2,0.0029717682020802376,6.27127315179035
+T90,Natural killer (NK) cell,CTCFL,137,2,0.014598540145985401,7.456675731329614
+T90,Hematopoietic stem cell,CTCFL,29,1,0.034482758620689655,7.250138700820551
+T90,Endothelial cell,CTCFL,79,0,0.0,
+T90,Plasmacytoid dendritic cell,CTCFL,68,0,0.0,
+T90,Dendritic cell,CTCFL,59,0,0.0,
+T90,Luminal progenitor cell,CTCFL,52,5,0.09615384615384616,2.347784589182538
+T90,Monocyte,DPPA2,292,0,0.0,
+T90,Natural killer T (NKT) cell,DPPA2,807,0,0.0,
+T90,T cell,DPPA2,280,0,0.0,
+T90,Mesenchymal cell,DPPA2,63,0,0.0,
+T90,Epithelial cell,DPPA2,974,2,0.002053388090349076,10.0
+T90,Fibroblast,DPPA2,191,0,0.0,
+T90,Decidual cell,DPPA2,487,1,0.002053388090349076,10.0
+T90,Plasma cell,DPPA2,172,0,0.0,
+T90,CD4+ T cell,DPPA2,673,0,0.0,
+T90,Natural killer (NK) cell,DPPA2,137,0,0.0,
+T90,Hematopoietic stem cell,DPPA2,29,0,0.0,
+T90,Endothelial cell,DPPA2,79,0,0.0,
+T90,Plasmacytoid dendritic cell,DPPA2,68,0,0.0,
+T90,Dendritic cell,DPPA2,59,0,0.0,
+T90,Luminal progenitor cell,DPPA2,52,0,0.0,
+T90,Monocyte,DSCR8,292,0,0.0,
+T90,Natural killer T (NKT) cell,DSCR8,807,1,0.0012391573729863693,10.0
+T90,T cell,DSCR8,280,0,0.0,
+T90,Mesenchymal cell,DSCR8,63,0,0.0,
+T90,Epithelial cell,DSCR8,974,5,0.00513347022587269,7.724080460007121
+T90,Fibroblast,DSCR8,191,0,0.0,
+T90,Decidual cell,DSCR8,487,1,0.002053388090349076,10.0
+T90,Plasma cell,DSCR8,172,0,0.0,
+T90,CD4+ T cell,DSCR8,673,0,0.0,
+T90,Natural killer (NK) cell,DSCR8,137,0,0.0,
+T90,Hematopoietic stem cell,DSCR8,29,0,0.0,
+T90,Endothelial cell,DSCR8,79,0,0.0,
+T90,Plasmacytoid dendritic cell,DSCR8,68,0,0.0,
+T90,Dendritic cell,DSCR8,59,0,0.0,
+T90,Luminal progenitor cell,DSCR8,52,0,0.0,
+T90,Monocyte,FATE1,292,0,0.0,
+T90,Natural killer T (NKT) cell,FATE1,807,0,0.0,
+T90,T cell,FATE1,280,0,0.0,
+T90,Mesenchymal cell,FATE1,63,1,0.015873015873015872,4.670436554536461
+T90,Epithelial cell,FATE1,974,0,0.0,
+T90,Fibroblast,FATE1,191,0,0.0,
+T90,Decidual cell,FATE1,487,0,0.0,
+T90,Plasma cell,FATE1,172,0,0.0,
+T90,CD4+ T cell,FATE1,673,0,0.0,
+T90,Natural killer (NK) cell,FATE1,137,0,0.0,
+T90,Hematopoietic stem cell,FATE1,29,0,0.0,
+T90,Endothelial cell,FATE1,79,3,0.0379746835443038,10.0
+T90,Plasmacytoid dendritic cell,FATE1,68,0,0.0,
+T90,Dendritic cell,FATE1,59,0,0.0,
+T90,Luminal progenitor cell,FATE1,52,0,0.0,
+T90,Monocyte,GAGE12E,292,0,0.0,
+T90,Natural killer T (NKT) cell,GAGE12E,807,0,0.0,
+T90,T cell,GAGE12E,280,0,0.0,
+T90,Mesenchymal cell,GAGE12E,63,0,0.0,
+T90,Epithelial cell,GAGE12E,974,4,0.004106776180698152,8.4956648337328
+T90,Fibroblast,GAGE12E,191,0,0.0,
+T90,Decidual cell,GAGE12E,487,1,0.002053388090349076,10.0
+T90,Plasma cell,GAGE12E,172,0,0.0,
+T90,CD4+ T cell,GAGE12E,673,0,0.0,
+T90,Natural killer (NK) cell,GAGE12E,137,0,0.0,
+T90,Hematopoietic stem cell,GAGE12E,29,0,0.0,
+T90,Endothelial cell,GAGE12E,79,0,0.0,
+T90,Plasmacytoid dendritic cell,GAGE12E,68,0,0.0,
+T90,Dendritic cell,GAGE12E,59,0,0.0,
+T90,Luminal progenitor cell,GAGE12E,52,0,0.0,
+T90,Monocyte,PAGE5,292,0,0.0,
+T90,Natural killer T (NKT) cell,PAGE5,807,0,0.0,
+T90,T cell,PAGE5,280,1,0.0035714285714285713,10.0
+T90,Mesenchymal cell,PAGE5,63,0,0.0,
+T90,Epithelial cell,PAGE5,974,0,0.0,
+T90,Fibroblast,PAGE5,191,0,0.0,
+T90,Decidual cell,PAGE5,487,1,0.002053388090349076,10.0
+T90,Plasma cell,PAGE5,172,0,0.0,
+T90,CD4+ T cell,PAGE5,673,4,0.005943536404160475,10.0
+T90,Natural killer (NK) cell,PAGE5,137,0,0.0,
+T90,Hematopoietic stem cell,PAGE5,29,0,0.0,
+T90,Endothelial cell,PAGE5,79,0,0.0,
+T90,Plasmacytoid dendritic cell,PAGE5,68,0,0.0,
+T90,Dendritic cell,PAGE5,59,0,0.0,
+T90,Luminal progenitor cell,PAGE5,52,0,0.0,
+T90,Monocyte,PLAC1,292,1,0.003424657534246575,10.0
+T90,Natural killer T (NKT) cell,PLAC1,807,0,0.0,
+T90,T cell,PLAC1,280,0,0.0,
+T90,Mesenchymal cell,PLAC1,63,1,0.015873015873015872,10.0
+T90,Epithelial cell,PLAC1,974,6,0.006160164271047228,7.154135648952415
+T90,Fibroblast,PLAC1,191,1,0.005235602094240838,6.1902478550487245
+T90,Decidual cell,PLAC1,487,2,0.004106776180698152,10.0
+T90,Plasma cell,PLAC1,172,0,0.0,
+T90,CD4+ T cell,PLAC1,673,0,0.0,
+T90,Natural killer (NK) cell,PLAC1,137,0,0.0,
+T90,Hematopoietic stem cell,PLAC1,29,0,0.0,
+T90,Endothelial cell,PLAC1,79,0,0.0,
+T90,Plasmacytoid dendritic cell,PLAC1,68,0,0.0,
+T90,Dendritic cell,PLAC1,59,0,0.0,
+T90,Luminal progenitor cell,PLAC1,52,2,0.038461538461538464,4.927279743257142
+T90,Monocyte,SPAG6,292,1,0.003424657534246575,10.0
+T90,Natural killer T (NKT) cell,SPAG6,807,0,0.0,
+T90,T cell,SPAG6,280,0,0.0,
+T90,Mesenchymal cell,SPAG6,63,0,0.0,
+T90,Epithelial cell,SPAG6,974,2,0.002053388090349076,8.843940751674795
+T90,Fibroblast,SPAG6,191,0,0.0,
+T90,Decidual cell,SPAG6,487,0,0.0,
+T90,Plasma cell,SPAG6,172,0,0.0,
+T90,CD4+ T cell,SPAG6,673,0,0.0,
+T90,Natural killer (NK) cell,SPAG6,137,0,0.0,
+T90,Hematopoietic stem cell,SPAG6,29,0,0.0,
+T90,Endothelial cell,SPAG6,79,0,0.0,
+T90,Plasmacytoid dendritic cell,SPAG6,68,0,0.0,
+T90,Dendritic cell,SPAG6,59,1,0.01694915254237288,10.0
+T90,Luminal progenitor cell,SPAG6,52,0,0.0,
+T90,Monocyte,TSSK6,292,0,0.0,
+T90,Natural killer T (NKT) cell,TSSK6,807,1,0.0012391573729863693,10.0
+T90,T cell,TSSK6,280,0,0.0,
+T90,Mesenchymal cell,TSSK6,63,0,0.0,
+T90,Epithelial cell,TSSK6,974,3,0.003080082135523614,9.730956555987513
+T90,Fibroblast,TSSK6,191,0,0.0,
+T90,Decidual cell,TSSK6,487,0,0.0,
+T90,Plasma cell,TSSK6,172,0,0.0,
+T90,CD4+ T cell,TSSK6,673,0,0.0,
+T90,Natural killer (NK) cell,TSSK6,137,0,0.0,
+T90,Hematopoietic stem cell,TSSK6,29,0,0.0,
+T90,Endothelial cell,TSSK6,79,0,0.0,
+T90,Plasmacytoid dendritic cell,TSSK6,68,0,0.0,
+T90,Dendritic cell,TSSK6,59,0,0.0,
+T90,Luminal progenitor cell,TSSK6,52,0,0.0,

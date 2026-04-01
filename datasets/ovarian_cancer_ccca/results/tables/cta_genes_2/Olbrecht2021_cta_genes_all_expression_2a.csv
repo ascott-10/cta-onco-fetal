@@ -1,0 +1,209 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Olbrecht2021,Mesenchymal cell,ARX,1523,0,0.0,
+Olbrecht2021,Hemangioblast,ARX,215,0,0.0,
+Olbrecht2021,Hematopoietic stem cell,ARX,294,0,0.0,
+Olbrecht2021,Fibroblast,ARX,1155,1,0.0008658008658008658,4.089951558387228
+Olbrecht2021,Basal epithelial cell,ARX,1285,13,0.010116731517509728,3.9636131257687595
+Olbrecht2021,Oocyte,ARX,849,13,0.015312131919905771,2.8719376658548517
+Olbrecht2021,Mesodermal embryonic stem cell,ARX,104,0,0.0,
+Olbrecht2021,Monocyte,ARX,402,7,0.017412935323383085,3.7670450540795337
+Olbrecht2021,Luminal progenitor cell,ARX,1077,16,0.014856081708449397,1.8323429630254142
+Olbrecht2021,Macrophage,ARX,538,0,0.0,
+Olbrecht2021,Microglial cell,ARX,739,3,0.0040595399188092015,4.155168799896073
+Olbrecht2021,Dendritic cell,ARX,436,1,0.0022935779816513763,3.718955302697025
+Olbrecht2021,T cell,ARX,398,11,0.02763819095477387,4.945425233819611
+Olbrecht2021,Granulocyte-monocyte progenitor,ARX,88,0,0.0,
+Olbrecht2021,Mesenchymal stem cell,ARX,97,0,0.0,
+Olbrecht2021,Endothelial cell,ARX,252,0,0.0,
+Olbrecht2021,Mitotic fetal germ cell,ARX,50,0,0.0,
+Olbrecht2021,Plasma cell,ARX,254,7,0.027559055118110236,2.6450975905025227
+Olbrecht2021,Oogenesis phase fetal germ cell,ARX,10,0,0.0,
+Olbrecht2021,Epithelial-mesenchymal cell,ARX,112,9,0.08035714285714286,6.100296758028628
+Olbrecht2021,Plasmacytoid dendritic cell,ARX,38,0,0.0,
+Olbrecht2021,CD4+ T cell,ARX,1536,364,0.23697916666666666,5.449796753661825
+Olbrecht2021,Meiotic prophase fetal germ cell,ARX,55,2,0.03636363636363636,4.826881470842914
+Olbrecht2021,Trophectoderm cell,ARX,616,0,0.0,
+Olbrecht2021,Luminal epithelial cell,ARX,1435,0,0.0,
+Olbrecht2021,Epithelial cell,ARX,105,0,0.0,
+Olbrecht2021,Mesenchymal cell,CSAG1,1523,0,0.0,
+Olbrecht2021,Hemangioblast,CSAG1,215,0,0.0,
+Olbrecht2021,Hematopoietic stem cell,CSAG1,294,0,0.0,
+Olbrecht2021,Fibroblast,CSAG1,1155,0,0.0,
+Olbrecht2021,Basal epithelial cell,CSAG1,1285,5,0.0038910505836575876,10.0
+Olbrecht2021,Oocyte,CSAG1,849,1,0.001177856301531213,10.0
+Olbrecht2021,Mesodermal embryonic stem cell,CSAG1,104,0,0.0,
+Olbrecht2021,Monocyte,CSAG1,402,0,0.0,
+Olbrecht2021,Luminal progenitor cell,CSAG1,1077,7,0.0064995357474466105,7.824900287688304
+Olbrecht2021,Macrophage,CSAG1,538,0,0.0,
+Olbrecht2021,Microglial cell,CSAG1,739,0,0.0,
+Olbrecht2021,Dendritic cell,CSAG1,436,0,0.0,
+Olbrecht2021,T cell,CSAG1,398,0,0.0,
+Olbrecht2021,Granulocyte-monocyte progenitor,CSAG1,88,0,0.0,
+Olbrecht2021,Mesenchymal stem cell,CSAG1,97,0,0.0,
+Olbrecht2021,Endothelial cell,CSAG1,252,0,0.0,
+Olbrecht2021,Mitotic fetal germ cell,CSAG1,50,0,0.0,
+Olbrecht2021,Plasma cell,CSAG1,254,0,0.0,
+Olbrecht2021,Oogenesis phase fetal germ cell,CSAG1,10,0,0.0,
+Olbrecht2021,Epithelial-mesenchymal cell,CSAG1,112,0,0.0,
+Olbrecht2021,Plasmacytoid dendritic cell,CSAG1,38,0,0.0,
+Olbrecht2021,CD4+ T cell,CSAG1,1536,0,0.0,
+Olbrecht2021,Meiotic prophase fetal germ cell,CSAG1,55,0,0.0,
+Olbrecht2021,Trophectoderm cell,CSAG1,616,0,0.0,
+Olbrecht2021,Luminal epithelial cell,CSAG1,1435,1,0.0006968641114982578,10.0
+Olbrecht2021,Epithelial cell,CSAG1,105,0,0.0,
+Olbrecht2021,Mesenchymal cell,CTCFL,1523,6,0.003939592908732764,4.84050791772903
+Olbrecht2021,Hemangioblast,CTCFL,215,0,0.0,
+Olbrecht2021,Hematopoietic stem cell,CTCFL,294,0,0.0,
+Olbrecht2021,Fibroblast,CTCFL,1155,2,0.0017316017316017316,5.1141038203128755
+Olbrecht2021,Basal epithelial cell,CTCFL,1285,0,0.0,
+Olbrecht2021,Oocyte,CTCFL,849,214,0.25206124852767964,4.848884742335685
+Olbrecht2021,Mesodermal embryonic stem cell,CTCFL,104,2,0.019230769230769232,7.419690133088896
+Olbrecht2021,Monocyte,CTCFL,402,2,0.004975124378109453,8.453798804389134
+Olbrecht2021,Luminal progenitor cell,CTCFL,1077,115,0.10677808727948004,4.019224837906462
+Olbrecht2021,Macrophage,CTCFL,538,2,0.0037174721189591076,5.69977134330763
+Olbrecht2021,Microglial cell,CTCFL,739,3,0.0040595399188092015,2.3758238121773565
+Olbrecht2021,Dendritic cell,CTCFL,436,0,0.0,
+Olbrecht2021,T cell,CTCFL,398,2,0.005025125628140704,2.8177566820276327
+Olbrecht2021,Granulocyte-monocyte progenitor,CTCFL,88,0,0.0,
+Olbrecht2021,Mesenchymal stem cell,CTCFL,97,0,0.0,
+Olbrecht2021,Endothelial cell,CTCFL,252,0,0.0,
+Olbrecht2021,Mitotic fetal germ cell,CTCFL,50,4,0.08,3.354071745075273
+Olbrecht2021,Plasma cell,CTCFL,254,0,0.0,
+Olbrecht2021,Oogenesis phase fetal germ cell,CTCFL,10,0,0.0,
+Olbrecht2021,Epithelial-mesenchymal cell,CTCFL,112,0,0.0,
+Olbrecht2021,Plasmacytoid dendritic cell,CTCFL,38,1,0.02631578947368421,7.855572155555634
+Olbrecht2021,CD4+ T cell,CTCFL,1536,2,0.0013020833333333333,4.4593901128793405
+Olbrecht2021,Meiotic prophase fetal germ cell,CTCFL,55,1,0.01818181818181818,7.311562047169627
+Olbrecht2021,Trophectoderm cell,CTCFL,616,101,0.16396103896103897,2.641960763536038
+Olbrecht2021,Luminal epithelial cell,CTCFL,1435,15,0.010452961672473868,6.148434812835148
+Olbrecht2021,Epithelial cell,CTCFL,105,17,0.1619047619047619,2.3115230458152265
+Olbrecht2021,Mesenchymal cell,LEMD1,1523,26,0.017071569271175313,1.2016215229215552
+Olbrecht2021,Hemangioblast,LEMD1,215,3,0.013953488372093023,1.0792663679779708
+Olbrecht2021,Hematopoietic stem cell,LEMD1,294,3,0.01020408163265306,1.4818086133484227
+Olbrecht2021,Fibroblast,LEMD1,1155,61,0.05281385281385281,1.3162299646390827
+Olbrecht2021,Basal epithelial cell,LEMD1,1285,29,0.022568093385214007,1.4008552150551508
+Olbrecht2021,Oocyte,LEMD1,849,766,0.9022379269729093,2.927255923549148
+Olbrecht2021,Mesodermal embryonic stem cell,LEMD1,104,2,0.019230769230769232,1.0632547272181099
+Olbrecht2021,Monocyte,LEMD1,402,10,0.024875621890547265,1.661134318053159
+Olbrecht2021,Luminal progenitor cell,LEMD1,1077,151,0.14020427112349118,0.9235360849456807
+Olbrecht2021,Macrophage,LEMD1,538,10,0.01858736059479554,1.2077012224393382
+Olbrecht2021,Microglial cell,LEMD1,739,26,0.035182679296346414,1.4492033836404443
+Olbrecht2021,Dendritic cell,LEMD1,436,8,0.01834862385321101,1.6971239639313962
+Olbrecht2021,T cell,LEMD1,398,19,0.04773869346733668,2.3062162346480632
+Olbrecht2021,Granulocyte-monocyte progenitor,LEMD1,88,4,0.045454545454545456,1.0434024432585143
+Olbrecht2021,Mesenchymal stem cell,LEMD1,97,0,0.0,
+Olbrecht2021,Endothelial cell,LEMD1,252,13,0.051587301587301584,0.9426580514351132
+Olbrecht2021,Mitotic fetal germ cell,LEMD1,50,2,0.04,0.6163346219793133
+Olbrecht2021,Plasma cell,LEMD1,254,16,0.06299212598425197,1.1960568956737425
+Olbrecht2021,Oogenesis phase fetal germ cell,LEMD1,10,0,0.0,
+Olbrecht2021,Epithelial-mesenchymal cell,LEMD1,112,0,0.0,
+Olbrecht2021,Plasmacytoid dendritic cell,LEMD1,38,1,0.02631578947368421,0.8595621834353644
+Olbrecht2021,CD4+ T cell,LEMD1,1536,30,0.01953125,1.3159080630988387
+Olbrecht2021,Meiotic prophase fetal germ cell,LEMD1,55,5,0.09090909090909091,1.5438561170400937
+Olbrecht2021,Trophectoderm cell,LEMD1,616,64,0.1038961038961039,0.5836879289175714
+Olbrecht2021,Luminal epithelial cell,LEMD1,1435,473,0.329616724738676,2.467033256879499
+Olbrecht2021,Epithelial cell,LEMD1,105,8,0.0761904761904762,0.40762634334960424
+Olbrecht2021,Mesenchymal cell,OTOA,1523,4,0.0026263952724885093,2.897057852679743
+Olbrecht2021,Hemangioblast,OTOA,215,0,0.0,
+Olbrecht2021,Hematopoietic stem cell,OTOA,294,1,0.003401360544217687,8.586207311736214
+Olbrecht2021,Fibroblast,OTOA,1155,2,0.0017316017316017316,2.4610187352425625
+Olbrecht2021,Basal epithelial cell,OTOA,1285,5,0.0038910505836575876,6.136700057741652
+Olbrecht2021,Oocyte,OTOA,849,5,0.005889281507656066,2.920584352970697
+Olbrecht2021,Mesodermal embryonic stem cell,OTOA,104,4,0.038461538461538464,6.705460545951305
+Olbrecht2021,Monocyte,OTOA,402,81,0.20149253731343283,5.366752285488567
+Olbrecht2021,Luminal progenitor cell,OTOA,1077,10,0.009285051067780872,1.3460805281399093
+Olbrecht2021,Macrophage,OTOA,538,128,0.2379182156133829,5.0166854682691495
+Olbrecht2021,Microglial cell,OTOA,739,108,0.14614343707713126,5.669803253604108
+Olbrecht2021,Dendritic cell,OTOA,436,3,0.006880733944954129,7.71436100136708
+Olbrecht2021,T cell,OTOA,398,0,0.0,
+Olbrecht2021,Granulocyte-monocyte progenitor,OTOA,88,0,0.0,
+Olbrecht2021,Mesenchymal stem cell,OTOA,97,17,0.17525773195876287,3.185138107471797
+Olbrecht2021,Endothelial cell,OTOA,252,4,0.015873015873015872,4.866102942715508
+Olbrecht2021,Mitotic fetal germ cell,OTOA,50,2,0.04,1.0624939379970684
+Olbrecht2021,Plasma cell,OTOA,254,1,0.003937007874015748,2.9961046764386845
+Olbrecht2021,Oogenesis phase fetal germ cell,OTOA,10,0,0.0,
+Olbrecht2021,Epithelial-mesenchymal cell,OTOA,112,0,0.0,
+Olbrecht2021,Plasmacytoid dendritic cell,OTOA,38,1,0.02631578947368421,4.037826430610742
+Olbrecht2021,CD4+ T cell,OTOA,1536,3,0.001953125,2.613211019531796
+Olbrecht2021,Meiotic prophase fetal germ cell,OTOA,55,0,0.0,
+Olbrecht2021,Trophectoderm cell,OTOA,616,12,0.01948051948051948,1.1014883790678764
+Olbrecht2021,Luminal epithelial cell,OTOA,1435,3,0.0020905923344947735,4.238360363380907
+Olbrecht2021,Epithelial cell,OTOA,105,0,0.0,
+Olbrecht2021,Mesenchymal cell,PAGE4,1523,2,0.0013131976362442547,4.897623108708409
+Olbrecht2021,Hemangioblast,PAGE4,215,0,0.0,
+Olbrecht2021,Hematopoietic stem cell,PAGE4,294,18,0.061224489795918366,9.00987787869014
+Olbrecht2021,Fibroblast,PAGE4,1155,4,0.003463203463203463,7.755840946521897
+Olbrecht2021,Basal epithelial cell,PAGE4,1285,6,0.004669260700389105,5.193512109877742
+Olbrecht2021,Oocyte,PAGE4,849,0,0.0,
+Olbrecht2021,Mesodermal embryonic stem cell,PAGE4,104,0,0.0,
+Olbrecht2021,Monocyte,PAGE4,402,0,0.0,
+Olbrecht2021,Luminal progenitor cell,PAGE4,1077,0,0.0,
+Olbrecht2021,Macrophage,PAGE4,538,0,0.0,
+Olbrecht2021,Microglial cell,PAGE4,739,0,0.0,
+Olbrecht2021,Dendritic cell,PAGE4,436,1,0.0022935779816513763,9.736562275163891
+Olbrecht2021,T cell,PAGE4,398,1,0.002512562814070352,9.745393381662815
+Olbrecht2021,Granulocyte-monocyte progenitor,PAGE4,88,0,0.0,
+Olbrecht2021,Mesenchymal stem cell,PAGE4,97,0,0.0,
+Olbrecht2021,Endothelial cell,PAGE4,252,0,0.0,
+Olbrecht2021,Mitotic fetal germ cell,PAGE4,50,0,0.0,
+Olbrecht2021,Plasma cell,PAGE4,254,0,0.0,
+Olbrecht2021,Oogenesis phase fetal germ cell,PAGE4,10,0,0.0,
+Olbrecht2021,Epithelial-mesenchymal cell,PAGE4,112,31,0.2767857142857143,9.59912698427808
+Olbrecht2021,Plasmacytoid dendritic cell,PAGE4,38,0,0.0,
+Olbrecht2021,CD4+ T cell,PAGE4,1536,13,0.008463541666666666,6.92406899210065
+Olbrecht2021,Meiotic prophase fetal germ cell,PAGE4,55,0,0.0,
+Olbrecht2021,Trophectoderm cell,PAGE4,616,2,0.003246753246753247,1.256858766173976
+Olbrecht2021,Luminal epithelial cell,PAGE4,1435,1,0.0006968641114982578,5.756132563038299
+Olbrecht2021,Epithelial cell,PAGE4,105,0,0.0,
+Olbrecht2021,Mesenchymal cell,PAGE5,1523,0,0.0,
+Olbrecht2021,Hemangioblast,PAGE5,215,0,0.0,
+Olbrecht2021,Hematopoietic stem cell,PAGE5,294,0,0.0,
+Olbrecht2021,Fibroblast,PAGE5,1155,0,0.0,
+Olbrecht2021,Basal epithelial cell,PAGE5,1285,0,0.0,
+Olbrecht2021,Oocyte,PAGE5,849,1,0.001177856301531213,7.156710232398263
+Olbrecht2021,Mesodermal embryonic stem cell,PAGE5,104,0,0.0,
+Olbrecht2021,Monocyte,PAGE5,402,0,0.0,
+Olbrecht2021,Luminal progenitor cell,PAGE5,1077,3,0.002785515320334262,7.728399304724566
+Olbrecht2021,Macrophage,PAGE5,538,0,0.0,
+Olbrecht2021,Microglial cell,PAGE5,739,0,0.0,
+Olbrecht2021,Dendritic cell,PAGE5,436,0,0.0,
+Olbrecht2021,T cell,PAGE5,398,2,0.005025125628140704,10.0
+Olbrecht2021,Granulocyte-monocyte progenitor,PAGE5,88,0,0.0,
+Olbrecht2021,Mesenchymal stem cell,PAGE5,97,0,0.0,
+Olbrecht2021,Endothelial cell,PAGE5,252,0,0.0,
+Olbrecht2021,Mitotic fetal germ cell,PAGE5,50,0,0.0,
+Olbrecht2021,Plasma cell,PAGE5,254,0,0.0,
+Olbrecht2021,Oogenesis phase fetal germ cell,PAGE5,10,0,0.0,
+Olbrecht2021,Epithelial-mesenchymal cell,PAGE5,112,0,0.0,
+Olbrecht2021,Plasmacytoid dendritic cell,PAGE5,38,0,0.0,
+Olbrecht2021,CD4+ T cell,PAGE5,1536,0,0.0,
+Olbrecht2021,Meiotic prophase fetal germ cell,PAGE5,55,0,0.0,
+Olbrecht2021,Trophectoderm cell,PAGE5,616,2,0.003246753246753247,7.003854371418636
+Olbrecht2021,Luminal epithelial cell,PAGE5,1435,0,0.0,
+Olbrecht2021,Epithelial cell,PAGE5,105,0,0.0,
+Olbrecht2021,Mesenchymal cell,SPAG8,1523,24,0.015758371634931056,3.893403304125948
+Olbrecht2021,Hemangioblast,SPAG8,215,2,0.009302325581395349,4.039301096713002
+Olbrecht2021,Hematopoietic stem cell,SPAG8,294,7,0.023809523809523808,6.961836116407274
+Olbrecht2021,Fibroblast,SPAG8,1155,20,0.017316017316017316,5.5648993000399605
+Olbrecht2021,Basal epithelial cell,SPAG8,1285,27,0.021011673151750974,5.584538255792503
+Olbrecht2021,Oocyte,SPAG8,849,69,0.0812720848056537,2.771507411059395
+Olbrecht2021,Mesodermal embryonic stem cell,SPAG8,104,2,0.019230769230769232,5.692924478971266
+Olbrecht2021,Monocyte,SPAG8,402,3,0.007462686567164179,5.426666019314983
+Olbrecht2021,Luminal progenitor cell,SPAG8,1077,39,0.036211699164345405,2.161460997332777
+Olbrecht2021,Macrophage,SPAG8,538,4,0.007434944237918215,4.900597518595998
+Olbrecht2021,Microglial cell,SPAG8,739,10,0.013531799729364006,4.938442699846055
+Olbrecht2021,Dendritic cell,SPAG8,436,4,0.009174311926605505,4.891055608161799
+Olbrecht2021,T cell,SPAG8,398,10,0.02512562814070352,6.253016202883702
+Olbrecht2021,Granulocyte-monocyte progenitor,SPAG8,88,0,0.0,
+Olbrecht2021,Mesenchymal stem cell,SPAG8,97,1,0.010309278350515464,3.935560358922939
+Olbrecht2021,Endothelial cell,SPAG8,252,3,0.011904761904761904,3.870333698660771
+Olbrecht2021,Mitotic fetal germ cell,SPAG8,50,3,0.06,2.872963074713814
+Olbrecht2021,Plasma cell,SPAG8,254,1,0.003937007874015748,3.0297110861915653
+Olbrecht2021,Oogenesis phase fetal germ cell,SPAG8,10,0,0.0,
+Olbrecht2021,Epithelial-mesenchymal cell,SPAG8,112,2,0.017857142857142856,8.037117018454998
+Olbrecht2021,Plasmacytoid dendritic cell,SPAG8,38,0,0.0,
+Olbrecht2021,CD4+ T cell,SPAG8,1536,48,0.03125,6.2789986214003575
+Olbrecht2021,Meiotic prophase fetal germ cell,SPAG8,55,44,0.8,8.437040988882352
+Olbrecht2021,Trophectoderm cell,SPAG8,616,75,0.12175324675324675,1.2798677070039335
+Olbrecht2021,Luminal epithelial cell,SPAG8,1435,26,0.018118466898954706,5.749960542769165
+Olbrecht2021,Epithelial cell,SPAG8,105,11,0.10476190476190476,0.8149636267026673

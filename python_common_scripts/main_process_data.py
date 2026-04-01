@@ -14,6 +14,7 @@ from codes.import_raw_data import import_raw_data_fetal_gonad, import_raw_data_1
 from codes.filter_qc_data import filter_data, run_qc
 from codes.cell_annotation import cell_annotation_wrapper
 from codes.visual_gene_expression import make_umaps, cta_genes_expression, cta_genes_expression_all_samples
+from codes.differential_gene_expression import get_ranked_genes
 
 def pre_process_project_setup(project_name):
     cfg = set_up_project_config(project_name)
@@ -232,6 +233,20 @@ def refine_processed_data(project_name, paths, project_cfg, global_cfg, samples_
 
             if df_cta_gene_expression is not None:
                 df_cta_gene_expression_list.append(df_cta_gene_expression)
+
+            if project_name in ["embryos_mixed"]:
+                if "F_" in sample_id:
+                    get_ranked_genes(adata = adata_umap, sample_id = sample_id, tables_dir=paths["TABLES_DIR"],
+                figures_dir=paths["FIGURES_DIR"], always_rank = True, marker_genes_dict =CUSTOM_MARKER_GENES_DICT)
+            elif project_name in ["fetal_gonad"]:
+                if "Ovary" in sample_id or "F_Mesonephros" in sample_id:
+                    get_ranked_genes(adata = adata_umap, sample_id = sample_id, tables_dir=paths["TABLES_DIR"],
+                figures_dir=paths["FIGURES_DIR"], always_rank = True, marker_genes_dict =CUSTOM_MARKER_GENES_DICT)
+            else:
+                get_ranked_genes(adata = adata_umap, sample_id = sample_id, tables_dir=paths["TABLES_DIR"],
+                figures_dir=paths["FIGURES_DIR"],always_rank = True, marker_genes_dict =CUSTOM_MARKER_GENES_DICT)
+
+
 
         except Exception as e:
             print(f"Failed to refine {sample_id}: {e}")

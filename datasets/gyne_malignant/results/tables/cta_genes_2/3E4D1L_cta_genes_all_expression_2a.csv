@@ -1,0 +1,103 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+3E4D1L,T cell,BRDT,516,0,0.0,
+3E4D1L,Migration phase fetal germ cell,BRDT,2052,1,0.0004873294346978557,10.0
+3E4D1L,CD4+ T cell,BRDT,230,0,0.0,
+3E4D1L,Mitotic fetal germ cell,BRDT,1057,0,0.0,
+3E4D1L,Granulosa cell,BRDT,719,0,0.0,
+3E4D1L,Mitotic arrest phase fetal germ cell,BRDT,580,0,0.0,
+3E4D1L,Epithelial-mesenchymal cell,BRDT,705,0,0.0,
+3E4D1L,Granulocyte-monocyte progenitor,BRDT,169,0,0.0,
+3E4D1L,Embryonic stem cell,BRDT,566,0,0.0,
+3E4D1L,Meiotic prophase fetal germ cell,BRDT,448,0,0.0,
+3E4D1L,Natural killer T (NKT) cell,BRDT,303,0,0.0,
+3E4D1L,B cell,BRDT,894,8,0.008948545861297539,10.0
+3E4D1L,Dendritic cell,BRDT,458,0,0.0,
+3E4D1L,Lymphoid progenitor cell,BRDT,154,0,0.0,
+3E4D1L,Endothelial cell,BRDT,28,0,0.0,
+3E4D1L,Mesenchymal cell,BRDT,32,0,0.0,
+3E4D1L,Natural killer (NK) cell,BRDT,145,0,0.0,
+3E4D1L,T cell,CTCFL,516,0,0.0,
+3E4D1L,Migration phase fetal germ cell,CTCFL,2052,0,0.0,
+3E4D1L,CD4+ T cell,CTCFL,230,0,0.0,
+3E4D1L,Mitotic fetal germ cell,CTCFL,1057,0,0.0,
+3E4D1L,Granulosa cell,CTCFL,719,0,0.0,
+3E4D1L,Mitotic arrest phase fetal germ cell,CTCFL,580,0,0.0,
+3E4D1L,Epithelial-mesenchymal cell,CTCFL,705,0,0.0,
+3E4D1L,Granulocyte-monocyte progenitor,CTCFL,169,0,0.0,
+3E4D1L,Embryonic stem cell,CTCFL,566,0,0.0,
+3E4D1L,Meiotic prophase fetal germ cell,CTCFL,448,0,0.0,
+3E4D1L,Natural killer T (NKT) cell,CTCFL,303,0,0.0,
+3E4D1L,B cell,CTCFL,894,0,0.0,
+3E4D1L,Dendritic cell,CTCFL,458,0,0.0,
+3E4D1L,Lymphoid progenitor cell,CTCFL,154,0,0.0,
+3E4D1L,Endothelial cell,CTCFL,28,0,0.0,
+3E4D1L,Mesenchymal cell,CTCFL,32,0,0.0,
+3E4D1L,Natural killer (NK) cell,CTCFL,145,0,0.0,
+3E4D1L,T cell,DDX43,516,0,0.0,
+3E4D1L,Migration phase fetal germ cell,DDX43,2052,1,0.0004873294346978557,8.699409810508289
+3E4D1L,CD4+ T cell,DDX43,230,1,0.004347826086956522,10.0
+3E4D1L,Mitotic fetal germ cell,DDX43,1057,1,0.000946073793755913,10.0
+3E4D1L,Granulosa cell,DDX43,719,1,0.0013908205841446453,10.0
+3E4D1L,Mitotic arrest phase fetal germ cell,DDX43,580,0,0.0,
+3E4D1L,Epithelial-mesenchymal cell,DDX43,705,0,0.0,
+3E4D1L,Granulocyte-monocyte progenitor,DDX43,169,0,0.0,
+3E4D1L,Embryonic stem cell,DDX43,566,0,0.0,
+3E4D1L,Meiotic prophase fetal germ cell,DDX43,448,0,0.0,
+3E4D1L,Natural killer T (NKT) cell,DDX43,303,3,0.009900990099009901,10.0
+3E4D1L,B cell,DDX43,894,3,0.003355704697986577,10.0
+3E4D1L,Dendritic cell,DDX43,458,4,0.008733624454148471,10.0
+3E4D1L,Lymphoid progenitor cell,DDX43,154,1,0.006493506493506494,10.0
+3E4D1L,Endothelial cell,DDX43,28,1,0.03571428571428571,4.932463074750649
+3E4D1L,Mesenchymal cell,DDX43,32,0,0.0,
+3E4D1L,Natural killer (NK) cell,DDX43,145,1,0.006896551724137931,10.0
+3E4D1L,T cell,GPAT2,516,4,0.007751937984496124,9.534499073177987
+3E4D1L,Migration phase fetal germ cell,GPAT2,2052,0,0.0,
+3E4D1L,CD4+ T cell,GPAT2,230,0,0.0,
+3E4D1L,Mitotic fetal germ cell,GPAT2,1057,2,0.001892147587511826,9.639074142903468
+3E4D1L,Granulosa cell,GPAT2,719,1,0.0013908205841446453,10.0
+3E4D1L,Mitotic arrest phase fetal germ cell,GPAT2,580,0,0.0,
+3E4D1L,Epithelial-mesenchymal cell,GPAT2,705,0,0.0,
+3E4D1L,Granulocyte-monocyte progenitor,GPAT2,169,0,0.0,
+3E4D1L,Embryonic stem cell,GPAT2,566,0,0.0,
+3E4D1L,Meiotic prophase fetal germ cell,GPAT2,448,0,0.0,
+3E4D1L,Natural killer T (NKT) cell,GPAT2,303,1,0.0033003300330033004,10.0
+3E4D1L,B cell,GPAT2,894,0,0.0,
+3E4D1L,Dendritic cell,GPAT2,458,0,0.0,
+3E4D1L,Lymphoid progenitor cell,GPAT2,154,1,0.006493506493506494,10.0
+3E4D1L,Endothelial cell,GPAT2,28,1,0.03571428571428571,4.57154501569905
+3E4D1L,Mesenchymal cell,GPAT2,32,3,0.09375,10.0
+3E4D1L,Natural killer (NK) cell,GPAT2,145,2,0.013793103448275862,10.0
+3E4D1L,T cell,LEMD1,516,1,0.001937984496124031,10.0
+3E4D1L,Migration phase fetal germ cell,LEMD1,2052,0,0.0,
+3E4D1L,CD4+ T cell,LEMD1,230,1,0.004347826086956522,10.0
+3E4D1L,Mitotic fetal germ cell,LEMD1,1057,0,0.0,
+3E4D1L,Granulosa cell,LEMD1,719,0,0.0,
+3E4D1L,Mitotic arrest phase fetal germ cell,LEMD1,580,0,0.0,
+3E4D1L,Epithelial-mesenchymal cell,LEMD1,705,1,0.0014184397163120568,10.0
+3E4D1L,Granulocyte-monocyte progenitor,LEMD1,169,0,0.0,
+3E4D1L,Embryonic stem cell,LEMD1,566,0,0.0,
+3E4D1L,Meiotic prophase fetal germ cell,LEMD1,448,0,0.0,
+3E4D1L,Natural killer T (NKT) cell,LEMD1,303,0,0.0,
+3E4D1L,B cell,LEMD1,894,0,0.0,
+3E4D1L,Dendritic cell,LEMD1,458,0,0.0,
+3E4D1L,Lymphoid progenitor cell,LEMD1,154,0,0.0,
+3E4D1L,Endothelial cell,LEMD1,28,0,0.0,
+3E4D1L,Mesenchymal cell,LEMD1,32,0,0.0,
+3E4D1L,Natural killer (NK) cell,LEMD1,145,0,0.0,
+3E4D1L,T cell,PAGE5,516,2,0.003875968992248062,10.0
+3E4D1L,Migration phase fetal germ cell,PAGE5,2052,0,0.0,
+3E4D1L,CD4+ T cell,PAGE5,230,0,0.0,
+3E4D1L,Mitotic fetal germ cell,PAGE5,1057,0,0.0,
+3E4D1L,Granulosa cell,PAGE5,719,0,0.0,
+3E4D1L,Mitotic arrest phase fetal germ cell,PAGE5,580,0,0.0,
+3E4D1L,Epithelial-mesenchymal cell,PAGE5,705,0,0.0,
+3E4D1L,Granulocyte-monocyte progenitor,PAGE5,169,0,0.0,
+3E4D1L,Embryonic stem cell,PAGE5,566,0,0.0,
+3E4D1L,Meiotic prophase fetal germ cell,PAGE5,448,0,0.0,
+3E4D1L,Natural killer T (NKT) cell,PAGE5,303,0,0.0,
+3E4D1L,B cell,PAGE5,894,1,0.0011185682326621924,10.0
+3E4D1L,Dendritic cell,PAGE5,458,0,0.0,
+3E4D1L,Lymphoid progenitor cell,PAGE5,154,0,0.0,
+3E4D1L,Endothelial cell,PAGE5,28,0,0.0,
+3E4D1L,Mesenchymal cell,PAGE5,32,0,0.0,
+3E4D1L,Natural killer (NK) cell,PAGE5,145,0,0.0,

@@ -25,6 +25,15 @@ GENE_DEFAULT_PALETTE = {
     "DPEP3": "#d31162",
 }
 
+CUSTOM_MARKER_GENES_DICT =  {
+    "PGC": ["POU5F1", "TCL1A", "PDPN", "MEG3", "GPHA2"],
+    "Pre-meiotic": ["DAZL", "ZGLP1", "DDX4", "SMC1B", "TEX30", "CKS2"],
+    "Meiotic": ["SYCP3", "SYCP2", "MEIOB", "SPATA22", "ZCWPW1", "MAEL"],
+    "Oocyte": ["ZP3", "TDRD1", "BRDT", "RBM46"],
+    "Endothelial": ["CDH5", "PECAM1", "VWF", "KDR", "FLT1"],
+    "Fibroblast": ["COL1A1", "COL3A1", "DCN", "PDGFRA"]
+}
+
 GENE_COLOR_MAP = GENE_DEFAULT_PALETTE.copy()
 CELL_TYPE_COLORS = {"None": "#d3d3d3"}
 

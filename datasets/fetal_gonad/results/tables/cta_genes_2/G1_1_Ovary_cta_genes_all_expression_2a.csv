@@ -1,0 +1,85 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+G1_1_Ovary,Neural progenitor cell,CTCFL,264,0,0.0,
+G1_1_Ovary,Fibroblast,CTCFL,272,1,0.003676470588235294,10.0
+G1_1_Ovary,Meiotic prophase fetal germ cell,CTCFL,43,0,0.0,
+G1_1_Ovary,Luminal progenitor cell,CTCFL,320,0,0.0,
+G1_1_Ovary,Microglial cell,CTCFL,130,0,0.0,
+G1_1_Ovary,Lymphoid progenitor cell,CTCFL,159,1,0.006289308176100629,10.0
+G1_1_Ovary,Granulosa cell,CTCFL,391,0,0.0,
+G1_1_Ovary,Endothelial cell,CTCFL,28,0,0.0,
+G1_1_Ovary,Mitotic arrest phase fetal germ cell,CTCFL,100,0,0.0,
+G1_1_Ovary,Gonadal mitotic phase fetal germ cell,CTCFL,6,0,0.0,
+G1_1_Ovary,Mesenchymal stem cell,CTCFL,32,0,0.0,
+G1_1_Ovary,T cell,CTCFL,15,0,0.0,
+G1_1_Ovary,Neural progenitor cell,HSPB9,264,0,0.0,
+G1_1_Ovary,Fibroblast,HSPB9,272,1,0.003676470588235294,10.0
+G1_1_Ovary,Meiotic prophase fetal germ cell,HSPB9,43,0,0.0,
+G1_1_Ovary,Luminal progenitor cell,HSPB9,320,1,0.003125,8.030822448181173
+G1_1_Ovary,Microglial cell,HSPB9,130,2,0.015384615384615385,8.425972999599747
+G1_1_Ovary,Lymphoid progenitor cell,HSPB9,159,2,0.012578616352201259,9.71031204817822
+G1_1_Ovary,Granulosa cell,HSPB9,391,2,0.005115089514066497,8.847071856863929
+G1_1_Ovary,Endothelial cell,HSPB9,28,1,0.03571428571428571,10.0
+G1_1_Ovary,Mitotic arrest phase fetal germ cell,HSPB9,100,1,0.01,9.718468451772747
+G1_1_Ovary,Gonadal mitotic phase fetal germ cell,HSPB9,6,0,0.0,
+G1_1_Ovary,Mesenchymal stem cell,HSPB9,32,0,0.0,
+G1_1_Ovary,T cell,HSPB9,15,0,0.0,
+G1_1_Ovary,Neural progenitor cell,PLAC1,264,63,0.23863636363636365,1.2208741692597913
+G1_1_Ovary,Fibroblast,PLAC1,272,39,0.14338235294117646,1.8178989582347242
+G1_1_Ovary,Meiotic prophase fetal germ cell,PLAC1,43,25,0.5813953488372093,2.501343760656513
+G1_1_Ovary,Luminal progenitor cell,PLAC1,320,22,0.06875,1.3176307697620966
+G1_1_Ovary,Microglial cell,PLAC1,130,21,0.16153846153846155,1.226234504604177
+G1_1_Ovary,Lymphoid progenitor cell,PLAC1,159,25,0.15723270440251572,1.3397681028794073
+G1_1_Ovary,Granulosa cell,PLAC1,391,180,0.46035805626598464,1.7050173697454716
+G1_1_Ovary,Endothelial cell,PLAC1,28,0,0.0,
+G1_1_Ovary,Mitotic arrest phase fetal germ cell,PLAC1,100,46,0.46,1.861558184935879
+G1_1_Ovary,Gonadal mitotic phase fetal germ cell,PLAC1,6,0,0.0,
+G1_1_Ovary,Mesenchymal stem cell,PLAC1,32,4,0.125,1.1349938261573391
+G1_1_Ovary,T cell,PLAC1,15,0,0.0,
+G1_1_Ovary,Neural progenitor cell,RGS22,264,9,0.03409090909090909,6.956450721799403
+G1_1_Ovary,Fibroblast,RGS22,272,2,0.007352941176470588,10.0
+G1_1_Ovary,Meiotic prophase fetal germ cell,RGS22,43,1,0.023255813953488372,10.0
+G1_1_Ovary,Luminal progenitor cell,RGS22,320,1,0.003125,9.858815680622648
+G1_1_Ovary,Microglial cell,RGS22,130,2,0.015384615384615385,4.886604941919508
+G1_1_Ovary,Lymphoid progenitor cell,RGS22,159,1,0.006289308176100629,6.047026367944666
+G1_1_Ovary,Granulosa cell,RGS22,391,6,0.015345268542199489,7.025672782091804
+G1_1_Ovary,Endothelial cell,RGS22,28,0,0.0,
+G1_1_Ovary,Mitotic arrest phase fetal germ cell,RGS22,100,0,0.0,
+G1_1_Ovary,Gonadal mitotic phase fetal germ cell,RGS22,6,0,0.0,
+G1_1_Ovary,Mesenchymal stem cell,RGS22,32,0,0.0,
+G1_1_Ovary,T cell,RGS22,15,0,0.0,
+G1_1_Ovary,Neural progenitor cell,TMEFF2,264,8,0.030303030303030304,4.266618116688191
+G1_1_Ovary,Fibroblast,TMEFF2,272,3,0.011029411764705883,7.94740870701919
+G1_1_Ovary,Meiotic prophase fetal germ cell,TMEFF2,43,1,0.023255813953488372,5.796202966908089
+G1_1_Ovary,Luminal progenitor cell,TMEFF2,320,6,0.01875,5.264825052652784
+G1_1_Ovary,Microglial cell,TMEFF2,130,13,0.1,4.231995247515196
+G1_1_Ovary,Lymphoid progenitor cell,TMEFF2,159,5,0.031446540880503145,5.183009418204515
+G1_1_Ovary,Granulosa cell,TMEFF2,391,4,0.010230179028132993,4.5557706079794436
+G1_1_Ovary,Endothelial cell,TMEFF2,28,0,0.0,
+G1_1_Ovary,Mitotic arrest phase fetal germ cell,TMEFF2,100,11,0.11,6.4940980598565945
+G1_1_Ovary,Gonadal mitotic phase fetal germ cell,TMEFF2,6,0,0.0,
+G1_1_Ovary,Mesenchymal stem cell,TMEFF2,32,0,0.0,
+G1_1_Ovary,T cell,TMEFF2,15,0,0.0,
+G1_1_Ovary,Neural progenitor cell,TSSK6,264,0,0.0,
+G1_1_Ovary,Fibroblast,TSSK6,272,2,0.007352941176470588,10.0
+G1_1_Ovary,Meiotic prophase fetal germ cell,TSSK6,43,0,0.0,
+G1_1_Ovary,Luminal progenitor cell,TSSK6,320,1,0.003125,9.436368838065846
+G1_1_Ovary,Microglial cell,TSSK6,130,0,0.0,
+G1_1_Ovary,Lymphoid progenitor cell,TSSK6,159,2,0.012578616352201259,8.724522183814885
+G1_1_Ovary,Granulosa cell,TSSK6,391,0,0.0,
+G1_1_Ovary,Endothelial cell,TSSK6,28,0,0.0,
+G1_1_Ovary,Mitotic arrest phase fetal germ cell,TSSK6,100,1,0.01,10.0
+G1_1_Ovary,Gonadal mitotic phase fetal germ cell,TSSK6,6,0,0.0,
+G1_1_Ovary,Mesenchymal stem cell,TSSK6,32,1,0.03125,10.0
+G1_1_Ovary,T cell,TSSK6,15,0,0.0,
+G1_1_Ovary,Neural progenitor cell,TULP2,264,1,0.003787878787878788,7.979558730955092
+G1_1_Ovary,Fibroblast,TULP2,272,1,0.003676470588235294,10.0
+G1_1_Ovary,Meiotic prophase fetal germ cell,TULP2,43,0,0.0,
+G1_1_Ovary,Luminal progenitor cell,TULP2,320,2,0.00625,10.0
+G1_1_Ovary,Microglial cell,TULP2,130,1,0.007692307692307693,6.835862233270917
+G1_1_Ovary,Lymphoid progenitor cell,TULP2,159,0,0.0,
+G1_1_Ovary,Granulosa cell,TULP2,391,0,0.0,
+G1_1_Ovary,Endothelial cell,TULP2,28,0,0.0,
+G1_1_Ovary,Mitotic arrest phase fetal germ cell,TULP2,100,1,0.01,10.0
+G1_1_Ovary,Gonadal mitotic phase fetal germ cell,TULP2,6,0,0.0,
+G1_1_Ovary,Mesenchymal stem cell,TULP2,32,0,0.0,
+G1_1_Ovary,T cell,TULP2,15,0,0.0,

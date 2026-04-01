@@ -1,0 +1,364 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+G2_2_Ovary,Lymphoid progenitor cell,CABYR,426,42,0.09859154929577464,3.149230977137244
+G2_2_Ovary,Fibroblast,CABYR,616,12,0.01948051948051948,3.794213502786961
+G2_2_Ovary,Epiblast cell,CABYR,169,12,0.07100591715976332,3.5121732829844947
+G2_2_Ovary,Plasmacytoid dendritic cell,CABYR,220,11,0.05,3.4452929596315287
+G2_2_Ovary,Luminal progenitor cell,CABYR,89,5,0.056179775280898875,3.8037979306642127
+G2_2_Ovary,Basal epithelial cell,CABYR,50,6,0.12,3.5314602642768853
+G2_2_Ovary,Trophoblast cell,CABYR,145,53,0.36551724137931035,2.306071440213076
+G2_2_Ovary,Endothelial cell,CABYR,122,4,0.03278688524590164,3.0330018683622355
+G2_2_Ovary,Neural progenitor cell,CABYR,68,7,0.10294117647058823,2.983052458519587
+G2_2_Ovary,Primitive endoderm cell,CABYR,6,0,0.0,
+G2_2_Ovary,T cell,CABYR,45,1,0.022222222222222223,4.326767373801511
+G2_2_Ovary,Lymphoid progenitor cell,CCDC36,426,3,0.007042253521126761,6.569396405354294
+G2_2_Ovary,Fibroblast,CCDC36,616,9,0.01461038961038961,7.8119216182473865
+G2_2_Ovary,Epiblast cell,CCDC36,169,1,0.005917159763313609,10.0
+G2_2_Ovary,Plasmacytoid dendritic cell,CCDC36,220,5,0.022727272727272728,6.980546122156275
+G2_2_Ovary,Luminal progenitor cell,CCDC36,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,CCDC36,50,1,0.02,7.251535618542508
+G2_2_Ovary,Trophoblast cell,CCDC36,145,7,0.04827586206896552,4.582368428709024
+G2_2_Ovary,Endothelial cell,CCDC36,122,5,0.040983606557377046,6.697007744474959
+G2_2_Ovary,Neural progenitor cell,CCDC36,68,1,0.014705882352941176,6.615192934515126
+G2_2_Ovary,Primitive endoderm cell,CCDC36,6,0,0.0,
+G2_2_Ovary,T cell,CCDC36,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,CT47B1,426,0,0.0,
+G2_2_Ovary,Fibroblast,CT47B1,616,0,0.0,
+G2_2_Ovary,Epiblast cell,CT47B1,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,CT47B1,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,CT47B1,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,CT47B1,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,CT47B1,145,9,0.06206896551724138,8.404693351068062
+G2_2_Ovary,Endothelial cell,CT47B1,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,CT47B1,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,CT47B1,6,0,0.0,
+G2_2_Ovary,T cell,CT47B1,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,CTAG2,426,0,0.0,
+G2_2_Ovary,Fibroblast,CTAG2,616,2,0.003246753246753247,8.639947874756707
+G2_2_Ovary,Epiblast cell,CTAG2,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,CTAG2,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,CTAG2,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,CTAG2,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,CTAG2,145,16,0.1103448275862069,7.741154731876609
+G2_2_Ovary,Endothelial cell,CTAG2,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,CTAG2,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,CTAG2,6,0,0.0,
+G2_2_Ovary,T cell,CTAG2,45,1,0.022222222222222223,10.0
+G2_2_Ovary,Lymphoid progenitor cell,CTCFL,426,0,0.0,
+G2_2_Ovary,Fibroblast,CTCFL,616,1,0.0016233766233766235,9.119452264962325
+G2_2_Ovary,Epiblast cell,CTCFL,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,CTCFL,220,2,0.00909090909090909,6.924698045250588
+G2_2_Ovary,Luminal progenitor cell,CTCFL,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,CTCFL,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,CTCFL,145,28,0.19310344827586207,6.254105200895835
+G2_2_Ovary,Endothelial cell,CTCFL,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,CTCFL,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,CTCFL,6,0,0.0,
+G2_2_Ovary,T cell,CTCFL,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,DMRT1,426,3,0.007042253521126761,3.384690965004958
+G2_2_Ovary,Fibroblast,DMRT1,616,1,0.0016233766233766235,3.716253715577273
+G2_2_Ovary,Epiblast cell,DMRT1,169,2,0.011834319526627219,2.91273099210655
+G2_2_Ovary,Plasmacytoid dendritic cell,DMRT1,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,DMRT1,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,DMRT1,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,DMRT1,145,108,0.7448275862068966,3.7163283094338597
+G2_2_Ovary,Endothelial cell,DMRT1,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,DMRT1,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,DMRT1,6,0,0.0,
+G2_2_Ovary,T cell,DMRT1,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,DSCR8,426,2,0.004694835680751174,3.88035117284456
+G2_2_Ovary,Fibroblast,DSCR8,616,1,0.0016233766233766235,3.2330420920645357
+G2_2_Ovary,Epiblast cell,DSCR8,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,DSCR8,220,3,0.013636363636363636,3.3374236133606705
+G2_2_Ovary,Luminal progenitor cell,DSCR8,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,DSCR8,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,DSCR8,145,112,0.7724137931034483,3.5896061918875803
+G2_2_Ovary,Endothelial cell,DSCR8,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,DSCR8,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,DSCR8,6,0,0.0,
+G2_2_Ovary,T cell,DSCR8,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,FAM133A,426,18,0.04225352112676056,3.553357859290776
+G2_2_Ovary,Fibroblast,FAM133A,616,4,0.006493506493506494,3.660532685179099
+G2_2_Ovary,Epiblast cell,FAM133A,169,5,0.029585798816568046,4.28984571668092
+G2_2_Ovary,Plasmacytoid dendritic cell,FAM133A,220,13,0.05909090909090909,4.025738773322343
+G2_2_Ovary,Luminal progenitor cell,FAM133A,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,FAM133A,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,FAM133A,145,73,0.503448275862069,3.5880392390260836
+G2_2_Ovary,Endothelial cell,FAM133A,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,FAM133A,68,1,0.014705882352941176,1.4197258491384868
+G2_2_Ovary,Primitive endoderm cell,FAM133A,6,0,0.0,
+G2_2_Ovary,T cell,FAM133A,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,GAGE1,426,1,0.002347417840375587,9.093421566330075
+G2_2_Ovary,Fibroblast,GAGE1,616,1,0.0016233766233766235,10.0
+G2_2_Ovary,Epiblast cell,GAGE1,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,GAGE1,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,GAGE1,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,GAGE1,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,GAGE1,145,5,0.034482758620689655,9.880667405807586
+G2_2_Ovary,Endothelial cell,GAGE1,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,GAGE1,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,GAGE1,6,0,0.0,
+G2_2_Ovary,T cell,GAGE1,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,GAGE2A,426,0,0.0,
+G2_2_Ovary,Fibroblast,GAGE2A,616,0,0.0,
+G2_2_Ovary,Epiblast cell,GAGE2A,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,GAGE2A,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,GAGE2A,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,GAGE2A,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,GAGE2A,145,4,0.027586206896551724,8.840038846810211
+G2_2_Ovary,Endothelial cell,GAGE2A,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,GAGE2A,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,GAGE2A,6,0,0.0,
+G2_2_Ovary,T cell,GAGE2A,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,HORMAD1,426,2,0.004694835680751174,3.3347874458922284
+G2_2_Ovary,Fibroblast,HORMAD1,616,0,0.0,
+G2_2_Ovary,Epiblast cell,HORMAD1,169,1,0.005917159763313609,4.608310453484671
+G2_2_Ovary,Plasmacytoid dendritic cell,HORMAD1,220,1,0.004545454545454545,4.320549395025698
+G2_2_Ovary,Luminal progenitor cell,HORMAD1,89,1,0.011235955056179775,2.8595503490468506
+G2_2_Ovary,Basal epithelial cell,HORMAD1,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,HORMAD1,145,76,0.5241379310344828,3.876507810549537
+G2_2_Ovary,Endothelial cell,HORMAD1,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,HORMAD1,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,HORMAD1,6,0,0.0,
+G2_2_Ovary,T cell,HORMAD1,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,HSPB9,426,3,0.007042253521126761,9.454821052329713
+G2_2_Ovary,Fibroblast,HSPB9,616,1,0.0016233766233766235,10.0
+G2_2_Ovary,Epiblast cell,HSPB9,169,1,0.005917159763313609,10.0
+G2_2_Ovary,Plasmacytoid dendritic cell,HSPB9,220,2,0.00909090909090909,9.586656708210338
+G2_2_Ovary,Luminal progenitor cell,HSPB9,89,1,0.011235955056179775,10.0
+G2_2_Ovary,Basal epithelial cell,HSPB9,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,HSPB9,145,1,0.006896551724137931,10.0
+G2_2_Ovary,Endothelial cell,HSPB9,122,1,0.00819672131147541,10.0
+G2_2_Ovary,Neural progenitor cell,HSPB9,68,1,0.014705882352941176,5.419724868250952
+G2_2_Ovary,Primitive endoderm cell,HSPB9,6,0,0.0,
+G2_2_Ovary,T cell,HSPB9,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,IL13RA2,426,5,0.011737089201877934,7.019357488994733
+G2_2_Ovary,Fibroblast,IL13RA2,616,0,0.0,
+G2_2_Ovary,Epiblast cell,IL13RA2,169,3,0.01775147928994083,8.263462506011757
+G2_2_Ovary,Plasmacytoid dendritic cell,IL13RA2,220,9,0.04090909090909091,7.137251739938275
+G2_2_Ovary,Luminal progenitor cell,IL13RA2,89,1,0.011235955056179775,4.055524897691976
+G2_2_Ovary,Basal epithelial cell,IL13RA2,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,IL13RA2,145,14,0.09655172413793103,5.404672086264306
+G2_2_Ovary,Endothelial cell,IL13RA2,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,IL13RA2,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,IL13RA2,6,0,0.0,
+G2_2_Ovary,T cell,IL13RA2,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,LUZP4,426,3,0.007042253521126761,2.515535187661071
+G2_2_Ovary,Fibroblast,LUZP4,616,2,0.003246753246753247,4.3535323152410355
+G2_2_Ovary,Epiblast cell,LUZP4,169,3,0.01775147928994083,3.901169896557262
+G2_2_Ovary,Plasmacytoid dendritic cell,LUZP4,220,3,0.013636363636363636,4.435760007867699
+G2_2_Ovary,Luminal progenitor cell,LUZP4,89,2,0.02247191011235955,1.5541549723934702
+G2_2_Ovary,Basal epithelial cell,LUZP4,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,LUZP4,145,116,0.8,3.4467217911537205
+G2_2_Ovary,Endothelial cell,LUZP4,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,LUZP4,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,LUZP4,6,0,0.0,
+G2_2_Ovary,T cell,LUZP4,45,1,0.022222222222222223,6.724930104990024
+G2_2_Ovary,Lymphoid progenitor cell,LY6K,426,2,0.004694835680751174,3.4283912425291154
+G2_2_Ovary,Fibroblast,LY6K,616,6,0.00974025974025974,3.865413104578435
+G2_2_Ovary,Epiblast cell,LY6K,169,1,0.005917159763313609,6.247941701032415
+G2_2_Ovary,Plasmacytoid dendritic cell,LY6K,220,1,0.004545454545454545,4.145966983021863
+G2_2_Ovary,Luminal progenitor cell,LY6K,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,LY6K,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,LY6K,145,45,0.3103448275862069,4.567237660266352
+G2_2_Ovary,Endothelial cell,LY6K,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,LY6K,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,LY6K,6,0,0.0,
+G2_2_Ovary,T cell,LY6K,45,1,0.022222222222222223,5.933483914800048
+G2_2_Ovary,Lymphoid progenitor cell,MAEL,426,6,0.014084507042253521,1.9838189012104064
+G2_2_Ovary,Fibroblast,MAEL,616,3,0.00487012987012987,3.2175910935013454
+G2_2_Ovary,Epiblast cell,MAEL,169,3,0.01775147928994083,2.937696178555439
+G2_2_Ovary,Plasmacytoid dendritic cell,MAEL,220,1,0.004545454545454545,2.4080755491499106
+G2_2_Ovary,Luminal progenitor cell,MAEL,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,MAEL,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,MAEL,145,120,0.8275862068965517,3.391853316587239
+G2_2_Ovary,Endothelial cell,MAEL,122,1,0.00819672131147541,1.4564127296681444
+G2_2_Ovary,Neural progenitor cell,MAEL,68,1,0.014705882352941176,2.383068527003577
+G2_2_Ovary,Primitive endoderm cell,MAEL,6,1,0.16666666666666666,1.5457397520803298
+G2_2_Ovary,T cell,MAEL,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,MAGEA4,426,0,0.0,
+G2_2_Ovary,Fibroblast,MAGEA4,616,0,0.0,
+G2_2_Ovary,Epiblast cell,MAGEA4,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,MAGEA4,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,MAGEA4,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,MAGEA4,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,MAGEA4,145,11,0.07586206896551724,7.508195618544531
+G2_2_Ovary,Endothelial cell,MAGEA4,122,1,0.00819672131147541,10.0
+G2_2_Ovary,Neural progenitor cell,MAGEA4,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,MAGEA4,6,0,0.0,
+G2_2_Ovary,T cell,MAGEA4,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,MAGEB2,426,0,0.0,
+G2_2_Ovary,Fibroblast,MAGEB2,616,1,0.0016233766233766235,4.53027003166894
+G2_2_Ovary,Epiblast cell,MAGEB2,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,MAGEB2,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,MAGEB2,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,MAGEB2,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,MAGEB2,145,52,0.3586206896551724,4.832296514163748
+G2_2_Ovary,Endothelial cell,MAGEB2,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,MAGEB2,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,MAGEB2,6,0,0.0,
+G2_2_Ovary,T cell,MAGEB2,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,MAGEC2,426,0,0.0,
+G2_2_Ovary,Fibroblast,MAGEC2,616,0,0.0,
+G2_2_Ovary,Epiblast cell,MAGEC2,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,MAGEC2,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,MAGEC2,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,MAGEC2,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,MAGEC2,145,8,0.05517241379310345,6.733697478101643
+G2_2_Ovary,Endothelial cell,MAGEC2,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,MAGEC2,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,MAGEC2,6,0,0.0,
+G2_2_Ovary,T cell,MAGEC2,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,NR6A1,426,79,0.18544600938967137,1.5334736596629528
+G2_2_Ovary,Fibroblast,NR6A1,616,15,0.024350649350649352,1.8805531178091004
+G2_2_Ovary,Epiblast cell,NR6A1,169,29,0.17159763313609466,2.339171985212447
+G2_2_Ovary,Plasmacytoid dendritic cell,NR6A1,220,40,0.18181818181818182,1.5846326904772055
+G2_2_Ovary,Luminal progenitor cell,NR6A1,89,7,0.07865168539325842,1.5772951201685657
+G2_2_Ovary,Basal epithelial cell,NR6A1,50,1,0.02,1.5147774039720947
+G2_2_Ovary,Trophoblast cell,NR6A1,145,126,0.8689655172413793,2.7896687983819675
+G2_2_Ovary,Endothelial cell,NR6A1,122,6,0.04918032786885246,1.257226764291725
+G2_2_Ovary,Neural progenitor cell,NR6A1,68,2,0.029411764705882353,0.9521551245329581
+G2_2_Ovary,Primitive endoderm cell,NR6A1,6,2,0.3333333333333333,1.8006391144629446
+G2_2_Ovary,T cell,NR6A1,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,PAGE1,426,0,0.0,
+G2_2_Ovary,Fibroblast,PAGE1,616,0,0.0,
+G2_2_Ovary,Epiblast cell,PAGE1,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,PAGE1,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,PAGE1,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,PAGE1,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,PAGE1,145,4,0.027586206896551724,8.508014994225537
+G2_2_Ovary,Endothelial cell,PAGE1,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,PAGE1,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,PAGE1,6,0,0.0,
+G2_2_Ovary,T cell,PAGE1,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,PAGE2,426,1,0.002347417840375587,9.183496255296092
+G2_2_Ovary,Fibroblast,PAGE2,616,1,0.0016233766233766235,4.195051497578497
+G2_2_Ovary,Epiblast cell,PAGE2,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,PAGE2,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,PAGE2,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,PAGE2,50,1,0.02,4.884085583350767
+G2_2_Ovary,Trophoblast cell,PAGE2,145,33,0.22758620689655173,5.408328046539215
+G2_2_Ovary,Endothelial cell,PAGE2,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,PAGE2,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,PAGE2,6,0,0.0,
+G2_2_Ovary,T cell,PAGE2,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,PAGE2B,426,0,0.0,
+G2_2_Ovary,Fibroblast,PAGE2B,616,2,0.003246753246753247,4.236939062340241
+G2_2_Ovary,Epiblast cell,PAGE2B,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,PAGE2B,220,1,0.004545454545454545,9.715506991759986
+G2_2_Ovary,Luminal progenitor cell,PAGE2B,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,PAGE2B,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,PAGE2B,145,41,0.2827586206896552,4.963590020138355
+G2_2_Ovary,Endothelial cell,PAGE2B,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,PAGE2B,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,PAGE2B,6,0,0.0,
+G2_2_Ovary,T cell,PAGE2B,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,PAGE4,426,2,0.004694835680751174,10.0
+G2_2_Ovary,Fibroblast,PAGE4,616,2,0.003246753246753247,10.0
+G2_2_Ovary,Epiblast cell,PAGE4,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,PAGE4,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,PAGE4,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,PAGE4,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,PAGE4,145,3,0.020689655172413793,8.525461828103525
+G2_2_Ovary,Endothelial cell,PAGE4,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,PAGE4,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,PAGE4,6,0,0.0,
+G2_2_Ovary,T cell,PAGE4,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,PAGE5,426,0,0.0,
+G2_2_Ovary,Fibroblast,PAGE5,616,0,0.0,
+G2_2_Ovary,Epiblast cell,PAGE5,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,PAGE5,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,PAGE5,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,PAGE5,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,PAGE5,145,22,0.15172413793103448,7.345780718443463
+G2_2_Ovary,Endothelial cell,PAGE5,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,PAGE5,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,PAGE5,6,0,0.0,
+G2_2_Ovary,T cell,PAGE5,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,PASD1,426,0,0.0,
+G2_2_Ovary,Fibroblast,PASD1,616,1,0.0016233766233766235,10.0
+G2_2_Ovary,Epiblast cell,PASD1,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,PASD1,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,PASD1,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,PASD1,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,PASD1,145,5,0.034482758620689655,8.896861548088006
+G2_2_Ovary,Endothelial cell,PASD1,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,PASD1,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,PASD1,6,0,0.0,
+G2_2_Ovary,T cell,PASD1,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,PBK,426,5,0.011737089201877934,2.755047380414452
+G2_2_Ovary,Fibroblast,PBK,616,6,0.00974025974025974,3.51323228867705
+G2_2_Ovary,Epiblast cell,PBK,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,PBK,220,1,0.004545454545454545,2.8121057274435124
+G2_2_Ovary,Luminal progenitor cell,PBK,89,1,0.011235955056179775,1.8957859656955964
+G2_2_Ovary,Basal epithelial cell,PBK,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,PBK,145,61,0.4206896551724138,2.717035578093785
+G2_2_Ovary,Endothelial cell,PBK,122,10,0.08196721311475409,3.385537793493552
+G2_2_Ovary,Neural progenitor cell,PBK,68,43,0.6323529411764706,4.44405484568673
+G2_2_Ovary,Primitive endoderm cell,PBK,6,0,0.0,
+G2_2_Ovary,T cell,PBK,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,PRAME,426,2,0.004694835680751174,1.817376168509922
+G2_2_Ovary,Fibroblast,PRAME,616,4,0.006493506493506494,2.4445387687999793
+G2_2_Ovary,Epiblast cell,PRAME,169,1,0.005917159763313609,2.5591171308833016
+G2_2_Ovary,Plasmacytoid dendritic cell,PRAME,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,PRAME,89,1,0.011235955056179775,2.0460504667662187
+G2_2_Ovary,Basal epithelial cell,PRAME,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,PRAME,145,115,0.7931034482758621,3.532575424457701
+G2_2_Ovary,Endothelial cell,PRAME,122,1,0.00819672131147541,1.6213114950811416
+G2_2_Ovary,Neural progenitor cell,PRAME,68,1,0.014705882352941176,1.5230179450283536
+G2_2_Ovary,Primitive endoderm cell,PRAME,6,0,0.0,
+G2_2_Ovary,T cell,PRAME,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,SPANXN2,426,3,0.007042253521126761,10.0
+G2_2_Ovary,Fibroblast,SPANXN2,616,0,0.0,
+G2_2_Ovary,Epiblast cell,SPANXN2,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,SPANXN2,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,SPANXN2,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,SPANXN2,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,SPANXN2,145,0,0.0,
+G2_2_Ovary,Endothelial cell,SPANXN2,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,SPANXN2,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,SPANXN2,6,0,0.0,
+G2_2_Ovary,T cell,SPANXN2,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,SPO11,426,0,0.0,
+G2_2_Ovary,Fibroblast,SPO11,616,0,0.0,
+G2_2_Ovary,Epiblast cell,SPO11,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,SPO11,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,SPO11,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,SPO11,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,SPO11,145,11,0.07586206896551724,8.023888149014168
+G2_2_Ovary,Endothelial cell,SPO11,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,SPO11,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,SPO11,6,0,0.0,
+G2_2_Ovary,T cell,SPO11,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,SYCP1,426,6,0.014084507042253521,5.925292329132984
+G2_2_Ovary,Fibroblast,SYCP1,616,0,0.0,
+G2_2_Ovary,Epiblast cell,SYCP1,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,SYCP1,220,7,0.031818181818181815,6.968270032104732
+G2_2_Ovary,Luminal progenitor cell,SYCP1,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,SYCP1,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,SYCP1,145,11,0.07586206896551724,7.515509412317053
+G2_2_Ovary,Endothelial cell,SYCP1,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,SYCP1,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,SYCP1,6,0,0.0,
+G2_2_Ovary,T cell,SYCP1,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,TEX101,426,0,0.0,
+G2_2_Ovary,Fibroblast,TEX101,616,0,0.0,
+G2_2_Ovary,Epiblast cell,TEX101,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,TEX101,220,0,0.0,
+G2_2_Ovary,Luminal progenitor cell,TEX101,89,0,0.0,
+G2_2_Ovary,Basal epithelial cell,TEX101,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,TEX101,145,13,0.0896551724137931,7.622007491006311
+G2_2_Ovary,Endothelial cell,TEX101,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,TEX101,68,1,0.014705882352941176,6.250123398188458
+G2_2_Ovary,Primitive endoderm cell,TEX101,6,0,0.0,
+G2_2_Ovary,T cell,TEX101,45,0,0.0,
+G2_2_Ovary,Lymphoid progenitor cell,TPTE,426,2,0.004694835680751174,3.410049368133431
+G2_2_Ovary,Fibroblast,TPTE,616,2,0.003246753246753247,5.280166783629301
+G2_2_Ovary,Epiblast cell,TPTE,169,0,0.0,
+G2_2_Ovary,Plasmacytoid dendritic cell,TPTE,220,1,0.004545454545454545,5.22198372986841
+G2_2_Ovary,Luminal progenitor cell,TPTE,89,1,0.011235955056179775,2.905085560878341
+G2_2_Ovary,Basal epithelial cell,TPTE,50,0,0.0,
+G2_2_Ovary,Trophoblast cell,TPTE,145,92,0.6344827586206897,3.859213711573886
+G2_2_Ovary,Endothelial cell,TPTE,122,0,0.0,
+G2_2_Ovary,Neural progenitor cell,TPTE,68,0,0.0,
+G2_2_Ovary,Primitive endoderm cell,TPTE,6,0,0.0,
+G2_2_Ovary,T cell,TPTE,45,0,0.0,

@@ -1,0 +1,1246 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Norm1,Fibroblast,CTCFL,1200,0,0.0,
+Norm1,Granulosa cell,CTCFL,1645,0,0.0,
+Norm1,Luminal progenitor cell,CTCFL,498,0,0.0,
+Norm1,Squamous cell,CTCFL,177,0,0.0,
+Norm1,Mitotic fetal germ cell,CTCFL,1002,1,0.000998003992015968,10.0
+Norm1,Mitotic arrest phase fetal germ cell,CTCFL,235,0,0.0,
+Norm1,Erythrocyte,CTCFL,118,0,0.0,
+Norm1,Hematopoietic stem cell,CTCFL,46,0,0.0,
+Norm1,CD8+ T cell,CTCFL,438,0,0.0,
+Norm1,Natural killer (NK) cell,CTCFL,55,0,0.0,
+Norm1,Luminal epithelial cell,CTCFL,13,0,0.0,
+Norm1,Endothelial cell,CTCFL,102,0,0.0,
+Norm1,Microglial cell,CTCFL,78,0,0.0,
+Norm1,Basal epithelial cell,CTCFL,97,0,0.0,
+Norm1,T cell,CTCFL,166,0,0.0,
+Norm1,Fibroblast,FAM133A,1200,9,0.0075,10.0
+Norm1,Granulosa cell,FAM133A,1645,8,0.004863221884498481,9.635941469206957
+Norm1,Luminal progenitor cell,FAM133A,498,2,0.004016064257028112,10.0
+Norm1,Squamous cell,FAM133A,177,1,0.005649717514124294,10.0
+Norm1,Mitotic fetal germ cell,FAM133A,1002,7,0.006986027944111776,9.121010986118241
+Norm1,Mitotic arrest phase fetal germ cell,FAM133A,235,0,0.0,
+Norm1,Erythrocyte,FAM133A,118,0,0.0,
+Norm1,Hematopoietic stem cell,FAM133A,46,0,0.0,
+Norm1,CD8+ T cell,FAM133A,438,0,0.0,
+Norm1,Natural killer (NK) cell,FAM133A,55,0,0.0,
+Norm1,Luminal epithelial cell,FAM133A,13,1,0.07692307692307693,2.472419612215697
+Norm1,Endothelial cell,FAM133A,102,1,0.00980392156862745,1.7784162807348742
+Norm1,Microglial cell,FAM133A,78,0,0.0,
+Norm1,Basal epithelial cell,FAM133A,97,2,0.020618556701030927,8.161833988022256
+Norm1,T cell,FAM133A,166,0,0.0,
+Norm1,Fibroblast,ODF3,1200,0,0.0,
+Norm1,Granulosa cell,ODF3,1645,0,0.0,
+Norm1,Luminal progenitor cell,ODF3,498,1,0.002008032128514056,10.0
+Norm1,Squamous cell,ODF3,177,0,0.0,
+Norm1,Mitotic fetal germ cell,ODF3,1002,1,0.000998003992015968,10.0
+Norm1,Mitotic arrest phase fetal germ cell,ODF3,235,0,0.0,
+Norm1,Erythrocyte,ODF3,118,0,0.0,
+Norm1,Hematopoietic stem cell,ODF3,46,0,0.0,
+Norm1,CD8+ T cell,ODF3,438,0,0.0,
+Norm1,Natural killer (NK) cell,ODF3,55,0,0.0,
+Norm1,Luminal epithelial cell,ODF3,13,0,0.0,
+Norm1,Endothelial cell,ODF3,102,0,0.0,
+Norm1,Microglial cell,ODF3,78,1,0.01282051282051282,10.0
+Norm1,Basal epithelial cell,ODF3,97,0,0.0,
+Norm1,T cell,ODF3,166,0,0.0,
+Norm1,Fibroblast,PBK,1200,0,0.0,
+Norm1,Granulosa cell,PBK,1645,2,0.0012158054711246201,10.0
+Norm1,Luminal progenitor cell,PBK,498,0,0.0,
+Norm1,Squamous cell,PBK,177,0,0.0,
+Norm1,Mitotic fetal germ cell,PBK,1002,0,0.0,
+Norm1,Mitotic arrest phase fetal germ cell,PBK,235,0,0.0,
+Norm1,Erythrocyte,PBK,118,0,0.0,
+Norm1,Hematopoietic stem cell,PBK,46,0,0.0,
+Norm1,CD8+ T cell,PBK,438,1,0.00228310502283105,10.0
+Norm1,Natural killer (NK) cell,PBK,55,0,0.0,
+Norm1,Luminal epithelial cell,PBK,13,0,0.0,
+Norm1,Endothelial cell,PBK,102,0,0.0,
+Norm1,Microglial cell,PBK,78,0,0.0,
+Norm1,Basal epithelial cell,PBK,97,0,0.0,
+Norm1,T cell,PBK,166,0,0.0,
+Norm1,Fibroblast,TEX15,1200,0,0.0,
+Norm1,Granulosa cell,TEX15,1645,0,0.0,
+Norm1,Luminal progenitor cell,TEX15,498,1,0.002008032128514056,10.0
+Norm1,Squamous cell,TEX15,177,0,0.0,
+Norm1,Mitotic fetal germ cell,TEX15,1002,1,0.000998003992015968,10.0
+Norm1,Mitotic arrest phase fetal germ cell,TEX15,235,1,0.00425531914893617,10.0
+Norm1,Erythrocyte,TEX15,118,0,0.0,
+Norm1,Hematopoietic stem cell,TEX15,46,0,0.0,
+Norm1,CD8+ T cell,TEX15,438,0,0.0,
+Norm1,Natural killer (NK) cell,TEX15,55,0,0.0,
+Norm1,Luminal epithelial cell,TEX15,13,0,0.0,
+Norm1,Endothelial cell,TEX15,102,0,0.0,
+Norm1,Microglial cell,TEX15,78,0,0.0,
+Norm1,Basal epithelial cell,TEX15,97,0,0.0,
+Norm1,T cell,TEX15,166,0,0.0,
+Norm1,Fibroblast,TMEFF2,1200,1,0.0008333333333333334,10.0
+Norm1,Granulosa cell,TMEFF2,1645,0,0.0,
+Norm1,Luminal progenitor cell,TMEFF2,498,1,0.002008032128514056,10.0
+Norm1,Squamous cell,TMEFF2,177,0,0.0,
+Norm1,Mitotic fetal germ cell,TMEFF2,1002,1,0.000998003992015968,10.0
+Norm1,Mitotic arrest phase fetal germ cell,TMEFF2,235,0,0.0,
+Norm1,Erythrocyte,TMEFF2,118,0,0.0,
+Norm1,Hematopoietic stem cell,TMEFF2,46,0,0.0,
+Norm1,CD8+ T cell,TMEFF2,438,0,0.0,
+Norm1,Natural killer (NK) cell,TMEFF2,55,0,0.0,
+Norm1,Luminal epithelial cell,TMEFF2,13,0,0.0,
+Norm1,Endothelial cell,TMEFF2,102,0,0.0,
+Norm1,Microglial cell,TMEFF2,78,0,0.0,
+Norm1,Basal epithelial cell,TMEFF2,97,0,0.0,
+Norm1,T cell,TMEFF2,166,0,0.0,
+Norm2,Granulocyte-monocyte progenitor,CAGE1,378,0,0.0,
+Norm2,Basal epithelial cell,CAGE1,1318,0,0.0,
+Norm2,Fibroblast,CAGE1,1077,2,0.0018570102135561746,10.0
+Norm2,Decidual cell,CAGE1,404,0,0.0,
+Norm2,T cell,CAGE1,283,0,0.0,
+Norm2,Endothelial cell,CAGE1,158,1,0.006329113924050633,9.381298532033208
+Norm2,Monocyte,CAGE1,123,0,0.0,
+Norm2,Mesenchymal cell,CAGE1,384,0,0.0,
+Norm2,Embryonic stem cell,CAGE1,189,0,0.0,
+Norm2,Oogenesis phase fetal germ cell,CAGE1,86,0,0.0,
+Norm2,Dendritic cell,CAGE1,109,0,0.0,
+Norm2,B cell,CAGE1,25,0,0.0,
+Norm2,Eosinophil,CAGE1,14,0,0.0,
+Norm2,CD8+ T cell,CAGE1,166,2,0.012048192771084338,10.0
+Norm2,Granulosa cell,CAGE1,63,0,0.0,
+Norm2,Granulocyte-monocyte progenitor,CEP55,378,1,0.0026455026455026454,3.7584479965370594
+Norm2,Basal epithelial cell,CEP55,1318,1,0.0007587253414264037,7.9439595776848915
+Norm2,Fibroblast,CEP55,1077,1,0.0009285051067780873,3.440010148362362
+Norm2,Decidual cell,CEP55,404,1,0.0024752475247524753,4.690322239767231
+Norm2,T cell,CEP55,283,2,0.007067137809187279,10.0
+Norm2,Endothelial cell,CEP55,158,7,0.04430379746835443,6.3022819110284205
+Norm2,Monocyte,CEP55,123,0,0.0,
+Norm2,Mesenchymal cell,CEP55,384,10,0.026041666666666668,8.426886384337951
+Norm2,Embryonic stem cell,CEP55,189,1,0.005291005291005291,4.83099987298233
+Norm2,Oogenesis phase fetal germ cell,CEP55,86,0,0.0,
+Norm2,Dendritic cell,CEP55,109,4,0.03669724770642202,9.603920392103346
+Norm2,B cell,CEP55,25,0,0.0,
+Norm2,Eosinophil,CEP55,14,0,0.0,
+Norm2,CD8+ T cell,CEP55,166,0,0.0,
+Norm2,Granulosa cell,CEP55,63,0,0.0,
+Norm2,Granulocyte-monocyte progenitor,OTOA,378,0,0.0,
+Norm2,Basal epithelial cell,OTOA,1318,0,0.0,
+Norm2,Fibroblast,OTOA,1077,0,0.0,
+Norm2,Decidual cell,OTOA,404,0,0.0,
+Norm2,T cell,OTOA,283,0,0.0,
+Norm2,Endothelial cell,OTOA,158,0,0.0,
+Norm2,Monocyte,OTOA,123,1,0.008130081300813009,10.0
+Norm2,Mesenchymal cell,OTOA,384,0,0.0,
+Norm2,Embryonic stem cell,OTOA,189,0,0.0,
+Norm2,Oogenesis phase fetal germ cell,OTOA,86,0,0.0,
+Norm2,Dendritic cell,OTOA,109,4,0.03669724770642202,10.0
+Norm2,B cell,OTOA,25,0,0.0,
+Norm2,Eosinophil,OTOA,14,0,0.0,
+Norm2,CD8+ T cell,OTOA,166,0,0.0,
+Norm2,Granulosa cell,OTOA,63,0,0.0,
+Norm3,Basal epithelial cell,CAGE1,730,0,0.0,
+Norm3,Hemangioblast,CAGE1,538,1,0.0018587360594795538,1.6426535745460131
+Norm3,Luminal progenitor cell,CAGE1,165,0,0.0,
+Norm3,Natural killer (NK) cell,CAGE1,250,0,0.0,
+Norm3,T cell,CAGE1,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,CAGE1,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,CAGE1,365,2,0.005479452054794521,10.0
+Norm3,Fibroblast,CAGE1,475,1,0.002105263157894737,8.263213773318371
+Norm3,CD4+ T cell,CAGE1,471,0,0.0,
+Norm3,B cell,CAGE1,31,1,0.03225806451612903,3.067576991479791
+Norm3,Dendritic cell,CAGE1,194,1,0.005154639175257732,10.0
+Norm3,CD8+ T cell,CAGE1,131,0,0.0,
+Norm3,Decidual cell,CAGE1,178,1,0.0056179775280898875,10.0
+Norm3,Endothelial cell,CAGE1,73,0,0.0,
+Norm3,Monocyte,CAGE1,111,0,0.0,
+Norm3,Epithelial cell,CAGE1,88,2,0.022727272727272728,7.907049515043945
+Norm3,Lymphoid progenitor cell,CAGE1,11,0,0.0,
+Norm3,Mesenchymal cell,CAGE1,35,0,0.0,
+Norm3,Basal epithelial cell,CCDC62,730,1,0.0013698630136986301,8.703737509154143
+Norm3,Hemangioblast,CCDC62,538,1,0.0018587360594795538,10.0
+Norm3,Luminal progenitor cell,CCDC62,165,0,0.0,
+Norm3,Natural killer (NK) cell,CCDC62,250,0,0.0,
+Norm3,T cell,CCDC62,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,CCDC62,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,CCDC62,365,2,0.005479452054794521,10.0
+Norm3,Fibroblast,CCDC62,475,1,0.002105263157894737,9.875967560786636
+Norm3,CD4+ T cell,CCDC62,471,0,0.0,
+Norm3,B cell,CCDC62,31,0,0.0,
+Norm3,Dendritic cell,CCDC62,194,0,0.0,
+Norm3,CD8+ T cell,CCDC62,131,0,0.0,
+Norm3,Decidual cell,CCDC62,178,0,0.0,
+Norm3,Endothelial cell,CCDC62,73,1,0.0136986301369863,4.19952225347073
+Norm3,Monocyte,CCDC62,111,1,0.009009009009009009,10.0
+Norm3,Epithelial cell,CCDC62,88,2,0.022727272727272728,1.3915862553726068
+Norm3,Lymphoid progenitor cell,CCDC62,11,0,0.0,
+Norm3,Mesenchymal cell,CCDC62,35,0,0.0,
+Norm3,Basal epithelial cell,CTCFL,730,1,0.0013698630136986301,10.0
+Norm3,Hemangioblast,CTCFL,538,0,0.0,
+Norm3,Luminal progenitor cell,CTCFL,165,0,0.0,
+Norm3,Natural killer (NK) cell,CTCFL,250,0,0.0,
+Norm3,T cell,CTCFL,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,CTCFL,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,CTCFL,365,0,0.0,
+Norm3,Fibroblast,CTCFL,475,2,0.004210526315789474,10.0
+Norm3,CD4+ T cell,CTCFL,471,0,0.0,
+Norm3,B cell,CTCFL,31,0,0.0,
+Norm3,Dendritic cell,CTCFL,194,0,0.0,
+Norm3,CD8+ T cell,CTCFL,131,0,0.0,
+Norm3,Decidual cell,CTCFL,178,0,0.0,
+Norm3,Endothelial cell,CTCFL,73,0,0.0,
+Norm3,Monocyte,CTCFL,111,0,0.0,
+Norm3,Epithelial cell,CTCFL,88,2,0.022727272727272728,10.0
+Norm3,Lymphoid progenitor cell,CTCFL,11,0,0.0,
+Norm3,Mesenchymal cell,CTCFL,35,0,0.0,
+Norm3,Basal epithelial cell,FBXO39,730,1,0.0013698630136986301,7.929101919785434
+Norm3,Hemangioblast,FBXO39,538,8,0.01486988847583643,6.23309636412842
+Norm3,Luminal progenitor cell,FBXO39,165,0,0.0,
+Norm3,Natural killer (NK) cell,FBXO39,250,0,0.0,
+Norm3,T cell,FBXO39,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,FBXO39,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,FBXO39,365,0,0.0,
+Norm3,Fibroblast,FBXO39,475,0,0.0,
+Norm3,CD4+ T cell,FBXO39,471,0,0.0,
+Norm3,B cell,FBXO39,31,0,0.0,
+Norm3,Dendritic cell,FBXO39,194,0,0.0,
+Norm3,CD8+ T cell,FBXO39,131,0,0.0,
+Norm3,Decidual cell,FBXO39,178,0,0.0,
+Norm3,Endothelial cell,FBXO39,73,4,0.0547945205479452,4.620436010730007
+Norm3,Monocyte,FBXO39,111,0,0.0,
+Norm3,Epithelial cell,FBXO39,88,0,0.0,
+Norm3,Lymphoid progenitor cell,FBXO39,11,0,0.0,
+Norm3,Mesenchymal cell,FBXO39,35,0,0.0,
+Norm3,Basal epithelial cell,OTOA,730,1,0.0013698630136986301,6.889250594730464
+Norm3,Hemangioblast,OTOA,538,1,0.0018587360594795538,10.0
+Norm3,Luminal progenitor cell,OTOA,165,0,0.0,
+Norm3,Natural killer (NK) cell,OTOA,250,0,0.0,
+Norm3,T cell,OTOA,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,OTOA,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,OTOA,365,0,0.0,
+Norm3,Fibroblast,OTOA,475,0,0.0,
+Norm3,CD4+ T cell,OTOA,471,0,0.0,
+Norm3,B cell,OTOA,31,0,0.0,
+Norm3,Dendritic cell,OTOA,194,3,0.015463917525773196,10.0
+Norm3,CD8+ T cell,OTOA,131,0,0.0,
+Norm3,Decidual cell,OTOA,178,0,0.0,
+Norm3,Endothelial cell,OTOA,73,0,0.0,
+Norm3,Monocyte,OTOA,111,3,0.02702702702702703,10.0
+Norm3,Epithelial cell,OTOA,88,0,0.0,
+Norm3,Lymphoid progenitor cell,OTOA,11,0,0.0,
+Norm3,Mesenchymal cell,OTOA,35,0,0.0,
+Norm3,Basal epithelial cell,PAGE4,730,2,0.0027397260273972603,7.51858677391092
+Norm3,Hemangioblast,PAGE4,538,0,0.0,
+Norm3,Luminal progenitor cell,PAGE4,165,0,0.0,
+Norm3,Natural killer (NK) cell,PAGE4,250,0,0.0,
+Norm3,T cell,PAGE4,185,1,0.005405405405405406,9.774173664529009
+Norm3,Granulocyte-monocyte progenitor,PAGE4,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,PAGE4,365,0,0.0,
+Norm3,Fibroblast,PAGE4,475,7,0.014736842105263158,9.944468051133656
+Norm3,CD4+ T cell,PAGE4,471,0,0.0,
+Norm3,B cell,PAGE4,31,0,0.0,
+Norm3,Dendritic cell,PAGE4,194,1,0.005154639175257732,3.420511786245605
+Norm3,CD8+ T cell,PAGE4,131,0,0.0,
+Norm3,Decidual cell,PAGE4,178,0,0.0,
+Norm3,Endothelial cell,PAGE4,73,0,0.0,
+Norm3,Monocyte,PAGE4,111,0,0.0,
+Norm3,Epithelial cell,PAGE4,88,1,0.011363636363636364,1.103255890646273
+Norm3,Lymphoid progenitor cell,PAGE4,11,1,0.09090909090909091,7.106566961078976
+Norm3,Mesenchymal cell,PAGE4,35,0,0.0,
+Norm3,Basal epithelial cell,PAGE5,730,0,0.0,
+Norm3,Hemangioblast,PAGE5,538,0,0.0,
+Norm3,Luminal progenitor cell,PAGE5,165,0,0.0,
+Norm3,Natural killer (NK) cell,PAGE5,250,0,0.0,
+Norm3,T cell,PAGE5,185,1,0.005405405405405406,10.0
+Norm3,Granulocyte-monocyte progenitor,PAGE5,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,PAGE5,365,1,0.0027397260273972603,10.0
+Norm3,Fibroblast,PAGE5,475,0,0.0,
+Norm3,CD4+ T cell,PAGE5,471,6,0.012738853503184714,10.0
+Norm3,B cell,PAGE5,31,0,0.0,
+Norm3,Dendritic cell,PAGE5,194,0,0.0,
+Norm3,CD8+ T cell,PAGE5,131,0,0.0,
+Norm3,Decidual cell,PAGE5,178,0,0.0,
+Norm3,Endothelial cell,PAGE5,73,0,0.0,
+Norm3,Monocyte,PAGE5,111,0,0.0,
+Norm3,Epithelial cell,PAGE5,88,0,0.0,
+Norm3,Lymphoid progenitor cell,PAGE5,11,0,0.0,
+Norm3,Mesenchymal cell,PAGE5,35,0,0.0,
+Norm3,Basal epithelial cell,TEX14,730,0,0.0,
+Norm3,Hemangioblast,TEX14,538,2,0.0037174721189591076,8.213384069724407
+Norm3,Luminal progenitor cell,TEX14,165,0,0.0,
+Norm3,Natural killer (NK) cell,TEX14,250,0,0.0,
+Norm3,T cell,TEX14,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,TEX14,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,TEX14,365,0,0.0,
+Norm3,Fibroblast,TEX14,475,1,0.002105263157894737,10.0
+Norm3,CD4+ T cell,TEX14,471,0,0.0,
+Norm3,B cell,TEX14,31,0,0.0,
+Norm3,Dendritic cell,TEX14,194,4,0.020618556701030927,10.0
+Norm3,CD8+ T cell,TEX14,131,0,0.0,
+Norm3,Decidual cell,TEX14,178,0,0.0,
+Norm3,Endothelial cell,TEX14,73,0,0.0,
+Norm3,Monocyte,TEX14,111,0,0.0,
+Norm3,Epithelial cell,TEX14,88,0,0.0,
+Norm3,Lymphoid progenitor cell,TEX14,11,0,0.0,
+Norm3,Mesenchymal cell,TEX14,35,0,0.0,
+Norm3,Basal epithelial cell,TSSK6,730,1,0.0013698630136986301,10.0
+Norm3,Hemangioblast,TSSK6,538,1,0.0018587360594795538,3.2147178843063227
+Norm3,Luminal progenitor cell,TSSK6,165,0,0.0,
+Norm3,Natural killer (NK) cell,TSSK6,250,0,0.0,
+Norm3,T cell,TSSK6,185,1,0.005405405405405406,10.0
+Norm3,Granulocyte-monocyte progenitor,TSSK6,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,TSSK6,365,0,0.0,
+Norm3,Fibroblast,TSSK6,475,1,0.002105263157894737,10.0
+Norm3,CD4+ T cell,TSSK6,471,1,0.0021231422505307855,10.0
+Norm3,B cell,TSSK6,31,0,0.0,
+Norm3,Dendritic cell,TSSK6,194,0,0.0,
+Norm3,CD8+ T cell,TSSK6,131,0,0.0,
+Norm3,Decidual cell,TSSK6,178,0,0.0,
+Norm3,Endothelial cell,TSSK6,73,0,0.0,
+Norm3,Monocyte,TSSK6,111,0,0.0,
+Norm3,Epithelial cell,TSSK6,88,0,0.0,
+Norm3,Lymphoid progenitor cell,TSSK6,11,0,0.0,
+Norm3,Mesenchymal cell,TSSK6,35,0,0.0,
+Norm4,Fibroblast,CAGE1,586,0,0.0,
+Norm4,CD4+ T cell,CAGE1,640,0,0.0,
+Norm4,Hemangioblast,CAGE1,489,0,0.0,
+Norm4,Granulocyte-monocyte progenitor,CAGE1,230,1,0.004347826086956522,10.0
+Norm4,Mesodermal embryonic stem cell,CAGE1,364,1,0.0027472527472527475,10.0
+Norm4,Gonadal mitotic phase fetal germ cell,CAGE1,1258,4,0.003179650238473768,9.340478995178739
+Norm4,Mesenchymal cell,CAGE1,341,0,0.0,
+Norm4,Basal epithelial cell,CAGE1,183,1,0.00546448087431694,10.0
+Norm4,Natural killer (NK) cell,CAGE1,99,0,0.0,
+Norm4,Luminal progenitor cell,CAGE1,703,0,0.0,
+Norm4,Dendritic cell,CAGE1,142,0,0.0,
+Norm4,Mitotic fetal germ cell,CAGE1,171,0,0.0,
+Norm4,Decidual cell,CAGE1,323,0,0.0,
+Norm4,Migration phase fetal germ cell,CAGE1,146,1,0.00684931506849315,10.0
+Norm4,T cell,CAGE1,343,1,0.0029154518950437317,10.0
+Norm4,Endothelial cell,CAGE1,31,0,0.0,
+Norm4,Fibroblast,CCDC33,586,0,0.0,
+Norm4,CD4+ T cell,CCDC33,640,0,0.0,
+Norm4,Hemangioblast,CCDC33,489,0,0.0,
+Norm4,Granulocyte-monocyte progenitor,CCDC33,230,1,0.004347826086956522,10.0
+Norm4,Mesodermal embryonic stem cell,CCDC33,364,0,0.0,
+Norm4,Gonadal mitotic phase fetal germ cell,CCDC33,1258,2,0.001589825119236884,10.0
+Norm4,Mesenchymal cell,CCDC33,341,0,0.0,
+Norm4,Basal epithelial cell,CCDC33,183,0,0.0,
+Norm4,Natural killer (NK) cell,CCDC33,99,0,0.0,
+Norm4,Luminal progenitor cell,CCDC33,703,0,0.0,
+Norm4,Dendritic cell,CCDC33,142,0,0.0,
+Norm4,Mitotic fetal germ cell,CCDC33,171,0,0.0,
+Norm4,Decidual cell,CCDC33,323,1,0.0030959752321981426,10.0
+Norm4,Migration phase fetal germ cell,CCDC33,146,1,0.00684931506849315,10.0
+Norm4,T cell,CCDC33,343,0,0.0,
+Norm4,Endothelial cell,CCDC33,31,0,0.0,
+Norm4,Fibroblast,COX6B2,586,0,0.0,
+Norm4,CD4+ T cell,COX6B2,640,2,0.003125,10.0
+Norm4,Hemangioblast,COX6B2,489,0,0.0,
+Norm4,Granulocyte-monocyte progenitor,COX6B2,230,0,0.0,
+Norm4,Mesodermal embryonic stem cell,COX6B2,364,0,0.0,
+Norm4,Gonadal mitotic phase fetal germ cell,COX6B2,1258,3,0.0023847376788553257,8.64835066647092
+Norm4,Mesenchymal cell,COX6B2,341,1,0.002932551319648094,6.654011128905026
+Norm4,Basal epithelial cell,COX6B2,183,2,0.01092896174863388,9.121186747248759
+Norm4,Natural killer (NK) cell,COX6B2,99,0,0.0,
+Norm4,Luminal progenitor cell,COX6B2,703,1,0.001422475106685633,10.0
+Norm4,Dendritic cell,COX6B2,142,0,0.0,
+Norm4,Mitotic fetal germ cell,COX6B2,171,0,0.0,
+Norm4,Decidual cell,COX6B2,323,0,0.0,
+Norm4,Migration phase fetal germ cell,COX6B2,146,0,0.0,
+Norm4,T cell,COX6B2,343,1,0.0029154518950437317,10.0
+Norm4,Endothelial cell,COX6B2,31,0,0.0,
+Norm4,Fibroblast,CTCFL,586,0,0.0,
+Norm4,CD4+ T cell,CTCFL,640,0,0.0,
+Norm4,Hemangioblast,CTCFL,489,1,0.002044989775051125,10.0
+Norm4,Granulocyte-monocyte progenitor,CTCFL,230,0,0.0,
+Norm4,Mesodermal embryonic stem cell,CTCFL,364,0,0.0,
+Norm4,Gonadal mitotic phase fetal germ cell,CTCFL,1258,0,0.0,
+Norm4,Mesenchymal cell,CTCFL,341,0,0.0,
+Norm4,Basal epithelial cell,CTCFL,183,0,0.0,
+Norm4,Natural killer (NK) cell,CTCFL,99,0,0.0,
+Norm4,Luminal progenitor cell,CTCFL,703,0,0.0,
+Norm4,Dendritic cell,CTCFL,142,0,0.0,
+Norm4,Mitotic fetal germ cell,CTCFL,171,0,0.0,
+Norm4,Decidual cell,CTCFL,323,0,0.0,
+Norm4,Migration phase fetal germ cell,CTCFL,146,0,0.0,
+Norm4,T cell,CTCFL,343,0,0.0,
+Norm4,Endothelial cell,CTCFL,31,0,0.0,
+Norm4,Fibroblast,PBK,586,9,0.015358361774744027,2.7607943637197057
+Norm4,CD4+ T cell,PBK,640,11,0.0171875,1.8425588550613057
+Norm4,Hemangioblast,PBK,489,79,0.16155419222903886,2.8994093423167726
+Norm4,Granulocyte-monocyte progenitor,PBK,230,171,0.7434782608695653,3.9878663773447567
+Norm4,Mesodermal embryonic stem cell,PBK,364,28,0.07692307692307693,2.833455995110616
+Norm4,Gonadal mitotic phase fetal germ cell,PBK,1258,29,0.023052464228934817,1.5340493896336014
+Norm4,Mesenchymal cell,PBK,341,3,0.008797653958944282,1.9408613198617541
+Norm4,Basal epithelial cell,PBK,183,26,0.14207650273224043,3.230229975593716
+Norm4,Natural killer (NK) cell,PBK,99,2,0.020202020202020204,9.193247301629015
+Norm4,Luminal progenitor cell,PBK,703,8,0.011379800853485065,2.1157931522926456
+Norm4,Dendritic cell,PBK,142,1,0.007042253521126761,2.8918557831685945
+Norm4,Mitotic fetal germ cell,PBK,171,5,0.029239766081871343,2.3182786345375175
+Norm4,Decidual cell,PBK,323,4,0.01238390092879257,8.252995489019169
+Norm4,Migration phase fetal germ cell,PBK,146,10,0.0684931506849315,1.5677812987274549
+Norm4,T cell,PBK,343,0,0.0,
+Norm4,Endothelial cell,PBK,31,1,0.03225806451612903,3.4164540894727393
+Norm4,Fibroblast,TSSK6,586,0,0.0,
+Norm4,CD4+ T cell,TSSK6,640,1,0.0015625,10.0
+Norm4,Hemangioblast,TSSK6,489,3,0.006134969325153374,7.8939647506519615
+Norm4,Granulocyte-monocyte progenitor,TSSK6,230,1,0.004347826086956522,10.0
+Norm4,Mesodermal embryonic stem cell,TSSK6,364,0,0.0,
+Norm4,Gonadal mitotic phase fetal germ cell,TSSK6,1258,4,0.003179650238473768,8.247474890560671
+Norm4,Mesenchymal cell,TSSK6,341,0,0.0,
+Norm4,Basal epithelial cell,TSSK6,183,1,0.00546448087431694,10.0
+Norm4,Natural killer (NK) cell,TSSK6,99,0,0.0,
+Norm4,Luminal progenitor cell,TSSK6,703,0,0.0,
+Norm4,Dendritic cell,TSSK6,142,0,0.0,
+Norm4,Mitotic fetal germ cell,TSSK6,171,0,0.0,
+Norm4,Decidual cell,TSSK6,323,0,0.0,
+Norm4,Migration phase fetal germ cell,TSSK6,146,0,0.0,
+Norm4,T cell,TSSK6,343,2,0.0058309037900874635,10.0
+Norm4,Endothelial cell,TSSK6,31,0,0.0,
+Norm5,Migration phase fetal germ cell,CTCFL,594,0,0.0,
+Norm5,Eosinophil,CTCFL,61,0,0.0,
+Norm5,Zygote,CTCFL,41,0,0.0,
+Norm5,Fibroblast,CTCFL,761,1,0.001314060446780552,10.0
+Norm5,Epithelial-mesenchymal cell,CTCFL,116,0,0.0,
+Norm5,Macrophage,CTCFL,187,0,0.0,
+Norm5,CD8+ T cell,CTCFL,283,0,0.0,
+Norm5,Epithelial cell,CTCFL,193,0,0.0,
+Norm5,Natural killer (NK) cell,CTCFL,239,0,0.0,
+Norm5,Lymphoid progenitor cell,CTCFL,17,0,0.0,
+Norm5,Meiotic prophase fetal germ cell,CTCFL,103,0,0.0,
+Norm5,Hemangioblast,CTCFL,290,1,0.0034482758620689655,10.0
+Norm5,Basal epithelial cell,CTCFL,156,0,0.0,
+Norm5,Dendritic cell,CTCFL,242,0,0.0,
+Norm5,T cell,CTCFL,335,0,0.0,
+Norm5,B cell,CTCFL,82,0,0.0,
+Norm5,Microglial cell,CTCFL,15,0,0.0,
+Norm5,Endothelial cell,CTCFL,117,0,0.0,
+Norm5,Retinoid acid signaling-responsive fetal germ cell,CTCFL,50,0,0.0,
+Norm5,Migration phase fetal germ cell,HORMAD1,594,2,0.003367003367003367,7.7380550004885835
+Norm5,Eosinophil,HORMAD1,61,0,0.0,
+Norm5,Zygote,HORMAD1,41,0,0.0,
+Norm5,Fibroblast,HORMAD1,761,0,0.0,
+Norm5,Epithelial-mesenchymal cell,HORMAD1,116,0,0.0,
+Norm5,Macrophage,HORMAD1,187,1,0.0053475935828877,10.0
+Norm5,CD8+ T cell,HORMAD1,283,0,0.0,
+Norm5,Epithelial cell,HORMAD1,193,0,0.0,
+Norm5,Natural killer (NK) cell,HORMAD1,239,0,0.0,
+Norm5,Lymphoid progenitor cell,HORMAD1,17,0,0.0,
+Norm5,Meiotic prophase fetal germ cell,HORMAD1,103,0,0.0,
+Norm5,Hemangioblast,HORMAD1,290,0,0.0,
+Norm5,Basal epithelial cell,HORMAD1,156,0,0.0,
+Norm5,Dendritic cell,HORMAD1,242,1,0.004132231404958678,10.0
+Norm5,T cell,HORMAD1,335,0,0.0,
+Norm5,B cell,HORMAD1,82,0,0.0,
+Norm5,Microglial cell,HORMAD1,15,0,0.0,
+Norm5,Endothelial cell,HORMAD1,117,0,0.0,
+Norm5,Retinoid acid signaling-responsive fetal germ cell,HORMAD1,50,0,0.0,
+Norm5,Migration phase fetal germ cell,PIWIL2,594,1,0.0016835016835016834,2.644911296450916
+Norm5,Eosinophil,PIWIL2,61,0,0.0,
+Norm5,Zygote,PIWIL2,41,0,0.0,
+Norm5,Fibroblast,PIWIL2,761,3,0.003942181340341655,7.879030949532271
+Norm5,Epithelial-mesenchymal cell,PIWIL2,116,1,0.008620689655172414,7.957948914018079
+Norm5,Macrophage,PIWIL2,187,0,0.0,
+Norm5,CD8+ T cell,PIWIL2,283,0,0.0,
+Norm5,Epithelial cell,PIWIL2,193,0,0.0,
+Norm5,Natural killer (NK) cell,PIWIL2,239,0,0.0,
+Norm5,Lymphoid progenitor cell,PIWIL2,17,0,0.0,
+Norm5,Meiotic prophase fetal germ cell,PIWIL2,103,1,0.009708737864077669,10.0
+Norm5,Hemangioblast,PIWIL2,290,3,0.010344827586206896,10.0
+Norm5,Basal epithelial cell,PIWIL2,156,0,0.0,
+Norm5,Dendritic cell,PIWIL2,242,0,0.0,
+Norm5,T cell,PIWIL2,335,2,0.005970149253731343,10.0
+Norm5,B cell,PIWIL2,82,0,0.0,
+Norm5,Microglial cell,PIWIL2,15,0,0.0,
+Norm5,Endothelial cell,PIWIL2,117,0,0.0,
+Norm5,Retinoid acid signaling-responsive fetal germ cell,PIWIL2,50,0,0.0,
+Cancer1,T cell,ADAM29,1085,2,0.0018433179723502304,10.0
+Cancer1,Luminal progenitor cell,ADAM29,330,0,0.0,
+Cancer1,Trophectoderm cell,ADAM29,483,0,0.0,
+Cancer1,Monocyte,ADAM29,551,0,0.0,
+Cancer1,Natural killer (NK) cell,ADAM29,1028,0,0.0,
+Cancer1,Microglial cell,ADAM29,785,0,0.0,
+Cancer1,Epithelial cell,ADAM29,1257,0,0.0,
+Cancer1,Trophoblast cell,ADAM29,445,0,0.0,
+Cancer1,Fibroblast,ADAM29,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,ADAM29,484,0,0.0,
+Cancer1,Granulocyte-monocyte progenitor,ADAM29,305,0,0.0,
+Cancer1,Lymphoid progenitor cell,ADAM29,207,1,0.004830917874396135,10.0
+Cancer1,Migration phase fetal germ cell,ADAM29,120,0,0.0,
+Cancer1,Decidual cell,ADAM29,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,ADAM29,261,0,0.0,
+Cancer1,B cell,ADAM29,62,0,0.0,
+Cancer1,CD8+ T cell,ADAM29,104,0,0.0,
+Cancer1,Endothelial cell,ADAM29,90,0,0.0,
+Cancer1,T cell,CTCFL,1085,5,0.004608294930875576,9.917338585008878
+Cancer1,Luminal progenitor cell,CTCFL,330,123,0.37272727272727274,3.208624365953935
+Cancer1,Trophectoderm cell,CTCFL,483,124,0.2567287784679089,3.3134620068050302
+Cancer1,Monocyte,CTCFL,551,2,0.003629764065335753,5.919857953937022
+Cancer1,Natural killer (NK) cell,CTCFL,1028,2,0.0019455252918287938,8.449832527484913
+Cancer1,Microglial cell,CTCFL,785,3,0.003821656050955414,8.947538499280379
+Cancer1,Epithelial cell,CTCFL,1257,99,0.07875894988066826,3.7558491725496355
+Cancer1,Trophoblast cell,CTCFL,445,1,0.0022471910112359553,5.8140243223229575
+Cancer1,Fibroblast,CTCFL,37,1,0.02702702702702703,2.2238417635831524
+Cancer1,Epithelial-mesenchymal cell,CTCFL,484,4,0.008264462809917356,2.5201474062747184
+Cancer1,Granulocyte-monocyte progenitor,CTCFL,305,1,0.003278688524590164,2.7214145461417787
+Cancer1,Lymphoid progenitor cell,CTCFL,207,0,0.0,
+Cancer1,Migration phase fetal germ cell,CTCFL,120,6,0.05,7.98127917729386
+Cancer1,Decidual cell,CTCFL,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,CTCFL,261,3,0.011494252873563218,2.9508420178707877
+Cancer1,B cell,CTCFL,62,0,0.0,
+Cancer1,CD8+ T cell,CTCFL,104,0,0.0,
+Cancer1,Endothelial cell,CTCFL,90,0,0.0,
+Cancer1,T cell,DDX43,1085,4,0.003686635944700461,10.0
+Cancer1,Luminal progenitor cell,DDX43,330,0,0.0,
+Cancer1,Trophectoderm cell,DDX43,483,1,0.002070393374741201,2.605955270981918
+Cancer1,Monocyte,DDX43,551,4,0.007259528130671506,9.30998119605739
+Cancer1,Natural killer (NK) cell,DDX43,1028,1,0.0009727626459143969,10.0
+Cancer1,Microglial cell,DDX43,785,2,0.0025477707006369425,10.0
+Cancer1,Epithelial cell,DDX43,1257,1,0.0007955449482895784,5.362835682113672
+Cancer1,Trophoblast cell,DDX43,445,0,0.0,
+Cancer1,Fibroblast,DDX43,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,DDX43,484,2,0.004132231404958678,6.7667923951476165
+Cancer1,Granulocyte-monocyte progenitor,DDX43,305,3,0.009836065573770493,6.8355944693167165
+Cancer1,Lymphoid progenitor cell,DDX43,207,2,0.00966183574879227,7.671230198352449
+Cancer1,Migration phase fetal germ cell,DDX43,120,0,0.0,
+Cancer1,Decidual cell,DDX43,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,DDX43,261,1,0.0038314176245210726,5.4613359335611165
+Cancer1,B cell,DDX43,62,2,0.03225806451612903,10.0
+Cancer1,CD8+ T cell,DDX43,104,1,0.009615384615384616,10.0
+Cancer1,Endothelial cell,DDX43,90,1,0.011111111111111112,10.0
+Cancer1,T cell,SAGE1,1085,0,0.0,
+Cancer1,Luminal progenitor cell,SAGE1,330,0,0.0,
+Cancer1,Trophectoderm cell,SAGE1,483,0,0.0,
+Cancer1,Monocyte,SAGE1,551,2,0.003629764065335753,10.0
+Cancer1,Natural killer (NK) cell,SAGE1,1028,0,0.0,
+Cancer1,Microglial cell,SAGE1,785,6,0.007643312101910828,10.0
+Cancer1,Epithelial cell,SAGE1,1257,0,0.0,
+Cancer1,Trophoblast cell,SAGE1,445,0,0.0,
+Cancer1,Fibroblast,SAGE1,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,SAGE1,484,0,0.0,
+Cancer1,Granulocyte-monocyte progenitor,SAGE1,305,2,0.006557377049180328,9.675902588093882
+Cancer1,Lymphoid progenitor cell,SAGE1,207,1,0.004830917874396135,10.0
+Cancer1,Migration phase fetal germ cell,SAGE1,120,0,0.0,
+Cancer1,Decidual cell,SAGE1,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,SAGE1,261,0,0.0,
+Cancer1,B cell,SAGE1,62,0,0.0,
+Cancer1,CD8+ T cell,SAGE1,104,0,0.0,
+Cancer1,Endothelial cell,SAGE1,90,0,0.0,
+Cancer1,T cell,TEX14,1085,2,0.0018433179723502304,7.455976231600957
+Cancer1,Luminal progenitor cell,TEX14,330,4,0.012121212121212121,1.6391207140803665
+Cancer1,Trophectoderm cell,TEX14,483,3,0.006211180124223602,0.7749822277993336
+Cancer1,Monocyte,TEX14,551,6,0.010889292196007259,6.092216968655824
+Cancer1,Natural killer (NK) cell,TEX14,1028,1,0.0009727626459143969,9.268203491501527
+Cancer1,Microglial cell,TEX14,785,41,0.05222929936305733,8.758854245038615
+Cancer1,Epithelial cell,TEX14,1257,10,0.007955449482895784,2.1417363321369516
+Cancer1,Trophoblast cell,TEX14,445,0,0.0,
+Cancer1,Fibroblast,TEX14,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,TEX14,484,6,0.012396694214876033,5.678636834105158
+Cancer1,Granulocyte-monocyte progenitor,TEX14,305,8,0.02622950819672131,6.099647145056107
+Cancer1,Lymphoid progenitor cell,TEX14,207,8,0.03864734299516908,4.701688929792438
+Cancer1,Migration phase fetal germ cell,TEX14,120,0,0.0,
+Cancer1,Decidual cell,TEX14,300,1,0.0033333333333333335,10.0
+Cancer1,Plasmacytoid dendritic cell,TEX14,261,14,0.05363984674329502,4.1412874975316845
+Cancer1,B cell,TEX14,62,0,0.0,
+Cancer1,CD8+ T cell,TEX14,104,0,0.0,
+Cancer1,Endothelial cell,TEX14,90,0,0.0,
+Cancer1,T cell,TSSK6,1085,1,0.0009216589861751152,10.0
+Cancer1,Luminal progenitor cell,TSSK6,330,0,0.0,
+Cancer1,Trophectoderm cell,TSSK6,483,0,0.0,
+Cancer1,Monocyte,TSSK6,551,1,0.0018148820326678765,10.0
+Cancer1,Natural killer (NK) cell,TSSK6,1028,2,0.0019455252918287938,10.0
+Cancer1,Microglial cell,TSSK6,785,0,0.0,
+Cancer1,Epithelial cell,TSSK6,1257,1,0.0007955449482895784,4.539311431064697
+Cancer1,Trophoblast cell,TSSK6,445,0,0.0,
+Cancer1,Fibroblast,TSSK6,37,0,0.0,
+Cancer1,Epithelial-mesenchymal cell,TSSK6,484,0,0.0,
+Cancer1,Granulocyte-monocyte progenitor,TSSK6,305,1,0.003278688524590164,10.0
+Cancer1,Lymphoid progenitor cell,TSSK6,207,2,0.00966183574879227,10.0
+Cancer1,Migration phase fetal germ cell,TSSK6,120,0,0.0,
+Cancer1,Decidual cell,TSSK6,300,0,0.0,
+Cancer1,Plasmacytoid dendritic cell,TSSK6,261,1,0.0038314176245210726,3.497017125712445
+Cancer1,B cell,TSSK6,62,0,0.0,
+Cancer1,CD8+ T cell,TSSK6,104,0,0.0,
+Cancer1,Endothelial cell,TSSK6,90,0,0.0,
+Cancer2,Macrophage,CCDC62,128,0,0.0,
+Cancer2,Hemangioblast,CCDC62,249,1,0.004016064257028112,10.0
+Cancer2,Luminal epithelial cell,CCDC62,813,8,0.00984009840098401,2.9952967161177604
+Cancer2,Microglial cell,CCDC62,363,2,0.005509641873278237,10.0
+Cancer2,Fibroblast,CCDC62,515,1,0.001941747572815534,7.847957830092675
+Cancer2,Luminal progenitor cell,CCDC62,613,0,0.0,
+Cancer2,Monocyte,CCDC62,167,0,0.0,
+Cancer2,Dendritic cell,CCDC62,55,0,0.0,
+Cancer2,Natural killer (NK) cell,CCDC62,157,0,0.0,
+Cancer2,T cell,CCDC62,244,0,0.0,
+Cancer2,Trophectoderm cell,CCDC62,104,0,0.0,
+Cancer2,Decidual cell,CCDC62,348,2,0.005747126436781609,10.0
+Cancer2,Mesodermal embryonic stem cell,CCDC62,125,2,0.016,6.425420355460053
+Cancer2,Lymphoid progenitor cell,CCDC62,21,0,0.0,
+Cancer2,B cell,CCDC62,44,0,0.0,
+Cancer2,Endothelial cell,CCDC62,18,0,0.0,
+Cancer2,Macrophage,CTCFL,128,0,0.0,
+Cancer2,Hemangioblast,CTCFL,249,2,0.008032128514056224,4.475635427951997
+Cancer2,Luminal epithelial cell,CTCFL,813,170,0.2091020910209102,2.069535675756136
+Cancer2,Microglial cell,CTCFL,363,1,0.0027548209366391185,4.542700469124317
+Cancer2,Fibroblast,CTCFL,515,5,0.009708737864077669,3.752338695845546
+Cancer2,Luminal progenitor cell,CTCFL,613,75,0.12234910277324633,2.844806059896933
+Cancer2,Monocyte,CTCFL,167,1,0.005988023952095809,1.8267840297382048
+Cancer2,Dendritic cell,CTCFL,55,0,0.0,
+Cancer2,Natural killer (NK) cell,CTCFL,157,0,0.0,
+Cancer2,T cell,CTCFL,244,0,0.0,
+Cancer2,Trophectoderm cell,CTCFL,104,27,0.25961538461538464,2.16262323453152
+Cancer2,Decidual cell,CTCFL,348,0,0.0,
+Cancer2,Mesodermal embryonic stem cell,CTCFL,125,2,0.016,1.713258572681902
+Cancer2,Lymphoid progenitor cell,CTCFL,21,0,0.0,
+Cancer2,B cell,CTCFL,44,0,0.0,
+Cancer2,Endothelial cell,CTCFL,18,1,0.05555555555555555,2.034970547113999
+Cancer2,Macrophage,FAM133A,128,0,0.0,
+Cancer2,Hemangioblast,FAM133A,249,0,0.0,
+Cancer2,Luminal epithelial cell,FAM133A,813,0,0.0,
+Cancer2,Microglial cell,FAM133A,363,0,0.0,
+Cancer2,Fibroblast,FAM133A,515,11,0.021359223300970873,7.820263843849153
+Cancer2,Luminal progenitor cell,FAM133A,613,0,0.0,
+Cancer2,Monocyte,FAM133A,167,0,0.0,
+Cancer2,Dendritic cell,FAM133A,55,1,0.01818181818181818,10.0
+Cancer2,Natural killer (NK) cell,FAM133A,157,0,0.0,
+Cancer2,T cell,FAM133A,244,0,0.0,
+Cancer2,Trophectoderm cell,FAM133A,104,0,0.0,
+Cancer2,Decidual cell,FAM133A,348,0,0.0,
+Cancer2,Mesodermal embryonic stem cell,FAM133A,125,0,0.0,
+Cancer2,Lymphoid progenitor cell,FAM133A,21,0,0.0,
+Cancer2,B cell,FAM133A,44,0,0.0,
+Cancer2,Endothelial cell,FAM133A,18,0,0.0,
+Cancer2,Macrophage,HORMAD1,128,0,0.0,
+Cancer2,Hemangioblast,HORMAD1,249,0,0.0,
+Cancer2,Luminal epithelial cell,HORMAD1,813,1,0.0012300123001230013,9.622788685825846
+Cancer2,Microglial cell,HORMAD1,363,1,0.0027548209366391185,10.0
+Cancer2,Fibroblast,HORMAD1,515,0,0.0,
+Cancer2,Luminal progenitor cell,HORMAD1,613,0,0.0,
+Cancer2,Monocyte,HORMAD1,167,0,0.0,
+Cancer2,Dendritic cell,HORMAD1,55,1,0.01818181818181818,10.0
+Cancer2,Natural killer (NK) cell,HORMAD1,157,0,0.0,
+Cancer2,T cell,HORMAD1,244,0,0.0,
+Cancer2,Trophectoderm cell,HORMAD1,104,1,0.009615384615384616,6.700510246832213
+Cancer2,Decidual cell,HORMAD1,348,0,0.0,
+Cancer2,Mesodermal embryonic stem cell,HORMAD1,125,0,0.0,
+Cancer2,Lymphoid progenitor cell,HORMAD1,21,0,0.0,
+Cancer2,B cell,HORMAD1,44,0,0.0,
+Cancer2,Endothelial cell,HORMAD1,18,0,0.0,
+Cancer2,Macrophage,PBK,128,2,0.015625,1.9345812682941534
+Cancer2,Hemangioblast,PBK,249,7,0.028112449799196786,3.147375003074631
+Cancer2,Luminal epithelial cell,PBK,813,153,0.1881918819188192,2.6850390577364998
+Cancer2,Microglial cell,PBK,363,15,0.04132231404958678,1.5590103673171767
+Cancer2,Fibroblast,PBK,515,22,0.04271844660194175,2.4181896156208613
+Cancer2,Luminal progenitor cell,PBK,613,45,0.0734094616639478,4.030170016116994
+Cancer2,Monocyte,PBK,167,2,0.011976047904191617,4.0191751206382325
+Cancer2,Dendritic cell,PBK,55,1,0.01818181818181818,3.914196889464801
+Cancer2,Natural killer (NK) cell,PBK,157,2,0.012738853503184714,3.141415171546607
+Cancer2,T cell,PBK,244,8,0.03278688524590164,4.03577650818232
+Cancer2,Trophectoderm cell,PBK,104,5,0.04807692307692308,0.7101957393533935
+Cancer2,Decidual cell,PBK,348,4,0.011494252873563218,6.596028064623024
+Cancer2,Mesodermal embryonic stem cell,PBK,125,5,0.04,4.582516222320506
+Cancer2,Lymphoid progenitor cell,PBK,21,0,0.0,
+Cancer2,B cell,PBK,44,0,0.0,
+Cancer2,Endothelial cell,PBK,18,3,0.16666666666666666,2.0458230544318403
+Cancer2,Macrophage,PIWIL2,128,1,0.0078125,10.0
+Cancer2,Hemangioblast,PIWIL2,249,1,0.004016064257028112,7.227020605896888
+Cancer2,Luminal epithelial cell,PIWIL2,813,1,0.0012300123001230013,3.5021132389529424
+Cancer2,Microglial cell,PIWIL2,363,0,0.0,
+Cancer2,Fibroblast,PIWIL2,515,1,0.001941747572815534,10.0
+Cancer2,Luminal progenitor cell,PIWIL2,613,2,0.0032626427406199023,2.6762449147520426
+Cancer2,Monocyte,PIWIL2,167,0,0.0,
+Cancer2,Dendritic cell,PIWIL2,55,0,0.0,
+Cancer2,Natural killer (NK) cell,PIWIL2,157,2,0.012738853503184714,10.0
+Cancer2,T cell,PIWIL2,244,0,0.0,
+Cancer2,Trophectoderm cell,PIWIL2,104,0,0.0,
+Cancer2,Decidual cell,PIWIL2,348,0,0.0,
+Cancer2,Mesodermal embryonic stem cell,PIWIL2,125,0,0.0,
+Cancer2,Lymphoid progenitor cell,PIWIL2,21,0,0.0,
+Cancer2,B cell,PIWIL2,44,0,0.0,
+Cancer2,Endothelial cell,PIWIL2,18,0,0.0,
+Cancer2,Macrophage,TEX14,128,0,0.0,
+Cancer2,Hemangioblast,TEX14,249,0,0.0,
+Cancer2,Luminal epithelial cell,TEX14,813,2,0.0024600246002460025,1.980165259035346
+Cancer2,Microglial cell,TEX14,363,0,0.0,
+Cancer2,Fibroblast,TEX14,515,5,0.009708737864077669,7.803336554750979
+Cancer2,Luminal progenitor cell,TEX14,613,1,0.0016313213703099511,2.0475077270202395
+Cancer2,Monocyte,TEX14,167,0,0.0,
+Cancer2,Dendritic cell,TEX14,55,0,0.0,
+Cancer2,Natural killer (NK) cell,TEX14,157,0,0.0,
+Cancer2,T cell,TEX14,244,0,0.0,
+Cancer2,Trophectoderm cell,TEX14,104,0,0.0,
+Cancer2,Decidual cell,TEX14,348,2,0.005747126436781609,10.0
+Cancer2,Mesodermal embryonic stem cell,TEX14,125,0,0.0,
+Cancer2,Lymphoid progenitor cell,TEX14,21,0,0.0,
+Cancer2,B cell,TEX14,44,0,0.0,
+Cancer2,Endothelial cell,TEX14,18,0,0.0,
+Cancer3,CD4+ T cell,CAGE1,449,0,0.0,
+Cancer3,Meiotic prophase fetal germ cell,CAGE1,899,5,0.0055617352614015575,10.0
+Cancer3,Macrophage,CAGE1,338,3,0.008875739644970414,3.2503788317432636
+Cancer3,Epithelial cell,CAGE1,417,28,0.0671462829736211,2.6937484844686184
+Cancer3,Natural killer T (NKT) cell,CAGE1,705,1,0.0014184397163120568,6.777911107816302
+Cancer3,CD8+ T cell,CAGE1,379,0,0.0,
+Cancer3,Plasma cell,CAGE1,179,2,0.0111731843575419,6.759276804042064
+Cancer3,Natural killer (NK) cell,CAGE1,240,2,0.008333333333333333,10.0
+Cancer3,Mesodermal embryonic stem cell,CAGE1,8,0,0.0,
+Cancer3,Plasmacytoid dendritic cell,CAGE1,37,1,0.02702702702702703,4.2200001682419295
+Cancer3,Endothelial cell,CAGE1,238,1,0.004201680672268907,1.091008575072672
+Cancer3,Dendritic cell,CAGE1,175,1,0.005714285714285714,7.033529898983329
+Cancer3,Mast cell,CAGE1,146,1,0.00684931506849315,7.457278205622108
+Cancer3,T cell,CAGE1,327,3,0.009174311926605505,9.334122950669583
+Cancer3,B cell,CAGE1,37,0,0.0,
+Cancer3,Fibroblast,CAGE1,43,0,0.0,
+Cancer3,Mitotic arrest phase fetal germ cell,CAGE1,18,0,0.0,
+Cancer3,CD4+ T cell,CCDC36,449,0,0.0,
+Cancer3,Meiotic prophase fetal germ cell,CCDC36,899,0,0.0,
+Cancer3,Macrophage,CCDC36,338,1,0.0029585798816568047,4.824153274773743
+Cancer3,Epithelial cell,CCDC36,417,0,0.0,
+Cancer3,Natural killer T (NKT) cell,CCDC36,705,0,0.0,
+Cancer3,CD8+ T cell,CCDC36,379,0,0.0,
+Cancer3,Plasma cell,CCDC36,179,1,0.00558659217877095,10.0
+Cancer3,Natural killer (NK) cell,CCDC36,240,0,0.0,
+Cancer3,Mesodermal embryonic stem cell,CCDC36,8,0,0.0,
+Cancer3,Plasmacytoid dendritic cell,CCDC36,37,0,0.0,
+Cancer3,Endothelial cell,CCDC36,238,0,0.0,
+Cancer3,Dendritic cell,CCDC36,175,0,0.0,
+Cancer3,Mast cell,CCDC36,146,0,0.0,
+Cancer3,T cell,CCDC36,327,1,0.0030581039755351682,10.0
+Cancer3,B cell,CCDC36,37,0,0.0,
+Cancer3,Fibroblast,CCDC36,43,1,0.023255813953488372,10.0
+Cancer3,Mitotic arrest phase fetal germ cell,CCDC36,18,0,0.0,
+Cancer3,CD4+ T cell,CCDC62,449,1,0.0022271714922048997,10.0
+Cancer3,Meiotic prophase fetal germ cell,CCDC62,899,1,0.0011123470522803114,10.0
+Cancer3,Macrophage,CCDC62,338,0,0.0,
+Cancer3,Epithelial cell,CCDC62,417,0,0.0,
+Cancer3,Natural killer T (NKT) cell,CCDC62,705,1,0.0014184397163120568,10.0
+Cancer3,CD8+ T cell,CCDC62,379,0,0.0,
+Cancer3,Plasma cell,CCDC62,179,0,0.0,
+Cancer3,Natural killer (NK) cell,CCDC62,240,0,0.0,
+Cancer3,Mesodermal embryonic stem cell,CCDC62,8,0,0.0,
+Cancer3,Plasmacytoid dendritic cell,CCDC62,37,0,0.0,
+Cancer3,Endothelial cell,CCDC62,238,0,0.0,
+Cancer3,Dendritic cell,CCDC62,175,1,0.005714285714285714,10.0
+Cancer3,Mast cell,CCDC62,146,0,0.0,
+Cancer3,T cell,CCDC62,327,1,0.0030581039755351682,10.0
+Cancer3,B cell,CCDC62,37,0,0.0,
+Cancer3,Fibroblast,CCDC62,43,0,0.0,
+Cancer3,Mitotic arrest phase fetal germ cell,CCDC62,18,0,0.0,
+Cancer3,CD4+ T cell,CTCFL,449,0,0.0,
+Cancer3,Meiotic prophase fetal germ cell,CTCFL,899,6,0.006674082313681869,9.738429641799117
+Cancer3,Macrophage,CTCFL,338,4,0.011834319526627219,2.0784920353230265
+Cancer3,Epithelial cell,CTCFL,417,229,0.5491606714628298,3.1256684947449784
+Cancer3,Natural killer T (NKT) cell,CTCFL,705,4,0.005673758865248227,5.830894234868148
+Cancer3,CD8+ T cell,CTCFL,379,0,0.0,
+Cancer3,Plasma cell,CTCFL,179,1,0.00558659217877095,0.6619902590060269
+Cancer3,Natural killer (NK) cell,CTCFL,240,1,0.004166666666666667,4.3706965633639125
+Cancer3,Mesodermal embryonic stem cell,CTCFL,8,0,0.0,
+Cancer3,Plasmacytoid dendritic cell,CTCFL,37,1,0.02702702702702703,2.9248514558846894
+Cancer3,Endothelial cell,CTCFL,238,2,0.008403361344537815,3.2024783861930564
+Cancer3,Dendritic cell,CTCFL,175,0,0.0,
+Cancer3,Mast cell,CTCFL,146,0,0.0,
+Cancer3,T cell,CTCFL,327,0,0.0,
+Cancer3,B cell,CTCFL,37,0,0.0,
+Cancer3,Fibroblast,CTCFL,43,2,0.046511627906976744,1.961372641955364
+Cancer3,Mitotic arrest phase fetal germ cell,CTCFL,18,1,0.05555555555555555,1.850796317452654
+Cancer3,CD4+ T cell,HSPB9,449,1,0.0022271714922048997,10.0
+Cancer3,Meiotic prophase fetal germ cell,HSPB9,899,4,0.004449388209121246,10.0
+Cancer3,Macrophage,HSPB9,338,2,0.005917159763313609,4.386103970554359
+Cancer3,Epithelial cell,HSPB9,417,4,0.009592326139088728,0.8802917151259927
+Cancer3,Natural killer T (NKT) cell,HSPB9,705,0,0.0,
+Cancer3,CD8+ T cell,HSPB9,379,0,0.0,
+Cancer3,Plasma cell,HSPB9,179,1,0.00558659217877095,3.6029982208563642
+Cancer3,Natural killer (NK) cell,HSPB9,240,1,0.004166666666666667,10.0
+Cancer3,Mesodermal embryonic stem cell,HSPB9,8,0,0.0,
+Cancer3,Plasmacytoid dendritic cell,HSPB9,37,0,0.0,
+Cancer3,Endothelial cell,HSPB9,238,1,0.004201680672268907,5.0253813646964876
+Cancer3,Dendritic cell,HSPB9,175,1,0.005714285714285714,7.543576950510066
+Cancer3,Mast cell,HSPB9,146,0,0.0,
+Cancer3,T cell,HSPB9,327,1,0.0030581039755351682,10.0
+Cancer3,B cell,HSPB9,37,0,0.0,
+Cancer3,Fibroblast,HSPB9,43,1,0.023255813953488372,2.2783927750956314
+Cancer3,Mitotic arrest phase fetal germ cell,HSPB9,18,0,0.0,
+Cancer3,CD4+ T cell,PAGE5,449,1,0.0022271714922048997,10.0
+Cancer3,Meiotic prophase fetal germ cell,PAGE5,899,0,0.0,
+Cancer3,Macrophage,PAGE5,338,0,0.0,
+Cancer3,Epithelial cell,PAGE5,417,0,0.0,
+Cancer3,Natural killer T (NKT) cell,PAGE5,705,1,0.0014184397163120568,10.0
+Cancer3,CD8+ T cell,PAGE5,379,3,0.0079155672823219,10.0
+Cancer3,Plasma cell,PAGE5,179,0,0.0,
+Cancer3,Natural killer (NK) cell,PAGE5,240,0,0.0,
+Cancer3,Mesodermal embryonic stem cell,PAGE5,8,0,0.0,
+Cancer3,Plasmacytoid dendritic cell,PAGE5,37,0,0.0,
+Cancer3,Endothelial cell,PAGE5,238,1,0.004201680672268907,3.0425895099535274
+Cancer3,Dendritic cell,PAGE5,175,0,0.0,
+Cancer3,Mast cell,PAGE5,146,0,0.0,
+Cancer3,T cell,PAGE5,327,0,0.0,
+Cancer3,B cell,PAGE5,37,0,0.0,
+Cancer3,Fibroblast,PAGE5,43,0,0.0,
+Cancer3,Mitotic arrest phase fetal germ cell,PAGE5,18,0,0.0,
+Cancer3,CD4+ T cell,PIWIL2,449,2,0.004454342984409799,10.0
+Cancer3,Meiotic prophase fetal germ cell,PIWIL2,899,1,0.0011123470522803114,10.0
+Cancer3,Macrophage,PIWIL2,338,1,0.0029585798816568047,3.733206211513097
+Cancer3,Epithelial cell,PIWIL2,417,4,0.009592326139088728,3.4907383806898657
+Cancer3,Natural killer T (NKT) cell,PIWIL2,705,1,0.0014184397163120568,10.0
+Cancer3,CD8+ T cell,PIWIL2,379,2,0.005277044854881266,10.0
+Cancer3,Plasma cell,PIWIL2,179,0,0.0,
+Cancer3,Natural killer (NK) cell,PIWIL2,240,0,0.0,
+Cancer3,Mesodermal embryonic stem cell,PIWIL2,8,0,0.0,
+Cancer3,Plasmacytoid dendritic cell,PIWIL2,37,0,0.0,
+Cancer3,Endothelial cell,PIWIL2,238,0,0.0,
+Cancer3,Dendritic cell,PIWIL2,175,0,0.0,
+Cancer3,Mast cell,PIWIL2,146,0,0.0,
+Cancer3,T cell,PIWIL2,327,1,0.0030581039755351682,7.595241904611278
+Cancer3,B cell,PIWIL2,37,1,0.02702702702702703,10.0
+Cancer3,Fibroblast,PIWIL2,43,0,0.0,
+Cancer3,Mitotic arrest phase fetal germ cell,PIWIL2,18,0,0.0,
+Cancer3,CD4+ T cell,TSSK6,449,2,0.004454342984409799,10.0
+Cancer3,Meiotic prophase fetal germ cell,TSSK6,899,1,0.0011123470522803114,10.0
+Cancer3,Macrophage,TSSK6,338,0,0.0,
+Cancer3,Epithelial cell,TSSK6,417,1,0.002398081534772182,4.784128642594896
+Cancer3,Natural killer T (NKT) cell,TSSK6,705,0,0.0,
+Cancer3,CD8+ T cell,TSSK6,379,1,0.002638522427440633,10.0
+Cancer3,Plasma cell,TSSK6,179,0,0.0,
+Cancer3,Natural killer (NK) cell,TSSK6,240,1,0.004166666666666667,10.0
+Cancer3,Mesodermal embryonic stem cell,TSSK6,8,0,0.0,
+Cancer3,Plasmacytoid dendritic cell,TSSK6,37,0,0.0,
+Cancer3,Endothelial cell,TSSK6,238,0,0.0,
+Cancer3,Dendritic cell,TSSK6,175,0,0.0,
+Cancer3,Mast cell,TSSK6,146,0,0.0,
+Cancer3,T cell,TSSK6,327,0,0.0,
+Cancer3,B cell,TSSK6,37,0,0.0,
+Cancer3,Fibroblast,TSSK6,43,0,0.0,
+Cancer3,Mitotic arrest phase fetal germ cell,TSSK6,18,0,0.0,
+Cancer4,Luminal epithelial cell,CAGE1,306,3,0.00980392156862745,2.6892886383738284
+Cancer4,Neutrophil,CAGE1,267,3,0.011235955056179775,10.0
+Cancer4,Epithelial cell,CAGE1,1023,17,0.016617790811339198,3.283917432454976
+Cancer4,T cell,CAGE1,517,3,0.005802707930367505,10.0
+Cancer4,Luminal progenitor cell,CAGE1,537,9,0.01675977653631285,1.9689723947376225
+Cancer4,Basophil,CAGE1,301,0,0.0,
+Cancer4,Natural killer (NK) cell,CAGE1,99,0,0.0,
+Cancer4,Dendritic cell,CAGE1,168,0,0.0,
+Cancer4,Erythroid progenitor,CAGE1,37,0,0.0,
+Cancer4,Microglial cell,CAGE1,301,14,0.046511627906976744,7.672307591857563
+Cancer4,Fibroblast,CAGE1,84,2,0.023809523809523808,2.75442548938582
+Cancer4,CD8+ T cell,CAGE1,24,0,0.0,
+Cancer4,Endothelial cell,CAGE1,22,0,0.0,
+Cancer4,Mast cell,CAGE1,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,CAGE1,21,0,0.0,
+Cancer4,Luminal epithelial cell,CTCFL,306,1,0.0032679738562091504,6.485712398350245
+Cancer4,Neutrophil,CTCFL,267,0,0.0,
+Cancer4,Epithelial cell,CTCFL,1023,4,0.0039100684261974585,10.0
+Cancer4,T cell,CTCFL,517,0,0.0,
+Cancer4,Luminal progenitor cell,CTCFL,537,7,0.01303538175046555,2.9488300262111298
+Cancer4,Basophil,CTCFL,301,0,0.0,
+Cancer4,Natural killer (NK) cell,CTCFL,99,0,0.0,
+Cancer4,Dendritic cell,CTCFL,168,0,0.0,
+Cancer4,Erythroid progenitor,CTCFL,37,1,0.02702702702702703,1.6084822355133679
+Cancer4,Microglial cell,CTCFL,301,0,0.0,
+Cancer4,Fibroblast,CTCFL,84,0,0.0,
+Cancer4,CD8+ T cell,CTCFL,24,0,0.0,
+Cancer4,Endothelial cell,CTCFL,22,0,0.0,
+Cancer4,Mast cell,CTCFL,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,CTCFL,21,0,0.0,
+Cancer4,Luminal epithelial cell,DDX43,306,0,0.0,
+Cancer4,Neutrophil,DDX43,267,1,0.003745318352059925,10.0
+Cancer4,Epithelial cell,DDX43,1023,0,0.0,
+Cancer4,T cell,DDX43,517,5,0.009671179883945842,9.37257469321313
+Cancer4,Luminal progenitor cell,DDX43,537,0,0.0,
+Cancer4,Basophil,DDX43,301,0,0.0,
+Cancer4,Natural killer (NK) cell,DDX43,99,1,0.010101010101010102,8.600578049132269
+Cancer4,Dendritic cell,DDX43,168,0,0.0,
+Cancer4,Erythroid progenitor,DDX43,37,0,0.0,
+Cancer4,Microglial cell,DDX43,301,0,0.0,
+Cancer4,Fibroblast,DDX43,84,3,0.03571428571428571,4.713113062328133
+Cancer4,CD8+ T cell,DDX43,24,0,0.0,
+Cancer4,Endothelial cell,DDX43,22,0,0.0,
+Cancer4,Mast cell,DDX43,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,DDX43,21,1,0.047619047619047616,9.221385323375857
+Cancer4,Luminal epithelial cell,HORMAD1,306,0,0.0,
+Cancer4,Neutrophil,HORMAD1,267,1,0.003745318352059925,10.0
+Cancer4,Epithelial cell,HORMAD1,1023,2,0.0019550342130987292,9.477908123029753
+Cancer4,T cell,HORMAD1,517,0,0.0,
+Cancer4,Luminal progenitor cell,HORMAD1,537,4,0.0074487895716946,4.691593654684841
+Cancer4,Basophil,HORMAD1,301,0,0.0,
+Cancer4,Natural killer (NK) cell,HORMAD1,99,0,0.0,
+Cancer4,Dendritic cell,HORMAD1,168,2,0.011904761904761904,10.0
+Cancer4,Erythroid progenitor,HORMAD1,37,0,0.0,
+Cancer4,Microglial cell,HORMAD1,301,0,0.0,
+Cancer4,Fibroblast,HORMAD1,84,0,0.0,
+Cancer4,CD8+ T cell,HORMAD1,24,0,0.0,
+Cancer4,Endothelial cell,HORMAD1,22,0,0.0,
+Cancer4,Mast cell,HORMAD1,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,HORMAD1,21,0,0.0,
+Cancer4,Luminal epithelial cell,PAGE5,306,0,0.0,
+Cancer4,Neutrophil,PAGE5,267,0,0.0,
+Cancer4,Epithelial cell,PAGE5,1023,0,0.0,
+Cancer4,T cell,PAGE5,517,3,0.005802707930367505,10.0
+Cancer4,Luminal progenitor cell,PAGE5,537,0,0.0,
+Cancer4,Basophil,PAGE5,301,0,0.0,
+Cancer4,Natural killer (NK) cell,PAGE5,99,0,0.0,
+Cancer4,Dendritic cell,PAGE5,168,0,0.0,
+Cancer4,Erythroid progenitor,PAGE5,37,0,0.0,
+Cancer4,Microglial cell,PAGE5,301,0,0.0,
+Cancer4,Fibroblast,PAGE5,84,0,0.0,
+Cancer4,CD8+ T cell,PAGE5,24,0,0.0,
+Cancer4,Endothelial cell,PAGE5,22,0,0.0,
+Cancer4,Mast cell,PAGE5,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,PAGE5,21,0,0.0,
+Cancer4,Luminal epithelial cell,TDRD1,306,0,0.0,
+Cancer4,Neutrophil,TDRD1,267,0,0.0,
+Cancer4,Epithelial cell,TDRD1,1023,4,0.0039100684261974585,7.455578673373671
+Cancer4,T cell,TDRD1,517,2,0.0038684719535783366,10.0
+Cancer4,Luminal progenitor cell,TDRD1,537,0,0.0,
+Cancer4,Basophil,TDRD1,301,0,0.0,
+Cancer4,Natural killer (NK) cell,TDRD1,99,0,0.0,
+Cancer4,Dendritic cell,TDRD1,168,0,0.0,
+Cancer4,Erythroid progenitor,TDRD1,37,0,0.0,
+Cancer4,Microglial cell,TDRD1,301,2,0.006644518272425249,9.435682162707627
+Cancer4,Fibroblast,TDRD1,84,1,0.011904761904761904,3.8597075884614114
+Cancer4,CD8+ T cell,TDRD1,24,0,0.0,
+Cancer4,Endothelial cell,TDRD1,22,0,0.0,
+Cancer4,Mast cell,TDRD1,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,TDRD1,21,0,0.0,
+Cancer4,Luminal epithelial cell,TEX101,306,0,0.0,
+Cancer4,Neutrophil,TEX101,267,0,0.0,
+Cancer4,Epithelial cell,TEX101,1023,3,0.002932551319648094,8.977299529749791
+Cancer4,T cell,TEX101,517,0,0.0,
+Cancer4,Luminal progenitor cell,TEX101,537,2,0.0037243947858473,3.128503970124953
+Cancer4,Basophil,TEX101,301,1,0.0033222591362126247,10.0
+Cancer4,Natural killer (NK) cell,TEX101,99,0,0.0,
+Cancer4,Dendritic cell,TEX101,168,0,0.0,
+Cancer4,Erythroid progenitor,TEX101,37,1,0.02702702702702703,4.6761393163910565
+Cancer4,Microglial cell,TEX101,301,0,0.0,
+Cancer4,Fibroblast,TEX101,84,0,0.0,
+Cancer4,CD8+ T cell,TEX101,24,0,0.0,
+Cancer4,Endothelial cell,TEX101,22,0,0.0,
+Cancer4,Mast cell,TEX101,38,0,0.0,
+Cancer4,Plasmacytoid dendritic cell,TEX101,21,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,CTCFL,237,0,0.0,
+Cancer5,CD4+ T cell,CTCFL,528,1,0.001893939393939394,10.0
+Cancer5,Natural killer T (NKT) cell,CTCFL,1066,0,0.0,
+Cancer5,T cell,CTCFL,555,1,0.0018018018018018018,10.0
+Cancer5,Plasmacytoid dendritic cell,CTCFL,334,1,0.0029940119760479044,5.109362637326903
+Cancer5,Fibroblast,CTCFL,133,0,0.0,
+Cancer5,Dendritic cell,CTCFL,550,0,0.0,
+Cancer5,Decidual cell,CTCFL,561,1,0.0017825311942959,10.0
+Cancer5,Natural killer (NK) cell,CTCFL,301,0,0.0,
+Cancer5,Epithelial cell,CTCFL,392,26,0.0663265306122449,4.914199097987502
+Cancer5,B cell,CTCFL,129,0,0.0,
+Cancer5,Mesodermal embryonic stem cell,CTCFL,38,0,0.0,
+Cancer5,Mast cell,CTCFL,336,0,0.0,
+Cancer5,Erythroid progenitor,CTCFL,42,0,0.0,
+Cancer5,Luminal progenitor cell,CTCFL,70,2,0.02857142857142857,3.2450896003721192
+Cancer5,CD8+ T cell,CTCFL,38,0,0.0,
+Cancer5,Basophil,CTCFL,18,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,DDX43,237,0,0.0,
+Cancer5,CD4+ T cell,DDX43,528,1,0.001893939393939394,10.0
+Cancer5,Natural killer T (NKT) cell,DDX43,1066,2,0.001876172607879925,10.0
+Cancer5,T cell,DDX43,555,1,0.0018018018018018018,9.475248583441227
+Cancer5,Plasmacytoid dendritic cell,DDX43,334,3,0.008982035928143712,6.635287990380745
+Cancer5,Fibroblast,DDX43,133,3,0.022556390977443608,5.927201845169709
+Cancer5,Dendritic cell,DDX43,550,0,0.0,
+Cancer5,Decidual cell,DDX43,561,2,0.0035650623885918,10.0
+Cancer5,Natural killer (NK) cell,DDX43,301,1,0.0033222591362126247,10.0
+Cancer5,Epithelial cell,DDX43,392,0,0.0,
+Cancer5,B cell,DDX43,129,2,0.015503875968992248,10.0
+Cancer5,Mesodermal embryonic stem cell,DDX43,38,1,0.02631578947368421,9.60016207769298
+Cancer5,Mast cell,DDX43,336,0,0.0,
+Cancer5,Erythroid progenitor,DDX43,42,0,0.0,
+Cancer5,Luminal progenitor cell,DDX43,70,0,0.0,
+Cancer5,CD8+ T cell,DDX43,38,0,0.0,
+Cancer5,Basophil,DDX43,18,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,DSCR8,237,0,0.0,
+Cancer5,CD4+ T cell,DSCR8,528,1,0.001893939393939394,10.0
+Cancer5,Natural killer T (NKT) cell,DSCR8,1066,1,0.0009380863039399625,10.0
+Cancer5,T cell,DSCR8,555,0,0.0,
+Cancer5,Plasmacytoid dendritic cell,DSCR8,334,0,0.0,
+Cancer5,Fibroblast,DSCR8,133,0,0.0,
+Cancer5,Dendritic cell,DSCR8,550,0,0.0,
+Cancer5,Decidual cell,DSCR8,561,0,0.0,
+Cancer5,Natural killer (NK) cell,DSCR8,301,0,0.0,
+Cancer5,Epithelial cell,DSCR8,392,6,0.015306122448979591,7.860920026187976
+Cancer5,B cell,DSCR8,129,0,0.0,
+Cancer5,Mesodermal embryonic stem cell,DSCR8,38,0,0.0,
+Cancer5,Mast cell,DSCR8,336,0,0.0,
+Cancer5,Erythroid progenitor,DSCR8,42,0,0.0,
+Cancer5,Luminal progenitor cell,DSCR8,70,3,0.04285714285714286,9.08804077717708
+Cancer5,CD8+ T cell,DSCR8,38,0,0.0,
+Cancer5,Basophil,DSCR8,18,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,HORMAD1,237,0,0.0,
+Cancer5,CD4+ T cell,HORMAD1,528,0,0.0,
+Cancer5,Natural killer T (NKT) cell,HORMAD1,1066,1,0.0009380863039399625,10.0
+Cancer5,T cell,HORMAD1,555,0,0.0,
+Cancer5,Plasmacytoid dendritic cell,HORMAD1,334,0,0.0,
+Cancer5,Fibroblast,HORMAD1,133,0,0.0,
+Cancer5,Dendritic cell,HORMAD1,550,8,0.014545454545454545,8.696658172645094
+Cancer5,Decidual cell,HORMAD1,561,0,0.0,
+Cancer5,Natural killer (NK) cell,HORMAD1,301,1,0.0033222591362126247,10.0
+Cancer5,Epithelial cell,HORMAD1,392,0,0.0,
+Cancer5,B cell,HORMAD1,129,0,0.0,
+Cancer5,Mesodermal embryonic stem cell,HORMAD1,38,0,0.0,
+Cancer5,Mast cell,HORMAD1,336,0,0.0,
+Cancer5,Erythroid progenitor,HORMAD1,42,0,0.0,
+Cancer5,Luminal progenitor cell,HORMAD1,70,0,0.0,
+Cancer5,CD8+ T cell,HORMAD1,38,0,0.0,
+Cancer5,Basophil,HORMAD1,18,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,PAGE2,237,0,0.0,
+Cancer5,CD4+ T cell,PAGE2,528,1,0.001893939393939394,10.0
+Cancer5,Natural killer T (NKT) cell,PAGE2,1066,0,0.0,
+Cancer5,T cell,PAGE2,555,0,0.0,
+Cancer5,Plasmacytoid dendritic cell,PAGE2,334,0,0.0,
+Cancer5,Fibroblast,PAGE2,133,0,0.0,
+Cancer5,Dendritic cell,PAGE2,550,1,0.0018181818181818182,2.3486279959881564
+Cancer5,Decidual cell,PAGE2,561,1,0.0017825311942959,10.0
+Cancer5,Natural killer (NK) cell,PAGE2,301,0,0.0,
+Cancer5,Epithelial cell,PAGE2,392,1,0.002551020408163265,8.523761478923404
+Cancer5,B cell,PAGE2,129,0,0.0,
+Cancer5,Mesodermal embryonic stem cell,PAGE2,38,0,0.0,
+Cancer5,Mast cell,PAGE2,336,0,0.0,
+Cancer5,Erythroid progenitor,PAGE2,42,0,0.0,
+Cancer5,Luminal progenitor cell,PAGE2,70,0,0.0,
+Cancer5,CD8+ T cell,PAGE2,38,0,0.0,
+Cancer5,Basophil,PAGE2,18,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,PAGE5,237,2,0.008438818565400843,10.0
+Cancer5,CD4+ T cell,PAGE5,528,1,0.001893939393939394,10.0
+Cancer5,Natural killer T (NKT) cell,PAGE5,1066,1,0.0009380863039399625,10.0
+Cancer5,T cell,PAGE5,555,4,0.007207207207207207,10.0
+Cancer5,Plasmacytoid dendritic cell,PAGE5,334,0,0.0,
+Cancer5,Fibroblast,PAGE5,133,0,0.0,
+Cancer5,Dendritic cell,PAGE5,550,0,0.0,
+Cancer5,Decidual cell,PAGE5,561,0,0.0,
+Cancer5,Natural killer (NK) cell,PAGE5,301,0,0.0,
+Cancer5,Epithelial cell,PAGE5,392,0,0.0,
+Cancer5,B cell,PAGE5,129,0,0.0,
+Cancer5,Mesodermal embryonic stem cell,PAGE5,38,0,0.0,
+Cancer5,Mast cell,PAGE5,336,0,0.0,
+Cancer5,Erythroid progenitor,PAGE5,42,0,0.0,
+Cancer5,Luminal progenitor cell,PAGE5,70,0,0.0,
+Cancer5,CD8+ T cell,PAGE5,38,0,0.0,
+Cancer5,Basophil,PAGE5,18,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,SPAG6,237,13,0.05485232067510549,4.322293240739237
+Cancer5,CD4+ T cell,SPAG6,528,0,0.0,
+Cancer5,Natural killer T (NKT) cell,SPAG6,1066,29,0.027204502814258912,9.246156030510186
+Cancer5,T cell,SPAG6,555,5,0.009009009009009009,6.87615022024872
+Cancer5,Plasmacytoid dendritic cell,SPAG6,334,1,0.0029940119760479044,1.4911601175828366
+Cancer5,Fibroblast,SPAG6,133,0,0.0,
+Cancer5,Dendritic cell,SPAG6,550,1,0.0018181818181818182,5.029669602503924
+Cancer5,Decidual cell,SPAG6,561,2,0.0035650623885918,10.0
+Cancer5,Natural killer (NK) cell,SPAG6,301,5,0.016611295681063124,8.08252109910053
+Cancer5,Epithelial cell,SPAG6,392,2,0.00510204081632653,2.874619060980261
+Cancer5,B cell,SPAG6,129,0,0.0,
+Cancer5,Mesodermal embryonic stem cell,SPAG6,38,0,0.0,
+Cancer5,Mast cell,SPAG6,336,1,0.002976190476190476,9.334538492251344
+Cancer5,Erythroid progenitor,SPAG6,42,0,0.0,
+Cancer5,Luminal progenitor cell,SPAG6,70,0,0.0,
+Cancer5,CD8+ T cell,SPAG6,38,0,0.0,
+Cancer5,Basophil,SPAG6,18,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,SYCE1,237,1,0.004219409282700422,10.0
+Cancer5,CD4+ T cell,SYCE1,528,0,0.0,
+Cancer5,Natural killer T (NKT) cell,SYCE1,1066,0,0.0,
+Cancer5,T cell,SYCE1,555,1,0.0018018018018018018,10.0
+Cancer5,Plasmacytoid dendritic cell,SYCE1,334,0,0.0,
+Cancer5,Fibroblast,SYCE1,133,1,0.007518796992481203,10.0
+Cancer5,Dendritic cell,SYCE1,550,0,0.0,
+Cancer5,Decidual cell,SYCE1,561,0,0.0,
+Cancer5,Natural killer (NK) cell,SYCE1,301,0,0.0,
+Cancer5,Epithelial cell,SYCE1,392,0,0.0,
+Cancer5,B cell,SYCE1,129,0,0.0,
+Cancer5,Mesodermal embryonic stem cell,SYCE1,38,0,0.0,
+Cancer5,Mast cell,SYCE1,336,0,0.0,
+Cancer5,Erythroid progenitor,SYCE1,42,0,0.0,
+Cancer5,Luminal progenitor cell,SYCE1,70,0,0.0,
+Cancer5,CD8+ T cell,SYCE1,38,0,0.0,
+Cancer5,Basophil,SYCE1,18,0,0.0,
+Cancer5,Granulocyte-monocyte progenitor,TSSK6,237,0,0.0,
+Cancer5,CD4+ T cell,TSSK6,528,0,0.0,
+Cancer5,Natural killer T (NKT) cell,TSSK6,1066,1,0.0009380863039399625,10.0
+Cancer5,T cell,TSSK6,555,2,0.0036036036036036037,10.0
+Cancer5,Plasmacytoid dendritic cell,TSSK6,334,0,0.0,
+Cancer5,Fibroblast,TSSK6,133,0,0.0,
+Cancer5,Dendritic cell,TSSK6,550,2,0.0036363636363636364,10.0
+Cancer5,Decidual cell,TSSK6,561,0,0.0,
+Cancer5,Natural killer (NK) cell,TSSK6,301,0,0.0,
+Cancer5,Epithelial cell,TSSK6,392,5,0.012755102040816327,3.5418434734745965
+Cancer5,B cell,TSSK6,129,0,0.0,
+Cancer5,Mesodermal embryonic stem cell,TSSK6,38,0,0.0,
+Cancer5,Mast cell,TSSK6,336,0,0.0,
+Cancer5,Erythroid progenitor,TSSK6,42,0,0.0,
+Cancer5,Luminal progenitor cell,TSSK6,70,0,0.0,
+Cancer5,CD8+ T cell,TSSK6,38,0,0.0,
+Cancer5,Basophil,TSSK6,18,0,0.0,
+Cancer6,Microglial cell,CCDC62,299,0,0.0,
+Cancer6,Fibroblast,CCDC62,1215,4,0.0032921810699588477,9.288373135066053
+Cancer6,Epithelial cell,CCDC62,1118,6,0.005366726296958855,5.821036632380008
+Cancer6,Decidual cell,CCDC62,186,0,0.0,
+Cancer6,Natural killer (NK) cell,CCDC62,95,0,0.0,
+Cancer6,Trophectoderm cell,CCDC62,649,6,0.009244992295839754,4.850942599089531
+Cancer6,Macrophage,CCDC62,194,1,0.005154639175257732,10.0
+Cancer6,Epithelial-mesenchymal cell,CCDC62,347,1,0.002881844380403458,10.0
+Cancer6,T cell,CCDC62,416,0,0.0,
+Cancer6,Endothelial progenitor cell,CCDC62,30,0,0.0,
+Cancer6,Neutrophil,CCDC62,137,1,0.0072992700729927005,10.0
+Cancer6,Mitotic arrest phase fetal germ cell,CCDC62,20,0,0.0,
+Cancer6,B cell,CCDC62,22,0,0.0,
+Cancer6,Microglial cell,CTCFL,299,4,0.013377926421404682,1.1988827812242935
+Cancer6,Fibroblast,CTCFL,1215,23,0.018930041152263374,1.9341107218870826
+Cancer6,Epithelial cell,CTCFL,1118,495,0.44275491949910556,1.7575978915273325
+Cancer6,Decidual cell,CTCFL,186,19,0.10215053763440861,3.870744253397641
+Cancer6,Natural killer (NK) cell,CTCFL,95,3,0.031578947368421054,3.66055929216963
+Cancer6,Trophectoderm cell,CTCFL,649,288,0.4437596302003082,1.3996825148609897
+Cancer6,Macrophage,CTCFL,194,7,0.03608247422680412,3.3591380146464487
+Cancer6,Epithelial-mesenchymal cell,CTCFL,347,3,0.008645533141210375,1.9247816878433326
+Cancer6,T cell,CTCFL,416,4,0.009615384615384616,5.051423199795106
+Cancer6,Endothelial progenitor cell,CTCFL,30,0,0.0,
+Cancer6,Neutrophil,CTCFL,137,1,0.0072992700729927005,5.299612784081101
+Cancer6,Mitotic arrest phase fetal germ cell,CTCFL,20,11,0.55,0.9112578026414139
+Cancer6,B cell,CTCFL,22,0,0.0,
+Cancer6,Microglial cell,LDHC,299,0,0.0,
+Cancer6,Fibroblast,LDHC,1215,0,0.0,
+Cancer6,Epithelial cell,LDHC,1118,4,0.0035778175313059034,6.072016384152997
+Cancer6,Decidual cell,LDHC,186,0,0.0,
+Cancer6,Natural killer (NK) cell,LDHC,95,0,0.0,
+Cancer6,Trophectoderm cell,LDHC,649,2,0.0030816640986132513,1.917198093326639
+Cancer6,Macrophage,LDHC,194,3,0.015463917525773196,10.0
+Cancer6,Epithelial-mesenchymal cell,LDHC,347,2,0.005763688760806916,10.0
+Cancer6,T cell,LDHC,416,0,0.0,
+Cancer6,Endothelial progenitor cell,LDHC,30,0,0.0,
+Cancer6,Neutrophil,LDHC,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,LDHC,20,0,0.0,
+Cancer6,B cell,LDHC,22,0,0.0,
+Cancer6,Microglial cell,PAGE2B,299,0,0.0,
+Cancer6,Fibroblast,PAGE2B,1215,0,0.0,
+Cancer6,Epithelial cell,PAGE2B,1118,0,0.0,
+Cancer6,Decidual cell,PAGE2B,186,0,0.0,
+Cancer6,Natural killer (NK) cell,PAGE2B,95,0,0.0,
+Cancer6,Trophectoderm cell,PAGE2B,649,4,0.0061633281972265025,7.1899157292076294
+Cancer6,Macrophage,PAGE2B,194,0,0.0,
+Cancer6,Epithelial-mesenchymal cell,PAGE2B,347,0,0.0,
+Cancer6,T cell,PAGE2B,416,1,0.002403846153846154,10.0
+Cancer6,Endothelial progenitor cell,PAGE2B,30,1,0.03333333333333333,10.0
+Cancer6,Neutrophil,PAGE2B,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,PAGE2B,20,0,0.0,
+Cancer6,B cell,PAGE2B,22,0,0.0,
+Cancer6,Microglial cell,PAGE5,299,0,0.0,
+Cancer6,Fibroblast,PAGE5,1215,0,0.0,
+Cancer6,Epithelial cell,PAGE5,1118,1,0.0008944543828264759,10.0
+Cancer6,Decidual cell,PAGE5,186,0,0.0,
+Cancer6,Natural killer (NK) cell,PAGE5,95,0,0.0,
+Cancer6,Trophectoderm cell,PAGE5,649,1,0.0015408320493066256,10.0
+Cancer6,Macrophage,PAGE5,194,0,0.0,
+Cancer6,Epithelial-mesenchymal cell,PAGE5,347,1,0.002881844380403458,10.0
+Cancer6,T cell,PAGE5,416,2,0.004807692307692308,10.0
+Cancer6,Endothelial progenitor cell,PAGE5,30,0,0.0,
+Cancer6,Neutrophil,PAGE5,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,PAGE5,20,0,0.0,
+Cancer6,B cell,PAGE5,22,0,0.0,
+Cancer6,Microglial cell,SAGE1,299,0,0.0,
+Cancer6,Fibroblast,SAGE1,1215,0,0.0,
+Cancer6,Epithelial cell,SAGE1,1118,19,0.01699463327370304,6.379305112303722
+Cancer6,Decidual cell,SAGE1,186,1,0.005376344086021506,10.0
+Cancer6,Natural killer (NK) cell,SAGE1,95,0,0.0,
+Cancer6,Trophectoderm cell,SAGE1,649,11,0.01694915254237288,4.238985356444753
+Cancer6,Macrophage,SAGE1,194,1,0.005154639175257732,10.0
+Cancer6,Epithelial-mesenchymal cell,SAGE1,347,0,0.0,
+Cancer6,T cell,SAGE1,416,0,0.0,
+Cancer6,Endothelial progenitor cell,SAGE1,30,0,0.0,
+Cancer6,Neutrophil,SAGE1,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,SAGE1,20,0,0.0,
+Cancer6,B cell,SAGE1,22,0,0.0,
+Cancer6,Microglial cell,SPANXB1,299,0,0.0,
+Cancer6,Fibroblast,SPANXB1,1215,3,0.0024691358024691358,10.0
+Cancer6,Epithelial cell,SPANXB1,1118,0,0.0,
+Cancer6,Decidual cell,SPANXB1,186,0,0.0,
+Cancer6,Natural killer (NK) cell,SPANXB1,95,0,0.0,
+Cancer6,Trophectoderm cell,SPANXB1,649,0,0.0,
+Cancer6,Macrophage,SPANXB1,194,0,0.0,
+Cancer6,Epithelial-mesenchymal cell,SPANXB1,347,0,0.0,
+Cancer6,T cell,SPANXB1,416,0,0.0,
+Cancer6,Endothelial progenitor cell,SPANXB1,30,0,0.0,
+Cancer6,Neutrophil,SPANXB1,137,0,0.0,
+Cancer6,Mitotic arrest phase fetal germ cell,SPANXB1,20,0,0.0,
+Cancer6,B cell,SPANXB1,22,0,0.0,
+Cancer7,Epithelial cell,COX6B2,537,4,0.0074487895716946,4.732936622085209
+Cancer7,Luminal epithelial cell,COX6B2,142,3,0.02112676056338028,3.288928172622725
+Cancer7,Plasma cell,COX6B2,612,0,0.0,
+Cancer7,CD4+ T cell,COX6B2,277,0,0.0,
+Cancer7,Dendritic cell,COX6B2,217,0,0.0,
+Cancer7,Mast cell,COX6B2,249,1,0.004016064257028112,10.0
+Cancer7,Endothelial cell,COX6B2,95,0,0.0,
+Cancer7,Lymphoid progenitor cell,COX6B2,349,0,0.0,
+Cancer7,CD8+ T cell,COX6B2,442,0,0.0,
+Cancer7,Natural killer (NK) cell,COX6B2,270,1,0.003703703703703704,10.0
+Cancer7,Natural killer T (NKT) cell,COX6B2,710,0,0.0,
+Cancer7,T cell,COX6B2,273,0,0.0,
+Cancer7,B cell,COX6B2,108,1,0.009259259259259259,10.0
+Cancer7,Luminal progenitor cell,COX6B2,336,0,0.0,
+Cancer7,Plasmacytoid dendritic cell,COX6B2,54,0,0.0,
+Cancer7,Epithelial cell,CTCFL,537,239,0.4450651769087523,2.4462255504377577
+Cancer7,Luminal epithelial cell,CTCFL,142,104,0.7323943661971831,2.3533211933540907
+Cancer7,Plasma cell,CTCFL,612,4,0.006535947712418301,1.1096746836174294
+Cancer7,CD4+ T cell,CTCFL,277,1,0.0036101083032490976,3.8326045488653966
+Cancer7,Dendritic cell,CTCFL,217,2,0.009216589861751152,1.0622035433912431
+Cancer7,Mast cell,CTCFL,249,0,0.0,
+Cancer7,Endothelial cell,CTCFL,95,0,0.0,
+Cancer7,Lymphoid progenitor cell,CTCFL,349,1,0.0028653295128939827,8.168335254217503
+Cancer7,CD8+ T cell,CTCFL,442,2,0.004524886877828055,6.122157965416127
+Cancer7,Natural killer (NK) cell,CTCFL,270,0,0.0,
+Cancer7,Natural killer T (NKT) cell,CTCFL,710,4,0.005633802816901409,4.824014840358671
+Cancer7,T cell,CTCFL,273,3,0.01098901098901099,4.481010455680391
+Cancer7,B cell,CTCFL,108,0,0.0,
+Cancer7,Luminal progenitor cell,CTCFL,336,224,0.6666666666666666,1.8739454516518987
+Cancer7,Plasmacytoid dendritic cell,CTCFL,54,1,0.018518518518518517,0.9042429530957309
+Cancer7,Epithelial cell,PAGE5,537,0,0.0,
+Cancer7,Luminal epithelial cell,PAGE5,142,0,0.0,
+Cancer7,Plasma cell,PAGE5,612,0,0.0,
+Cancer7,CD4+ T cell,PAGE5,277,2,0.007220216606498195,10.0
+Cancer7,Dendritic cell,PAGE5,217,0,0.0,
+Cancer7,Mast cell,PAGE5,249,1,0.004016064257028112,10.0
+Cancer7,Endothelial cell,PAGE5,95,1,0.010526315789473684,10.0
+Cancer7,Lymphoid progenitor cell,PAGE5,349,0,0.0,
+Cancer7,CD8+ T cell,PAGE5,442,0,0.0,
+Cancer7,Natural killer (NK) cell,PAGE5,270,0,0.0,
+Cancer7,Natural killer T (NKT) cell,PAGE5,710,0,0.0,
+Cancer7,T cell,PAGE5,273,0,0.0,
+Cancer7,B cell,PAGE5,108,0,0.0,
+Cancer7,Luminal progenitor cell,PAGE5,336,0,0.0,
+Cancer7,Plasmacytoid dendritic cell,PAGE5,54,0,0.0,
+Cancer7,Epithelial cell,PIWIL2,537,0,0.0,
+Cancer7,Luminal epithelial cell,PIWIL2,142,0,0.0,
+Cancer7,Plasma cell,PIWIL2,612,1,0.0016339869281045752,7.137789603515641
+Cancer7,CD4+ T cell,PIWIL2,277,0,0.0,
+Cancer7,Dendritic cell,PIWIL2,217,0,0.0,
+Cancer7,Mast cell,PIWIL2,249,0,0.0,
+Cancer7,Endothelial cell,PIWIL2,95,0,0.0,
+Cancer7,Lymphoid progenitor cell,PIWIL2,349,0,0.0,
+Cancer7,CD8+ T cell,PIWIL2,442,2,0.004524886877828055,10.0
+Cancer7,Natural killer (NK) cell,PIWIL2,270,0,0.0,
+Cancer7,Natural killer T (NKT) cell,PIWIL2,710,0,0.0,
+Cancer7,T cell,PIWIL2,273,0,0.0,
+Cancer7,B cell,PIWIL2,108,0,0.0,
+Cancer7,Luminal progenitor cell,PIWIL2,336,5,0.01488095238095238,7.045158995226801
+Cancer7,Plasmacytoid dendritic cell,PIWIL2,54,0,0.0,
+Cancer7,Epithelial cell,SPAG6,537,1,0.00186219739292365,3.55317011274769
+Cancer7,Luminal epithelial cell,SPAG6,142,0,0.0,
+Cancer7,Plasma cell,SPAG6,612,0,0.0,
+Cancer7,CD4+ T cell,SPAG6,277,0,0.0,
+Cancer7,Dendritic cell,SPAG6,217,0,0.0,
+Cancer7,Mast cell,SPAG6,249,0,0.0,
+Cancer7,Endothelial cell,SPAG6,95,1,0.010526315789473684,10.0
+Cancer7,Lymphoid progenitor cell,SPAG6,349,2,0.0057306590257879654,10.0
+Cancer7,CD8+ T cell,SPAG6,442,3,0.006787330316742082,10.0
+Cancer7,Natural killer (NK) cell,SPAG6,270,2,0.007407407407407408,9.337617203234917
+Cancer7,Natural killer T (NKT) cell,SPAG6,710,10,0.014084507042253521,9.38648896443571
+Cancer7,T cell,SPAG6,273,2,0.007326007326007326,10.0
+Cancer7,B cell,SPAG6,108,0,0.0,
+Cancer7,Luminal progenitor cell,SPAG6,336,0,0.0,
+Cancer7,Plasmacytoid dendritic cell,SPAG6,54,0,0.0,
+Cancer7,Epithelial cell,TDRD1,537,0,0.0,
+Cancer7,Luminal epithelial cell,TDRD1,142,0,0.0,
+Cancer7,Plasma cell,TDRD1,612,0,0.0,
+Cancer7,CD4+ T cell,TDRD1,277,0,0.0,
+Cancer7,Dendritic cell,TDRD1,217,1,0.004608294930875576,10.0
+Cancer7,Mast cell,TDRD1,249,0,0.0,
+Cancer7,Endothelial cell,TDRD1,95,0,0.0,
+Cancer7,Lymphoid progenitor cell,TDRD1,349,0,0.0,
+Cancer7,CD8+ T cell,TDRD1,442,0,0.0,
+Cancer7,Natural killer (NK) cell,TDRD1,270,0,0.0,
+Cancer7,Natural killer T (NKT) cell,TDRD1,710,4,0.005633802816901409,10.0
+Cancer7,T cell,TDRD1,273,0,0.0,
+Cancer7,B cell,TDRD1,108,0,0.0,
+Cancer7,Luminal progenitor cell,TDRD1,336,0,0.0,
+Cancer7,Plasmacytoid dendritic cell,TDRD1,54,0,0.0,

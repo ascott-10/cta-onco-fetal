@@ -1,0 +1,457 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+G_1_2_M_Mesonephros,Colony-forming cell,BRDT,548,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,BRDT,696,0,0.0,-0.028010374115911573
+G_1_2_M_Mesonephros,Innate lymphoid cell,BRDT,810,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Interstitial cell,BRDT,386,0,0.0,-0.028010374115911566
+G_1_2_M_Mesonephros,Haematopoietic cell,BRDT,154,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,BRDT,740,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Epithelial progenitor cell,BRDT,673,1,0.0014858841010401188,-0.013109912935947361
+G_1_2_M_Mesonephros,Cancer cell,BRDT,572,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,BRDT,419,0,0.0,-0.028010374115911566
+G_1_2_M_Mesonephros,Granulosa cell,BRDT,471,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Smooth muscle cell,BRDT,1210,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Sertoli cell,BRDT,1117,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Hepatic stellate cell,BRDT,541,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Lymphocyte,BRDT,313,0,0.0,-0.028010374115911573
+G_1_2_M_Mesonephros,Hypoblast cell,BRDT,155,0,0.0,-0.02801037411591157
+G_1_2_M_Mesonephros,Endothelial cell,BRDT,71,0,0.0,-0.02801037411591158
+G_1_2_M_Mesonephros,Podocyte,BRDT,107,1,0.009345794392523364,0.06570934900666704
+G_1_2_M_Mesonephros,Lymphoid cell,BRDT,35,0,0.0,-0.028010374115911573
+G_1_2_M_Mesonephros,Corticotroph tumor cell,BRDT,20,6,0.3,2.980392738118862
+G_1_2_M_Mesonephros,Colony-forming cell,CTAG2,548,6,0.010948905109489052,0.03509998563468818
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,CTAG2,696,7,0.010057471264367816,0.034691593877347035
+G_1_2_M_Mesonephros,Innate lymphoid cell,CTAG2,810,0,0.0,-0.06523027566723949
+G_1_2_M_Mesonephros,Interstitial cell,CTAG2,386,2,0.0051813471502590676,-0.022153079202506518
+G_1_2_M_Mesonephros,Haematopoietic cell,CTAG2,154,0,0.0,-0.0652302756672395
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,CTAG2,740,4,0.005405405405405406,-0.01950175227513765
+G_1_2_M_Mesonephros,Epithelial progenitor cell,CTAG2,673,0,0.0,-0.06523027566723949
+G_1_2_M_Mesonephros,Cancer cell,CTAG2,572,0,0.0,-0.0652302756672395
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,CTAG2,419,0,0.0,-0.06523027566723949
+G_1_2_M_Mesonephros,Granulosa cell,CTAG2,471,7,0.014861995753715499,0.07226868869125568
+G_1_2_M_Mesonephros,Smooth muscle cell,CTAG2,1210,9,0.00743801652892562,0.0053434607347075
+G_1_2_M_Mesonephros,Sertoli cell,CTAG2,1117,1,0.0008952551477170994,-0.061710666749508925
+G_1_2_M_Mesonephros,Hepatic stellate cell,CTAG2,541,0,0.0,-0.06523027566723949
+G_1_2_M_Mesonephros,Lymphocyte,CTAG2,313,2,0.006389776357827476,-0.013979353448311204
+G_1_2_M_Mesonephros,Hypoblast cell,CTAG2,155,2,0.012903225806451613,0.0646436633736281
+G_1_2_M_Mesonephros,Endothelial cell,CTAG2,71,1,0.014084507042253521,0.07653353103229904
+G_1_2_M_Mesonephros,Podocyte,CTAG2,107,2,0.018691588785046728,0.07069707690570372
+G_1_2_M_Mesonephros,Lymphoid cell,CTAG2,35,0,0.0,-0.06523027566723948
+G_1_2_M_Mesonephros,Corticotroph tumor cell,CTAG2,20,2,0.1,0.7280489860821285
+G_1_2_M_Mesonephros,Colony-forming cell,CTCFL,548,1,0.0018248175182481751,-0.014566473639997395
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,CTCFL,696,0,0.0,-0.03287463903970489
+G_1_2_M_Mesonephros,Innate lymphoid cell,CTCFL,810,2,0.0024691358024691358,-0.00810210906676734
+G_1_2_M_Mesonephros,Interstitial cell,CTCFL,386,0,0.0,-0.03287463903970489
+G_1_2_M_Mesonephros,Haematopoietic cell,CTCFL,154,0,0.0,-0.03287463903970489
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,CTCFL,740,2,0.002702702702702703,-0.005758761636894868
+G_1_2_M_Mesonephros,Epithelial progenitor cell,CTCFL,673,0,0.0,-0.032874639039704896
+G_1_2_M_Mesonephros,Cancer cell,CTCFL,572,1,0.0017482517482517483,-0.01533464841201309
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,CTCFL,419,1,0.002386634844868735,-0.008929830831972883
+G_1_2_M_Mesonephros,Granulosa cell,CTCFL,471,1,0.0021231422505307855,-0.011573418999280884
+G_1_2_M_Mesonephros,Smooth muscle cell,CTCFL,1210,0,0.0,-0.03287463903970489
+G_1_2_M_Mesonephros,Sertoli cell,CTCFL,1117,1,0.0008952551477170994,-0.023892656372704255
+G_1_2_M_Mesonephros,Hepatic stellate cell,CTCFL,541,0,0.0,-0.03287463903970488
+G_1_2_M_Mesonephros,Lymphocyte,CTCFL,313,0,0.0,-0.03287463903970489
+G_1_2_M_Mesonephros,Hypoblast cell,CTCFL,155,0,0.0,-0.03287463903970488
+G_1_2_M_Mesonephros,Endothelial cell,CTCFL,71,0,0.0,-0.032874639039704875
+G_1_2_M_Mesonephros,Podocyte,CTCFL,107,0,0.0,-0.03287463903970489
+G_1_2_M_Mesonephros,Lymphoid cell,CTCFL,35,0,0.0,-0.03287463903970488
+G_1_2_M_Mesonephros,Corticotroph tumor cell,CTCFL,20,3,0.15,1.472056556816251
+G_1_2_M_Mesonephros,Colony-forming cell,DMRT1,548,2,0.0036496350364963502,-0.08245594116713872
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,DMRT1,696,0,0.0,-0.09929389339091331
+G_1_2_M_Mesonephros,Innate lymphoid cell,DMRT1,810,2,0.0024691358024691358,-0.08723646707595624
+G_1_2_M_Mesonephros,Interstitial cell,DMRT1,386,0,0.0,-0.0992938933909133
+G_1_2_M_Mesonephros,Haematopoietic cell,DMRT1,154,2,0.012987012987012988,-0.030789564466842008
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,DMRT1,740,4,0.005405405405405406,-0.07328661447186871
+G_1_2_M_Mesonephros,Epithelial progenitor cell,DMRT1,673,7,0.010401188707280832,-0.039433433033205935
+G_1_2_M_Mesonephros,Cancer cell,DMRT1,572,1,0.0017482517482517483,-0.09396264887389601
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,DMRT1,419,2,0.00477326968973747,-0.06332993177763625
+G_1_2_M_Mesonephros,Granulosa cell,DMRT1,471,0,0.0,-0.0992938933909133
+G_1_2_M_Mesonephros,Smooth muscle cell,DMRT1,1210,1,0.0008264462809917355,-0.09549405580687231
+G_1_2_M_Mesonephros,Sertoli cell,DMRT1,1117,77,0.06893464637421665,0.4500500115248523
+G_1_2_M_Mesonephros,Hepatic stellate cell,DMRT1,541,0,0.0,-0.09929389339091332
+G_1_2_M_Mesonephros,Lymphocyte,DMRT1,313,1,0.003194888178913738,-0.08582079948745383
+G_1_2_M_Mesonephros,Hypoblast cell,DMRT1,155,0,0.0,-0.09929389339091331
+G_1_2_M_Mesonephros,Endothelial cell,DMRT1,71,0,0.0,-0.09929389339091334
+G_1_2_M_Mesonephros,Podocyte,DMRT1,107,0,0.0,-0.09929389339091328
+G_1_2_M_Mesonephros,Lymphoid cell,DMRT1,35,0,0.0,-0.0992938933909133
+G_1_2_M_Mesonephros,Corticotroph tumor cell,DMRT1,20,7,0.35,3.3030199943339307
+G_1_2_M_Mesonephros,Colony-forming cell,FAM133A,548,0,0.0,-0.05548039660034794
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,FAM133A,696,1,0.0014367816091954023,-0.04481424990463705
+G_1_2_M_Mesonephros,Innate lymphoid cell,FAM133A,810,2,0.0024691358024691358,-0.034734193889977595
+G_1_2_M_Mesonephros,Interstitial cell,FAM133A,386,1,0.0025906735751295338,-0.029429929251642395
+G_1_2_M_Mesonephros,Haematopoietic cell,FAM133A,154,0,0.0,-0.055480396600347946
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,FAM133A,740,2,0.002702702702702703,-0.035259587468858745
+G_1_2_M_Mesonephros,Epithelial progenitor cell,FAM133A,673,6,0.008915304606240713,0.020958124625750578
+G_1_2_M_Mesonephros,Cancer cell,FAM133A,572,0,0.0,-0.05548039660034793
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,FAM133A,419,4,0.00954653937947494,0.03409205119695219
+G_1_2_M_Mesonephros,Granulosa cell,FAM133A,471,1,0.0021231422505307855,-0.0341311813209417
+G_1_2_M_Mesonephros,Smooth muscle cell,FAM133A,1210,3,0.0024793388429752068,-0.03156291052984875
+G_1_2_M_Mesonephros,Sertoli cell,FAM133A,1117,8,0.007162041181736795,0.010548344447259272
+G_1_2_M_Mesonephros,Hepatic stellate cell,FAM133A,541,0,0.0,-0.05548039660034794
+G_1_2_M_Mesonephros,Lymphocyte,FAM133A,313,0,0.0,-0.05548039660034794
+G_1_2_M_Mesonephros,Hypoblast cell,FAM133A,155,0,0.0,-0.055480396600347946
+G_1_2_M_Mesonephros,Endothelial cell,FAM133A,71,0,0.0,-0.05548039660034793
+G_1_2_M_Mesonephros,Podocyte,FAM133A,107,0,0.0,-0.05548039660034796
+G_1_2_M_Mesonephros,Lymphoid cell,FAM133A,35,0,0.0,-0.05548039660034794
+G_1_2_M_Mesonephros,Corticotroph tumor cell,FAM133A,20,8,0.4,3.9143724932452573
+G_1_2_M_Mesonephros,Colony-forming cell,FATE1,548,0,0.0,-0.16145945970153197
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,FATE1,696,2,0.0028735632183908046,-0.15408045124786407
+G_1_2_M_Mesonephros,Innate lymphoid cell,FATE1,810,0,0.0,-0.16145945970153197
+G_1_2_M_Mesonephros,Interstitial cell,FATE1,386,0,0.0,-0.16145945970153194
+G_1_2_M_Mesonephros,Haematopoietic cell,FATE1,154,0,0.0,-0.16145945970153194
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,FATE1,740,0,0.0,-0.16145945970153194
+G_1_2_M_Mesonephros,Epithelial progenitor cell,FATE1,673,1,0.0014858841010401188,-0.15664191972723868
+G_1_2_M_Mesonephros,Cancer cell,FATE1,572,1,0.0017482517482517483,-0.15939222925012905
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,FATE1,419,3,0.007159904534606206,-0.13170452914525385
+G_1_2_M_Mesonephros,Granulosa cell,FATE1,471,0,0.0,-0.16145945970153194
+G_1_2_M_Mesonephros,Smooth muscle cell,FATE1,1210,2,0.001652892561983471,-0.154671310427002
+G_1_2_M_Mesonephros,Sertoli cell,FATE1,1117,283,0.25335720680393914,1.0697562852136238
+G_1_2_M_Mesonephros,Hepatic stellate cell,FATE1,541,1,0.0018484288354898336,-0.15397466200797602
+G_1_2_M_Mesonephros,Lymphocyte,FATE1,313,1,0.003194888178913738,-0.14811672157634143
+G_1_2_M_Mesonephros,Hypoblast cell,FATE1,155,1,0.0064516129032258064,-0.13485443621179297
+G_1_2_M_Mesonephros,Endothelial cell,FATE1,71,0,0.0,-0.161459459701532
+G_1_2_M_Mesonephros,Podocyte,FATE1,107,0,0.0,-0.16145945970153197
+G_1_2_M_Mesonephros,Lymphoid cell,FATE1,35,0,0.0,-0.1614594597015319
+G_1_2_M_Mesonephros,Corticotroph tumor cell,FATE1,20,0,0.0,-0.1614594597015319
+G_1_2_M_Mesonephros,Colony-forming cell,GAGE12H,548,0,0.0,-0.019353421020498418
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,GAGE12H,696,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Innate lymphoid cell,GAGE12H,810,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Interstitial cell,GAGE12H,386,0,0.0,-0.019353421020498418
+G_1_2_M_Mesonephros,Haematopoietic cell,GAGE12H,154,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,GAGE12H,740,0,0.0,-0.019353421020498418
+G_1_2_M_Mesonephros,Epithelial progenitor cell,GAGE12H,673,0,0.0,-0.019353421020498418
+G_1_2_M_Mesonephros,Cancer cell,GAGE12H,572,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,GAGE12H,419,0,0.0,-0.01935342102049841
+G_1_2_M_Mesonephros,Granulosa cell,GAGE12H,471,0,0.0,-0.019353421020498408
+G_1_2_M_Mesonephros,Smooth muscle cell,GAGE12H,1210,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Sertoli cell,GAGE12H,1117,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Hepatic stellate cell,GAGE12H,541,0,0.0,-0.019353421020498418
+G_1_2_M_Mesonephros,Lymphocyte,GAGE12H,313,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Hypoblast cell,GAGE12H,155,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Endothelial cell,GAGE12H,71,0,0.0,-0.019353421020498415
+G_1_2_M_Mesonephros,Podocyte,GAGE12H,107,0,0.0,-0.019353421020498408
+G_1_2_M_Mesonephros,Lymphoid cell,GAGE12H,35,0,0.0,-0.01935342102049841
+G_1_2_M_Mesonephros,Corticotroph tumor cell,GAGE12H,20,4,0.2,1.9845172631836014
+G_1_2_M_Mesonephros,Colony-forming cell,GAGE2A,548,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,GAGE2A,696,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Innate lymphoid cell,GAGE2A,810,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Interstitial cell,GAGE2A,386,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Haematopoietic cell,GAGE2A,154,0,0.0,-0.02224882657376573
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,GAGE2A,740,0,0.0,-0.02224882657376573
+G_1_2_M_Mesonephros,Epithelial progenitor cell,GAGE2A,673,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Cancer cell,GAGE2A,572,0,0.0,-0.02224882657376573
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,GAGE2A,419,0,0.0,-0.02224882657376573
+G_1_2_M_Mesonephros,Granulosa cell,GAGE2A,471,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Smooth muscle cell,GAGE2A,1210,0,0.0,-0.02224882657376573
+G_1_2_M_Mesonephros,Sertoli cell,GAGE2A,1117,0,0.0,-0.02224882657376573
+G_1_2_M_Mesonephros,Hepatic stellate cell,GAGE2A,541,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Lymphocyte,GAGE2A,313,0,0.0,-0.02224882657376573
+G_1_2_M_Mesonephros,Hypoblast cell,GAGE2A,155,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Endothelial cell,GAGE2A,71,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Podocyte,GAGE2A,107,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Lymphoid cell,GAGE2A,35,0,0.0,-0.022248826573765725
+G_1_2_M_Mesonephros,Corticotroph tumor cell,GAGE2A,20,5,0.25,2.4833133800696756
+G_1_2_M_Mesonephros,Colony-forming cell,IL13RA2,548,110,0.20072992700729927,-0.11630754704505641
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,IL13RA2,696,204,0.29310344827586204,0.21292996151294896
+G_1_2_M_Mesonephros,Innate lymphoid cell,IL13RA2,810,203,0.2506172839506173,0.0647485967067714
+G_1_2_M_Mesonephros,Interstitial cell,IL13RA2,386,172,0.44559585492227977,0.5720777070373324
+G_1_2_M_Mesonephros,Haematopoietic cell,IL13RA2,154,0,0.0,-0.4290847937591126
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,IL13RA2,740,28,0.03783783783783784,-0.38701367725998215
+G_1_2_M_Mesonephros,Epithelial progenitor cell,IL13RA2,673,57,0.08469539375928678,-0.31323657841515606
+G_1_2_M_Mesonephros,Cancer cell,IL13RA2,572,79,0.1381118881118881,-0.2833960506110279
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,IL13RA2,419,25,0.059665871121718374,-0.2912891261480975
+G_1_2_M_Mesonephros,Granulosa cell,IL13RA2,471,83,0.1762208067940552,-0.15867543198694994
+G_1_2_M_Mesonephros,Smooth muscle cell,IL13RA2,1210,575,0.47520661157024796,0.8032916525322982
+G_1_2_M_Mesonephros,Sertoli cell,IL13RA2,1117,20,0.017905102954341987,-0.4018452435094304
+G_1_2_M_Mesonephros,Hepatic stellate cell,IL13RA2,541,146,0.2698706099815157,0.07776777694223311
+G_1_2_M_Mesonephros,Lymphocyte,IL13RA2,313,122,0.38977635782747605,0.4173796958500536
+G_1_2_M_Mesonephros,Hypoblast cell,IL13RA2,155,11,0.07096774193548387,-0.2956688718445308
+G_1_2_M_Mesonephros,Endothelial cell,IL13RA2,71,6,0.08450704225352113,-0.3138968068936567
+G_1_2_M_Mesonephros,Podocyte,IL13RA2,107,0,0.0,-0.4290847937591124
+G_1_2_M_Mesonephros,Lymphoid cell,IL13RA2,35,0,0.0,-0.4290847937591127
+G_1_2_M_Mesonephros,Corticotroph tumor cell,IL13RA2,20,3,0.15,-0.11767256384141997
+G_1_2_M_Mesonephros,Colony-forming cell,LUZP4,548,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,LUZP4,696,0,0.0,-0.029768561936437846
+G_1_2_M_Mesonephros,Innate lymphoid cell,LUZP4,810,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Interstitial cell,LUZP4,386,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Haematopoietic cell,LUZP4,154,0,0.0,-0.02976856193643784
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,LUZP4,740,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Epithelial progenitor cell,LUZP4,673,0,0.0,-0.02976856193643784
+G_1_2_M_Mesonephros,Cancer cell,LUZP4,572,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,LUZP4,419,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Granulosa cell,LUZP4,471,0,0.0,-0.02976856193643784
+G_1_2_M_Mesonephros,Smooth muscle cell,LUZP4,1210,0,0.0,-0.02976856193643784
+G_1_2_M_Mesonephros,Sertoli cell,LUZP4,1117,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Hepatic stellate cell,LUZP4,541,0,0.0,-0.02976856193643784
+G_1_2_M_Mesonephros,Lymphocyte,LUZP4,313,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Hypoblast cell,LUZP4,155,0,0.0,-0.02976856193643784
+G_1_2_M_Mesonephros,Endothelial cell,LUZP4,71,0,0.0,-0.029768561936437832
+G_1_2_M_Mesonephros,Podocyte,LUZP4,107,0,0.0,-0.029768561936437836
+G_1_2_M_Mesonephros,Lymphoid cell,LUZP4,35,0,0.0,-0.029768561936437843
+G_1_2_M_Mesonephros,Corticotroph tumor cell,LUZP4,20,9,0.45,4.48362729093496
+G_1_2_M_Mesonephros,Colony-forming cell,LY6K,548,28,0.051094890510948905,-0.08152999395045454
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,LY6K,696,46,0.06609195402298851,0.1415615135758658
+G_1_2_M_Mesonephros,Innate lymphoid cell,LY6K,810,40,0.04938271604938271,-0.029099903273094765
+G_1_2_M_Mesonephros,Interstitial cell,LY6K,386,27,0.06994818652849741,0.08469117789504413
+G_1_2_M_Mesonephros,Haematopoietic cell,LY6K,154,0,0.0,-0.21243239619974852
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,LY6K,740,61,0.08243243243243244,0.03548660895640621
+G_1_2_M_Mesonephros,Epithelial progenitor cell,LY6K,673,20,0.029717682020802376,-0.11028085914027483
+G_1_2_M_Mesonephros,Cancer cell,LY6K,572,21,0.03671328671328671,-0.11863324807786395
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,LY6K,419,10,0.02386634844868735,-0.08822813048568547
+G_1_2_M_Mesonephros,Granulosa cell,LY6K,471,25,0.05307855626326964,-0.04101380295417961
+G_1_2_M_Mesonephros,Smooth muscle cell,LY6K,1210,104,0.0859504132231405,0.16009277088431131
+G_1_2_M_Mesonephros,Sertoli cell,LY6K,1117,6,0.005371530886302597,-0.19798753399388397
+G_1_2_M_Mesonephros,Hepatic stellate cell,LY6K,541,47,0.08687615526802218,0.16727214417839317
+G_1_2_M_Mesonephros,Lymphocyte,LY6K,313,20,0.06389776357827476,-0.012213517378947165
+G_1_2_M_Mesonephros,Hypoblast cell,LY6K,155,22,0.14193548387096774,0.4624252710894626
+G_1_2_M_Mesonephros,Endothelial cell,LY6K,71,2,0.028169014084507043,-0.13685259807610325
+G_1_2_M_Mesonephros,Podocyte,LY6K,107,2,0.018691588785046728,-0.13892656225178057
+G_1_2_M_Mesonephros,Lymphoid cell,LY6K,35,0,0.0,-0.2124323961997485
+G_1_2_M_Mesonephros,Corticotroph tumor cell,LY6K,20,5,0.25,1.2984080343691868
+G_1_2_M_Mesonephros,Colony-forming cell,MAGEA4,548,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,MAGEA4,696,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Innate lymphoid cell,MAGEA4,810,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Interstitial cell,MAGEA4,386,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Haematopoietic cell,MAGEA4,154,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,MAGEA4,740,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Epithelial progenitor cell,MAGEA4,673,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Cancer cell,MAGEA4,572,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,MAGEA4,419,0,0.0,-0.019449461901146887
+G_1_2_M_Mesonephros,Granulosa cell,MAGEA4,471,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Smooth muscle cell,MAGEA4,1210,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Sertoli cell,MAGEA4,1117,0,0.0,-0.019449461901146887
+G_1_2_M_Mesonephros,Hepatic stellate cell,MAGEA4,541,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Lymphocyte,MAGEA4,313,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Hypoblast cell,MAGEA4,155,0,0.0,-0.019449461901146884
+G_1_2_M_Mesonephros,Endothelial cell,MAGEA4,71,0,0.0,-0.019449461901146887
+G_1_2_M_Mesonephros,Podocyte,MAGEA4,107,0,0.0,-0.019449461901146887
+G_1_2_M_Mesonephros,Lymphoid cell,MAGEA4,35,0,0.0,-0.01944946190114689
+G_1_2_M_Mesonephros,Corticotroph tumor cell,MAGEA4,20,4,0.2,1.9844404304790828
+G_1_2_M_Mesonephros,Colony-forming cell,MAGEB2,548,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,MAGEB2,696,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Innate lymphoid cell,MAGEB2,810,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Interstitial cell,MAGEB2,386,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Haematopoietic cell,MAGEB2,154,0,0.0,-0.022146811365806734
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,MAGEB2,740,0,0.0,-0.022146811365806734
+G_1_2_M_Mesonephros,Epithelial progenitor cell,MAGEB2,673,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Cancer cell,MAGEB2,572,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,MAGEB2,419,0,0.0,-0.022146811365806728
+G_1_2_M_Mesonephros,Granulosa cell,MAGEB2,471,0,0.0,-0.022146811365806728
+G_1_2_M_Mesonephros,Smooth muscle cell,MAGEB2,1210,0,0.0,-0.022146811365806734
+G_1_2_M_Mesonephros,Sertoli cell,MAGEB2,1117,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Hepatic stellate cell,MAGEB2,541,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Lymphocyte,MAGEB2,313,0,0.0,-0.02214681136580673
+G_1_2_M_Mesonephros,Hypoblast cell,MAGEB2,155,0,0.0,-0.022146811365806734
+G_1_2_M_Mesonephros,Endothelial cell,MAGEB2,71,0,0.0,-0.022146811365806734
+G_1_2_M_Mesonephros,Podocyte,MAGEB2,107,0,0.0,-0.022146811365806728
+G_1_2_M_Mesonephros,Lymphoid cell,MAGEB2,35,0,0.0,-0.022146811365806734
+G_1_2_M_Mesonephros,Corticotroph tumor cell,MAGEB2,20,5,0.25,2.483389891475645
+G_1_2_M_Mesonephros,Colony-forming cell,MAGEC2,548,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,MAGEC2,696,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Innate lymphoid cell,MAGEC2,810,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Interstitial cell,MAGEC2,386,0,0.0,-0.02294596368377875
+G_1_2_M_Mesonephros,Haematopoietic cell,MAGEC2,154,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,MAGEC2,740,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Epithelial progenitor cell,MAGEC2,673,0,0.0,-0.022945963683778742
+G_1_2_M_Mesonephros,Cancer cell,MAGEC2,572,0,0.0,-0.022945963683778742
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,MAGEC2,419,0,0.0,-0.02294596368377875
+G_1_2_M_Mesonephros,Granulosa cell,MAGEC2,471,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Smooth muscle cell,MAGEC2,1210,0,0.0,-0.022945963683778742
+G_1_2_M_Mesonephros,Sertoli cell,MAGEC2,1117,0,0.0,-0.022945963683778742
+G_1_2_M_Mesonephros,Hepatic stellate cell,MAGEC2,541,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Lymphocyte,MAGEC2,313,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Hypoblast cell,MAGEC2,155,0,0.0,-0.022945963683778745
+G_1_2_M_Mesonephros,Endothelial cell,MAGEC2,71,0,0.0,-0.02294596368377875
+G_1_2_M_Mesonephros,Podocyte,MAGEC2,107,0,0.0,-0.022945963683778742
+G_1_2_M_Mesonephros,Lymphoid cell,MAGEC2,35,0,0.0,-0.022945963683778752
+G_1_2_M_Mesonephros,Corticotroph tumor cell,MAGEC2,20,5,0.25,2.482790527237166
+G_1_2_M_Mesonephros,Colony-forming cell,MORC1,548,0,0.0,-0.022040586665101794
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,MORC1,696,0,0.0,-0.02204058666510179
+G_1_2_M_Mesonephros,Innate lymphoid cell,MORC1,810,0,0.0,-0.022040586665101787
+G_1_2_M_Mesonephros,Interstitial cell,MORC1,386,0,0.0,-0.02204058666510179
+G_1_2_M_Mesonephros,Haematopoietic cell,MORC1,154,0,0.0,-0.022040586665101794
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,MORC1,740,0,0.0,-0.02204058666510179
+G_1_2_M_Mesonephros,Epithelial progenitor cell,MORC1,673,0,0.0,-0.02204058666510179
+G_1_2_M_Mesonephros,Cancer cell,MORC1,572,0,0.0,-0.02204058666510179
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,MORC1,419,0,0.0,-0.022040586665101787
+G_1_2_M_Mesonephros,Granulosa cell,MORC1,471,0,0.0,-0.02204058666510179
+G_1_2_M_Mesonephros,Smooth muscle cell,MORC1,1210,0,0.0,-0.022040586665101794
+G_1_2_M_Mesonephros,Sertoli cell,MORC1,1117,0,0.0,-0.022040586665101794
+G_1_2_M_Mesonephros,Hepatic stellate cell,MORC1,541,1,0.0018484288354898336,-0.0035155578542605576
+G_1_2_M_Mesonephros,Lymphocyte,MORC1,313,0,0.0,-0.02204058666510179
+G_1_2_M_Mesonephros,Hypoblast cell,MORC1,155,0,0.0,-0.022040586665101794
+G_1_2_M_Mesonephros,Endothelial cell,MORC1,71,0,0.0,-0.022040586665101804
+G_1_2_M_Mesonephros,Podocyte,MORC1,107,0,0.0,-0.02204058666510179
+G_1_2_M_Mesonephros,Lymphoid cell,MORC1,35,0,0.0,-0.022040586665101794
+G_1_2_M_Mesonephros,Corticotroph tumor cell,MORC1,20,4,0.2,1.9823675306679185
+G_1_2_M_Mesonephros,Colony-forming cell,PAGE1,548,0,0.0,-0.01598374048107446
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,PAGE1,696,0,0.0,-0.015983740481074454
+G_1_2_M_Mesonephros,Innate lymphoid cell,PAGE1,810,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Interstitial cell,PAGE1,386,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Haematopoietic cell,PAGE1,154,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,PAGE1,740,0,0.0,-0.015983740481074454
+G_1_2_M_Mesonephros,Epithelial progenitor cell,PAGE1,673,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Cancer cell,PAGE1,572,0,0.0,-0.01598374048107446
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE1,419,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Granulosa cell,PAGE1,471,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Smooth muscle cell,PAGE1,1210,0,0.0,-0.015983740481074454
+G_1_2_M_Mesonephros,Sertoli cell,PAGE1,1117,0,0.0,-0.01598374048107446
+G_1_2_M_Mesonephros,Hepatic stellate cell,PAGE1,541,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Lymphocyte,PAGE1,313,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Hypoblast cell,PAGE1,155,0,0.0,-0.01598374048107446
+G_1_2_M_Mesonephros,Endothelial cell,PAGE1,71,0,0.0,-0.015983740481074465
+G_1_2_M_Mesonephros,Podocyte,PAGE1,107,0,0.0,-0.015983740481074458
+G_1_2_M_Mesonephros,Lymphoid cell,PAGE1,35,0,0.0,-0.015983740481074454
+G_1_2_M_Mesonephros,Corticotroph tumor cell,PAGE1,20,3,0.15,1.4864138205910866
+G_1_2_M_Mesonephros,Colony-forming cell,PAGE2,548,1,0.0018248175182481751,-0.0021718167847433775
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,PAGE2,696,0,0.0,-0.020457322848335232
+G_1_2_M_Mesonephros,Innate lymphoid cell,PAGE2,810,0,0.0,-0.02045732284833523
+G_1_2_M_Mesonephros,Interstitial cell,PAGE2,386,0,0.0,-0.020457322848335235
+G_1_2_M_Mesonephros,Haematopoietic cell,PAGE2,154,0,0.0,-0.020457322848335232
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,PAGE2,740,0,0.0,-0.020457322848335235
+G_1_2_M_Mesonephros,Epithelial progenitor cell,PAGE2,673,0,0.0,-0.020457322848335232
+G_1_2_M_Mesonephros,Cancer cell,PAGE2,572,1,0.0017482517482517483,-0.0029390408153835952
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE2,419,2,0.00477326968973747,0.027373022368124604
+G_1_2_M_Mesonephros,Granulosa cell,PAGE2,471,0,0.0,-0.02045732284833523
+G_1_2_M_Mesonephros,Smooth muscle cell,PAGE2,1210,0,0.0,-0.020457322848335232
+G_1_2_M_Mesonephros,Sertoli cell,PAGE2,1117,0,0.0,-0.020457322848335235
+G_1_2_M_Mesonephros,Hepatic stellate cell,PAGE2,541,0,0.0,-0.020457322848335232
+G_1_2_M_Mesonephros,Lymphocyte,PAGE2,313,0,0.0,-0.020457322848335232
+G_1_2_M_Mesonephros,Hypoblast cell,PAGE2,155,0,0.0,-0.020457322848335232
+G_1_2_M_Mesonephros,Endothelial cell,PAGE2,71,0,0.0,-0.02045732284833522
+G_1_2_M_Mesonephros,Podocyte,PAGE2,107,0,0.0,-0.02045732284833523
+G_1_2_M_Mesonephros,Lymphoid cell,PAGE2,35,0,0.0,-0.020457322848335232
+G_1_2_M_Mesonephros,Corticotroph tumor cell,PAGE2,20,1,0.05,0.4805655432940815
+G_1_2_M_Mesonephros,Colony-forming cell,PAGE2B,548,1,0.0018248175182481751,-0.013507866967588303
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,PAGE2B,696,0,0.0,-0.03173166559845743
+G_1_2_M_Mesonephros,Innate lymphoid cell,PAGE2B,810,0,0.0,-0.03173166559845743
+G_1_2_M_Mesonephros,Interstitial cell,PAGE2B,386,0,0.0,-0.03173166559845743
+G_1_2_M_Mesonephros,Haematopoietic cell,PAGE2B,154,0,0.0,-0.03173166559845743
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,PAGE2B,740,3,0.004054054054054054,0.008937516829644429
+G_1_2_M_Mesonephros,Epithelial progenitor cell,PAGE2B,673,0,0.0,-0.031731665598457436
+G_1_2_M_Mesonephros,Cancer cell,PAGE2B,572,0,0.0,-0.03173166559845743
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE2B,419,1,0.002386634844868735,-0.007789585250967067
+G_1_2_M_Mesonephros,Granulosa cell,PAGE2B,471,0,0.0,-0.03173166559845742
+G_1_2_M_Mesonephros,Smooth muscle cell,PAGE2B,1210,0,0.0,-0.031731665598457436
+G_1_2_M_Mesonephros,Sertoli cell,PAGE2B,1117,1,0.0008952551477170994,-0.026647216853988732
+G_1_2_M_Mesonephros,Hepatic stellate cell,PAGE2B,541,0,0.0,-0.03173166559845743
+G_1_2_M_Mesonephros,Lymphocyte,PAGE2B,313,0,0.0,-0.031731665598457436
+G_1_2_M_Mesonephros,Hypoblast cell,PAGE2B,155,0,0.0,-0.03173166559845743
+G_1_2_M_Mesonephros,Endothelial cell,PAGE2B,71,0,0.0,-0.031731665598457436
+G_1_2_M_Mesonephros,Podocyte,PAGE2B,107,0,0.0,-0.03173166559845743
+G_1_2_M_Mesonephros,Lymphoid cell,PAGE2B,35,0,0.0,-0.031731665598457436
+G_1_2_M_Mesonephros,Corticotroph tumor cell,PAGE2B,20,6,0.3,2.97778783408108
+G_1_2_M_Mesonephros,Colony-forming cell,PAGE4,548,1,0.0018248175182481751,-0.08440470511583886
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,PAGE4,696,13,0.01867816091954023,0.04987962789475075
+G_1_2_M_Mesonephros,Innate lymphoid cell,PAGE4,810,0,0.0,-0.09591212656065283
+G_1_2_M_Mesonephros,Interstitial cell,PAGE4,386,25,0.06476683937823834,0.39512068296149916
+G_1_2_M_Mesonephros,Haematopoietic cell,PAGE4,154,0,0.0,-0.09591212656065282
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,PAGE4,740,0,0.0,-0.09591212656065282
+G_1_2_M_Mesonephros,Epithelial progenitor cell,PAGE4,673,1,0.0014858841010401188,-0.09078049860259205
+G_1_2_M_Mesonephros,Cancer cell,PAGE4,572,1,0.0017482517482517483,-0.09069760480265397
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE4,419,3,0.007159904534606206,-0.023626359544705385
+G_1_2_M_Mesonephros,Granulosa cell,PAGE4,471,3,0.006369426751592357,-0.034520516865841046
+G_1_2_M_Mesonephros,Smooth muscle cell,PAGE4,1210,49,0.04049586776859504,0.2277718545014697
+G_1_2_M_Mesonephros,Sertoli cell,PAGE4,1117,1,0.0008952551477170994,-0.09320668692223158
+G_1_2_M_Mesonephros,Hepatic stellate cell,PAGE4,541,0,0.0,-0.09591212656065282
+G_1_2_M_Mesonephros,Lymphocyte,PAGE4,313,2,0.006389776357827476,-0.03262288161882802
+G_1_2_M_Mesonephros,Hypoblast cell,PAGE4,155,1,0.0064516129032258064,-0.056789136976836414
+G_1_2_M_Mesonephros,Endothelial cell,PAGE4,71,0,0.0,-0.09591212656065282
+G_1_2_M_Mesonephros,Podocyte,PAGE4,107,0,0.0,-0.0959121265606528
+G_1_2_M_Mesonephros,Lymphoid cell,PAGE4,35,0,0.0,-0.0959121265606528
+G_1_2_M_Mesonephros,Corticotroph tumor cell,PAGE4,20,0,0.0,-0.09591212656065282
+G_1_2_M_Mesonephros,Colony-forming cell,PAGE5,548,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,PAGE5,696,0,0.0,-0.02213445792402116
+G_1_2_M_Mesonephros,Innate lymphoid cell,PAGE5,810,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Interstitial cell,PAGE5,386,0,0.0,-0.022134457924021165
+G_1_2_M_Mesonephros,Haematopoietic cell,PAGE5,154,0,0.0,-0.022134457924021165
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,PAGE5,740,0,0.0,-0.022134457924021172
+G_1_2_M_Mesonephros,Epithelial progenitor cell,PAGE5,673,0,0.0,-0.022134457924021165
+G_1_2_M_Mesonephros,Cancer cell,PAGE5,572,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PAGE5,419,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Granulosa cell,PAGE5,471,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Smooth muscle cell,PAGE5,1210,0,0.0,-0.022134457924021165
+G_1_2_M_Mesonephros,Sertoli cell,PAGE5,1117,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Hepatic stellate cell,PAGE5,541,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Lymphocyte,PAGE5,313,0,0.0,-0.022134457924021165
+G_1_2_M_Mesonephros,Hypoblast cell,PAGE5,155,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Endothelial cell,PAGE5,71,0,0.0,-0.022134457924021172
+G_1_2_M_Mesonephros,Podocyte,PAGE5,107,0,0.0,-0.02213445792402117
+G_1_2_M_Mesonephros,Lymphoid cell,PAGE5,35,0,0.0,-0.022134457924021165
+G_1_2_M_Mesonephros,Corticotroph tumor cell,PAGE5,20,5,0.25,2.4833991565569837
+G_1_2_M_Mesonephros,Colony-forming cell,PLAC1,548,0,0.0,-0.1307462878510117
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,PLAC1,696,3,0.004310344827586207,-0.10453721267288489
+G_1_2_M_Mesonephros,Innate lymphoid cell,PLAC1,810,4,0.0049382716049382715,-0.09473438328964538
+G_1_2_M_Mesonephros,Interstitial cell,PLAC1,386,6,0.015544041450777202,-0.044326963151545794
+G_1_2_M_Mesonephros,Haematopoietic cell,PLAC1,154,9,0.05844155844155844,0.20125119107107506
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,PLAC1,740,4,0.005405405405405406,-0.11061814149640405
+G_1_2_M_Mesonephros,Epithelial progenitor cell,PLAC1,673,4,0.005943536404160475,-0.10288722019192381
+G_1_2_M_Mesonephros,Cancer cell,PLAC1,572,2,0.0034965034965034965,-0.11975550152564897
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PLAC1,419,11,0.026252983293556086,0.09151334056034839
+G_1_2_M_Mesonephros,Granulosa cell,PLAC1,471,1,0.0021231422505307855,-0.12676427712631758
+G_1_2_M_Mesonephros,Smooth muscle cell,PLAC1,1210,9,0.00743801652892562,-0.08733294115481001
+G_1_2_M_Mesonephros,Sertoli cell,PLAC1,1117,103,0.09221128021486123,0.4543852996373347
+G_1_2_M_Mesonephros,Hepatic stellate cell,PLAC1,541,19,0.03512014787430684,0.05393459688323517
+G_1_2_M_Mesonephros,Lymphocyte,PLAC1,313,5,0.01597444089456869,-0.06659455574571994
+G_1_2_M_Mesonephros,Hypoblast cell,PLAC1,155,0,0.0,-0.1307462878510117
+G_1_2_M_Mesonephros,Endothelial cell,PLAC1,71,0,0.0,-0.1307462878510116
+G_1_2_M_Mesonephros,Podocyte,PLAC1,107,4,0.037383177570093455,0.16148425728827936
+G_1_2_M_Mesonephros,Lymphoid cell,PLAC1,35,0,0.0,-0.13074628785101167
+G_1_2_M_Mesonephros,Corticotroph tumor cell,PLAC1,20,1,0.05,-0.0016312621915571368
+G_1_2_M_Mesonephros,Colony-forming cell,PRAME,548,0,0.0,-0.05007554447530575
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,PRAME,696,0,0.0,-0.050075544475305746
+G_1_2_M_Mesonephros,Innate lymphoid cell,PRAME,810,0,0.0,-0.050075544475305746
+G_1_2_M_Mesonephros,Interstitial cell,PRAME,386,0,0.0,-0.050075544475305746
+G_1_2_M_Mesonephros,Haematopoietic cell,PRAME,154,0,0.0,-0.050075544475305746
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,PRAME,740,2,0.002702702702702703,-0.03859784535156532
+G_1_2_M_Mesonephros,Epithelial progenitor cell,PRAME,673,1,0.0014858841010401188,-0.038671248735389734
+G_1_2_M_Mesonephros,Cancer cell,PRAME,572,0,0.0,-0.05007554447530576
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,PRAME,419,0,0.0,-0.050075544475305746
+G_1_2_M_Mesonephros,Granulosa cell,PRAME,471,0,0.0,-0.05007554447530574
+G_1_2_M_Mesonephros,Smooth muscle cell,PRAME,1210,0,0.0,-0.05007554447530575
+G_1_2_M_Mesonephros,Sertoli cell,PRAME,1117,18,0.01611459265890779,0.09474332762785719
+G_1_2_M_Mesonephros,Hepatic stellate cell,PRAME,541,0,0.0,-0.05007554447530575
+G_1_2_M_Mesonephros,Lymphocyte,PRAME,313,0,0.0,-0.05007554447530575
+G_1_2_M_Mesonephros,Hypoblast cell,PRAME,155,0,0.0,-0.050075544475305746
+G_1_2_M_Mesonephros,Endothelial cell,PRAME,71,0,0.0,-0.05007554447530576
+G_1_2_M_Mesonephros,Podocyte,PRAME,107,0,0.0,-0.05007554447530573
+G_1_2_M_Mesonephros,Lymphoid cell,PRAME,35,0,0.0,-0.05007554447530575
+G_1_2_M_Mesonephros,Corticotroph tumor cell,PRAME,20,10,0.5,4.814870718422307
+G_1_2_M_Mesonephros,Colony-forming cell,SPAG6,548,0,0.0,-0.048482117927247714
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,SPAG6,696,0,0.0,-0.048482117927247714
+G_1_2_M_Mesonephros,Innate lymphoid cell,SPAG6,810,0,0.0,-0.0484821179272477
+G_1_2_M_Mesonephros,Interstitial cell,SPAG6,386,0,0.0,-0.04848211792724771
+G_1_2_M_Mesonephros,Haematopoietic cell,SPAG6,154,0,0.0,-0.048482117927247714
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,SPAG6,740,1,0.0013513513513513514,-0.03490308803815684
+G_1_2_M_Mesonephros,Epithelial progenitor cell,SPAG6,673,0,0.0,-0.048482117927247714
+G_1_2_M_Mesonephros,Cancer cell,SPAG6,572,24,0.04195804195804196,0.3297153924419115
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,SPAG6,419,0,0.0,-0.048482117927247693
+G_1_2_M_Mesonephros,Granulosa cell,SPAG6,471,0,0.0,-0.048482117927247693
+G_1_2_M_Mesonephros,Smooth muscle cell,SPAG6,1210,0,0.0,-0.04848211792724771
+G_1_2_M_Mesonephros,Sertoli cell,SPAG6,1117,3,0.0026857654431512983,-0.021494251898794947
+G_1_2_M_Mesonephros,Hepatic stellate cell,SPAG6,541,1,0.0018484288354898336,-0.02990821382756703
+G_1_2_M_Mesonephros,Lymphocyte,SPAG6,313,0,0.0,-0.04848211792724771
+G_1_2_M_Mesonephros,Hypoblast cell,SPAG6,155,0,0.0,-0.048482117927247714
+G_1_2_M_Mesonephros,Endothelial cell,SPAG6,71,0,0.0,-0.04848211792724772
+G_1_2_M_Mesonephros,Podocyte,SPAG6,107,0,0.0,-0.048482117927247693
+G_1_2_M_Mesonephros,Lymphoid cell,SPAG6,35,0,0.0,-0.0484821179272477
+G_1_2_M_Mesonephros,Corticotroph tumor cell,SPAG6,20,0,0.0,-0.0484821179272477
+G_1_2_M_Mesonephros,Colony-forming cell,TMEFF2,548,21,0.03832116788321168,-0.13571016109481085
+G_1_2_M_Mesonephros,Oligodendrocyte precursor cell,TMEFF2,696,38,0.05459770114942529,-0.0017496579253200616
+G_1_2_M_Mesonephros,Innate lymphoid cell,TMEFF2,810,38,0.04691358024691358,-0.0723774393375844
+G_1_2_M_Mesonephros,Interstitial cell,TMEFF2,386,27,0.06994818652849741,0.02030959272973939
+G_1_2_M_Mesonephros,Haematopoietic cell,TMEFF2,154,1,0.006493506493506494,-0.2097922025727018
+G_1_2_M_Mesonephros,Pre-tubular aggregate cell,TMEFF2,740,27,0.03648648648648649,-0.13043291452203853
+G_1_2_M_Mesonephros,Epithelial progenitor cell,TMEFF2,673,87,0.12927191679049035,0.21482153363844825
+G_1_2_M_Mesonephros,Cancer cell,TMEFF2,572,4,0.006993006993006993,-0.21222880833076221
+G_1_2_M_Mesonephros,Meiotic prophase fetal germ cell,TMEFF2,419,40,0.0954653937947494,0.1840712213907189
+G_1_2_M_Mesonephros,Granulosa cell,TMEFF2,471,18,0.03821656050955414,-0.11101093230974345
+G_1_2_M_Mesonephros,Smooth muscle cell,TMEFF2,1210,50,0.04132231404958678,-0.06304607678352822
+G_1_2_M_Mesonephros,Sertoli cell,TMEFF2,1117,8,0.007162041181736795,-0.2046225925527674
+G_1_2_M_Mesonephros,Hepatic stellate cell,TMEFF2,541,144,0.266173752310536,1.0030119477703994
+G_1_2_M_Mesonephros,Lymphocyte,TMEFF2,313,30,0.09584664536741214,0.09871247667513099
+G_1_2_M_Mesonephros,Hypoblast cell,TMEFF2,155,4,0.025806451612903226,-0.1491280031939345
+G_1_2_M_Mesonephros,Endothelial cell,TMEFF2,71,0,0.0,-0.22738109181834582
+G_1_2_M_Mesonephros,Podocyte,TMEFF2,107,1,0.009345794392523364,-0.20693144140334518
+G_1_2_M_Mesonephros,Lymphoid cell,TMEFF2,35,0,0.0,-0.22738109181834582
+G_1_2_M_Mesonephros,Corticotroph tumor cell,TMEFF2,20,2,0.1,0.2023851783390164

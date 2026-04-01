@@ -6,6 +6,13 @@ import glob
 import pandas as pd
 import numpy as np
 import scanpy as sc
+import decoupler as dc
+
+sc.settings.autosave = True  # Saves plots to figdir automatically
+sc.settings.autoshow = False # Prevents plots from displaying inline
+
+# Needed for some plotting
+import matplotlib.pyplot as plt
 
 import scipy.sparse as sp  
 from scipy.sparse import csr_matrix
@@ -18,40 +25,95 @@ import matplotlib.pyplot as plt
 from config import *
 from codes.cell_annotation import *
 
-def get_markers_clusters(sample_id, adata, figures_dir, tables_dir, top_n=30):
 
-    heatmap_save_dir = os.path.join(figures_dir, "deg_analysis", "leiden", "heatmap")
-    dotplot_save_dir = os.path.join(figures_dir, "deg_analysis", "leiden", "dotplot")
-    markers_save_dir = os.path.join(tables_dir, "deg_analysis", "leiden")
+def get_ranked_genes(adata, sample_id, tables_dir, figures_dir, always_rank=True, marker_genes_dict=CUSTOM_MARKER_GENES_DICT):
 
-    for d in [heatmap_save_dir, dotplot_save_dir, markers_save_dir]:
-        os.makedirs(d, exist_ok=True)
+    deg_tables_dir = os.path.join(tables_dir, "deg_analysis")
+    deg_figures_dir = os.path.join(figures_dir, "deg_analysis")
+    os.makedirs(deg_figures_dir, exist_ok=True)
+    os.makedirs(deg_tables_dir, exist_ok=True)
 
-    sc.tl.rank_genes_groups(adata, groupby="leiden", method="wilcoxon")
+    # --- work on copy (fix)
+    ad = adata.copy()
 
-    markers_df = sc.get.rank_genes_groups_df(adata, None)
-    markers_df = markers_df[~markers_df["names"].str.startswith(("RPS","RPL","MT-","MALAT1","HLA-"))]
+    # Only use highly variable genes
+    ad.X = np.nan_to_num(ad.X, nan=0.0, posinf=0.0, neginf=0.0)
 
-    markers_df.to_csv(os.path.join(markers_save_dir, f"{sample_id}_deg_analysis_markers.csv"), index=False)
+    if "highly_variable" not in ad.var.columns:
+        sc.pp.highly_variable_genes(
+            ad,
+            layer="counts",
+            n_top_genes=2000,
+            min_mean=0.0125,
+            max_mean=3,
+            min_disp=0.5,
+            flavor="seurat_v3"
+        )
 
-    top_markers = markers_df.groupby("group", observed=False).head(top_n)["names"].unique().tolist()
+    ad = ad[:, ad.var["highly_variable"]].copy()
 
-    top_markers = [g for g in top_markers if g in adata.var_names]
+    # 1. Create df of top genes in each cluster
+    cluster_ranked_genes_df_save_path = os.path.join(
+        deg_tables_dir,
+        f"{sample_id}_top_genes_per_leiden_cluster.csv"
+    )
 
-    cluster_values = adata[:, top_markers].to_df().groupby(adata.obs["leiden"]).mean().values
-    cluster_values = np.nan_to_num(cluster_values)
-    cluster_values = cluster_values[np.isfinite(cluster_values).all(axis=1)]
+    if os.path.exists(cluster_ranked_genes_df_save_path) and not always_rank:
+        cluster_markers_df = pd.read_csv(cluster_ranked_genes_df_save_path)
 
-    Z = linkage(cluster_values, method="average", metric="correlation")
+    else:
+        sc.tl.rank_genes_groups(ad, "leiden", mask_var="highly_variable", method="t-test", use_raw=False)
 
-    sc.tl.dendrogram(adata, groupby="leiden")
+        cluster_dfs = []
 
-    sc.pl.rank_genes_groups_dotplot(adata, show=False)
-    plt.savefig(os.path.join(dotplot_save_dir, f"{sample_id}_leiden_dotplot.png"), dpi=300, bbox_inches="tight")
-    plt.close()
+        for group in sorted(ad.obs["leiden"].unique()):
+            df = sc.get.rank_genes_groups_df(ad, group)
 
-    sc.pl.rank_genes_groups_heatmap(adata, show=False)
-    plt.savefig(os.path.join(heatmap_save_dir, f"{sample_id}_leiden_heatmap.png"), dpi=300, bbox_inches="tight")
-    plt.close()
+            df_filtered = df[(df["pvals_adj"] < 0.05) & (df["logfoldchanges"] > 1)]
+            if df_filtered.shape[0] >= 5:
+                df = df_filtered
 
+            df = df[["names", "logfoldchanges", "pvals_adj"]].head(10).copy()
+            df["leiden_cluster"] = group
+            df["rank"] = range(1, len(df) + 1)
+
+            cluster_dfs.append(df)
+
+        cluster_markers_df = pd.concat(cluster_dfs, ignore_index=True)
+        cluster_markers_df.to_csv(cluster_ranked_genes_df_save_path, index=False)
+
+    # 2. Dotplot
+    ranked_genes_dotplot_save_path = f"_{sample_id}_ranked_genes_dotplot.pdf"
+
+    marker_genes_filtered = {
+        k: [g for g in v if g in ad.var_names]
+        for k, v in marker_genes_dict.items()
+    }
+
+    marker_genes_filtered = {
+        k: v for k, v in marker_genes_filtered.items() if len(v) > 0
+    }
+
+    clusters = list(ad.obs["leiden"].unique())
+
+    sc.tl.dendrogram(ad, groupby="leiden")
+
+    sc.settings.figdir = deg_figures_dir
+
+    sc.pl.dotplot(
+        ad,
+        marker_genes_filtered,
+        groupby="leiden",
+        categories_order=clusters,
+        dendrogram=True,
+        standard_scale="var",
+        cmap="Purples",
+        var_group_rotation=0,
+        dot_max=0.6,
+        dot_min=0.1,
+        figsize=(15, 6),
+        show=False,
+        save=ranked_genes_dotplot_save_path  # <-- fixed
+    )
+    adata.write()
     return adata

@@ -1,0 +1,163 @@
+sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
+Norm3,Basal epithelial cell,CAGE1,730,0,0.0,
+Norm3,Hemangioblast,CAGE1,538,1,0.0018587360594795538,1.6426535745460131
+Norm3,Luminal progenitor cell,CAGE1,165,0,0.0,
+Norm3,Natural killer (NK) cell,CAGE1,250,0,0.0,
+Norm3,T cell,CAGE1,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,CAGE1,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,CAGE1,365,2,0.005479452054794521,10.0
+Norm3,Fibroblast,CAGE1,475,1,0.002105263157894737,8.263213773318371
+Norm3,CD4+ T cell,CAGE1,471,0,0.0,
+Norm3,B cell,CAGE1,31,1,0.03225806451612903,3.067576991479791
+Norm3,Dendritic cell,CAGE1,194,1,0.005154639175257732,10.0
+Norm3,CD8+ T cell,CAGE1,131,0,0.0,
+Norm3,Decidual cell,CAGE1,178,1,0.0056179775280898875,10.0
+Norm3,Endothelial cell,CAGE1,73,0,0.0,
+Norm3,Monocyte,CAGE1,111,0,0.0,
+Norm3,Epithelial cell,CAGE1,88,2,0.022727272727272728,7.907049515043945
+Norm3,Lymphoid progenitor cell,CAGE1,11,0,0.0,
+Norm3,Mesenchymal cell,CAGE1,35,0,0.0,
+Norm3,Basal epithelial cell,CCDC62,730,1,0.0013698630136986301,8.703737509154143
+Norm3,Hemangioblast,CCDC62,538,1,0.0018587360594795538,10.0
+Norm3,Luminal progenitor cell,CCDC62,165,0,0.0,
+Norm3,Natural killer (NK) cell,CCDC62,250,0,0.0,
+Norm3,T cell,CCDC62,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,CCDC62,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,CCDC62,365,2,0.005479452054794521,10.0
+Norm3,Fibroblast,CCDC62,475,1,0.002105263157894737,9.875967560786636
+Norm3,CD4+ T cell,CCDC62,471,0,0.0,
+Norm3,B cell,CCDC62,31,0,0.0,
+Norm3,Dendritic cell,CCDC62,194,0,0.0,
+Norm3,CD8+ T cell,CCDC62,131,0,0.0,
+Norm3,Decidual cell,CCDC62,178,0,0.0,
+Norm3,Endothelial cell,CCDC62,73,1,0.0136986301369863,4.19952225347073
+Norm3,Monocyte,CCDC62,111,1,0.009009009009009009,10.0
+Norm3,Epithelial cell,CCDC62,88,2,0.022727272727272728,1.3915862553726068
+Norm3,Lymphoid progenitor cell,CCDC62,11,0,0.0,
+Norm3,Mesenchymal cell,CCDC62,35,0,0.0,
+Norm3,Basal epithelial cell,CTCFL,730,1,0.0013698630136986301,10.0
+Norm3,Hemangioblast,CTCFL,538,0,0.0,
+Norm3,Luminal progenitor cell,CTCFL,165,0,0.0,
+Norm3,Natural killer (NK) cell,CTCFL,250,0,0.0,
+Norm3,T cell,CTCFL,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,CTCFL,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,CTCFL,365,0,0.0,
+Norm3,Fibroblast,CTCFL,475,2,0.004210526315789474,10.0
+Norm3,CD4+ T cell,CTCFL,471,0,0.0,
+Norm3,B cell,CTCFL,31,0,0.0,
+Norm3,Dendritic cell,CTCFL,194,0,0.0,
+Norm3,CD8+ T cell,CTCFL,131,0,0.0,
+Norm3,Decidual cell,CTCFL,178,0,0.0,
+Norm3,Endothelial cell,CTCFL,73,0,0.0,
+Norm3,Monocyte,CTCFL,111,0,0.0,
+Norm3,Epithelial cell,CTCFL,88,2,0.022727272727272728,10.0
+Norm3,Lymphoid progenitor cell,CTCFL,11,0,0.0,
+Norm3,Mesenchymal cell,CTCFL,35,0,0.0,
+Norm3,Basal epithelial cell,FBXO39,730,1,0.0013698630136986301,7.929101919785434
+Norm3,Hemangioblast,FBXO39,538,8,0.01486988847583643,6.23309636412842
+Norm3,Luminal progenitor cell,FBXO39,165,0,0.0,
+Norm3,Natural killer (NK) cell,FBXO39,250,0,0.0,
+Norm3,T cell,FBXO39,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,FBXO39,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,FBXO39,365,0,0.0,
+Norm3,Fibroblast,FBXO39,475,0,0.0,
+Norm3,CD4+ T cell,FBXO39,471,0,0.0,
+Norm3,B cell,FBXO39,31,0,0.0,
+Norm3,Dendritic cell,FBXO39,194,0,0.0,
+Norm3,CD8+ T cell,FBXO39,131,0,0.0,
+Norm3,Decidual cell,FBXO39,178,0,0.0,
+Norm3,Endothelial cell,FBXO39,73,4,0.0547945205479452,4.620436010730007
+Norm3,Monocyte,FBXO39,111,0,0.0,
+Norm3,Epithelial cell,FBXO39,88,0,0.0,
+Norm3,Lymphoid progenitor cell,FBXO39,11,0,0.0,
+Norm3,Mesenchymal cell,FBXO39,35,0,0.0,
+Norm3,Basal epithelial cell,OTOA,730,1,0.0013698630136986301,6.889250594730464
+Norm3,Hemangioblast,OTOA,538,1,0.0018587360594795538,10.0
+Norm3,Luminal progenitor cell,OTOA,165,0,0.0,
+Norm3,Natural killer (NK) cell,OTOA,250,0,0.0,
+Norm3,T cell,OTOA,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,OTOA,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,OTOA,365,0,0.0,
+Norm3,Fibroblast,OTOA,475,0,0.0,
+Norm3,CD4+ T cell,OTOA,471,0,0.0,
+Norm3,B cell,OTOA,31,0,0.0,
+Norm3,Dendritic cell,OTOA,194,3,0.015463917525773196,10.0
+Norm3,CD8+ T cell,OTOA,131,0,0.0,
+Norm3,Decidual cell,OTOA,178,0,0.0,
+Norm3,Endothelial cell,OTOA,73,0,0.0,
+Norm3,Monocyte,OTOA,111,3,0.02702702702702703,10.0
+Norm3,Epithelial cell,OTOA,88,0,0.0,
+Norm3,Lymphoid progenitor cell,OTOA,11,0,0.0,
+Norm3,Mesenchymal cell,OTOA,35,0,0.0,
+Norm3,Basal epithelial cell,PAGE4,730,2,0.0027397260273972603,7.51858677391092
+Norm3,Hemangioblast,PAGE4,538,0,0.0,
+Norm3,Luminal progenitor cell,PAGE4,165,0,0.0,
+Norm3,Natural killer (NK) cell,PAGE4,250,0,0.0,
+Norm3,T cell,PAGE4,185,1,0.005405405405405406,9.774173664529009
+Norm3,Granulocyte-monocyte progenitor,PAGE4,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,PAGE4,365,0,0.0,
+Norm3,Fibroblast,PAGE4,475,7,0.014736842105263158,9.944468051133656
+Norm3,CD4+ T cell,PAGE4,471,0,0.0,
+Norm3,B cell,PAGE4,31,0,0.0,
+Norm3,Dendritic cell,PAGE4,194,1,0.005154639175257732,3.420511786245605
+Norm3,CD8+ T cell,PAGE4,131,0,0.0,
+Norm3,Decidual cell,PAGE4,178,0,0.0,
+Norm3,Endothelial cell,PAGE4,73,0,0.0,
+Norm3,Monocyte,PAGE4,111,0,0.0,
+Norm3,Epithelial cell,PAGE4,88,1,0.011363636363636364,1.103255890646273
+Norm3,Lymphoid progenitor cell,PAGE4,11,1,0.09090909090909091,7.106566961078976
+Norm3,Mesenchymal cell,PAGE4,35,0,0.0,
+Norm3,Basal epithelial cell,PAGE5,730,0,0.0,
+Norm3,Hemangioblast,PAGE5,538,0,0.0,
+Norm3,Luminal progenitor cell,PAGE5,165,0,0.0,
+Norm3,Natural killer (NK) cell,PAGE5,250,0,0.0,
+Norm3,T cell,PAGE5,185,1,0.005405405405405406,10.0
+Norm3,Granulocyte-monocyte progenitor,PAGE5,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,PAGE5,365,1,0.0027397260273972603,10.0
+Norm3,Fibroblast,PAGE5,475,0,0.0,
+Norm3,CD4+ T cell,PAGE5,471,6,0.012738853503184714,10.0
+Norm3,B cell,PAGE5,31,0,0.0,
+Norm3,Dendritic cell,PAGE5,194,0,0.0,
+Norm3,CD8+ T cell,PAGE5,131,0,0.0,
+Norm3,Decidual cell,PAGE5,178,0,0.0,
+Norm3,Endothelial cell,PAGE5,73,0,0.0,
+Norm3,Monocyte,PAGE5,111,0,0.0,
+Norm3,Epithelial cell,PAGE5,88,0,0.0,
+Norm3,Lymphoid progenitor cell,PAGE5,11,0,0.0,
+Norm3,Mesenchymal cell,PAGE5,35,0,0.0,
+Norm3,Basal epithelial cell,TEX14,730,0,0.0,
+Norm3,Hemangioblast,TEX14,538,2,0.0037174721189591076,8.213384069724407
+Norm3,Luminal progenitor cell,TEX14,165,0,0.0,
+Norm3,Natural killer (NK) cell,TEX14,250,0,0.0,
+Norm3,T cell,TEX14,185,0,0.0,
+Norm3,Granulocyte-monocyte progenitor,TEX14,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,TEX14,365,0,0.0,
+Norm3,Fibroblast,TEX14,475,1,0.002105263157894737,10.0
+Norm3,CD4+ T cell,TEX14,471,0,0.0,
+Norm3,B cell,TEX14,31,0,0.0,
+Norm3,Dendritic cell,TEX14,194,4,0.020618556701030927,10.0
+Norm3,CD8+ T cell,TEX14,131,0,0.0,
+Norm3,Decidual cell,TEX14,178,0,0.0,
+Norm3,Endothelial cell,TEX14,73,0,0.0,
+Norm3,Monocyte,TEX14,111,0,0.0,
+Norm3,Epithelial cell,TEX14,88,0,0.0,
+Norm3,Lymphoid progenitor cell,TEX14,11,0,0.0,
+Norm3,Mesenchymal cell,TEX14,35,0,0.0,
+Norm3,Basal epithelial cell,TSSK6,730,1,0.0013698630136986301,10.0
+Norm3,Hemangioblast,TSSK6,538,1,0.0018587360594795538,3.2147178843063227
+Norm3,Luminal progenitor cell,TSSK6,165,0,0.0,
+Norm3,Natural killer (NK) cell,TSSK6,250,0,0.0,
+Norm3,T cell,TSSK6,185,1,0.005405405405405406,10.0
+Norm3,Granulocyte-monocyte progenitor,TSSK6,19,0,0.0,
+Norm3,Natural killer T (NKT) cell,TSSK6,365,0,0.0,
+Norm3,Fibroblast,TSSK6,475,1,0.002105263157894737,10.0
+Norm3,CD4+ T cell,TSSK6,471,1,0.0021231422505307855,10.0
+Norm3,B cell,TSSK6,31,0,0.0,
+Norm3,Dendritic cell,TSSK6,194,0,0.0,
+Norm3,CD8+ T cell,TSSK6,131,0,0.0,
+Norm3,Decidual cell,TSSK6,178,0,0.0,
+Norm3,Endothelial cell,TSSK6,73,0,0.0,
+Norm3,Monocyte,TSSK6,111,0,0.0,
+Norm3,Epithelial cell,TSSK6,88,0,0.0,
+Norm3,Lymphoid progenitor cell,TSSK6,11,0,0.0,
+Norm3,Mesenchymal cell,TSSK6,35,0,0.0,
