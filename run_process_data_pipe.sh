@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=process_data
-#SBATCH --output=logs/third_round/_64G%j.out
-#SBATCH --error=errors/third_round/_64G%j.err
+#SBATCH --job-name=concat_fetal_set
+#SBATCH --output=logs/third_round/concat_64G%j.out
+#SBATCH --error=errors/third_round/concat_64G%j.err
 #SBATCH --time=6:00:00
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=2
@@ -15,8 +15,9 @@ cd /data/scottaa/cta_onco_fetal
 
 PROJECT=$1
 
-python python_common_scripts/main.py process ${PROJECT}
-python python_common_scripts/main.py refine ${PROJECT}
+#python python_common_scripts/main.py process ${PROJECT}
+#python python_common_scripts/main.py refine ${PROJECT}
+python python_common_scripts/concat_adata.py
 
 # To run (example):
 # sbatch run_process_data_pipe.sh embryos_mixed

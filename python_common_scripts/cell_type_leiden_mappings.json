@@ -1,0 +1,23 @@
+{
+  "embryos_mixed_female": {
+    "leiden_res_0.50": {
+      "mapping": {
+        "4": "Germ cell (mitotic)",
+        "8": "Germ cell (mitotic)",
+        "9": "Germ cell (mitotic)",
+        "2": "Germ cell (mitotic)",
+        "10": "Germ cell (RA-responsive)",
+        "6": "Germ cell (meiotic)",
+        "5": "Germ cell (oogenesis)",
+        "7": "Gonadal somatic",
+        "1": "Gonadal somatic",
+        "12": "Gonadal somatic",
+        "11": "Supporting/Non-gonadal",
+        "0": "Supporting/Non-gonadal",
+        "3": "Unassigned",
+        "13": "Unassigned"
+      },
+      "cluster_order": ["2","6","7","11","13","10","12","4","9","8","5","0","3","1"]
+    }
+}
+}

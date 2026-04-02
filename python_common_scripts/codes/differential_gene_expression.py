@@ -26,12 +26,19 @@ from config import *
 from codes.cell_annotation import *
 
 
-def get_ranked_genes(adata, sample_id, tables_dir, figures_dir, always_rank=True, marker_genes_dict=CUSTOM_MARKER_GENES_DICT):
+def get_ranked_genes(adata, sample_id, tables_dir, figures_dir, always_rank=True, marker_genes_dict=CUSTOM_MARKER_GENES_DICT, save_name=None):
 
     deg_tables_dir = os.path.join(tables_dir, "deg_analysis")
     deg_figures_dir = os.path.join(figures_dir, "deg_analysis")
     os.makedirs(deg_figures_dir, exist_ok=True)
     os.makedirs(deg_tables_dir, exist_ok=True)
+
+    if save_name == None:
+        ranked_genes_dotplot_save_path = f"_{sample_id}_ranked_genes_2_dotplot.pdf"
+        cluster_ranked_genes_df_save_path = os.path.join(deg_tables_dir, f"{sample_id}_top_genes_per_leiden_cluster.csv")
+    else:
+        ranked_genes_dotplot_save_path = f"_{sample_id}_{save_name}_ranked_genes_2_dotplot.pdf"
+        cluster_ranked_genes_df_save_path = os.path.join(deg_tables_dir, f"{sample_id}_{save_name}_top_genes_per_leiden_cluster.csv")
 
     # --- work on copy (fix)
     ad = adata.copy()
@@ -53,10 +60,7 @@ def get_ranked_genes(adata, sample_id, tables_dir, figures_dir, always_rank=True
     ad = ad[:, ad.var["highly_variable"]].copy()
 
     # 1. Create df of top genes in each cluster
-    cluster_ranked_genes_df_save_path = os.path.join(
-        deg_tables_dir,
-        f"{sample_id}_top_genes_per_leiden_cluster.csv"
-    )
+    
 
     if os.path.exists(cluster_ranked_genes_df_save_path) and not always_rank:
         cluster_markers_df = pd.read_csv(cluster_ranked_genes_df_save_path)
@@ -83,7 +87,7 @@ def get_ranked_genes(adata, sample_id, tables_dir, figures_dir, always_rank=True
         cluster_markers_df.to_csv(cluster_ranked_genes_df_save_path, index=False)
 
     # 2. Dotplot
-    ranked_genes_dotplot_save_path = f"_{sample_id}_ranked_genes_dotplot.pdf"
+    
 
     marker_genes_filtered = {
         k: [g for g in v if g in ad.var_names]
@@ -115,5 +119,105 @@ def get_ranked_genes(adata, sample_id, tables_dir, figures_dir, always_rank=True
         show=False,
         save=ranked_genes_dotplot_save_path  # <-- fixed
     )
-    adata.write()
+    
+    return adata
+
+
+def plot_marker_genes(adata, dataset_name, marker_dict, figures_dir, new_col, leiden_res=0.50):
+
+    umap_dir = os.path.join(figures_dir, "marker_genes", "umap")
+    os.makedirs(umap_dir, exist_ok=True)
+    umap_save_path = os.path.join(umap_dir, f"{dataset_name}_new_annotated_umap.png")
+
+    dotplot_dir = os.path.join(figures_dir, "marker_genes", "dotplot")
+    os.makedirs(dotplot_dir, exist_ok=True)
+    dotplot_save_path = os.path.join(dotplot_dir, f"{dataset_name}_new_annotated_dotplot.png")
+
+    # Compute neighbors + UMAP if not already present
+    if "neighbors" not in adata.uns:
+        sc.pp.neighbors(adata)
+    if "X_umap" not in adata.obsm:
+        sc.tl.umap(adata)
+
+    # Leiden
+    leiden_key = f"leiden_res_{leiden_res:4.2f}"
+    sc.tl.leiden(adata, key_added=leiden_key, resolution=leiden_res, flavor="igraph")
+
+    
+
+    # Ensure categorical
+    color_list = [leiden_key, "sample_id", "predicted_cell_type"]
+    for col in color_list:
+        if col in adata.obs:
+            adata.obs[col] = adata.obs[col].astype("category")
+
+    adata, gene_color_map, cell_type_colors = set_obs_colors(
+        adata,
+        palette="glasbey",
+        cell_type_colors=cell_type_colors,
+        gene_color_map=gene_color_map
+    )
+
+    # --- UMAP ---
+    sc.pl.umap(
+        adata,
+        color=color_list,
+        ncols=len(color_list),
+        frameon=False,
+        show=False
+    )
+
+    fig = plt.gcf()
+    axes = fig.axes
+
+    for ax, col in zip(axes, color_list):
+        if col == leiden_key:
+            leg = ax.get_legend()
+            if leg:
+                leg.set_bbox_to_anchor((0.5, 0.5))
+        ax.set_title(f"{dataset_name}\n{col}")
+
+    plt.tight_layout()
+    fig.savefig(umap_save_path, dpi=300, bbox_inches="tight")
+    plt.close(fig)
+
+def stop():
+
+    # Apply mapping
+    adata, cluster_order = apply_celltype_mapping(
+        adata,
+        mapping_file=CELL_TYPE_MAPPINGS,
+        dataset_name=dataset_name,
+        new_col=new_col,
+        leiden_key=leiden_key
+    )
+
+    
+    # --- DOTPLOT ---
+    dot = sc.pl.dotplot(
+        adata,
+        var_names=marker_dict,
+        groupby=leiden_key,
+        categories_order=cluster_order,
+        standard_scale="var",
+        cmap="Purples",
+        return_fig=True
+    )
+
+    dot.make_figure()
+    ax = dot["mainplot_ax"]
+
+    ax.set_xticklabels(ax.get_xticklabels(), rotation=90, ha="center")
+
+    dot["fig"].suptitle(
+        f"{dataset_name}\nMarker Genes for Key Cell Types",
+        y=1.02
+    )
+
+    dot["fig"].tight_layout()
+    dot["fig"].subplots_adjust(top=0.88)
+
+    dot["fig"].savefig(dotplot_save_path, dpi=300, bbox_inches="tight")
+    plt.close(dot["fig"])
+
     return adata

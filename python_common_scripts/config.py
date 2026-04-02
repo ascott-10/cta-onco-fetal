@@ -15,6 +15,7 @@ FEMALE_NONCANCER_ANNOTATION_FILE_PATH = os.path.join(REFERENCE_DIR, "markers", "
 FEMALE_CANCER_ANNOTATION_FILE_PATH = os.path.join(REFERENCE_DIR, "markers", "cm2_updated_adult_female_cancer.csv")
 
 ENSEMBL_TO_HGNC_MAP= os.path.join(REFERENCE_DIR,  "ensembl_to_hgnc.csv")
+CELL_TYPE_MAPPINGS = os.path.join(BASE_DIR, "python_common_scripts", "cell_type_leiden_mappings.json")
 IMPORTANT_GENES = ["CTCF", "CTCFL", "DPEP3"]
 GENE_MAP_FILE_PATH = os.path.join(REFERENCE_DIR,"gencode_v45_ensembl_to_hgnc.tsv")
 CTA_FAMILY_FILE_PATH = os.path.join(REFERENCE_DIR, "CTA_family.csv")
@@ -25,14 +26,17 @@ GENE_DEFAULT_PALETTE = {
     "DPEP3": "#d31162",
 }
 
-CUSTOM_MARKER_GENES_DICT =  {
-    "PGC": ["POU5F1", "TCL1A", "PDPN", "MEG3", "GPHA2"],
-    "Pre-meiotic": ["DAZL", "ZGLP1", "DDX4", "SMC1B", "TEX30", "CKS2"],
-    "Meiotic": ["SYCP3", "SYCP2", "MEIOB", "SPATA22", "ZCWPW1", "MAEL"],
-    "Oocyte": ["ZP3", "TDRD1", "BRDT", "RBM46"],
-    "Endothelial": ["CDH5", "PECAM1", "VWF", "KDR", "FLT1"],
-    "Fibroblast": ["COL1A1", "COL3A1", "DCN", "PDGFRA"]
-}
+CUSTOM_MARKER_GENES_DICT  = {
+    "Germ cell (mitotic)": ["DPPA3", "NANOG", "DAZL", "TFAP2C"],
+    "Germ cell (RA-responsive)": ["STRA8", "ZGLP1", "KIT"],
+    "Germ cell (meiotic)": ["SYCP3", "SYCP1", "SPO11"],
+    "Germ cell (oogenesis)": ["NOBOX", "FIGLA", "OOSP2"],
+    "Germ cell (mitotic arrest, male)": ["NANOS2"],
+
+    "Gonadal somatic": ["SOX9", "AMH", "CLDN11", "INSL3", "CYP17A1", "FOXL2","WNT4","RSPO1"],
+    
+    "Supporting/Non-gonadal": ["COL1A1", "DCN", "LUM", "PDGFRA", "KRT19"],}
+
 
 GENE_COLOR_MAP = GENE_DEFAULT_PALETTE.copy()
 CELL_TYPE_COLORS = {"None": "#d3d3d3"}
@@ -83,7 +87,7 @@ PROJECT_CONFIG = {
     "embryos_mixed": {
         
         "sample_col": "sample_id",
-        "sample_list": ['F_3_8W','F_9_12W','F_13_16W','F_17_21W','F_22_26W','M_10W','M_3_8W','M_9_12W','M_20W','M_21W','M_17_21W','M_22_26W'],
+        "sample_list": ['F_3_8W','F_9_12W','F_13_16W','F_17_21W','F_22_26W','M_3_8W','M_9_12W','M_17_21W','M_22_26W'],
         "sample_meta_cols": ['sample_id','developmental_stage','sex','cell_type_descript'],
         "sample_meta_filename": "embryos_mixed_concat_sample_meta.csv",
         "cell_meta_cols": None,
@@ -95,11 +99,11 @@ PROJECT_CONFIG = {
             'F_13_16W': FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
             'F_17_21W': FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
             'F_22_26W': FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'M_10W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
+            
             'M_3_8W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
             'M_9_12W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'M_20W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'M_21W':MALE_NONCANCER_ANNOTATION_FILE_PATH,
+            
+            
             'M_17_21W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
             'M_22_26W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
     
@@ -118,64 +122,7 @@ PROJECT_CONFIG = {
         "cell_markers_file_path": FEMALE_CANCER_ANNOTATION_FILE_PATH,
     },
 
-     "cell_populations": {
-        "sample_list":  ['349', '553', '565', '568', '580', '589', '600', '618', '626'],
-
-        "sample_col": "subject_id",
-        "sample_meta_cols": ["sample_id","subject_id","gse_id","lesion_diagnosis","lesion_site","cancer_type"],
-        "sample_meta_filename": "cell_populations_sample_meta.csv",
-        "cell_meta_cols": None,
-        "cell_meta_filename": None,
-        "processing_type": "counts_txt",
-        "cell_markers_file_path": FEMALE_CANCER_ANNOTATION_FILE_PATH,
-    },
-
-    "subtype_evolution": {
-        "sample_list":  ['T59', 'T76', 'T77', 'T89', 'T90'],
-
-        "sample_col": "sample_id",
-        "sample_meta_cols": ["sample_id","gse_id","donor_id","sample_tissue"],
-        "sample_meta_filename": "subtype_evolution_metadata.csv",
-        "cell_meta_cols": None,
-        "cell_meta_filename": None,
-        "processing_type": "10x",
-        "cell_markers_file_path": FEMALE_CANCER_ANNOTATION_FILE_PATH,
-    },
-
-    "hgsoc_subtype_define": {
-        "sample_list":  ['16030X2_HJVMLDMXX', '16030X3_HJTWLDMXX', '16030X4_HJTWLDMXX'],
-        "sample_col": "sample_id",
-        "sample_meta_cols": ["sample_id","gse_id","sample_tissue","sample_tissue_description"],
-        "sample_meta_filename": "hgsoc_subtype_define_sample_meta.csv",
-        "cell_meta_cols": None,
-        "cell_meta_filename": None,
-        "processing_type": "10x",
-        "cell_markers_file_path": FEMALE_CANCER_ANNOTATION_FILE_PATH,
-    },
-
-    "hgsoc_tissue_architecture": {
-        "sample_list":  ['Norm1','Norm2','Norm3','Norm4','Norm5','Cancer1','Cancer2','Cancer3','Cancer4','Cancer5','Cancer6','Cancer7'],
-        "sample_col": "sample_id",
-        "sample_meta_cols": ["sample_id","gse_id","sample_tissue","sample_tissue_description", "tumor_stage","sample_long_id"],
-        "sample_meta_filename": "hgsoc_tissue_architecture_sample_meta.csv",
-        "cell_meta_cols": None,
-        "cell_meta_filename": None,
-        "processing_type": "10x",
-        "cell_markers_file_path": FEMALE_CANCER_ANNOTATION_FILE_PATH,
-    },
-
-    "gyne_malignant":
-    {
-        "sample_list":  ['3533EL','3571DL','36186L','36639L','366C5L','37EACL','38FE7L','3BAE2L','3CCF1L','3E4D1L','3E5CFL'],
-        "sample_col": "sample_id",
-        "sample_meta_cols": ["sample_id","gse_id","sample_tissue","sample_tissue_description", "donor_ethnicity", "tumor_site","tumor_histology","metastatic_status"],
-        "sample_meta_filename": "gynecological_malignancies_sample_meta.csv",
-        "cell_meta_cols": None,
-        "cell_meta_filename": None,
-        "processing_type": "10x",
-        "cell_markers_file_path": FEMALE_CANCER_ANNOTATION_FILE_PATH,
-    },
-
+     
 
 }
 

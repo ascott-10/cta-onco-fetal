@@ -245,3 +245,42 @@ def cell_annotation_wrapper(sample_id, adata_qc, adata_annotated_path, markers_f
     adata.write(adata_annotated_path)
 
     return adata, gene_color_map, cell_type_colors
+
+
+import json
+
+def apply_celltype_mapping(
+    adata,
+    mapping_file,
+    dataset_name,
+    leiden_key,
+    new_col,
+    strict=False
+):
+    with open(mapping_file) as f:
+        all_data = json.load(f)
+    
+    entry = all_data[dataset_name][leiden_key]
+    
+    mapping = entry["mapping"]
+    cluster_order = entry.get("cluster_order", None)
+    
+    clusters = adata.obs[leiden_key].astype(str)
+    
+    # Safety check
+    missing = set(clusters.unique()) - set(mapping.keys())
+    
+    if missing:
+        msg = f"Missing mappings for clusters: {missing}"
+        if strict:
+            raise ValueError(msg)
+        else:
+            print("Warning:", msg)
+    
+    adata.obs[new_col] = clusters.map(mapping).fillna("Unassigned").astype("category")
+    
+    # Optional: store order in .uns for later use
+    if cluster_order is not None:
+        adata.uns[f"{leiden_key}_cluster_order"] = cluster_order
+    
+    return adata, cluster_order

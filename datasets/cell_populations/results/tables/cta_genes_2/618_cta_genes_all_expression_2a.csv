@@ -1,4 +1,0 @@
-sample_id,predicted_cell_type,gene,n_cells,n_positive_cells,frac_positive_cells,mean_expression
-618,Microglial cell,KIAA0100,22,1,0.045454545454545456,3.638400077819824
-618,Fibroblast,KIAA0100,14,0,0.0,
-618,T cell,KIAA0100,24,2,0.08333333333333333,4.481630802154541
