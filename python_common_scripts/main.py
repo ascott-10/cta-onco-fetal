@@ -2,9 +2,7 @@
 
 from config import *
 import sys
-from main_process_data import pre_process_project_setup, run_process_pipeline, refine_processed_data
-
-
+from main_process_data import pre_process_project_setup, run_process_pipeline
 # main.py
 def main():
     if len(sys.argv) < 2:
@@ -26,8 +24,8 @@ def main():
             if len(sys.argv) != 3: print("Usage: main.py refine <project_name>"); sys.exit(1)
            
             print(f"Running REFINE mode: {project_name}")
-            refine_processed_data(project_name, paths, project_cfg, global_cfg, samples_to_process)
-
+            #refine_processed_data(project_name, paths, project_cfg, global_cfg, samples_to_process)
+        
         else:
             print(f"Unknown mode: {mode}"); sys.exit(1)
 
@@ -45,3 +43,7 @@ if __name__ == "__main__":
 
 # python python_common_scripts/main.py process fetal_gonad
 # python python_common_scripts/main.py refine fetal_gonad
+# python python_common_scripts/main.py process embryos_mixed
+# python python_common_scripts/main.py refine embryos_mixed
+# python python_common_scripts/main.py whole_project fetal_gonad
+# python python_common_scripts/main.py whole_project embryos_mixed

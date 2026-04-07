@@ -23,9 +23,10 @@ from codes.cell_annotation import *
 
 def make_umaps(sample_id, adata, umap_dir, gene_color_map, cell_type_colors, cols_to_plot, genes_list, cell_type_label_col="predicted_cell_type", palette="glasbey", plot_always=True):
 
-    sc.settings.autosave = False  # Saves plots to figdir automatically
-    sc.settings.autoshow = False # Prevents plots from displaying inline
+    sc.settings.autosave = False
+    sc.settings.autoshow = False
 
+    
     os.makedirs(umap_dir, exist_ok=True)
 
     for col in adata.obs.columns: 
@@ -33,8 +34,12 @@ def make_umaps(sample_id, adata, umap_dir, gene_color_map, cell_type_colors, col
 
     adata = add_gene_binary_columns(adata, genes_list)
 
-    if f"{cell_type_label_col}_colors" not in adata.uns:
-        adata, gene_color_map, cell_type_colors = set_obs_colors(adata, palette, cell_type_colors, gene_color_map)
+    # --- FIX 1: ensure ALL needed color columns exist ---
+    for col in cols_to_plot:
+        adata, new_gene_colors, new_cell_colors = set_obs_colors(adata, palette, cell_type_colors, gene_color_map)
+
+    gene_color_map = {**gene_color_map, **new_gene_colors}
+    cell_type_colors = {**cell_type_colors, **new_cell_colors}
 
     gene_counts = {}
     for g in genes_list:
@@ -50,25 +55,47 @@ def make_umaps(sample_id, adata, umap_dir, gene_color_map, cell_type_colors, col
 
         umap_out_path = os.path.join(umap_dir, f"{col}_umap_{sample_id}.png")
         
-        if plot_always == False:
-            if os.path.exists(umap_out_path): 
-                continue
+        if plot_always == False and os.path.exists(umap_out_path):
+            continue
 
         legend_loc = "on data" if col in ["leiden"] else "right margin"
         title = f"{sample_id}\n{col}"
 
+        # --- FIX 3: gene-specific coloring ---
+        palette_arg = None
+
         if col.endswith("_binary"):
             gene = col.replace("_binary", "")
+
             if gene in gene_counts:
                 n_pos, n_total = gene_counts[gene]
                 title = f"{sample_id}\n{gene} ({n_pos}/{n_total} cells positive)"
 
+            # Apply gene-specific color if available
+            if gene in gene_color_map:
+                palette_arg = ["lightgrey", gene_color_map[gene]]
+
         n_categories = adata.obs[col].nunique()
-        fig, ax = plt.subplots(figsize=(5 + min(n_categories * 0.25, 4), 5) if legend_loc == "right margin" else (5, 5))
 
-        sc.pl.umap(adata, color=col, legend_loc=legend_loc, frameon=False, ax=ax, title=title, show=False)
+        width = 5 + min(n_categories * 0.4, 8)
+        fig, ax = plt.subplots(
+            figsize=(width, 5) if legend_loc == "right margin" else (5, 5)
+        )
 
-        #ax.set_aspect("equal", adjustable="box")
+        sc.pl.umap(
+            adata,
+            color=col,
+            legend_loc=legend_loc,
+            frameon=False,
+            ax=ax,
+            title=title,
+            show=False,
+            palette=palette_arg  # <-- key fix
+        )
+
+        if legend_loc == "right margin":
+            plt.subplots_adjust(right=0.75)
+
         plt.tight_layout()
         plt.savefig(umap_out_path, dpi=300, bbox_inches="tight")
         plt.close(fig)

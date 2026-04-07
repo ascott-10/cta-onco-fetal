@@ -10,11 +10,11 @@ import scanpy as sc
 
 # Import from your config and helper codes
 from config import *
-from codes.import_raw_data import import_raw_data_fetal_gonad, import_raw_data_10x_subprojects, import_raw_data_csv
-from codes.filter_qc_data import filter_data, run_qc
-from codes.cell_annotation import cell_annotation_wrapper
+from codes.import_raw_data import import_raw_data_fetal_gonad, import_raw_data_embryos_mixed, import_raw_data_10x_subprojects
+from codes.filter_qc_data import filter_data,filter_data_embryos_mixed, run_qc, run_qc_embryos_mixed
+from codes.cell_annotation import cell_annotation_wrapper, annotate_obs_columns, adata_split_annotate
 from codes.visual_gene_expression import make_umaps, cta_genes_expression, cta_genes_expression_all_samples
-from codes.differential_gene_expression import get_ranked_genes, plot_marker_genes
+from codes.differential_gene_expression import get_ranked_genes, markers_leiden_embryos_mixed, rank_genes_for_publication
 
 def pre_process_project_setup(project_name):
     cfg = set_up_project_config(project_name)
@@ -31,245 +31,47 @@ def pre_process_project_setup(project_name):
     return paths, project_cfg, global_cfg, samples_to_process
 
 def run_process_pipeline(project_name, paths, project_cfg, global_cfg, samples_to_process):
-    
-    important_genes = global_cfg["important_genes"]
-    
-        
-    
-    
-    for sample_id in samples_to_process:
-        print("Processing sample", sample_id)
 
-        if project_name in ["ovarian_cancer_ccca"]:
-            # special case
-            sample_meta_path = os.path.join(paths["ORIGINAL_DATA_DIR"], f"Data_{sample_id}_Ovarian", "Samples.csv")
-            sample_meta_df = pd.read_csv(sample_meta_path)
-            sample_meta_df = sample_meta_df.dropna(axis=1, how="all")
-            sample_meta_df = sample_meta_df.astype(str)
+    important_genes = global_cfg["important_genes"]
+    cell_cycle_genes_file_path = CELL_CYCLE_GENES_FILE_PATH
+    cols_to_plot = ["sample_id", "sex", "stage_label"]
+    cols_to_plot_titles = ["Sample", "Sex", "Age (Gestation Weeks)"]
+    final_leiden_res = global_cfg["final_leiden_res"]
+    json_annotations_path = global_cfg["json_annotations_path"]
+
+    if project_name in ["embryos_mixed"]:
+        original_original_data_dir = os.path.join(paths["ORIGINAL_ORIGINAL_DATA_DIR"])
+        original_data_dir = os.path.join(paths["ORIGINAL_DATA_DIR"])
+        sample_meta_path = os.path.join(paths["PROJECT_DIR"], project_cfg["sample_meta_filename"])
+
+        adata_init_path = os.path.join(paths["RAW_DATA_DIR"], f"{project_name}_init.h5ad")
+        adata_filt_path = os.path.join(paths["RAW_DATA_DIR"], f"{project_name}_before_qc.h5ad")
+        adata_qc_path = os.path.join(paths["RAW_DATA_DIR"], f"{project_name}_mixed_after_hvg.h5ad")
+        #adata_annotated_path = os.path.join(paths["WORKING_ADATA_DIR"], f"{project_name}_mixed_processed.h5ad")
+        adata_male_path = os.path.join(paths["WORKING_ADATA_DIR"], f"{project_name}_male_processed.h5ad")
+        adata_female_path = os.path.join(paths["WORKING_ADATA_DIR"], f"{project_name}_female_processed.h5ad")
+
+        
+        if os.path.exists(adata_qc_path):
+            adata_qc = sc.read_h5ad(adata_qc_path)
         else:
-            # if not '\t separated (other projects)
-            sample_meta_path = os.path.join(paths["PROJECT_DIR"], project_cfg["sample_meta_filename"])
-            sample_meta_df = pd.read_csv(sample_meta_path, usecols=project_cfg["sample_meta_cols"])
-        
-        # Set sample dicts for projects with matched sample_id to gse_id
-        if project_name in ["fetal_gonad"]:
-                        
-            sample_dict = dict(zip(sample_meta_df["gse_id"], sample_meta_df["sample_id"]))
-            sample_dict_reversed = {v: k for k, v in sample_dict.items()}
-        
-        # Set marker file path
-        if project_name in ["fetal_gonad", "embryos_mixed"]:
-
-            # If dependent on sample_id (i.e. mixed gender)
-            markers_file_path = project_cfg["cell_markers_file_path"][sample_id]
-            print(markers_file_path)
-                
-        else: 
-            # If not dependent on sample_id (most samples)
-            markers_file_path = project_cfg["cell_markers_file_path"]
-
-        try:
-            adata_init_path = os.path.join(paths["RAW_DATA_DIR"], f"{sample_id}_init.h5ad")
-            adata_filtered_path = os.path.join(paths["RAW_DATA_DIR"], f"{sample_id}_before_qc.h5ad")
-            adata_qc_path = os.path.join(paths["RAW_DATA_DIR"], f"{sample_id}_after_qc.h5ad")
-
-            if os.path.exists(adata_qc_path):
-                adata_qc = sc.read_h5ad(adata_qc_path)
+            if os.path.exists(adata_filt_path):
+                adata_filtered = sc.read_h5ad(adata_filt_path)
             else:
-                if os.path.exists(adata_filtered_path):
-                    adata_filtered = sc.read_h5ad(adata_filtered_path)
+                if os.path.exists(adata_init_path):
+                    adata_init = sc.read_h5ad(adata_init_path)
                 else:
-                    if os.path.exists(adata_init_path):
-                        adata_init = sc.read_h5ad(adata_init_path)
-                    else:
-                        
-                        if project_name in ["fetal_gonad"]:
-                            gse_id = sample_dict_reversed.get(sample_id)
-                            
-                            
-
-                            adata_init = import_raw_data_fetal_gonad(sample_id, gse_id, paths["ORIGINAL_DATA_DIR"], adata_init_path, sample_meta_df)
-                        
-                        elif project_name in ["embryos_mixed"]:    
-                            adata_init = import_raw_data_csv(project_name, sample_id, paths["ORIGINAL_DATA_DIR"],adata_init_path, sample_meta_path)
-                        
-                        elif project_name in ["ovarian_cancer_ccca"]:
-                            subproject = sample_id
-                            adata_init = import_raw_data_10x_subprojects(subproject, original_data_dir = paths["ORIGINAL_DATA_DIR"], adata_init_path = adata_init_path)
-                            
-                    adata_filtered = filter_data(sample_id, adata_init, adata_filtered_path, important_genes, CELL_CYCLE_GENES_FILE_PATH, paths["QC_SAVE_DIR"])
-                
-                adata_qc = run_qc(adata_filtered, adata_qc_path, important_genes)
-        except Exception as e:
-            print(f"Failed to process {sample_id}: {e}")
-            import traceback; traceback.print_exc()
-            continue
-       
-
-def refine_processed_data(project_name, paths, project_cfg, global_cfg, samples_to_process):
-
-    important_genes = global_cfg["important_genes"]
-    cols_to_plot = global_cfg["umap_obs_cols"]
-    
-    df_cta_gene_expression_list = []
-
-    df_project_cta_gene_expression_save_dir = os.path.join(ALL_RESULTS_DIR, "tables", "cta_genes")
-    os.makedirs(df_project_cta_gene_expression_save_dir, exist_ok=True)
-
-    df_project_cta_gene_expression_save_path = os.path.join( df_project_cta_gene_expression_save_dir, f"{project_name}_cta_gene_expression.csv")
-
-    color_config_path = os.path.join("python_common_scripts", "global_colors.json")
-
-    if os.path.exists(color_config_path):
-        data = json.load(open(color_config_path))
-        gene_color_map = data.get("gene_color_map", {})
-        cell_type_colors = data.get("cell_type_colors", {})
-    else:
-        gene_color_map = dict(GENE_COLOR_MAP)
-        cell_type_colors = dict(CELL_TYPE_COLORS)
-
-    for sample_id in samples_to_process:
-        print("Refining sample", sample_id)
-
-        try:
-
-            # Set sample meta path
-            
-            if project_name in ["ovarian_cancer_ccca"]:
-                # special case
-                sample_meta_path = os.path.join(paths["ORIGINAL_DATA_DIR"], f"Data_{sample_id}_Ovarian", "Samples.csv")
-                sample_meta_df = pd.read_csv(sample_meta_path)
-                sample_meta_df = sample_meta_df.dropna(axis=1, how="all")
-                sample_meta_df = sample_meta_df.astype(str)
-            else:
-                # if not '\t separated (other projects)
-                sample_meta_path = os.path.join(paths["PROJECT_DIR"], project_cfg["sample_meta_filename"])
-                sample_meta_df = pd.read_csv(sample_meta_path, usecols=project_cfg["sample_meta_cols"])
-            
-            # Set sample dicts for projects with matched sample_id to gse_id
-            if project_name in ["fetal_gonad"]:
-                            
-                sample_dict = dict(zip(sample_meta_df["gse_id"], sample_meta_df["sample_id"]))
-                sample_dict_reversed = {v: k for k, v in sample_dict.items()}
-            
-            # Set marker file path
-            if project_name in ["fetal_gonad", "embryos_mixed"]:
-
-                # If dependent on sample_id (i.e. mixed gender)
-                markers_file_path = project_cfg["cell_markers_file_path"][sample_id]
-                print(markers_file_path)
-            else: 
-                # If not dependent on sample_id (most samples)
-                markers_file_path = project_cfg["cell_markers_file_path"]
-            
-
-
-            adata_qc_path = os.path.join(paths["RAW_DATA_DIR"], f"{sample_id}_after_qc.h5ad")
-            adata_annotated_path = os.path.join(paths["WORKING_ADATA_DIR"], f"{sample_id}_annotated_cellmarker.h5ad")
-            umap_individual_save_dir = os.path.join(paths["FIGURES_DIR"], "umap", sample_id)
-
-            if os.path.exists(adata_annotated_path):
-                adata_annotated = sc.read_h5ad(adata_annotated_path)
-            else:
-                if not os.path.exists(adata_qc_path):
-                    print(f"Missing QC file for {sample_id}, skipping")
-                    continue
-
-                adata_qc = sc.read_h5ad(adata_qc_path)
-
-                adata_annotated, gene_color_map, cell_type_colors = cell_annotation_wrapper(
-                    sample_id,
-                    adata_qc,
-                    adata_annotated_path,
-                    markers_file_path,
-                    gene_color_map,
-                    cell_type_colors,
-                    genes_list=important_genes,
-                    cell_type_label_col="predicted_cell_type",
-                    palette="glasbey"
-                )
-
-            adata_umap, gene_color_map, cell_type_colors = make_umaps(
-                sample_id,
-                adata_annotated,
-                umap_individual_save_dir,
-                gene_color_map,
-                cell_type_colors,
-                cols_to_plot,
-                genes_list=important_genes,
-                cell_type_label_col="predicted_cell_type",
-                palette="glasbey",
-                plot_always=False
-            )
-
-            df_cta_gene_expression = cta_genes_expression(
-                sample_id,
-                adata_umap,
-                tables_dir=paths["TABLES_DIR"],
-                figures_dir=paths["FIGURES_DIR"],
-                cta_genes_file_path=CTA_FAMILY_FILE_PATH,
-                top_n=25,
-                plot_always=False
-            )
-
-            if df_cta_gene_expression is not None:
-                df_cta_gene_expression_list.append(df_cta_gene_expression)
-
-            if project_name in ["embryos_mixed"]:
-                if "F_" in sample_id:
-                    get_ranked_genes(adata = adata_umap, sample_id = sample_id, tables_dir=paths["TABLES_DIR"],
-                figures_dir=paths["FIGURES_DIR"], always_rank = True, marker_genes_dict =CUSTOM_MARKER_GENES_DICT)
-            elif project_name in ["fetal_gonad"]:
-                if "Ovary" in sample_id or "F_Mesonephros" in sample_id:
-                    get_ranked_genes(adata = adata_umap, sample_id = sample_id, tables_dir=paths["TABLES_DIR"],
-                figures_dir=paths["FIGURES_DIR"], always_rank = True, marker_genes_dict =CUSTOM_MARKER_GENES_DICT)
-            else:
-                get_ranked_genes(adata = adata_umap, sample_id = sample_id, tables_dir=paths["TABLES_DIR"],
-                figures_dir=paths["FIGURES_DIR"],always_rank = True, marker_genes_dict =CUSTOM_MARKER_GENES_DICT)
-
-
-
-        except Exception as e:
-            print(f"Failed to refine {sample_id}: {e}")
-            import traceback
-            traceback.print_exc()
-            continue
-
-    # Combine all samples in the project
-    all_figures_dir = os.path.join(ALL_RESULTS_DIR, "figures")
-    all_tables_dir = os.path.join(ALL_RESULTS_DIR, "tables")
-
-    adata_concat_female_path = os.path.join(paths["WORKING_ADATA_DIR"], f"{project_name}_female_concat_annotated_cellmarker.h5ad")
-    adata_concat_male_path = os.path.join(paths["WORKING_ADATA_DIR"], f"{project_name}_male_concat_annotated_cellmarker.h5ad")
-    
-    if os.path.exists(adata_concat_female_path):
-        adata_concat_female = sc.read_h5ad(adata_concat_female_path)
-
-        #get_ranked_genes(adata = adata_concat_female, sample_id = project_name, tables_dir = all_tables_dir, figures_dir=all_figures_dir,always_rank = True, marker_genes_dict =CUSTOM_MARKER_GENES_DICT, save_name="female")
-        plot_marker_genes(adata = adata_concat_female, dataset_name = f"{project_name}_female", marker_dict = CUSTOM_MARKER_GENES_DICT, figures_dir=all_figures_dir, new_col = "cell_type_lvl1", leiden_res=0.50)
-    if os.path.exists(adata_concat_male_path):
-        adata_concat_male = sc.read_h5ad(adata_concat_male_path)
-        #get_ranked_genes(adata = adata_concat_male, sample_id = project_name, tables_dir = all_tables_dir, figures_dir=all_figures_dir,always_rank = True, marker_genes_dict =CUSTOM_MARKER_GENES_DICT,save_name="male")
-        plot_marker_genes(adata = adata_concat_male, dataset_name = f"{project_name}_male", marker_dict = CUSTOM_MARKER_GENES_DICT, figures_dir=all_figures_dir, new_col = "cell_type_lvl1", leiden_res=0.50)
-
-    if df_cta_gene_expression_list:
-        df_project_cta_gene_expression_df = pd.concat(df_cta_gene_expression_list,ignore_index=True)
-        df_project_cta_gene_expression_df.to_csv(df_project_cta_gene_expression_save_path, index=False)
-    else:
-        print("No CTA gene expression data generated.")
-    
-    if os.path.exists(df_project_cta_gene_expression_save_path):
+                    adata_init = import_raw_data_embryos_mixed(project_name, original_original_data_dir, original_data_dir, adata_init_path, sample_meta_path)
+                adata_filtered = filter_data_embryos_mixed(project_name, adata_init, adata_filt_path, important_genes, cell_cycle_genes_file_path, paths["QC_SAVE_DIR"])   
+            adata_qc = run_qc_embryos_mixed(project_name, adata_filtered, adata_qc_path, important_genes, paths["QC_SAVE_DIR"])
         
-        cta_genes_expression_all_samples(project_name,df_project_cta_gene_expression_save_path, all_figures_dir, top_n=25)
-    
-
-    # --- Save colors ---
-    os.makedirs(os.path.dirname(color_config_path), exist_ok=True)
-
-    json.dump(
-        {
-            "gene_color_map": gene_color_map,
-            "cell_type_colors": cell_type_colors
-        },
-        open(color_config_path, "w")
-    )
+            
+            
+        adata_female, adata_male = adata_split_annotate(project_name, final_leiden_res, adata_female_path, adata_male_path, adata_qc_path, json_annotations_path)
+        for sex, adata_current, adata_path in [
+            ("female", adata_female, adata_female_path),
+            ("male", adata_male, adata_male_path),]:
+            subproject_name = f"{project_name}_{sex}"
+            adata_annotated = annotate_obs_columns(subproject_name, adata_current, cols_to_plot, cols_to_plot_titles, adata_path, paths["FIGURES_DIR"], palette = "tab10")
+            top_markers_path = os.path.join(paths["TABLES_DIR"], "deg_analysis", f"leiden_{final_leiden_res}_{sex}_markers.csv")
+            markers_leiden_embryos_mixed(adata_annotated, subproject_name, top_markers_path, final_leiden_res, paths["FIGURES_DIR"])

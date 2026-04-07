@@ -26,6 +26,57 @@ from config import *
 
 #### Functions ####
 
+
+def filter_data_embryos_mixed(project_name, adata_init, adata_filt_path, important_genes, cell_cycle_genes_file_path, qc_save_dir):
+    
+    # Set up dirs
+    violin_dir = os.path.join(qc_save_dir, "violin")
+    
+    os.makedirs(qc_save_dir, exist_ok=True)
+    os.makedirs(violin_dir, exist_ok=True)
+
+    adata = adata_init.copy()
+
+    adata.obs["nonzero_counts"] = np.array((adata.X > 0).sum(axis=1)).flatten()  # Because original data was CPM or TPM:
+    adata.var["mt"] = adata.var_names.str.upper().str.startswith("MT-") # mitochondrial genes
+    adata.var["ribo"] = adata.var_names.str.startswith(("RPS", "RPL")) # ribosomal genes
+    adata.var["hb"] = adata.var_names.str.startswith("HB") & ~adata.var_names.str.startswith("HBP") # hemoglobin genes
+
+    sc.pp.calculate_qc_metrics(adata, qc_vars=["mt", "ribo", "hb"], inplace=True)
+
+    qc_cols = ["n_genes_by_counts", "nonzero_counts", "pct_counts_mt"] # Because original data was CPM or TPM, normully use total counts not nonzero counts
+
+    sc.settings.figdir = qc_save_dir
+    sc.pl.violin(adata, qc_cols, save=f"_{project_name}_QC.png", jitter=0.4, multi_panel=True)
+ 
+    sc.pp.filter_cells(adata, min_genes=100)
+    sc.pp.filter_genes(adata, min_cells=3)
+
+    sc.pp.log1p(adata)
+    adata.raw = adata
+
+    # Create a mask for genes expressed in at least 3 cells
+    genes_expressed_mask = sc.pp.filter_genes(adata, min_cells=3, inplace=False)[0]
+
+    # Create a mask for the important genes
+    important_set = {g.upper() for g in important_genes}
+    important_genes_mask = adata.var_names.str.upper().isin(important_set)
+
+    final_gene_mask = genes_expressed_mask | important_genes_mask
+
+    # Apply this final, combined mask to the data just once
+    adata = adata[:, final_gene_mask].copy()
+
+    cell_cycle_scoring(project_name, adata, cell_cycle_genes_file_path, qc_save_dir)
+
+    # Store the raw counts in a layer before any normalization
+    adata.layers["counts"] = adata.X.copy()
+    adata.write(adata_filt_path)
+
+    return adata
+
+    
+
 def filter_data(sample_id, adata_init, adata_filtered_path, important_genes, cell_cycle_genes_file_path, qc_save_dir, full_filter = 0.05, relaxed_filter = 0.02):
     
     #  Setup 
@@ -164,4 +215,55 @@ def run_qc(adata_filtered, adata_qc_path, important_genes):
 
     adata.write(adata_qc_path)
     return adata
+
+
+def run_qc_embryos_mixed(project_name, adata_filtered, adata_qc_path, important_genes, qc_save_dir):
+    pca_dir = os.path.join(qc_save_dir, "pca")
+    os.makedirs(pca_dir, exist_ok=True)
+    sc.settings.figdir = pca_dir
+    
+    adata = adata_filtered.copy()
+    
+    # always restore raw counts into X
+    if "counts" in adata.layers:
+        adata.X = adata.layers["counts"].copy()
         
+    
+    # Embryos data already normalized
+    
+    sc.pp.log1p(adata)
+
+    # Save the log-normalized data before filtering to HVGs
+    adata.raw = adata.copy()
+    
+    # Find HVGs using the log-normalized data in adata.X by removing the 'layer' argument.
+    # Find highly variable genes
+    sc.pp.highly_variable_genes(adata, n_top_genes=2000, batch_key="sample_id", flavor="seurat")
+    sc.pl.highly_variable_genes(adata, save=f"_{project_name}_HVGs.png")
+    
+    # Force important genes to be included as "highly variable"
+    important_set = {g.upper() for g in important_genes}
+    gene_series = adata.var_names.astype(str)
+    adata.var.loc[gene_series.str.upper().isin(important_set),"highly_variable"] = True
+    
+    # Filter the data to only the highly variable genes
+    adata = adata[:, adata.var["highly_variable"]].copy()
+    
+    # Scale before PCA
+    sc.pp.scale(adata, max_value=10)
+
+    # PCA
+    sc.tl.pca(adata, use_highly_variable=True)
+    sc.pl.pca_variance_ratio(adata, n_pcs=50, log=True, save=f"_{project_name}_PCA_variance_ratio.png")
+
+    # Neighbors
+    sc.pp.neighbors(adata, n_pcs=30)
+
+    # Clustering
+    for res in [0.5, 1.0, 2.0, 3.0]:
+        sc.tl.leiden(adata, key_added=f"leiden_res_{res:3.1f}", resolution=res, flavor="igraph")
+
+    sc.tl.umap(adata)
+    adata.write(adata_qc_path)
+    
+    return adata

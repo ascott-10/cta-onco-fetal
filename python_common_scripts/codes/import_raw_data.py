@@ -22,6 +22,38 @@ from config import *
 
 #### Functions ####
 
+def import_raw_data_embryos_mixed(project_name, original_original_data_dir, original_data_dir, adata_init_path, sample_meta_path):
+    # Concat all text files
+    original_file_df_list = []
+    df_all_save_path = os.path.join(original_data_dir, f"{project_name}_gene_expression.csv")
+
+    for file in os.listdir(original_original_data_dir):
+        if file.endswith(".txt"):
+            file_name = os.path.join(original_original_data_dir, file)
+            df = pd.read_csv(file_name, sep='\t')
+            df = df.set_index("Gene")
+            original_file_df_list.append(df)
+
+    df_all = pd.concat(original_file_df_list, axis=1).fillna(0)
+    df_all.reset_index().to_csv(df_all_save_path, index=False)
+
+    df = df.set_index("Gene")
+
+    adata = sc.AnnData(df.T)
+    adata.var_names_make_unique()
+
+    adata.layers["raw_counts"] = adata.X.copy()
+    adata.raw = adata.copy()
+
+    adata.obs["sample_id"] = adata.obs.index.str.split("_embryo").str[0]
+    sample_meta = pd.read_csv(sample_meta_path)
+    sample_meta = sample_meta.set_index("sample_id")
+
+    adata.obs = adata.obs.join(sample_meta, on ="sample_id")
+
+    adata.write(adata_init_path)
+
+
 def import_raw_data_fetal_gonad(sample_id, gse_id, original_data_dir,adata_init_path, sample_meta_df):
 
     """["fetal_gonad]"""
@@ -66,51 +98,6 @@ def import_raw_data_fetal_gonad(sample_id, gse_id, original_data_dir,adata_init_
 
     return adata
 
-def import_raw_data_csv(project_name, sample_id, original_data_dir,adata_init_path, sample_meta_df):
-    """    ["embryos_mixed", "cell_populations"] """
-    
-    if project_name in ["embryos_mixed"]:
-        raw_counts_path = os.path.join(original_data_dir, f"{sample_id}_concat_gene_expression.txt")
-        with open(raw_counts_path) as f:
-            lines = [line.strip().strip('"') for line in f]
-            df = pd.read_csv(StringIO("\n".join(lines)), sep=',', index_col=0).T
-    elif project_name in ["cell_populations"]:
-        subject_id = sample_id
-        raw_counts_path = os.path.join(original_data_dir, f"subject_{subject_id}_concat_umiCounts.table.csv")
-        df = pd.read_csv(raw_counts_path, index_col=0)
-
-    
-    adata = sc.AnnData(df)
-    adata.var_names_make_unique()
- 
-    adata.layers["raw_counts"] = adata.X.copy()
-    adata.raw = adata.copy()
-
-    if project_name in ["embryos_mixed"]:
-        adata.obs["sample_id"] = sample_id
-        meta_row = sample_meta_df.set_index("sample_id").loc[sample_id]
-
-        for col in sample_meta_df.columns:
-            if col == "sample_id":
-                continue
-            adata.obs[col] = meta_row[col]
-
-    elif project_name in ["cell_populations"]:
-        adata.obs["sample_id"] = adata.obs.index.str.split("_").str[-1]
-
-        meta_df = sample_meta_df.set_index("sample_id")
-
-        for col in sample_meta_df.columns:
-            if col == "sample_id":
-                continue
-            adata.obs[col] = adata.obs["sample_id"].map(meta_df[col])
-        
-
-    
-    adata.write(adata_init_path)
-
-    return adata
-    
   
 
 def import_raw_data_10x_subprojects(subproject, original_data_dir,adata_init_path):

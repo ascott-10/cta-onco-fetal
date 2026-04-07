@@ -17,31 +17,29 @@ FEMALE_CANCER_ANNOTATION_FILE_PATH = os.path.join(REFERENCE_DIR, "markers", "cm2
 ENSEMBL_TO_HGNC_MAP= os.path.join(REFERENCE_DIR,  "ensembl_to_hgnc.csv")
 CELL_TYPE_MAPPINGS = os.path.join(BASE_DIR, "python_common_scripts", "cell_type_leiden_mappings.json")
 IMPORTANT_GENES = ["CTCF", "CTCFL", "DPEP3"]
+
+JSON_ANNOTATIONS_PATH = os.path.join(BASE_DIR, "python_common_scripts", "cell_type_leiden_mappings.json")
 GENE_MAP_FILE_PATH = os.path.join(REFERENCE_DIR,"gencode_v45_ensembl_to_hgnc.tsv")
 CTA_FAMILY_FILE_PATH = os.path.join(REFERENCE_DIR, "CTA_family.csv")
 CELL_CYCLE_GENES_FILE_PATH = os.path.join(REFERENCE_DIR, "cell_cycle_genes.csv")
+
+
+
+
 GENE_DEFAULT_PALETTE = {
     "CTCFL": "#04531c",
     "CTCF": "#4b11d3",
     "DPEP3": "#d31162",
 }
 
-CUSTOM_MARKER_GENES_DICT  = {
-    "Germ cell (mitotic)": ["DPPA3", "NANOG", "DAZL", "TFAP2C"],
-    "Germ cell (RA-responsive)": ["STRA8", "ZGLP1", "KIT"],
-    "Germ cell (meiotic)": ["SYCP3", "SYCP1", "SPO11"],
-    "Germ cell (oogenesis)": ["NOBOX", "FIGLA", "OOSP2"],
-    "Germ cell (mitotic arrest, male)": ["NANOS2"],
-
-    "Gonadal somatic": ["SOX9", "AMH", "CLDN11", "INSL3", "CYP17A1", "FOXL2","WNT4","RSPO1"],
-    
-    "Supporting/Non-gonadal": ["COL1A1", "DCN", "LUM", "PDGFRA", "KRT19"],}
 
 
 GENE_COLOR_MAP = GENE_DEFAULT_PALETTE.copy()
 CELL_TYPE_COLORS = {"None": "#d3d3d3"}
 
 # Project Configuration
+
+FINAL_LEIDEN_RES = "2.0"
 
 GLOBAL_CONFIG = {
     "important_genes": IMPORTANT_GENES,
@@ -54,10 +52,15 @@ GLOBAL_CONFIG = {
         "dpep3": "#9B0993",
         "wt1":   "#331704FF",
     },
+
+    "final_leiden_res": FINAL_LEIDEN_RES,
+    
+
+    
+    "cta_genes_path" : CTA_FAMILY_FILE_PATH,
+    "json_annotations_path" : JSON_ANNOTATIONS_PATH,
+
 }
-
-    # Group: fetal
-
 PROJECT_CONFIG = {
     
     "fetal_gonad": {
@@ -138,11 +141,16 @@ def set_up_project_config(project_name, base_dir=BASE_DIR):
     paths = {
         "PROJECT_DIR": project_dir,
         "ORIGINAL_DATA_DIR": os.path.join(project_dir, "original_data"),
+        "ORIGINAL_ORIGINAL_DATA_DIR": os.path.join(project_dir, "original_original_data"),
+
         "RAW_DATA_DIR": os.path.join(project_dir, "raw_data"),
         "WORKING_ADATA_DIR": os.path.join(project_dir, "working_adata"),
+        
         "FIGURES_DIR": os.path.join(project_dir, "results", "figures"),
         "QC_SAVE_DIR": os.path.join(project_dir, "results", "figures", "qc_plots"),
-        "TABLES_DIR": os.path.join(project_dir, "results", "tables")
+        
+        "TABLES_DIR": os.path.join(project_dir, "results", "tables"),
+        
 
         
         
