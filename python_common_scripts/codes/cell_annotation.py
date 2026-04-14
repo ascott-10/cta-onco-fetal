@@ -2,6 +2,7 @@
 
 import os
 import json
+import re
 import numpy as np
 import pandas as pd
 import random
@@ -19,6 +20,7 @@ import glasbey
 sc.settings.autosave = True  # Saves plots to figdir automatically
 sc.settings.autoshow = False # Prevents plots from displaying inline
 
+from codes.differential_gene_expression import get_ranked_genes
 from config import *
 
 def get_markers_df(markers_file_path):
@@ -243,6 +245,7 @@ def set_obs_colors(adata, palette, cell_type_colors, gene_color_map):
 
 def cell_annotation_wrapper(sample_id, adata_qc, adata_annotated_path, markers_file_path, gene_color_map, cell_type_colors, genes_list, cell_type_label_col = "predicted_cell_type", palette="glasbey"):
     adata = adata_qc.copy()
+    
     markers_df, cellmarkers_annotation_df = get_markers_df(markers_file_path)
     adata = get_cell_type(sample_id, adata, markers_df, cell_type_label_col="predicted_cell_type")
     adata = annotate_cells(adata, cellmarkers_annotation_df, cell_type_label_col="predicted_cell_type")
@@ -253,130 +256,70 @@ def cell_annotation_wrapper(sample_id, adata_qc, adata_annotated_path, markers_f
 
     return adata, gene_color_map, cell_type_colors
 
+# New for embryos
+def adata_split(adata_female_path, adata_male_path, adata_female_annotated_path,adata_male_annotated_path, adata_qc_path):
+    # Split data into male and female
 
-def adata_split_annotate(project_name, final_leiden_res, adata_female_path, adata_male_path, adata_annotated_path, json_annotations_path):
-    # Clustering/leiden resolution for adata_female
-    leiden_split = f"leiden_res_split_{final_leiden_res}"
-    leiden_celltype_split = f"final_celltype_{final_leiden_res}"
-    leiden_cellstate_split = f"final_cellstate_{final_leiden_res}"
-
-    if os.path.exists(adata_female_path):
-        adata_f = sc.read_h5ad(adata_female_path)
-        adata_m = sc.read_h5ad(adata_male_path)
+    if os.path.exists(adata_female_annotated_path) and os.path.exists(adata_male_annotated_path):
+        adata_f = sc.read_h5ad(adata_female_annotated_path)
+        adata_m = sc.read_h5ad(adata_male_annotated_path)
+    
     else:
 
+        if os.path.exists(adata_female_path) and os.path.exists(adata_male_path):
+            adata_f = sc.read_h5ad(adata_female_path)
+            adata_m = sc.read_h5ad(adata_male_path)
+        else:
 
-        adata_annotated = sc.read_h5ad(adata_annotated_path)
+            adata_annotated = sc.read_h5ad(adata_qc_path)
 
-        adata_f = adata_annotated[adata_annotated.obs["sex"] == "female"].copy()
-        adata_m = adata_annotated[adata_annotated.obs["sex"] == "male"].copy()
+            adata_f = adata_annotated[adata_annotated.obs["sex"] == "female"].copy()
+            adata_m = adata_annotated[adata_annotated.obs["sex"] == "male"].copy()
 
 
-        sc.pp.neighbors(adata_f, use_rep="X_pca", n_pcs=30)
-        sc.tl.umap(adata_f)
+            sc.pp.neighbors(adata_f, use_rep="X_pca", n_pcs=30)
+            sc.tl.umap(adata_f)
 
-        sc.pp.neighbors(adata_m, use_rep="X_pca", n_pcs=30)
-        sc.tl.umap(adata_m)
+            sc.pp.neighbors(adata_m, use_rep="X_pca", n_pcs=30)
+            sc.tl.umap(adata_m)
 
-        adata_f.write(adata_female_path)
-        adata_m.write(adata_male_path)
-        
-        # Clustering
-        for res in [0.5, 1.0, 2.0,3.0]:
-            sc.tl.leiden(adata_f, key_added=leiden_split, resolution=res, flavor="igraph")
-            sc.tl.leiden(adata_m, key_added=leiden_split, resolution=res, flavor="igraph")
-
-    import json
-
-    # Import existing annotations
-    if os.path.exists(json_annotations_path):
-
-        with open(json_annotations_path) as f:
-            annotations = json.load(f)
-
-        for sex, adata_current in [("female", adata_f), ("male", adata_m)]:
-            subproject_name = f"{project_name}_{sex}"
-
-            sub_ann = annotations.get(subproject_name)
-            if sub_ann is None:
-                print(f"{subproject_name} not found in annotations, skipping")
-                continue
-
-            leiden_ann = sub_ann.get(leiden_split)
-            if leiden_ann is None:
-                print(f"{leiden_split} not found for {subproject_name}, skipping")
-                continue
-
-            if leiden_split not in adata_current.obs.columns:
-                print(f"{leiden_split} not in adata.obs for {subproject_name}")
-                continue
-
-            # Cell type
-            if "cluster_to_celltype" in leiden_ann:
-                cluster_to_celltype = leiden_ann["cluster_to_celltype"]
-                adata_current.obs[leiden_celltype_split] = adata_current.obs[leiden_split].astype(str).map(cluster_to_celltype)
-                print(f"{subproject_name}: mapped cell type to {leiden_celltype_split}")
-            else:
-                print(f"{subproject_name}: cluster_to_celltype not found")
-
-            # Cell state
-            if "cluster_to_cellstate" in leiden_ann:
-                cluster_to_cellstate = leiden_ann["cluster_to_cellstate"]
-                adata_current.obs[leiden_cellstate_split] = adata_current.obs[leiden_split].astype(str).map(cluster_to_cellstate)
-                print(f"{subproject_name}: mapped cell state to {leiden_cellstate_split}")
-            else:
-                print(f"{subproject_name}: cluster_to_cellstate not found")
-
-    adata_f.write(adata_female_path)
-    adata_m.write(adata_male_path)
+            adata_f.write(adata_female_path)
+            adata_m.write(adata_male_path)
 
     return adata_f, adata_m
+        
 
-def annotate_obs_columns(project_name, adata, cols_to_plot, cols_to_plot_titles, adata_annotated_path, figures_dir, palette="tab10"):
-    umap_dir = os.path.join(figures_dir, "umap")
-    os.makedirs(umap_dir, exist_ok=True)
-    sc.settings.figdir = umap_dir
+def natural_key(x):
 
-    palette_size = matplotlib.colormaps.get_cmap(palette).N
-    all_palettes = {}
+    return [int(t) if t.isdigit() else t for t in re.split(r'(\d+)', str(x))]
 
-    # ---- SAFE age extraction ----
-    if "developmental_stage" in adata.obs.columns:
-        adata.obs["age"] = adata.obs["developmental_stage"].str.extract(r"(\d+)").astype(float)
-        ordered_ages = sorted(adata.obs["age"].dropna().unique())
-        adata.obs["stage_label"] = adata.obs["age"].astype("Int64").astype(str) + "W"
-        ordered_labels = [f"{int(age)}W" for age in ordered_ages]
+def add_stage_label(adata):
+    if "stage_label" not in adata.obs:
+        if "developmental_stage" in adata.obs.columns:
+            adata.obs["age"] = adata.obs["developmental_stage"].str.extract(r"(\d+)").astype(float)
+            ordered_ages = sorted(adata.obs["age"].dropna().unique())
 
-        adata.obs["stage_label"] = pd.Categorical(
-            adata.obs["stage_label"],
-            categories=ordered_labels,
-            ordered=True
-        )
-    else:
-        print("developmental_stage not found, skipping stage_label")
+            adata.obs["stage_label"] = adata.obs["age"].astype("Int64").astype(str) + "W"
+            ordered_labels = [f"{int(age)}W" for age in ordered_ages]
 
-    # ---- LEIDEN ----
-    leiden_cols = []
-    leiden_cols_titles = []
+            adata.obs["stage_label"] = pd.Categorical(
+                adata.obs["stage_label"],
+                categories=ordered_labels,
+                ordered=True
+            )
+    return adata
 
-    for res in [0.5, 1.0, 2.0, 3.0]:
-        key_added = f"leiden_res_{res:3.1f}"
-        if key_added in adata.obs.columns:
-            adata.obs[key_added] = adata.obs[key_added].astype(str).astype("category")
-            leiden_cols.append(key_added)
-            leiden_cols_titles.append(f"Leiden clustering\nResolution {res:3.1f}")
-        else:
-            print(f"{key_added} not found, skipping")
+def build_palettes(adata, cols, existing_palettes=None, palette="tab10"):
 
-    # ---- FILTER COLS EARLY ----
-    cols_to_plot_filt = [c for c in cols_to_plot if c in adata.obs.columns]
-    cols_to_plot_titles_filt = [t for c, t in zip(cols_to_plot, cols_to_plot_titles) if c in adata.obs.columns]
+    import copy
+    all_palettes = copy.deepcopy(existing_palettes) if existing_palettes else {}
 
-    # ---- PALETTES ----
-    for col in cols_to_plot_filt + leiden_cols:
-        categories = sorted(adata.obs[col].dropna().unique())
-        adata.obs[col] = adata.obs[col].astype("category")
-        adata.obs[col] = adata.obs[col].cat.set_categories(categories)
+    for col in cols:
+        if col not in adata.obs:
+            continue
+
+        categories = sorted(adata.obs[col].dropna().unique(), key=natural_key)
+        adata.obs[col] = adata.obs[col].astype("category").cat.set_categories(categories)
 
         if col == "sex":
             palette_dict = {"female": "#E78AC3", "male": "#4C72B0"}
@@ -388,50 +331,91 @@ def annotate_obs_columns(project_name, adata, cols_to_plot, cols_to_plot_titles,
             palette_dict = {cat: to_hex(color) for cat, color in zip(categories, palette_list)}
 
         elif col.startswith("leiden"):
-            palette_list = glasbey.create_palette(palette_size=len(categories))
-            palette_dict = {cat: to_hex(color) for cat, color in zip(categories, palette_list)}
+            colors = glasbey.create_palette(palette_size=len(categories))
+            palette_dict = {cat: to_hex(color) for cat, color in zip(categories, colors)}
 
         else:
-            if len(categories) <= palette_size:
-                cmap = matplotlib.colormaps.get_cmap(palette)
-                palette_list = [cmap(i)[:3] for i in range(len(categories))]
-            else:
-                palette_list = glasbey.extend_palette(palette, palette_size=len(categories))
+            # unified persistent behavior (celltype-like)
+            key = "celltype" if col.startswith("celltype_") else col
 
-            palette_dict = {cat: to_hex(color) for cat, color in zip(categories, palette_list)}
+            if key not in all_palettes:
+                all_palettes[key] = {}
 
-        all_palettes[col] = palette_dict
-        adata.uns[f"{col}_colors"] = [palette_dict[c] for c in categories]
+            palette_dict = all_palettes[key]
 
-    # ---- SAVE PALETTES ----
-    with open("adata_palettes.json", "w") as f:
-        json.dump(all_palettes, f, indent=2)
+            missing = sorted([c for c in categories if c not in palette_dict], key=natural_key)
 
-    # ---- PLOTS ----
-    if cols_to_plot_filt:
-        sc.pl.umap(
-            adata,
-            color=cols_to_plot_filt,
-            title=cols_to_plot_titles_filt,
-            ncols=1,
-            frameon=False,
-            save=f"_{project_name}_obs_UMAP_initial.png"
-        )
-    else:
-        print("No valid obs cols to plot")
+            if missing:
+                existing_n = len(palette_dict)
+                full_palette = glasbey.create_palette(palette_size=existing_n + len(missing))
+                new_colors = full_palette[existing_n:]
+                new_colors = [to_hex(c) for c in new_colors]
+
+                for k, c in zip(missing, new_colors):
+                    palette_dict[k] = c
+
+        if not col.startswith("celltype_") and not col.startswith("cellstate_"):
+            all_palettes[col] = palette_dict
+
+        adata.uns[f"{col}_colors"] = [palette_dict.get(c, "#d3d3d3") for c in categories]
+
+    return adata, all_palettes
+
+def plot_umaps(adata, subproject_name, obs_cols, obs_titles, leiden_cols, leiden_cols_titles, figures_dir):
+
+    umap_dir = os.path.join(figures_dir, "umap")
+    leiden_umap_dir = os.path.join(umap_dir, "leiden")
+    obs_umap_dir = os.path.join(umap_dir, "cat_obs")
+    os.makedirs(umap_dir, exist_ok=True)
+    os.makedirs(leiden_umap_dir, exist_ok=True)
+    os.makedirs(obs_umap_dir, exist_ok=True)
+
+    if obs_cols:
+        sc.settings.figdir = obs_umap_dir
+        for curr_col, curr_title in zip(obs_cols, obs_titles):
+            sc.pl.umap(adata, color=curr_col, title=curr_title,frameon=False, save=f"_{subproject_name}_{curr_col}.png")
+            if curr_col.startswith("celltype_"):
+                sc.pl.umap(adata, color=curr_col, title=curr_title,frameon=False, legend_loc = "on data", save=f"_{subproject_name}_{curr_col}_no_leg.png")
 
     if leiden_cols:
-        sc.pl.umap(
-            adata,
-            color=leiden_cols,
-            title=leiden_cols_titles,
-            ncols=4,
-            legend_loc="on data",
-            frameon=False,
-            save=f"_{project_name}_leiden_UMAP_initial.png"
-        )
-    else:
-        print("No valid leiden cols")
+        sc.settings.figdir = leiden_umap_dir
+        for curr_col, curr_title in zip(leiden_cols, leiden_cols_titles):
+            sc.pl.umap(adata, color=curr_col, title=curr_title, frameon=False, legend_loc = "on data", save=f"_{subproject_name}_{curr_col}.png")
 
-    adata.write(adata_annotated_path)
-    return adata
+def run_full_annotation_pipeline(subproject_name, adata_current, adata_annotated_path, leiden_res_list, json_annotations_path, palette_path, cols_to_plot, cols_to_plot_titles, tables_dir, figures_dir, palette="tab10"):
+    #0.
+    adata_current = add_stage_label(adata_current)
+    adata_current, leiden_cols, leiden_cols_titles, celltype_cols = get_ranked_genes(adata_current, subproject_name, json_annotations_path, leiden_res_list, tables_dir, figures_dir, always_rank=True)
+
+    # 3. Combine columns for palettes
+    all_cols = cols_to_plot + leiden_cols + celltype_cols
+
+    if os.path.exists(palette_path):
+        try:
+            with open(palette_path, "r") as f:
+                existing_palettes = json.load(f)
+        except Exception:
+            existing_palettes = {}
+    else:
+        existing_palettes = {}
+    
+    print(f"Building palettes for {len(all_cols)} columns")
+    adata_current, all_palettes = build_palettes(adata_current, all_cols,existing_palettes,palette=palette)
+
+    # 5. Plot
+    plot_cols = cols_to_plot + celltype_cols
+
+    # extend titles (simple version)
+    plot_titles = (cols_to_plot_titles + [f"Predicted Cell Type \n Leiden Resolution {c.replace('celltype_leiden_res_', '')}" for c in celltype_cols])
+   
+    plot_umaps(adata_current, subproject_name,plot_cols, plot_titles, leiden_cols,leiden_cols_titles,figures_dir)
+
+    
+    # 6. Save palettes
+    print(f"Saving palettes → {palette_path}")
+    with open(palette_path, "w") as f:
+        json.dump(all_palettes, f, indent=2)
+    # 7. Save AnnData
+    adata_current.write(adata_annotated_path)
+
+    return adata_current

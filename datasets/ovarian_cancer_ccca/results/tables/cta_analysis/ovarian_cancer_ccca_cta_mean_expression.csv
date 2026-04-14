@@ -1,0 +1,28 @@
+celltype_leiden_res_0.5,PRDM1,KIT
+Activated fibroblasts,0.06429168,0.00024435192
+Activated myeloid/APC,0.36244762,0.0
+Antigen-presenting cells,0.2519803,0.009575958
+B cells,0.059952334,0.006068544
+Ciliated epithelial cells,0.025479648,0.0021141088
+Classical fibroblasts / CAFs,0.23819655,0.0027630157
+Complement-high CAFs,0.0056804563,0.0005787705
+EMT / developmental signature,0.2183081,0.008635406
+EMT hybrid / transitioning tumor cells,0.00024613913,4.239824e-05
+EMT-like / activated CAFs,0.17933686,0.00043708275
+Endothelial cells,0.42675257,0.039939277
+HGSOC signature (FOLR1+),0.03690497,0.0035325363
+Inflammatory CAFs,0.53062874,0.0056568226
+Inflammatory/secretory phenotype,0.00012058804,0.0
+Malignant epithelial cells,0.020458823,0.0017730617
+Mast cells,0.014033707,0.6556352
+Myeloid,0.24815051,0.0016216823
+Myofibroblasts (contractile CAFs),0.18862166,0.008317719
+Ovarian lineage tumor cells,0.008683666,0.0015681721
+Plasma cells,0.67276156,0.0010084545
+Secretory CAFs / ECM remodeling,0.1598982,0.035614867
+Secretory epithelial,0.07951177,0.2036777
+Smooth muscle / pericytes,0.20804013,0.00041363202
+Stress/proliferation tumor cells,0.011705467,0.0
+Stressed / senescent-like population,0.022030154,0.45190606
+Stressed tumor cells,0.12371125,0.0
+T cells,0.25669387,0.012083377

@@ -1,0 +1,293 @@
+{
+"embryos_mixed_female": {
+    "leiden_res_0.5": {
+      "cluster_to_celltype": {
+        "1": "PGC",
+        "5": "RA–responsive germ cells",
+        "10": "Meiotic germ cells",
+        "2": "Proliferating",
+        "3": "Early somatic",
+        "9": "Stromal",
+        "4": "Stromal",
+        "8": "Mixed",
+        "6": "Mixed",
+        "7": "Immune",
+        "0": "Ribosomal"
+                            }
+                      },
+
+  "leiden_res_1.0": {
+    "cluster_to_celltype": {
+      "0": "Ribosomal",
+      "1": "PGC",
+      "2": "Proliferating",
+      "3": "Stromal",
+      "4": "Early somatic",
+      "5": "RA–responsive germ cells",
+      "6": "Ambiguous",
+      "7": "Mixed",
+      "8": "Immune",
+      "9": "Mixed",
+      "10": "Stromal",
+      "11": "Meiotic germ cells",
+      "12": "Oocytes",
+      "13": "Mixed"
+                          }
+                    },
+
+  "leiden_res_2.0": {
+    "cluster_to_celltype": {
+      "1": "PGC",
+      "5": "PGC",
+      "7": "RA–responsive germ cells",
+      "12": "Meiotic germ cells",
+      "15": "Oocytes",
+      "17": "Late germline",
+
+      "2": "Proliferating",
+      "3": "Proliferating",
+
+      "4": "Early somatic",
+      "14": "Early somatic",
+      "6": "Stromal",
+      "11": "Stromal",
+      "18": "Stromal",
+
+      "0": "Ribosomal",
+      "8": "Ribosomal",
+
+      "9": "Mixed",
+      "10": "Immune",
+      "13": "Mixed",
+
+      "16": "Mixed"
+                        }
+                  },
+
+  "leiden_res_3.0": {
+    "cluster_to_celltype": {
+      "2": "PGC",
+      "5": "PGC",
+      "8": "RA–responsive germ cells",
+      "12": "RA–responsive germ cells",
+      "9": "Meiotic germ cells",
+      "21": "Oocytes",
+      "23": "Late germline",
+
+      "3": "Proliferating",
+      "4": "Proliferating",
+      "6": "Proliferating",
+
+      "7": "Stromal",
+      "15": "Stromal",
+      "16": "Stromal",
+      "20": "Early somatic",
+      "19": "Early somatic",
+
+      "13": "Immune",
+      "11": "Mixed",
+      "22": "Mixed",
+
+      "25": "Endothelial",
+      "0": "Ribosomal",
+      "10": "Ribosomal",
+
+      "1": "Mixed",
+      "17": "Mixed"
+                        }
+                  }
+                        },
+"embryos_mixed_male": {
+    "leiden_res_0.5": {
+        "cluster_to_celltype": {
+            "1": "Erythroid (primitive)",
+            "5": "Cycling",
+            "10": "Germ cells (meiotic-like)",
+            "2": "Erythroid",
+            "3": "Mesenchymal",
+            "9": "Prospermatogonia",
+            "4": "PGC",
+            "8": "Fibroblast",
+            "6": "Mixed",
+            "7": "Sertoli",
+            "0": "Immune"
+        }
+    },
+    "leiden_res_1.0": {
+        "cluster_to_celltype": {
+            "1": "Erythroid (primitive)",
+            "5": "Cycling",
+            "10": "Fibroblast",
+            "2": "Erythroid",
+            "3": "Mesenchymal",
+            "9": "Sertoli",
+            "4": "PGC (early)",
+            "8": "PGC",
+            "6": "Mixed",
+            "7": "Erythroid",
+            "0": "Immune",
+            "12": "PGC (late)",
+            "11": "Prospermatogonia"
+        }
+    },
+    "leiden_res_2.0": {
+        "cluster_to_celltype": {
+            "0": "Immune",
+            "1": "Erythroid (primitive)",
+            "2": "Erythroid",
+            "3": "Mesenchymal",
+            "4": "PGC (early)",
+            "5": "Cycling",
+            "6": "Low-quality",
+            "7": "Erythroid (mixed)",
+            "8": "PGC",
+            "9": "PGC (early)",
+            "10": "Immune (activated)",
+            "11": "Sertoli",
+            "12": "Sertoli (state)",
+            "13": "Leydig",
+            "14": "Germ cells (early)",
+            "15": "Fibroblast",
+            "16": "Sertoli (state)",
+            "17": "Prospermatogonia (early)",
+            "18": "Germ cells",
+            "19": "Germ cells",
+            "20": "Germ cells (late)",
+            "21": "Prospermatogonia"
+        }
+    },
+    "leiden_res_3.0": {
+        "cluster_to_celltype": {
+            "0": "Immune",
+            "1": "Erythroid (primitive)",
+            "2": "Erythroid",
+            "3": "Mesenchymal",
+            "4": "PGC (early)",
+            "5": "PGC (early)",
+            "6": "PGC",
+            "7": "Cycling",
+            "8": "Low-quality",
+            "9": "Erythroid (mixed)",
+            "10": "PGC (early)",
+            "11": "Immune (activated)",
+            "12": "Sertoli",
+            "13": "Sertoli (state)",
+            "14": "Leydig",
+            "15": "Immune (activated)",
+            "16": "Low-quality",
+            "17": "Cycling",
+            "18": "Fibroblast",
+            "19": "Sertoli (state)",
+            "20": "PGC (early)",
+            "21": "Prospermatogonia (early)",
+            "22": "Germ cells",
+            "23": "Prospermatogonia",
+            "24": "Germ cells (late)",
+            "25": "Prospermatogonia",
+            "26": "Prospermatogonia",
+            "27": "Sertoli (state)",
+            "28": "PGC (late)"
+        }
+    }
+},
+                        
+                      
+  "ovarian_cancer_ccca":  {
+      "leiden_res_0.5": {
+        "cluster_to_celltype":  {
+    
+    "0": "T cells", 
+    "7": "T cells", 
+    "1": "B cells", 
+    "28": "Plasma cells", 
+    "2": "Antigen-presenting cells", 
+    "4": "Antigen-presenting cells", 
+    "5": "Myeloid", 
+    "6": "Myeloid", 
+    "27": "Activated myeloid/APC", 
+    "34": "Mast cells", 
+
+    
+    "8": "Malignant epithelial cells", 
+    "15": "Malignant epithelial cells", 
+    "16": "Malignant epithelial cells", 
+    "17": "Malignant epithelial cells", 
+    "20": "Malignant epithelial cells", 
+    "26": "Malignant epithelial cells", 
+    "10": "Stress/proliferation tumor cells", 
+    "12": "Ovarian lineage tumor cells", 
+    "21": "Ovarian lineage tumor cells", 
+    "22": "Ovarian lineage tumor cells", 
+    "33": "Ovarian lineage tumor cells", 
+    "24": "Stressed tumor cells", 
+    "32": "EMT / developmental signature", 
+    "3": "HGSOC signature (FOLR1+)", 
+    "9": "Inflammatory/secretory phenotype", 
+
+    
+    "13": "Classical fibroblasts / CAFs",
+    "14": "Classical fibroblasts / CAFs",
+    "25": "Activated fibroblasts",
+    "29": "EMT-like / activated CAFs",
+    "30": "Secretory CAFs / ECM remodeling",
+    "35": "Secretory CAFs / ECM remodeling",
+    "36": "Secretory CAFs / ECM remodeling",
+    "31": "Myofibroblasts (contractile CAFs)",
+    "37": "Inflammatory CAFs",
+    "18": "Complement-high CAFs",
+
+    
+    "23": "Endothelial cells",
+    "38": "Smooth muscle / pericytes",
+
+    
+    "19": "Ciliated epithelial cells",
+    "40": "Secretory epithelial",
+    "11": "EMT hybrid / transitioning tumor cells",
+    "39": "Stressed / senescent-like population"
+                                }
+
+                            }
+                      },
+
+
+
+  "gene_panels": {
+    "cta_poster": {
+      "PGC_like": [
+        "PRDM1","PRDM14","TFAP2C","NANOS3","KIT","DPPA3","DAZL","DDX4"
+      ],
+      "Meiosis": [
+        "SYCP1","SYCE1","SPO11","HORMAD1","HORMAD2",
+        "TDRD1","TDRD6","PIWIL2","MAEL"
+      ],
+      "Regulators": [
+        "CTCFL","TAF7L","DDX43","MORC1"
+      ],
+      "CTA_core": [
+        "PRAME","MAGEA4","MAGEC2","CTAG2","PAGE1","PAGE5"
+      ]
+    },
+
+    "cta_selected_umap": [
+      "PRAME","HORMAD1","SYCP1","PIWIL2","MAEL","DDX43","TDRD1"
+    ]
+  },
+
+  "cta_filtering": {
+    "genes_to_drop": [
+      "MAGEA1","MAGEA3","MAGEA6","MAGEA8","MAGEA10","MAGEA11","MAGEA12",
+      "MAGEB4","MAGEB6","MAGEAC3","MAGEC1","MAGEC3",
+      "GAGE1","GAGE2A","GAGE12J",
+      "SSX1","SSX3","SSX5","SSX6","SSX7",
+      "BAGE","XAGE3","XAGE5","SAGE1","CAGE1","PASD1",
+      "AKAP4","ROPN1","TSSK6","SPACA3","CRISP2",
+      "SPAG1","SPAG4","SPAG6","SPAG8","SPAG17",
+      "ODF1","ODF4","COX6B2","DDX53","TAF7L","CALR3"
+    ],
+    "fraction": {
+      "lower": 0.01,
+      "upper": 0.3
+    }
+  }
+}

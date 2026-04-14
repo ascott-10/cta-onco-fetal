@@ -14,15 +14,15 @@ MALE_NONCANCER_ANNOTATION_FILE_PATH = os.path.join(REFERENCE_DIR, "markers", "cm
 FEMALE_NONCANCER_ANNOTATION_FILE_PATH = os.path.join(REFERENCE_DIR, "markers", "cm2_updated_female_noncancer.csv")
 FEMALE_CANCER_ANNOTATION_FILE_PATH = os.path.join(REFERENCE_DIR, "markers", "cm2_updated_adult_female_cancer.csv")
 
-ENSEMBL_TO_HGNC_MAP= os.path.join(REFERENCE_DIR,  "ensembl_to_hgnc.csv")
-CELL_TYPE_MAPPINGS = os.path.join(BASE_DIR, "python_common_scripts", "cell_type_leiden_mappings.json")
-IMPORTANT_GENES = ["CTCF", "CTCFL", "DPEP3"]
+ENSEMBL_TO_HGNC_MAP = os.path.join(REFERENCE_DIR, "ensembl_to_hgnc.csv")
+CELL_TYPE_MAPPINGS = os.path.join(REFERENCE_DIR, "JSON", "cell_type_genes_mappings.json")
+ADATA_PALETTE_MAP = os.path.join(REFERENCE_DIR, "JSON", "adata_palettes.json")
 
-JSON_ANNOTATIONS_PATH = os.path.join(BASE_DIR, "python_common_scripts", "cell_type_leiden_mappings.json")
-GENE_MAP_FILE_PATH = os.path.join(REFERENCE_DIR,"gencode_v45_ensembl_to_hgnc.tsv")
+GENE_MAP_FILE_PATH = os.path.join(REFERENCE_DIR, "gencode_v45_ensembl_to_hgnc.tsv")
 CTA_FAMILY_FILE_PATH = os.path.join(REFERENCE_DIR, "CTA_family.csv")
 CELL_CYCLE_GENES_FILE_PATH = os.path.join(REFERENCE_DIR, "cell_cycle_genes.csv")
 
+IMPORTANT_GENES = ["CTCF", "CTCFL", "DPEP3"]
 
 
 
@@ -32,35 +32,19 @@ GENE_DEFAULT_PALETTE = {
     "DPEP3": "#d31162",
 }
 
-
-
-GENE_COLOR_MAP = GENE_DEFAULT_PALETTE.copy()
-CELL_TYPE_COLORS = {"None": "#d3d3d3"}
-
-# Project Configuration
-
-FINAL_LEIDEN_RES = "2.0"
+LEIDEN_RES_LIST = [0.5, 1.0, 2.0, 3.0]
 
 GLOBAL_CONFIG = {
     "important_genes": IMPORTANT_GENES,
-    "global_cell_markers_cols": ['tissue_class', 'tissue_type', 'cancer_type', 'cell_type', 'cell_name',  'Genetype'],
-    "umap_obs_cols": ["leiden", "predicted_cell_type"],
-    "species": "Homo sapiens", 
-    "gene_defaults" : {
-        "ctcfl": "#04531c",
-        "ctcf":  "#4b11d3",
-        "dpep3": "#9B0993",
-        "wt1":   "#331704FF",
-    },
-
-    "final_leiden_res": FINAL_LEIDEN_RES,
+    "species": "Homo sapiens",
+    "leiden_res_list": LEIDEN_RES_LIST,
+    "cell_cycle_genes_path": CELL_CYCLE_GENES_FILE_PATH,
+    "cta_genes_path": CTA_FAMILY_FILE_PATH,
+    "json_palette_path": ADATA_PALETTE_MAP,
+    "json_annotations_path": CELL_TYPE_MAPPINGS,
     
-
-    
-    "cta_genes_path" : CTA_FAMILY_FILE_PATH,
-    "json_annotations_path" : JSON_ANNOTATIONS_PATH,
-
 }
+
 PROJECT_CONFIG = {
     
     "fetal_gonad": {
@@ -92,35 +76,21 @@ PROJECT_CONFIG = {
         "sample_col": "sample_id",
         "sample_list": ['F_3_8W','F_9_12W','F_13_16W','F_17_21W','F_22_26W','M_3_8W','M_9_12W','M_17_21W','M_22_26W'],
         "sample_meta_cols": ['sample_id','developmental_stage','sex','cell_type_descript'],
-        "sample_meta_filename": "embryos_mixed_concat_sample_meta.csv",
-        "cell_meta_cols": None,
-        "cell_meta_filename": None,
+        "sample_meta_filename": "GSE86146_embryos_mixed_sample_meta.csv",
+        "plot": {"obs_cols": ["sample_id", "sex", "stage_label"],
+             "obs_titles": ["Sample", "Sex", "Age (Gestation Weeks)"],
+             },
         "processing_type": "counts_txt",
-        "cell_markers_file_path": {
-            'F_3_8W': FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'F_9_12W': FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'F_13_16W': FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'F_17_21W': FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'F_22_26W': FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            
-            'M_3_8W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'M_9_12W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
-            
-            
-            'M_17_21W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'M_22_26W': MALE_NONCANCER_ANNOTATION_FILE_PATH,
-    
-        },
+        
         
     },
 
     "ovarian_cancer_ccca": {
-        "sample_list": ['Geistlinger2020','Izar2020', 'Nath2021','Olalekan2021','Olbrecht2021','Qian2020','Regner2021','Shih2018','Tang-Huau2018','Zhang2019', 'Zhang2022'],
+        "sample_list": ['Nath2021','Olalekan2021','Olbrecht2021','Qian2020','Regner2021','Shih2018','Tang-Huau2018','Zhang2019', 'Zhang2022'],
         "sample_col": "sample_id",
-        "sample_meta_cols": None,
-        "sample_meta_filename": None,
-        "cell_meta_cols": None,
-        "cell_meta_filename": None,
+        "plot": {"obs_cols": ["sample_id"],
+             "obs_titles": ["Sample"],
+             },
         "processing_type": "10x",
         "cell_markers_file_path": FEMALE_CANCER_ANNOTATION_FILE_PATH,
     },

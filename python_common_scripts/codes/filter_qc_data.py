@@ -27,8 +27,12 @@ from config import *
 #### Functions ####
 
 
-def filter_data_embryos_mixed(project_name, adata_init, adata_filt_path, important_genes, cell_cycle_genes_file_path, qc_save_dir):
-    
+def filter_data_embryos_mixed(project_name, adata_init, adata_filt_path, important_genes, qc_save_dir):
+    """For consistency:
+        counts" = true raw data
+        adata.X = log-transformed
+        adata.raw = clean log reference
+        """
     # Set up dirs
     violin_dir = os.path.join(qc_save_dir, "violin")
     
@@ -49,11 +53,18 @@ def filter_data_embryos_mixed(project_name, adata_init, adata_filt_path, importa
     sc.settings.figdir = qc_save_dir
     sc.pl.violin(adata, qc_cols, save=f"_{project_name}_QC.png", jitter=0.4, multi_panel=True)
  
+    # Filter for cells and genes here
     sc.pp.filter_cells(adata, min_genes=100)
     sc.pp.filter_genes(adata, min_cells=3)
 
+    # Preserve raw counts BEFORE log transform
+    if "raw_counts" in adata.layers:
+        adata.layers["counts"] = adata.layers["raw_counts"].copy()
+    else:
+        adata.layers["counts"] = adata.X.copy()
+
     sc.pp.log1p(adata)
-    adata.raw = adata
+    adata.raw = adata.copy()
 
     # Create a mask for genes expressed in at least 3 cells
     genes_expressed_mask = sc.pp.filter_genes(adata, min_cells=3, inplace=False)[0]
@@ -67,92 +78,15 @@ def filter_data_embryos_mixed(project_name, adata_init, adata_filt_path, importa
     # Apply this final, combined mask to the data just once
     adata = adata[:, final_gene_mask].copy()
 
-    cell_cycle_scoring(project_name, adata, cell_cycle_genes_file_path, qc_save_dir)
+    
 
-    # Store the raw counts in a layer before any normalization
-    adata.layers["counts"] = adata.X.copy()
     adata.write(adata_filt_path)
 
     return adata
 
     
 
-def filter_data(sample_id, adata_init, adata_filtered_path, important_genes, cell_cycle_genes_file_path, qc_save_dir, full_filter = 0.05, relaxed_filter = 0.02):
-    
-    #  Setup 
-    violin_dir = os.path.join(qc_save_dir, "violin")
-    scatter_dir = os.path.join(qc_save_dir, "scatter")
 
-    os.makedirs(qc_save_dir, exist_ok=True)
-    os.makedirs(violin_dir, exist_ok=True)
-    os.makedirs(scatter_dir, exist_ok=True)
-
-    full_filter = float(full_filter)
-    relaxed_filter = float(relaxed_filter)
-    adata = adata_init.copy()
-
-    # Remove cells with no genes and genes with no expression
-    sc.pp.filter_cells(adata, min_genes=1)
-    sc.pp.filter_genes(adata, min_cells=1)
-
-    # Calculate and Plot QC Metrics
-    adata.var["mt"] = adata.var_names.str.upper().str.startswith("MT-")
-    adata.var["ribo"] = adata.var_names.str.upper().str.startswith(("RPS", "RPL"))
-    adata.var["hb"] = adata.var_names.str.upper().str.contains(r"^HB(?!P)", regex=True)
-
-    # Calculate the QC metrics for the defined sets
-    sc.pp.calculate_qc_metrics(adata, qc_vars=["mt", "ribo", "hb"], inplace=True, log1p=False)
-
-    # Plot the QC metrics BEFORE applying cell filters
-    qc_cols = ["n_genes_by_counts", "total_counts", "pct_counts_mt"]
-    
-    sc.settings.figdir = violin_dir
-    sc.pl.violin(adata, qc_cols, save=f"_{sample_id}_QC.png", jitter=0.4, multi_panel=True)
-    
-    sc.settings.figdir = scatter_dir
-    sc.pl.scatter(adata, "total_counts", "n_genes_by_counts", color="pct_counts_mt", save=f"_{sample_id}_QC.png")
-
-    # Create a boolean mask to identify and remove low-quality cells
-
-    if adata.n_obs > 50:
-
-        cell_mask = (
-            (adata.obs["n_genes_by_counts"] >= adata.obs["n_genes_by_counts"].quantile(full_filter)) &
-            (adata.obs["total_counts"] >= adata.obs["total_counts"].quantile(full_filter)) &
-            (adata.obs["pct_counts_mt"] <= adata.obs["pct_counts_mt"].quantile(1 - full_filter))
-        )
-        adata = adata[cell_mask].copy()
-
-    else:
-
-        cell_mask = (
-            (adata.obs["n_genes_by_counts"] >= adata.obs["n_genes_by_counts"].quantile(relaxed_filter)) &
-            (adata.obs["total_counts"] >= adata.obs["total_counts"].quantile(relaxed_filter)) &
-            (adata.obs["pct_counts_mt"] <= adata.obs["pct_counts_mt"].quantile(1 - relaxed_filter))
-        )
-        adata = adata[cell_mask].copy()
-
-    
-
-    # Create a mask for genes expressed in at least 3 cells
-    genes_expressed_mask = sc.pp.filter_genes(adata, min_cells=3, inplace=False)[0]
-
-    # Create a mask for the important genes
-    important_set = {g.upper() for g in important_genes}
-    important_genes_mask = adata.var_names.str.upper().isin(important_set)
-
-    final_gene_mask = genes_expressed_mask | important_genes_mask
-
-    # Apply this final, combined mask to the data just once
-    adata = adata[:, final_gene_mask].copy()
-
-    cell_cycle_scoring(sample_id, adata, cell_cycle_genes_file_path, qc_save_dir)
-
-    # Store the raw counts in a layer before any normalization
-    adata.layers["counts"] = adata.X.copy()
-    adata.write(adata_filtered_path)
-
-    return adata
 
 def cell_cycle_scoring(sample_id, adata, cell_cycle_genes_file_path, qc_save_dir):
 
@@ -177,83 +111,66 @@ def cell_cycle_scoring(sample_id, adata, cell_cycle_genes_file_path, qc_save_dir
 
         sc.settings.figdir =cell_cycle_dir
         sc.pl.violin( adata,["S_score", "G2M_score"], groupby="phase", jitter=0.4, multi_panel=True,show=False, save=f"_{sample_id}_cell_cycle_.png")
-        
-def run_qc(adata_filtered, adata_qc_path, important_genes):
-    adata = adata_filtered.copy()
-    
-    # always restore raw counts into X
-    if "counts" in adata.layers:
-        adata.X = adata.layers["counts"].copy()
-        
-    
-    # These two steps correctly prepare your data in adata.X
-    sc.pp.normalize_total(adata, target_sum=1e4)
-    sc.pp.log1p(adata)
 
-    # Save the log-normalized data before filtering to HVGs
-    adata.raw = adata.copy()
-    
-    # Find HVGs using the log-normalized data in adata.X by removing the 'layer' argument.
-    sc.pp.highly_variable_genes(adata, n_top_genes=2000, flavor="seurat_v3")
-    
-    # Force important genes to be included as "highly variable"
-    important_set = {g.upper() for g in important_genes}
-    gene_series = adata.var_names.astype(str)
-    adata.var.loc[gene_series.str.upper().isin(important_set),"highly_variable"] = True
-    
-    # Filter the data to only the highly variable genes
-    adata = adata[:, adata.var["highly_variable"]].copy()
-    
-    # Continue with downstream analysis
-    sc.pp.scale(adata, max_value=10)
-    max_pcs = max(2, min(adata.n_obs, adata.n_vars)-1)
-    n_pcs = min(30, max_pcs)
-    sc.tl.pca(adata, n_comps=n_pcs)
-    sc.pp.neighbors(adata, n_neighbors=10, n_pcs=n_pcs)
-    sc.tl.umap(adata)
-    sc.tl.leiden(adata, resolution=1.0)
-
-    adata.write(adata_qc_path)
-    return adata
-
-
-def run_qc_embryos_mixed(project_name, adata_filtered, adata_qc_path, important_genes, qc_save_dir):
+def run_qc_embryos_mixed(project_name, adata_filtered, adata_qc_path, important_genes, qc_save_dir, cell_cycle_genes_file_path):
+    """For consistency:
+        counts" = true raw data
+        adata.X = log-transformed
+        adata.raw = clean log reference
+        """
     pca_dir = os.path.join(qc_save_dir, "pca")
     os.makedirs(pca_dir, exist_ok=True)
     sc.settings.figdir = pca_dir
     
+    n_before = adata_filtered.n_obs
     adata = adata_filtered.copy()
-    
-    # always restore raw counts into X
-    if "counts" in adata.layers:
+
+
+     # Remove doublets FIRST
+    if "predicted_doublet" in adata.obs:
+        adata = adata[~adata.obs["predicted_doublet"]].copy()
+
+    n_after = adata.n_obs
+    print(f"Removed {n_before - n_after} doublets in project {project_name}")
+
+
+    # Restore raw counts into X
+    if "raw_counts" in adata.layers:
+        adata.X = adata.layers["raw_counts"].copy()
+    elif "counts" in adata.layers:
         adata.X = adata.layers["counts"].copy()
-        
-    
-    # Embryos data already normalized
-    
+
+    # Log transform
     sc.pp.log1p(adata)
 
-    # Save the log-normalized data before filtering to HVGs
+    # Store log-normalized version
     adata.raw = adata.copy()
+
+    cell_cycle_scoring(project_name, adata, cell_cycle_genes_file_path, qc_save_dir)
+
     
-    # Find HVGs using the log-normalized data in adata.X by removing the 'layer' argument.
-    # Find highly variable genes
+    # HVGs
     sc.pp.highly_variable_genes(adata, n_top_genes=2000, batch_key="sample_id", flavor="seurat")
     sc.pl.highly_variable_genes(adata, save=f"_{project_name}_HVGs.png")
     
-    # Force important genes to be included as "highly variable"
+    # Force important genes into HVGs
     important_set = {g.upper() for g in important_genes}
     gene_series = adata.var_names.astype(str)
-    adata.var.loc[gene_series.str.upper().isin(important_set),"highly_variable"] = True
+    adata.var.loc[gene_series.str.upper().isin(important_set), "highly_variable"] = True
     
-    # Filter the data to only the highly variable genes
+    # Subset to HVGs
     adata = adata[:, adata.var["highly_variable"]].copy()
-    
-    # Scale before PCA
-    sc.pp.scale(adata, max_value=10)
+
+    # ADD THIS BLOCK
+    adata.obs['total_counts'] = pd.to_numeric(adata.obs['total_counts'], errors='coerce')
+
+    if ("S_score" in adata.obs) and ("G2M_score" in adata.obs):
+        sc.pp.regress_out(adata, ['total_counts', 'S_score', 'G2M_score'])
+    else:
+        sc.pp.regress_out(adata, ['total_counts'])
 
     # PCA
-    sc.tl.pca(adata, use_highly_variable=True)
+    sc.tl.pca(adata)
     sc.pl.pca_variance_ratio(adata, n_pcs=50, log=True, save=f"_{project_name}_PCA_variance_ratio.png")
 
     # Neighbors
@@ -263,7 +180,162 @@ def run_qc_embryos_mixed(project_name, adata_filtered, adata_qc_path, important_
     for res in [0.5, 1.0, 2.0, 3.0]:
         sc.tl.leiden(adata, key_added=f"leiden_res_{res:3.1f}", resolution=res, flavor="igraph")
 
+    # UMAP
     sc.tl.umap(adata)
+
     adata.write(adata_qc_path)
     
+    return adata
+
+def filter_data_ovarian(subproject_name, adata_init, adata_filt_path, important_genes, qc_save_dir, full_filter=0.05, relaxed_filter=0.02):
+
+    violin_dir = os.path.join(qc_save_dir, "violin")
+    scatter_dir = os.path.join(qc_save_dir, "scatter")
+
+    os.makedirs(qc_save_dir, exist_ok=True)
+    os.makedirs(violin_dir, exist_ok=True)
+    os.makedirs(scatter_dir, exist_ok=True)
+
+    adata = adata_init.copy()
+
+    full_filter = float(full_filter)
+    relaxed_filter = float(relaxed_filter)
+
+    # Basic cleanup
+    sc.pp.filter_cells(adata, min_genes=1)
+    sc.pp.filter_genes(adata, min_cells=1)
+
+    # QC annotations
+    adata.var["mt"] = adata.var_names.str.upper().str.startswith("MT-")
+    adata.var["ribo"] = adata.var_names.str.upper().str.startswith(("RPS", "RPL"))
+    adata.var["hb"] = adata.var_names.str.upper().str.contains(r"^HB(?!P)", regex=True)
+
+    sc.pp.calculate_qc_metrics(adata, qc_vars=["mt", "ribo", "hb"], inplace=True)
+
+    qc_cols = ["n_genes_by_counts", "total_counts", "pct_counts_mt"]
+
+    sc.settings.figdir = violin_dir
+    sc.pl.violin(adata, qc_cols, save=f"_{subproject_name}_QC.png", jitter=0.4, multi_panel=True)
+
+    sc.settings.figdir = scatter_dir
+    sc.pl.scatter(adata, "total_counts", "n_genes_by_counts", color="pct_counts_mt", save=f"_{subproject_name}_QC.png")
+
+    # Adaptive filtering (important for tumor heterogeneity)
+    if adata.n_obs > 50:
+        cell_mask = (
+            (adata.obs["n_genes_by_counts"] >= adata.obs["n_genes_by_counts"].quantile(full_filter)) &
+            (adata.obs["total_counts"] >= adata.obs["total_counts"].quantile(full_filter)) &
+            (adata.obs["pct_counts_mt"] <= adata.obs["pct_counts_mt"].quantile(1 - full_filter))
+        )
+    else:
+        cell_mask = (
+            (adata.obs["n_genes_by_counts"] >= adata.obs["n_genes_by_counts"].quantile(relaxed_filter)) &
+            (adata.obs["total_counts"] >= adata.obs["total_counts"].quantile(relaxed_filter)) &
+            (adata.obs["pct_counts_mt"] <= adata.obs["pct_counts_mt"].quantile(1 - relaxed_filter))
+        )
+
+    adata = adata[cell_mask].copy()
+
+    # Preserve raw counts
+    if "raw_counts" in adata.layers:
+        adata.layers["counts"] = adata.layers["raw_counts"].copy()
+    else:
+        adata.layers["counts"] = adata.X.copy()
+
+    # Gene filtering (keep important genes)
+    genes_expressed_mask = sc.pp.filter_genes(adata, min_cells=3, inplace=False)[0]
+    important_set = {g.upper() for g in important_genes}
+    important_genes_mask = adata.var_names.str.upper().isin(important_set)
+
+    final_gene_mask = genes_expressed_mask | important_genes_mask
+    adata = adata[:, final_gene_mask].copy()
+
+    # Normalize AFTER filtering (critical difference from embryo pipeline)
+    sc.pp.normalize_total(adata, target_sum=1e4)
+    sc.pp.log1p(adata)
+
+    # Store clean reference
+    adata.raw = adata.copy()
+
+    adata.write(adata_filt_path)
+
+    return adata
+
+def concat_cancer_adata(concat_adatas, concat_keys, concat_path): 
+    """After filtering (QC, genes, cells, keep important genes) but before 
+    Normalize/Log; HVG; PCA;Neighbors;UMAP;clustering"""
+    
+    
+    adata_concat = ad.concat(concat_adatas, axis=0, join="outer", label="dataset", keys=concat_keys, fill_value=0)
+    adata_concat.write(concat_path)
+    return adata_concat
+
+def run_qc_ovarian(project_name, adata_filtered, adata_qc_path, important_genes, qc_save_dir, cell_cycle_genes_file_path):
+
+    pca_dir = os.path.join(qc_save_dir, "pca")
+    hvg_dir = os.path.join(qc_save_dir, "hvg")
+    os.makedirs(pca_dir, exist_ok=True)
+    os.makedirs(hvg_dir, exist_ok=True)
+
+    n_before = adata_filtered.n_obs
+    adata = adata_filtered.copy()
+
+    # Ensure batch key exists (for concat)
+    if "sample_id" not in adata.obs:
+        adata.obs["sample_id"] = adata.obs["dataset"].astype(str)
+
+    # Remove doublets FIRST
+    if "predicted_doublet" in adata.obs:
+        adata = adata[~adata.obs["predicted_doublet"]].copy()
+
+    n_after = adata.n_obs
+    print(f"Removed {n_before - n_after} doublets in project {project_name}")
+
+    # Restore raw counts into X + ensure counts layer exists
+    if "raw_counts" in adata.layers:
+        adata.X = adata.layers["raw_counts"].copy()
+        adata.layers["counts"] = adata.layers["raw_counts"].copy()
+    elif "counts" in adata.layers:
+        adata.X = adata.layers["counts"].copy()
+    else:
+        adata.layers["counts"] = adata.X.copy()
+
+    # Remove dead genes (important after concat)
+    sc.pp.filter_genes(adata, min_cells=3)
+
+    sc.pp.normalize_total(adata, target_sum=1e4)
+    sc.pp.log1p(adata)
+
+    adata.X = np.nan_to_num(adata.X, nan=0.0, posinf=0.0, neginf=0.0)
+
+    sc.settings.figdir = hvg_dir
+    sc.pp.highly_variable_genes(adata, n_top_genes=2000, batch_key="sample_id", flavor="seurat")
+    sc.pl.highly_variable_genes(adata, save=f"_{project_name}_HVGs.png")
+
+    # Subset to HVGs (IMPORTANT)
+    adata = adata[:, adata.var["highly_variable"]].copy()
+
+    adata.raw = adata.copy()
+
+    # Cell cycle scoring
+    cell_cycle_scoring(project_name, adata, cell_cycle_genes_file_path, qc_save_dir)
+
+    sc.pp.scale(adata, max_value=10)
+
+    max_pcs = max(2, min(adata.n_obs, adata.n_vars) - 1)
+    n_pcs = min(30, max_pcs)
+    sc.tl.pca(adata, n_comps=n_pcs)
+
+    sc.settings.figdir = pca_dir
+    sc.pl.pca_variance_ratio(adata, n_pcs=50, log=True, save=f"_{project_name}_PCA_variance_ratio.png")
+
+    sc.pp.neighbors(adata, n_neighbors=15, n_pcs=n_pcs)
+
+    for res in [0.5, 1.0, 2.0, 3.0]:
+        sc.tl.leiden(adata, key_added=f"leiden_res_{res:3.1f}", resolution=res, flavor="igraph")
+
+    sc.tl.umap(adata)
+
+    adata.write(adata_qc_path)
+
     return adata
