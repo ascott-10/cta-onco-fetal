@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=process_cancer
-#SBATCH --output=logs/fourth_round/cancer_64G%j.out
-#SBATCH --error=errors/fourth_round/cancer_64G%j.err
+#SBATCH --output=logs/fetal_gonad/concat_64G%j.out
+#SBATCH --error=errors/fetal_gonad/concat_64G%j.err
 #SBATCH --time=6:00:00
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=2
@@ -9,7 +9,7 @@
 source /data/scottaa/conda/etc/profile.d/conda.sh
 conda activate rnaseq-pipe
 
-mkdir -p errors/fourth_round logs/fourth_round
+mkdir -p errors/fetal_gonad logs/fetal_gonad
 cd /data/scottaa/cta_onco_fetal
 
 
@@ -21,10 +21,7 @@ python python_common_scripts/main.py process ${PROJECT}
 #python python_common_scripts/concat_adata.py
 
 # To run (example):
+# sbatch run_process_data_pipe.sh mtab_tumors
 # sbatch run_process_data_pipe.sh embryos_mixed
 # sbatch run_process_data_pipe.sh ovarian_cancer_ccca
 # sbatch run_process_data_pipe.sh fetal_gonad
-# sbatch run_process_data_pipe.sh cell_populations
-# sbatch run_process_data_pipe.sh subtype_evolution
-# sbatch run_process_data_pipe.sh hgsoc_subtype_define
-# sbatch run_process_data_pipe.sh gyne_malignant

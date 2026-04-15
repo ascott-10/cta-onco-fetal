@@ -252,42 +252,500 @@
 
 
 
-  "gene_panels": {
-    "cta_poster": {
-      "PGC_like": [
-        "PRDM1","PRDM14","TFAP2C","NANOS3","KIT","DPPA3","DAZL","DDX4"
-      ],
-      "Meiosis": [
-        "SYCP1","SYCE1","SPO11","HORMAD1","HORMAD2",
-        "TDRD1","TDRD6","PIWIL2","MAEL"
-      ],
-      "Regulators": [
-        "CTCFL","TAF7L","DDX43","MORC1"
-      ],
-      "CTA_core": [
-        "PRAME","MAGEA4","MAGEC2","CTAG2","PAGE1","PAGE5"
-      ]
-    },
+ 
 
-    "cta_selected_umap": [
-      "PRAME","HORMAD1","SYCP1","PIWIL2","MAEL","DDX43","TDRD1"
-    ]
+  "mtab_tumors": 
+  {"leiden_res_0.5": {
+      "cluster_to_celltype": {
+    "0": "Cycling tumor",
+    "3": "Tumor epithelial",
+    "4": "Tumor epithelial",
+    "6": "Tumor epithelial",
+
+    "2": "Stressed/hypoxic tumor",
+    "8": "Secretory tumor",
+
+    "1": "Fibroblast (CAF)",
+    "7": "Fibroblast (CAF)",
+
+    "5": "Myeloid (inflammatory)",
+    "9": "IFN-response"
+}
+                      },
+
+  "leiden_res_1.0": {
+     
+    "cluster_to_celltype": {
+
+      
+        "0": "Cycling tumor",
+        "15": "Cycling tumor",
+
+        
+        "1": "Tumor epithelial",
+        "3": "Tumor epithelial",
+        "6": "Tumor epithelial (stress-responsive)",
+        "7": "Tumor epithelial (ribosomal)",
+        "9": "Tumor epithelial (mixed stromal)",
+        "13": "Tumor epithelial (classical)",
+
+        
+        "4": "Hypoxic tumor",
+        "5": "Hypoxic tumor",
+
+       
+        "10": "Secretory tumor",
+        "12": "Transitional tumor state",
+
+       
+        "2": "Fibroblast (CAF)",
+        "11": "Activated fibroblast",
+        "14": "Stromal fibroblast",
+
+       
+        "8": "Myeloid (inflammatory)",
+
+      
+        "16": "Tumor (IFN-response)",
+        "17": "Tumor (IFN-response)",
+        "18": "Tumor (IFN-response)"
+    }
+},
+                
+
+  "leiden_res_2.0": {
+    "cluster_to_celltype":  {
+    "0": "Cycling tumor",
+    "20": "Cycling tumor",
+
+    "1": "Tumor",
+    "4": "Tumor",
+    "5": "Tumor",
+    "7": "Tumor",
+    "9": "Tumor",
+    "10": "Tumor",
+    "16": "Tumor",
+    "18": "Tumor",
+
+    "8": "Stressed tumor",
+    "11": "Stressed tumor",
+    "15": "Stressed tumor",
+    "26": "Stressed tumor",
+
+    "28": "Secretory tumor",
+    "29": "Secretory tumor",
+    "30": "Secretory tumor",
+    "12": "Secretory tumor",
+
+    "2": "Fibroblast",
+    "14": "Fibroblast",
+    "17": "Fibroblast",
+    "19": "Fibroblast",
+    "21": "Fibroblast",
+
+    "6": "Myeloid",
+
+    "22": "IFN-response",
+    "23": "IFN-response",
+    "24": "IFN-response",
+    "25": "IFN-response",
+    "27": "IFN-response",
+
+    "3": "Tumor",
+    "13": "Tumor"
+}
+                  }
+                },
+
+"fetal_gonad_Female": {
+  "leiden_res_0.5": {
+    "cluster_to_celltype": {
+      "10": "Meiotic germ cells",
+      "15": "Proliferating",
+      "3": "Endothelial",
+
+      "1": "Stromal",
+      "9": "Stromal",
+      "11": "Stromal",
+      "13": "Stromal",
+
+      "8": "Epithelial",
+
+      "4": "Mixed",
+      "5": "Immune",
+      "0": "Immune"
+    }
   },
 
-  "cta_filtering": {
-    "genes_to_drop": [
-      "MAGEA1","MAGEA3","MAGEA6","MAGEA8","MAGEA10","MAGEA11","MAGEA12",
-      "MAGEB4","MAGEB6","MAGEAC3","MAGEC1","MAGEC3",
-      "GAGE1","GAGE2A","GAGE12J",
-      "SSX1","SSX3","SSX5","SSX6","SSX7",
-      "BAGE","XAGE3","XAGE5","SAGE1","CAGE1","PASD1",
-      "AKAP4","ROPN1","TSSK6","SPACA3","CRISP2",
-      "SPAG1","SPAG4","SPAG6","SPAG8","SPAG17",
-      "ODF1","ODF4","COX6B2","DDX53","TAF7L","CALR3"
-    ],
-    "fraction": {
-      "lower": 0.01,
-      "upper": 0.3
+  "leiden_res_1.0": {
+    "cluster_to_celltype": {
+      "12": "Meiotic germ cells",
+      "6": "RA–responsive germ cells",
+      "0": "RA–responsive germ cells",
+
+      "20": "Proliferating",
+      "3": "Proliferating",
+
+      "2": "Stromal",
+      "5": "Stromal",
+      "15": "Stromal",
+      "7": "Stromal",
+      "13": "Stromal",
+      "17": "Stromal",
+      "16": "Stromal",
+
+      "14": "Endothelial",
+      "4": "Endothelial",
+
+      "11": "Epithelial",
+      "10": "Epithelial",
+      "21": "Epithelial",
+      "23": "Epithelial",
+
+      "8": "Immune",
+
+      "1": "Mixed",
+      "9": "Mixed",
+      "22": "Mixed",
+      "18": "Mixed",
+      "25": "Mixed"
+    }
+  },
+  
+  "leiden_res_2.0": {
+    "cluster_to_celltype": {
+
+      "7": "RA–responsive germ cells",
+      "14": "Meiotic germ cells",
+      "16": "Oocytes",
+
+      "26": "Proliferating",
+      "4": "Proliferating",
+      "0": "Proliferating",
+
+      "1": "Stromal",
+      "10": "Stromal",
+      "15": "Stromal",
+      "23": "Stromal",
+
+      "19": "Early somatic",
+      "20": "Early somatic",
+      "22": "Early somatic",
+
+      "8": "Perivascular",
+
+      "21": "Stromal",
+
+      "17": "Stromal",
+      "25": "Stromal",
+      "28": "Stromal",
+      "29": "Stromal",
+      "24": "Stromal",
+
+      "18": "Endothelial",
+      "5": "Endothelial",
+
+      "11": "Epithelial",
+      "13": "Epithelial",
+      "27": "Epithelial",
+      "36": "Epithelial",
+
+      "9": "Immune",
+
+      "2": "Mixed",
+      "6": "Mixed",
+      "12": "Mixed",
+      "30": "Mixed",
+      "31": "Mixed",
+      "32": "Mixed",
+      "33": "Mixed",
+      "34": "Mixed",
+      "35": "Mixed",
+      "37": "Mixed",
+      "3": "Mixed"
     }
   }
+},
+
+
+
+"fetal_gonad_Male": {
+  "leiden_res_0.5": {
+    "cluster_to_celltype": {
+
+      "0": "Sertoli",
+      "10": "Sertoli",
+
+      "12": "Leydig",
+      "9": "Leydig",
+
+      "1": "Fibroblast",
+      "7": "Fibroblast",
+
+      "2": "Cycling",
+      "5": "Cycling",
+
+      "6": "Endothelial",
+
+      "4": "Immune",
+
+      "14": "Epithelial",
+      "15": "Epithelial",
+      "3": "Epithelial",
+
+      "11": "Mesenchymal",
+      "13": "Mesenchymal",
+      "16": "Mesenchymal",
+
+      "8": "Mixed"
+    }
+  },
+
+  "leiden_res_1.0": {
+    "cluster_to_celltype": {
+
+      "1": "Sertoli",
+      "12": "Sertoli",
+      "13": "Sertoli",
+
+      "17": "Leydig",
+      "11": "Leydig",
+      "7": "Leydig",
+
+      "2": "Fibroblast",
+      "10": "Fibroblast",
+      "9": "Fibroblast",
+
+      "21": "Mesenchymal",
+      "23": "Mesenchymal",
+      "15": "Mesenchymal",
+
+      "4": "Epithelial",
+      "18": "Epithelial",
+      "19": "Epithelial",
+      "20": "Epithelial",
+
+      "6": "Endothelial",
+
+      "5": "Immune",
+
+      "0": "Cycling",
+      "22": "Cycling",
+      "3": "Cycling",
+
+      "14": "Mixed",
+      "8": "Mixed",
+      "16": "Mixed"
+    }
+  },
+
+  "leiden_res_2.0": {
+    "cluster_to_celltype": {
+
+      "17": "Prospermatogonia",
+
+      "1": "Sertoli",
+      "6": "Sertoli",
+      "20": "Sertoli",
+      "21": "Sertoli",
+      "22": "Sertoli",
+      "0": "Sertoli",
+      "2": "Sertoli",
+      "7": "Sertoli",
+
+      "13": "Leydig",
+      "27": "Leydig",
+      "28": "Leydig",
+      "30": "Leydig",
+
+      "3": "Fibroblast",
+      "4": "Fibroblast",
+      "5": "Fibroblast",
+      "19": "Fibroblast",
+
+      "16": "Perivascular",
+      "25": "Perivascular",
+
+      "35": "Mesenchymal",
+      "37": "Mesenchymal",
+
+      "29": "Epithelial",
+      "32": "Epithelial",
+      "33": "Epithelial",
+      "34": "Epithelial",
+      "26": "Epithelial",
+
+      "12": "Endothelial",
+
+      "11": "Immune",
+
+      "15": "Cycling",
+      "8": "Cycling",
+      "36": "Cycling",
+
+      "9": "Mixed",
+      "10": "Mixed",
+      "14": "Mixed",
+      "18": "Mixed",
+      "23": "Mixed",
+      "24": "Mixed",
+      "31": "Mixed",
+      "38": "Mixed"
+    }
+  }
+
+},
+"fetal_gonad_Mixed": {
+  "leiden_res_0.5": {
+    "cluster_to_celltype": {
+
+      "18": "PGC",
+
+      "10": "Sertoli",
+      "7": "Sertoli",
+
+      "0": "Leydig",
+      "1": "Leydig",
+
+      "2": "Fibroblast",
+      "6": "Fibroblast",
+      "12": "Fibroblast",
+
+      "21": "Perivascular",
+
+      "11": "Endothelial",
+
+      "17": "Epithelial",
+      "19": "Epithelial",
+      "14": "Epithelial",
+      "20": "Epithelial",
+
+      "24": "Immune",
+
+      "13": "Cycling",
+      "9": "Cycling",
+
+      "8": "Mixed",
+      "15": "Mixed",
+      "16": "Mixed",
+      "3": "Mixed",
+      "4": "Mixed",
+      "5": "Mixed",
+      "22": "Mixed",
+      "23": "Mixed"
+    }
+  },
+
+  "leiden_res_1.0": {
+    "cluster_to_celltype": {
+
+      "23": "PGC",
+
+      "13": "Sertoli",
+      "7": "Sertoli",
+
+      "0": "Leydig",
+      "1": "Leydig",
+      "17": "Leydig",
+
+      "3": "Fibroblast",
+      "4": "Fibroblast",
+      "5": "Fibroblast",
+      "16": "Fibroblast",
+
+      "27": "Perivascular",
+
+      "15": "Endothelial",
+
+      "22": "Epithelial",
+      "24": "Epithelial",
+      "19": "Epithelial",
+      "26": "Epithelial",
+
+      "31": "Immune",
+
+      "18": "Cycling",
+      "25": "Cycling",
+      "6": "Cycling",
+
+      "29": "Neural",
+
+      "2": "Mixed",
+      "8": "Mixed",
+      "9": "Mixed",
+      "10": "Mixed",
+      "11": "Mixed",
+      "12": "Mixed",
+      "14": "Mixed",
+      "20": "Mixed",
+      "21": "Mixed",
+      "28": "Mixed",
+      "30": "Mixed"
+    }
+  },
+
+  "leiden_res_2.0": {
+    "cluster_to_celltype": {
+
+      "30": "PGC",
+      "39": "Meiotic germ cells",
+
+      "14": "Sertoli",
+      "7": "Sertoli",
+
+      "0": "Leydig",
+      "11": "Leydig",
+      "17": "Leydig",
+
+      "2": "Fibroblast",
+      "5": "Fibroblast",
+      "6": "Fibroblast",
+      "35": "Fibroblast",
+
+      "40": "Perivascular",
+
+      "15": "Endothelial",
+      "24": "Endothelial",
+
+      "29": "Epithelial",
+      "33": "Epithelial",
+      "42": "Epithelial",
+      "21": "Epithelial",
+      "22": "Epithelial",
+
+      "46": "Immune",
+
+      "18": "Cycling",
+      "20": "Cycling",
+      "34": "Cycling",
+      "44": "Cycling",
+
+      "43": "Neural",
+
+      "1": "Mixed",
+      "3": "Mixed",
+      "4": "Mixed",
+      "8": "Mixed",
+      "9": "Mixed",
+      "10": "Mixed",
+      "12": "Mixed",
+      "13": "Mixed",
+      "16": "Mixed",
+      "19": "Mixed",
+      "23": "Mixed",
+      "25": "Mixed",
+      "26": "Mixed",
+      "27": "Mixed",
+      "28": "Mixed",
+      "31": "Mixed",
+      "32": "Mixed",
+      "36": "Mixed",
+      "37": "Mixed",
+      "38": "Mixed",
+      "41": "Mixed",
+      "45": "Mixed",
+      "47": "Mixed"
+    }
+  }
+}
 }

@@ -309,7 +309,7 @@ def add_stage_label(adata):
             )
     return adata
 
-def build_palettes(adata, cols, existing_palettes=None, palette="tab10"):
+def build_palettes(adata, adata_annotated_path, cols, existing_palettes=None, palette="tab10"):
 
     import copy
     all_palettes = copy.deepcopy(existing_palettes) if existing_palettes else {}
@@ -318,8 +318,8 @@ def build_palettes(adata, cols, existing_palettes=None, palette="tab10"):
         if col not in adata.obs:
             continue
 
-        categories = sorted(adata.obs[col].dropna().unique(), key=natural_key)
-        adata.obs[col] = adata.obs[col].astype("category").cat.set_categories(categories)
+        categories = sorted([str(c) for c in adata.obs[col].dropna().unique()], key=natural_key)
+        adata.obs[col] = adata.obs[col].astype(str).astype("category").cat.set_categories(categories)
 
         if col == "sex":
             palette_dict = {"female": "#E78AC3", "male": "#4C72B0"}
@@ -359,9 +359,10 @@ def build_palettes(adata, cols, existing_palettes=None, palette="tab10"):
 
         adata.uns[f"{col}_colors"] = [palette_dict.get(c, "#d3d3d3") for c in categories]
 
+    adata.write(adata_annotated_path)
     return adata, all_palettes
 
-def plot_umaps(adata, subproject_name, obs_cols, obs_titles, leiden_cols, leiden_cols_titles, figures_dir):
+def plot_umaps(adata, adata_annotated_path, subproject_name, obs_cols, obs_titles, leiden_cols, leiden_cols_titles, figures_dir):
 
     umap_dir = os.path.join(figures_dir, "umap")
     leiden_umap_dir = os.path.join(umap_dir, "leiden")
@@ -373,15 +374,18 @@ def plot_umaps(adata, subproject_name, obs_cols, obs_titles, leiden_cols, leiden
     if obs_cols:
         sc.settings.figdir = obs_umap_dir
         for curr_col, curr_title in zip(obs_cols, obs_titles):
-            sc.pl.umap(adata, color=curr_col, title=curr_title,frameon=False, save=f"_{subproject_name}_{curr_col}.png")
-            if curr_col.startswith("celltype_"):
-                sc.pl.umap(adata, color=curr_col, title=curr_title,frameon=False, legend_loc = "on data", save=f"_{subproject_name}_{curr_col}_no_leg.png")
+            if curr_col in adata.obs.columns:
+                sc.pl.umap(adata, color=curr_col, title=curr_title,frameon=False,use_raw=False, save=f"_{subproject_name}_{curr_col}.png")
+                if curr_col.startswith("celltype_"):
+                    sc.pl.umap(adata, color=curr_col, title=curr_title,frameon=False, legend_loc = "on data",use_raw=False, save=f"_{subproject_name}_{curr_col}_no_leg.png")
 
     if leiden_cols:
         sc.settings.figdir = leiden_umap_dir
-        for curr_col, curr_title in zip(leiden_cols, leiden_cols_titles):
-            sc.pl.umap(adata, color=curr_col, title=curr_title, frameon=False, legend_loc = "on data", save=f"_{subproject_name}_{curr_col}.png")
+        if curr_col in adata.obs.columns:
+            for curr_col, curr_title in zip(leiden_cols, leiden_cols_titles):
+                sc.pl.umap(adata, color=curr_col, title=curr_title, frameon=False, legend_loc = "on data",use_raw=False, save=f"_{subproject_name}_{curr_col}.png")
 
+    adata.write(adata_annotated_path)
 def run_full_annotation_pipeline(subproject_name, adata_current, adata_annotated_path, leiden_res_list, json_annotations_path, palette_path, cols_to_plot, cols_to_plot_titles, tables_dir, figures_dir, palette="tab10"):
     #0.
     adata_current = add_stage_label(adata_current)

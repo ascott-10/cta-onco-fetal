@@ -32,12 +32,13 @@ GENE_DEFAULT_PALETTE = {
     "DPEP3": "#d31162",
 }
 
-LEIDEN_RES_LIST = [0.5, 1.0, 2.0, 3.0]
+LEIDEN_RES_LIST = [0.5, 1.0,2.0]
 
 GLOBAL_CONFIG = {
     "important_genes": IMPORTANT_GENES,
     "species": "Homo sapiens",
     "leiden_res_list": LEIDEN_RES_LIST,
+    "gene_map_file_path": GENE_MAP_FILE_PATH,
     "cell_cycle_genes_path": CELL_CYCLE_GENES_FILE_PATH,
     "cta_genes_path": CTA_FAMILY_FILE_PATH,
     "json_palette_path": ADATA_PALETTE_MAP,
@@ -50,24 +51,17 @@ PROJECT_CONFIG = {
     "fetal_gonad": {
         
         "sample_col": "sample_id",
+        "gse_list": ['GSM5506062_G1', 'GSM5506063_G2', 'GSM5506064_G3', 'GSM5506065_G4','GSM5704349_mesonephros', 'GSM6703999_mesonephros_F', 'GSM6704000_G5_A','GSM6704001_G5_B', 'GSM6704002_G6_A', 'GSM6704003_G6_B'],
         "sample_list": ['G1_1_Ovary', 'G2_2_Ovary', 'G3_1_Testis','G4_2_Testis','G_1_2_M_Mesonephros','G_2_F_Mesonephros','G5_A_2_Ovary','G5_B_2_Ovary','G6_A_Mixed','G6_B_Mixed'],
-        "sample_meta_cols": ['sample_id','gse_id', 'Description', 'tissue_source', 'sex', 'trimester', 'number_donors', 'age_gestation'],
+        "group_list": ["Female", "Male", "Mixed"],
+        "sample_meta_cols": ['ID_REF','gse_id',	'Description','new_name','tissue_source','sex',	'trimester','number_donors','age_gestation',	'sample_id'],
+        "plot": {"obs_cols": ["sample_id", 'age_gestation', 'tissue_source'],
+             "obs_titles": ["Sample",  "Age (Gestation Weeks)","Tissue Source",],
+             },
         "sample_meta_filename": "fetal_gonad_sample_meta.csv",
-        "cell_meta_cols": None,
-        "cell_meta_filename": None,
+        
         "processing_type": "prebuilt_h5",
-        "cell_markers_file_path": {
-            'G1_1_Ovary' : FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'G2_2_Ovary' : FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'G3_1_Testis' : MALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'G4_2_Testis' :MALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'G_1_2_M_Mesonephros': MALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'G_2_F_Mesonephros':FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'G5_A_2_Ovary' : FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'G5_B_2_Ovary' :FEMALE_NONCANCER_ANNOTATION_FILE_PATH,
-            'G6_A_Mixed': ALL_NONCANCER_ANNOTATION_FILE_PATH,
-            'G6_B_Mixed': ALL_NONCANCER_ANNOTATION_FILE_PATH,
-        },
+        
     
     },
 
@@ -82,6 +76,20 @@ PROJECT_CONFIG = {
              },
         "processing_type": "counts_txt",
         
+        
+    },
+     "mtab_tumors": {
+        
+        "sample_col": "sample_id",
+        #"sample_list": ['38b', '59', '74-1', '79', "mtab_tumors"],
+        "sample_list": [ "mtab_tumors"],
+        "sample_meta_cols": ['donor_id','sample_id','sex','age','FIGO_grade'],
+        "sample_meta_filename": "mtab_tumors_sample_metadata.csv",
+        "plot": {"obs_cols": ['sample_id', 'age','FIGO_grade'],
+             "obs_titles": ["Sample", "Age", "FIGO_grade"],
+             },
+        "processing_type": "10x",
+
         
     },
 

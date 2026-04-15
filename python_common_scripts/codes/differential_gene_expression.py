@@ -26,7 +26,7 @@ import matplotlib.pyplot as plt
 from config import *
 
 
-def get_ranked_genes(adata, subproject_name, json_annotations_path, leiden_res_list, tables_dir, figures_dir, always_rank=True):
+def get_ranked_genes(adata, adata_ranked_path, subproject_name, json_annotations_path, leiden_res_list, tables_dir, figures_dir, always_rank=True):
 
     markers_save_dir = os.path.join(figures_dir, "deg_analysis")
     os.makedirs(markers_save_dir, exist_ok=True)
@@ -112,6 +112,8 @@ def get_ranked_genes(adata, subproject_name, json_annotations_path, leiden_res_l
         celltype_cols.append(celltype_col)
         leiden_cols.append(key_string)
         leiden_cols_titles.append(f"Leiden Clustering \n Resolution {res}")
+
+    adata.write(adata_ranked_path)
 
     return adata, leiden_cols, leiden_cols_titles, celltype_cols
 

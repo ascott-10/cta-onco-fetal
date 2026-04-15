@@ -112,7 +112,7 @@ import pandas as pd
 import json
 
 
-def show_cta_genes(project_name, adata, figures_dir, tables_dir,json_path, groupby, cta_genes_fixed=None):
+def show_cta_genes(project_name, adata, figures_dir, tables_dir,cta_genes_file_path, groupby, cta_genes_fixed=None):
 
     cta_tables_save_dir = os.path.join(tables_dir, "cta_analysis")
     os.makedirs(cta_tables_save_dir, exist_ok=True)
@@ -120,64 +120,20 @@ def show_cta_genes(project_name, adata, figures_dir, tables_dir,json_path, group
     os.makedirs(cta_figures_save_dir, exist_ok=True)
     sc.settings.figdir = cta_figures_save_dir
 
-    with open(json_path) as f:
-        annotations = json.load(f)
-
-    panel = annotations["gene_panels"]["cta_poster"]
-    umap_genes_config = annotations["gene_panels"]["cta_selected_umap"]
-
-    genes_to_drop = set(annotations["cta_filtering"]["genes_to_drop"])
-    lower = annotations["cta_filtering"]["fraction"]["lower"]
-    upper = annotations["cta_filtering"]["fraction"]["upper"]
-
-    if cta_genes_fixed is not None:
-        kept = [g for g in cta_genes_fixed if g in adata.var_names]
-
+    if cta_genes_fixed is None:
+        cta_genes_df = pd.read_csv(cta_genes_file_path)
+        cta_genes_all = cta_genes_df["Family member"].unique().tolist()
     else:
-        genes = []
-        for v in panel.values():
-            genes.extend(v)
-        all_panel_genes = list(set(genes))
-
-        kept = []
-
-        for g in all_panel_genes:
-            if g not in adata.raw.var_names:
-                continue
-
-            vals = adata.raw[:, g].X
-            if hasattr(vals, "toarray"):
-                vals = vals.toarray().flatten()
-            else:
-                vals = vals.flatten()
-
-            frac = np.mean(vals > 0)
-
-            if lower < frac < upper:
-                kept.append(g)
-
-    final_genes = [g for g in kept if g not in genes_to_drop]
-
-    print("Final CTA genes:", final_genes)
-
-    panel_final = {k: [g for g in v if g in final_genes] for k, v in panel.items()}
-
-    panel_dotplot = {k: [g for g in v if g in adata.var_names] for k, v in panel_final.items()}
-
-    genes_umap = [g for g in umap_genes_config if g in adata.var_names]
-
-    sc.pl.dotplot(adata, var_names=panel_dotplot, groupby=groupby, cmap="Purples", standard_scale="var", title=f"{project_name} CTA genes", save=f"{project_name}_cta_dotplot.png")
-
-    sc.pl.umap(adata, color=[groupby] + genes_umap, ncols=3, cmap="Purples", vmax="p99", frameon=False, save=f"{project_name}_cta_umap.png")
-
-    df_genes = pd.DataFrame({"gene": final_genes})
-    df_genes.to_csv(os.path.join(cta_tables_save_dir, f"{project_name}_cta_genes.csv"), index=False)
-
+        cta_genes_all = cta_genes_fixed
+    
+    cta_genes_in = []
     gene_stats = []
 
-    for g in final_genes:
+    for g in cta_genes_all:
         if g not in adata.raw.var_names:
             continue
+        else:
+            cta_genes_in.append(g)
 
         vals = adata.raw[:, g].X
         if hasattr(vals, "toarray"):
@@ -193,13 +149,12 @@ def show_cta_genes(project_name, adata, figures_dir, tables_dir,json_path, group
     df_stats = pd.DataFrame(gene_stats)
     df_stats.to_csv(os.path.join(cta_tables_save_dir, f"{project_name}_cta_gene_stats.csv"), index=False)
 
-    df_expr = sc.get.obs_df(adata, keys=[groupby] + final_genes, use_raw=True)
-
+    df_expr = sc.get.obs_df(adata, keys=[groupby] + cta_genes_in, use_raw=True)
     df_mean = df_expr.groupby(groupby).mean()
     df_mean.to_csv(os.path.join(cta_tables_save_dir, f"{project_name}_cta_mean_expression.csv"))
 
     df_frac = df_expr.copy()
-    for g in final_genes:
+    for g in cta_genes_in:
         df_frac[g] = df_frac[g] > 0
 
     df_frac = df_frac.groupby(groupby).mean()
@@ -208,6 +163,14 @@ def show_cta_genes(project_name, adata, figures_dir, tables_dir,json_path, group
     df_long = df_expr.melt(id_vars=groupby, var_name="gene", value_name="expression")
     df_long.to_csv(os.path.join(cta_tables_save_dir, f"{project_name}_cta_long_format.csv"), index=False)
 
-    return final_genes
+    
+    cta_genes_plot  = cta_genes_in
+    #cta_genes_plot  = [g for g in cta_genes_in if g in adata.var_names]
+   
+    print("Final CTA genes:", cta_genes_plot)
 
-     
+    sc.pl.dotplot(adata, var_names=cta_genes_plot, groupby=groupby, cmap="Purples", use_raw=True, standard_scale=None, title=f"{project_name} CTA genes", save=f"{project_name}_cta_dotplot.png")
+    sc.pl.umap(adata, color=[groupby], frameon=False, save=f"{project_name}_{groupby}_umap.png")
+    sc.pl.umap(adata, color= cta_genes_plot, use_raw=True, ncols=3, cmap="Purples", vmax="p99", frameon=False, save=f"{project_name}_cta_umap.png")
+
+    return cta_genes_plot

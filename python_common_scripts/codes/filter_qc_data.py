@@ -187,7 +187,7 @@ def run_qc_embryos_mixed(project_name, adata_filtered, adata_qc_path, important_
     
     return adata
 
-def filter_data_ovarian(subproject_name, adata_init, adata_filt_path, important_genes, qc_save_dir, full_filter=0.05, relaxed_filter=0.02):
+def filter_data(project_name, adata_init, adata_filt_path, important_genes, qc_save_dir, full_filter=0.05, relaxed_filter=0.02):
 
     violin_dir = os.path.join(qc_save_dir, "violin")
     scatter_dir = os.path.join(qc_save_dir, "scatter")
@@ -215,10 +215,10 @@ def filter_data_ovarian(subproject_name, adata_init, adata_filt_path, important_
     qc_cols = ["n_genes_by_counts", "total_counts", "pct_counts_mt"]
 
     sc.settings.figdir = violin_dir
-    sc.pl.violin(adata, qc_cols, save=f"_{subproject_name}_QC.png", jitter=0.4, multi_panel=True)
+    sc.pl.violin(adata, qc_cols, save=f"_{project_name}_QC.png", jitter=0.4, multi_panel=True)
 
     sc.settings.figdir = scatter_dir
-    sc.pl.scatter(adata, "total_counts", "n_genes_by_counts", color="pct_counts_mt", save=f"_{subproject_name}_QC.png")
+    sc.pl.scatter(adata, "total_counts", "n_genes_by_counts", color="pct_counts_mt", save=f"_{project_name}_QC.png")
 
     # Adaptive filtering (important for tumor heterogeneity)
     if adata.n_obs > 50:
@@ -237,10 +237,7 @@ def filter_data_ovarian(subproject_name, adata_init, adata_filt_path, important_
     adata = adata[cell_mask].copy()
 
     # Preserve raw counts
-    if "raw_counts" in adata.layers:
-        adata.layers["counts"] = adata.layers["raw_counts"].copy()
-    else:
-        adata.layers["counts"] = adata.X.copy()
+    adata.layers["counts"] = adata.X.copy()
 
     # Gene filtering (keep important genes)
     genes_expressed_mask = sc.pp.filter_genes(adata, min_cells=3, inplace=False)[0]
@@ -250,27 +247,14 @@ def filter_data_ovarian(subproject_name, adata_init, adata_filt_path, important_
     final_gene_mask = genes_expressed_mask | important_genes_mask
     adata = adata[:, final_gene_mask].copy()
 
-    # Normalize AFTER filtering (critical difference from embryo pipeline)
-    sc.pp.normalize_total(adata, target_sum=1e4)
-    sc.pp.log1p(adata)
-
-    # Store clean reference
-    adata.raw = adata.copy()
-
+   
     adata.write(adata_filt_path)
 
     return adata
 
-def concat_cancer_adata(concat_adatas, concat_keys, concat_path): 
-    """After filtering (QC, genes, cells, keep important genes) but before 
-    Normalize/Log; HVG; PCA;Neighbors;UMAP;clustering"""
-    
-    
-    adata_concat = ad.concat(concat_adatas, axis=0, join="outer", label="dataset", keys=concat_keys, fill_value=0)
-    adata_concat.write(concat_path)
-    return adata_concat
 
-def run_qc_ovarian(project_name, adata_filtered, adata_qc_path, important_genes, qc_save_dir, cell_cycle_genes_file_path):
+
+def run_qc(project_name, adata_filtered, adata_qc_path, qc_save_dir, cell_cycle_genes_file_path):
 
     pca_dir = os.path.join(qc_save_dir, "pca")
     hvg_dir = os.path.join(qc_save_dir, "hvg")
@@ -292,13 +276,7 @@ def run_qc_ovarian(project_name, adata_filtered, adata_qc_path, important_genes,
     print(f"Removed {n_before - n_after} doublets in project {project_name}")
 
     # Restore raw counts into X + ensure counts layer exists
-    if "raw_counts" in adata.layers:
-        adata.X = adata.layers["raw_counts"].copy()
-        adata.layers["counts"] = adata.layers["raw_counts"].copy()
-    elif "counts" in adata.layers:
-        adata.X = adata.layers["counts"].copy()
-    else:
-        adata.layers["counts"] = adata.X.copy()
+    adata.X = adata.layers["counts"].copy()
 
     # Remove dead genes (important after concat)
     sc.pp.filter_genes(adata, min_cells=3)
@@ -331,7 +309,7 @@ def run_qc_ovarian(project_name, adata_filtered, adata_qc_path, important_genes,
 
     sc.pp.neighbors(adata, n_neighbors=15, n_pcs=n_pcs)
 
-    for res in [0.5, 1.0, 2.0, 3.0]:
+    for res in [0.5, 1.0, 2.0]:
         sc.tl.leiden(adata, key_added=f"leiden_res_{res:3.1f}", resolution=res, flavor="igraph")
 
     sc.tl.umap(adata)
@@ -339,3 +317,12 @@ def run_qc_ovarian(project_name, adata_filtered, adata_qc_path, important_genes,
     adata.write(adata_qc_path)
 
     return adata
+
+def concat_cancer_adata(concat_adatas, concat_keys, concat_path): 
+    """After filtering (QC, genes, cells, keep important genes) but before 
+    Normalize/Log; HVG; PCA;Neighbors;UMAP;clustering"""
+    
+    
+    adata_concat = ad.concat(concat_adatas, axis=0, join="outer", label="dataset", keys=concat_keys, fill_value=0)
+    adata_concat.write(concat_path)
+    return adata_concat
