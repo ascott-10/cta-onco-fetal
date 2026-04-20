@@ -13,7 +13,11 @@
     "G4_2_Testis": "#005d59",
     "G_1_2_M_Mesonephros": "#9a8286",
     "G6_A_Mixed": "#aeaeff",
-    "G6_B_Mixed": "#9ab275"
+    "G6_B_Mixed": "#9ab275",
+    "Tumor_T59": "#9e08ef",
+    "Tumor_T76": "#5d0014",
+    "Tumor_T90": "#ffaebe",
+    "Tumor_T61": "#ba007d"
   },
   "age": {
     "46": "#d70041",
@@ -176,7 +180,24 @@
     "Sertoli (state)": "#350059",
     "Prospermatogonia": "#04518e",
     "PGC": "#9e4910",
-    "Neural": "#cebe00"
+    "Neural": "#cebe00",
+    "Antigen-presenting cells": "#002828",
+    "B cells": "#00b2ff",
+    "EMT hybrid / transitioning tumor cells": "#caaa86",
+    "HGSOC signature (FOLR1+)": "#be9ac2",
+    "Inflammatory/secretory phenotype": "#2d200c",
+    "Malignant epithelial cells": "#756545",
+    "Stress/proliferation tumor cells": "#8279df",
+    "T cells": "#14c286",
+    "CAF": "#bae7c2",
+    "CD8 T cells": "#868ea6",
+    "NK cells": "#ca7159",
+    "Plasma cells": "#829a00",
+    "pDC": "#2000fb",
+    "Stressed / mitochondrial": "#d204f7",
+    "Treg / activated T cells": "#ffd7be",
+    "Activated T cells": "#8ad2ff",
+    "Stressed": "#ba5d7d"
   },
   "age_gestation": {
     "10-11wks": "#a20000",
@@ -192,5 +213,16 @@
     "Fetal ovary tissue": "#1869ff",
     "Fetal testis tissue": "#008a00",
     "Fetal testis and ovary and mesonephros tissue": "#f36dff"
+  },
+  "tumor_stage": {
+    "IV": "#d21820",
+    "IVb": "#1869ff",
+    "IVa": "#008a00",
+    "IIIc": "#f36dff"
+  },
+  "chemotherapy_response": {
+    "resistant": "#d21820",
+    "sensitive": "#1869ff",
+    "refractory": "#008a00"
   }
 }

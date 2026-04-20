@@ -1,0 +1,462 @@
+{
+  "Tumor_T59": {
+    "leiden_res_0.5": {
+      "cluster_to_celltype": {
+        "1": "Tumor epithelial",
+        "3": "Tumor epithelial",
+        "4": "Tumor epithelial",
+
+        "0": "Myeloid",
+        "2": "T cells",
+        "10": "T cells",
+        "7": "NK cells",
+        "9": "B cells",
+        "8": "Plasma cells",
+
+        "5": "CAF",
+        "6": "Endothelial",
+        "11": "Perivascular",
+
+        "12": "Mixed"
+      }
+    },
+    "leiden_res_1.0": {
+      "cluster_to_celltype": {
+        "2": "Cycling tumor",
+
+        "3": "CAF",
+        "10": "CAF",
+
+        "0": "Mixed",
+        "6": "Mixed",
+        "7": "Mixed",
+        "9": "Mixed",
+        "13": "Mixed",
+
+        "8": "Immune",
+
+        "1": "Tumor epithelial",
+        "4": "Tumor epithelial"
+      }
+    },
+    "leiden_res_2.0": {
+      "cluster_to_celltype": {
+        "2": "Cycling tumor",
+        "3": "Cycling tumor",
+
+        "4": "Tumor epithelial",
+        "14": "Tumor epithelial",
+
+        "6": "CAF",
+        "11": "CAF",
+        "18": "CAF",
+
+        "10": "Immune",
+
+        "0": "Mixed",
+        "8": "Mixed",
+        "9": "Mixed",
+        "13": "Mixed",
+        "16": "Mixed"
+      }
+    }
+  },
+  "Tumor_T61": {
+    "leiden_res_0.5": {
+  "cluster_to_celltype": {
+
+    "6": "Tumor epithelial",
+
+    "0": "T cells",
+    "11": "Activated T cells",
+    "10": "NK cells",
+
+    "1": "B cells",
+    "8": "Plasma cells",
+    "9": "Plasma cells",
+
+    "4": "Myeloid",
+
+    "3": "CAF",
+    "7": "CAF",
+
+    "2": "Perivascular",
+    "5": "Endothelial",
+
+    "12": "Erythroid"
+  }
+},
+    "leiden_res_1.0": {
+  "cluster_to_celltype": {
+
+    "9": "Tumor epithelial",
+    "21": "Cycling tumor",
+
+    "5": "CAF",
+    "6": "CAF",
+    "10": "CAF",
+    "11": "CAF",
+    "12": "CAF",
+
+    "3": "Perivascular",
+    "8": "Endothelial",
+
+    "0": "T cells",
+    "1": "T cells",
+    "2": "T cells",
+    "19": "Activated T cells",
+
+    "7": "NK cells",
+
+    "4": "Myeloid",
+    "15": "Myeloid",
+
+    "16": "B cells",
+    "13": "Plasma cells",
+    "14": "Plasma cells",
+
+    "18": "Mast cells",
+
+    "20": "Erythroid"
+  }
+},
+    
+    "leiden_res_2.0": {
+  "cluster_to_celltype": {
+
+    "14": "Tumor epithelial",
+    "25": "Cycling tumor",
+
+    "7": "CAF",
+    "8": "CAF",
+    "9": "CAF",
+    "10": "CAF",
+    "11": "CAF",
+    "12": "CAF",
+    "15": "CAF",
+    "16": "CAF",
+
+    "3": "Perivascular",
+    "28": "Perivascular",
+
+    "13": "Endothelial",
+    "26": "Endothelial",
+
+    "0": "T cells",
+    "1": "T cells",
+    "2": "T cells",
+    "23": "Activated T cells",
+
+    "6": "CD8 T cells",
+    "21": "NK cells",
+
+    "4": "Myeloid",
+    "5": "Myeloid",
+    "19": "Myeloid",
+    "20": "Myeloid",
+
+    "22": "B cells",
+    "17": "Plasma cells",
+    "18": "Plasma cells",
+
+    "24": "Mast cells",
+
+    "27": "Erythroid"
+  }
+}
+  },
+
+  "Tumor_T76": {
+    "leiden_res_0.5": {
+      "cluster_to_celltype": {
+        "6": "Tumor epithelial",
+
+        "0": "CD8 T cells",
+        "11": "Activated T cells",
+        "10": "NK cells",
+
+        "1": "B cells",
+        "8": "Plasma cells",
+        "9": "Plasma cells",
+
+        "4": "Myeloid",
+
+        "3": "CAF",
+        "7": "CAF",
+
+        "2": "Perivascular",
+        "5": "Endothelial",
+
+        "12": "Erythroid"
+      }
+    },
+    "leiden_res_1.0": {
+      "cluster_to_celltype": {
+        "9": "Tumor epithelial",
+        "21": "Cycling tumor",
+
+        "5": "CAF",
+        "6": "CAF",
+        "10": "CAF",
+        "11": "CAF",
+        "12": "CAF",
+
+        "3": "Perivascular",
+        "8": "Endothelial",
+
+        "0": "T cells",
+        "1": "T cells",
+        "2": "T cells",
+        "19": "Activated T cells",
+
+        "7": "NK cells",
+
+        "4": "Myeloid",
+        "15": "Myeloid",
+
+        "16": "B cells",
+        "13": "Plasma cells",
+        "14": "Plasma cells",
+
+        "18": "Mast cells",
+
+        "20": "Erythroid"
+      }
+    },
+    "leiden_res_2.0": {
+      "cluster_to_celltype": {
+        "14": "Tumor epithelial",
+        "25": "Cycling tumor",
+
+        "7": "CAF",
+        "8": "CAF",
+        "9": "CAF",
+        "10": "CAF",
+        "11": "CAF",
+        "12": "CAF",
+        "15": "CAF",
+        "16": "CAF",
+
+        "3": "Perivascular",
+        "28": "Perivascular",
+
+        "13": "Endothelial",
+        "26": "Endothelial",
+
+        "0": "T cells",
+        "1": "T cells",
+        "2": "T cells",
+        "23": "Activated T cells",
+
+        "6": "NK cells",
+        "21": "NK cells",
+
+        "4": "Myeloid",
+        "5": "Myeloid",
+        "19": "Myeloid",
+        "20": "Myeloid",
+
+        "22": "B cells",
+        "17": "Plasma cells",
+        "18": "Plasma cells",
+
+        "24": "Mast cells",
+
+        "27": "Erythroid"
+      }
+    }
+  },
+
+  "Tumor_T89": {
+    "leiden_res_0.5": {
+      "cluster_to_celltype": {
+        "8": "Tumor epithelial",
+        "5": "Cycling tumor",
+
+        "1": "Epithelial (stress/EMT)",
+        "3": "Epithelial (stress/EMT)",
+        "9": "Epithelial (stress/EMT)",
+
+        "11": "CAF",
+        "10": "Endothelial",
+
+        "0": "T cells",
+        "7": "T cells",
+
+        "4": "B cells",
+        "2": "Plasma cells",
+
+        "6": "Myeloid"
+      }
+    },
+    "leiden_res_1.0": {
+      "cluster_to_celltype": {
+        "2": "Tumor epithelial",
+        "9": "Cycling tumor",
+
+        "4": "Epithelial (stress/EMT)",
+        "5": "Epithelial (stress/EMT)",
+        "6": "Epithelial (stress/EMT)",
+        "7": "Epithelial (stress/EMT)",
+        "14": "Epithelial (stress/EMT)",
+
+        "10": "CAF",
+        "11": "CAF",
+        "17": "CAF",
+
+        "16": "Endothelial",
+
+        "0": "T cells",
+        "1": "T cells",
+        
+
+        "15": "NK cells",
+
+        "12": "Myeloid",
+
+        "8": "B cells",
+        "3": "Plasma cells",
+        "13": "Plasma cells"
+      }
+    },
+    "leiden_res_2.0": {
+      "cluster_to_celltype": {
+        "13": "Tumor epithelial",
+        "14": "Cycling tumor",
+        "15": "Cycling tumor",
+
+        "2": "Epithelial (stress/EMT)",
+        "4": "Epithelial (stress/EMT)",
+        "5": "Epithelial (stress/EMT)",
+        "6": "Epithelial (stress/EMT)",
+        "7": "Epithelial (stress/EMT)",
+        "8": "Epithelial (stress/EMT)",
+        "9": "Epithelial (stress/EMT)",
+        "18": "Epithelial (stress/EMT)",
+
+        "24": "CAF",
+        "25": "CAF",
+
+        "23": "Endothelial",
+
+        "0": "T cells",
+        "1": "T cells",
+        "10": "T cells",
+        "12": "T cells",
+        "17": "Activated T cells",
+
+        "22": "NK cells",
+
+        "16": "Myeloid",
+        "19": "Myeloid",
+
+        "11": "B cells",
+        "3": "Plasma cells",
+        "20": "Plasma cells"
+      }
+    }
+  },
+
+  "Tumor_T90": {
+    "leiden_res_0.5": {
+      "cluster_to_celltype": {
+        "5": "Tumor epithelial",
+        "8": "Tumor epithelial",
+
+        "6": "CAF",
+        "4": "Perivascular",
+        "10": "Endothelial",
+
+        "0": "Myeloid",
+
+        "1": "T cells",
+        "2": "T cells",
+
+        "3": "CD8 T cells",
+
+        "9": "NK cells",
+
+        "7": "B cells",
+        "12": "Plasma cells",
+
+        "11": "pDC"
+      }
+    },
+    "leiden_res_1.0": {
+      "cluster_to_celltype": {
+        "5": "Tumor epithelial",
+        "6": "Cycling tumor",
+        "11": "Tumor epithelial",
+
+        "8": "CAF",
+        "9": "CAF",
+        "7": "CAF",
+
+        "4": "Perivascular",
+
+        "14": "Endothelial",
+
+        "0": "Myeloid",
+        "16": "Myeloid",
+
+        "1": "T cells",
+        "2": "T cells",
+
+        "3": "CD8 T cells",
+
+        "12": "NK cells",
+
+        "10": "B cells",
+        "17": "Plasma cells",
+
+        "15": "pDC",
+
+        "13": "IFN-response"
+      }
+    },
+    "leiden_res_2.0": {
+      "cluster_to_celltype": {
+        "8": "Tumor epithelial",
+        "12": "Tumor epithelial",
+        "14": "Tumor epithelial",
+        "23": "Tumor epithelial",
+        "25": "Tumor epithelial",
+
+        "9": "Cycling tumor",
+        "10": "Cycling tumor",
+
+        "17": "CAF",
+        "24": "CAF",
+        "11": "CAF",
+
+        "7": "Perivascular",
+
+        "20": "Endothelial",
+
+        "0": "Myeloid",
+        "22": "Myeloid",
+
+        "1": "T cells",
+        "4": "T cells",
+        "6": "T cells",
+
+        "3": "CD8 T cells",
+        "5": "CD8 T cells",
+        "18": "CD8 T cells",
+
+        "19": "NK cells",
+
+        "13": "B cells",
+        "26": "Plasma cells",
+
+        "21": "pDC",
+
+        "16": "Activated T cells",
+
+        "15": "IFN-response",
+
+        "2": "Stressed"
+      }
+    }
+  }
+}

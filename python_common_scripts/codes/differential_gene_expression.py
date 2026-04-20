@@ -40,7 +40,7 @@ def get_ranked_genes(adata, adata_ranked_path, subproject_name, json_annotations
         print("Annotation file not found")
         sub_ann = {}
 
-    print("debug sub_ann keys:", sub_ann.keys())
+    
     leiden_cols = []
     celltype_cols = []
     leiden_cols_titles = []
@@ -53,7 +53,6 @@ def get_ranked_genes(adata, adata_ranked_path, subproject_name, json_annotations
         if key_string not in adata.obs:
             continue
 
-        print(f"debug {key_string} in JSON:", key_string in sub_ann)
         
         adata.obs[key_string] = adata.obs[key_string].astype(str).astype("category")
 
@@ -80,31 +79,25 @@ def get_ranked_genes(adata, adata_ranked_path, subproject_name, json_annotations
         sc.pl.dendrogram(adata, groupby=key_string)
         sc.pl.dotplot(adata, var_names=top5, groupby=key_string, standard_scale="var", cmap="Purples", dendrogram=True, title=f"{subproject_name} \n Top Markers ({key_string})", save=f"{subproject_name}_top_markers_{key_string}.png")
 
-        print(f"\n=== {key_string} ===")
-        for k, v in top_markers_dict.items():
-            print(k, v)
-
         leiden_ann = sub_ann.get(key_string, {})
-        print("debug leiden_ann:", leiden_ann)
 
         cluster_to_celltype_dict = leiden_ann.get("cluster_to_celltype", {})
         cluster_to_celltype_dict = {str(k): v for k, v in cluster_to_celltype_dict.items()} #force to string
 
-        print("debug cluster_to_celltype_dict:", cluster_to_celltype_dict)
+        print(f"\n=== {subproject_name} {key_string} ===")
 
-        print("debug adata clusters:", adata.obs[key_string].unique())
-        print("debug mapping keys:", cluster_to_celltype_dict.keys())
+        for cluster, genes in top_markers_dict.items():
+            label = cluster_to_celltype_dict.get(cluster, "Unknown")
+            print(f"{cluster} {genes}, {label}")
 
         if cluster_to_celltype_dict:
 
-            print(f"debug Creating column: {celltype_col}")
+           
             adata.obs[celltype_col] = adata.obs[key_string].astype(str).map(cluster_to_celltype_dict).fillna("Unknown").astype("category")
             mapped = adata.obs[key_string].astype(str).map(cluster_to_celltype_dict)
-            print("debug", adata.obs[celltype_col].value_counts())
-
+           
             print("debug mapped unique:", mapped.unique())
             print("debug num unmapped:", mapped.isna().sum())
-
 
             sc.tl.dendrogram(adata, var_names=[g for v in top5.values() for g in v], groupby=celltype_col)
             sc.pl.dotplot(adata, var_names=top5, groupby=celltype_col, standard_scale="var", cmap="Purples", dendrogram=True, title=f"{subproject_name} \n Top Markers (celltype)", save=f"{subproject_name}_top_markers_celltype_{key_string}.png")

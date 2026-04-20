@@ -42,6 +42,7 @@ if __name__ == "__main__":
 # source myconda; conda activate rnaseq-pipe
 # python python_common_scripts/main.py process mtab_tumors
 # python python_common_scripts/main.py process fetal_gonad
+# python python_common_scripts/main.py process hgsoc_tumors
 # python python_common_scripts/main.py refine fetal_gonad
 # python python_common_scripts/main.py process embryos_mixed
 # python python_common_scripts/main.py refine embryos_mixed

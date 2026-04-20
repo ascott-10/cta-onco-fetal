@@ -273,7 +273,7 @@ def run_qc(project_name, adata_filtered, adata_qc_path, qc_save_dir, cell_cycle_
         adata = adata[~adata.obs["predicted_doublet"]].copy()
 
     n_after = adata.n_obs
-    print(f"Removed {n_before - n_after} doublets in project {project_name}")
+    print(f"Removed {n_before - n_after} doublets in project/sample {project_name}")
 
     # Restore raw counts into X + ensure counts layer exists
     adata.X = adata.layers["counts"].copy()

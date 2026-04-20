@@ -276,83 +276,78 @@
   "leiden_res_1.0": {
      
     "cluster_to_celltype": {
+    "0": "Cycling tumor",
+    "15": "Cycling tumor",
 
-      
-        "0": "Cycling tumor",
-        "15": "Cycling tumor",
+    "1": "Tumor epithelial",
+    "3": "Tumor epithelial",
+    "7": "Tumor epithelial",
 
-        
-        "1": "Tumor epithelial",
-        "3": "Tumor epithelial",
-        "6": "Tumor epithelial (stress-responsive)",
-        "7": "Tumor epithelial (ribosomal)",
-        "9": "Tumor epithelial (mixed stromal)",
-        "13": "Tumor epithelial (classical)",
+    "13": "Secretory tumor",
 
-        
-        "4": "Hypoxic tumor",
-        "5": "Hypoxic tumor",
+    "4": "Hypoxic tumor",
+    "5": "Hypoxic tumor",
 
-       
-        "10": "Secretory tumor",
-        "12": "Transitional tumor state",
+    "10": "EMT/inflammatory tumor",
+    "11": "EMT/inflammatory tumor",
+    "12": "EMT/inflammatory tumor",
 
-       
-        "2": "Fibroblast (CAF)",
-        "11": "Activated fibroblast",
-        "14": "Stromal fibroblast",
+    "16": "IFN-response tumor",
+    "17": "IFN-response tumor",
+    "18": "IFN-response tumor",
 
-       
-        "8": "Myeloid (inflammatory)",
+    "2": "CAF",
+    "8": "Inflammatory CAF",
 
-      
-        "16": "Tumor (IFN-response)",
-        "17": "Tumor (IFN-response)",
-        "18": "Tumor (IFN-response)"
-    }
+    "6": "Stressed tumor",
+    "9": "Mixed/stressed"
+}
 },
                 
 
   "leiden_res_2.0": {
     "cluster_to_celltype":  {
+    
     "0": "Cycling tumor",
     "20": "Cycling tumor",
 
-    "1": "Tumor",
-    "4": "Tumor",
-    "5": "Tumor",
-    "7": "Tumor",
-    "9": "Tumor",
-    "10": "Tumor",
-    "16": "Tumor",
-    "18": "Tumor",
+    "1": "Tumor epithelial",
+    "4": "Tumor epithelial",
+    "5": "Tumor epithelial",
+    "7": "Tumor epithelial",
 
-    "8": "Stressed tumor",
-    "11": "Stressed tumor",
-    "15": "Stressed tumor",
-    "26": "Stressed tumor",
+    "16": "Secretory tumor",
+    "18": "Secretory tumor",
 
-    "28": "Secretory tumor",
-    "29": "Secretory tumor",
-    "30": "Secretory tumor",
-    "12": "Secretory tumor",
+    "8": "Hypoxic tumor",
+    "11": "Hypoxic tumor",
 
-    "2": "Fibroblast",
-    "14": "Fibroblast",
-    "17": "Fibroblast",
-    "19": "Fibroblast",
-    "21": "Fibroblast",
+    "12": "EMT/inflammatory tumor",
+    "13": "EMT/inflammatory tumor",
+    "14": "EMT/inflammatory tumor",
+    "29": "EMT/inflammatory tumor",
+    "30": "EMT/inflammatory tumor",
 
-    "6": "Myeloid",
+    "28": "Secretory-inflammatory tumor",
 
-    "22": "IFN-response",
-    "23": "IFN-response",
-    "24": "IFN-response",
-    "25": "IFN-response",
-    "27": "IFN-response",
+    "2": "CAF",
+    "10": "CAF",
 
-    "3": "Tumor",
-    "13": "Tumor"
+    "6": "Inflammatory CAF",
+
+    "22": "IFN-response tumor",
+    "23": "IFN-response tumor",
+    "24": "IFN-response tumor",
+    "25": "IFN-response tumor",
+    "27": "IFN-response tumor",
+
+    "3": "Mixed/stressed",
+    "9": "Mixed/stressed",
+    "17": "Mixed/stressed",
+    "19": "Mixed/stressed",
+    "21": "Mixed/stressed",
+    "26": "Mixed/stressed"
+
 }
                   }
                 },

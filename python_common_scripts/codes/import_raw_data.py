@@ -164,29 +164,41 @@ def import_raw_data_h5_gsm(project_name, gse_id, original_data_dir, adata_init_p
         if gse_id in ['GSM5506062_G1', 'GSM5506063_G2','GSM5506064_G3', 'GSM5506065_G4', 'GSM5704349_mesonephros']:
             
             adata = sc.read_10x_h5(os.path.join(original_data_dir, f"{gse_id}.h5"))
+
+    elif project_name in ["fetal_gonad", "hgsoc_tumors"]:
         
-        elif gse_id in ['GSM6703999_mesonephros_F','GSM6704000_G5_A','GSM6704001_G5_B','GSM6704002_G6_A','GSM6704003_G6_B']:
+        if gse_id in ['GSM6703999_mesonephros_F','GSM6704000_G5_A','GSM6704001_G5_B','GSM6704002_G6_A','GSM6704003_G6_B']:
         
             matrix_path = os.path.join(original_data_dir, gse_id, "matrix.mtx")
             genes_path = os.path.join(original_data_dir, gse_id,  "features.tsv")
             barcodes_path = os.path.join(original_data_dir, gse_id,  "barcodes.tsv")
+
+        elif gse_id in ['GSM4675273_T59', 'GSM4675274_T76', 'GSM4675275_T77', 'GSM4675276_T89', 'GSM4675277_T90']:
+
+            matrix_path = os.path.join(original_data_dir, f"{gse_id}_matrix.mtx")
+            genes_path = os.path.join(original_data_dir, f"{gse_id}_genes.tsv")
+            barcodes_path = os.path.join(original_data_dir, f"{gse_id}_barcodes.tsv")
             
-            X = mmread(matrix_path).tocsr().T
+        X = mmread(matrix_path).tocsr().T
 
-            genes = pd.read_csv(genes_path, header=None, sep="\t")
-            barcodes = pd.read_csv(barcodes_path, header=None)
+        genes = pd.read_csv(genes_path, header=None, sep="\t")
+        barcodes = pd.read_csv(barcodes_path, header=None)
 
-            adata = sc.AnnData(X)
+        adata = sc.AnnData(X)
 
-            adata.var_names = genes[1].astype(str).values
-            adata.obs_names = barcodes[0].astype(str).values
+        adata.var_names = genes[1].astype(str).values
+        adata.obs_names = barcodes[0].astype(str).values
 
+   
     print("var_names",adata.var_names[:10])
     print("obs_names", adata.obs_names[:10])
 
     adata.var_names_make_unique()
 
-    sample_meta = pd.read_csv(sample_meta_path, sep = '\t',index_col = 0)
+    if project_name == "fetal_gonad":
+        sample_meta = pd.read_csv(sample_meta_path, sep = '\t',index_col = 0)
+    else:
+        sample_meta = pd.read_csv(sample_meta_path)
     sample_meta = sample_meta.set_index("gse_id")
 
     sample_id = sample_meta.loc[gse_id, "sample_id"]
@@ -267,5 +279,4 @@ def import_raw_data_10x_ovarian_cancer(subproject, original_data_dir,adata_init_
     return adata
 
 
-  
 

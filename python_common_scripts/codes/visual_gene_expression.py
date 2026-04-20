@@ -112,7 +112,7 @@ import pandas as pd
 import json
 
 
-def show_cta_genes(project_name, adata, figures_dir, tables_dir,cta_genes_file_path, groupby, cta_genes_fixed=None):
+def show_cta_genes(project_name, adata, figures_dir, tables_dir, cta_genes_file_path, groupby, cta_genes_fixed=None):
 
     cta_tables_save_dir = os.path.join(tables_dir, "cta_analysis")
     os.makedirs(cta_tables_save_dir, exist_ok=True)
@@ -125,37 +125,56 @@ def show_cta_genes(project_name, adata, figures_dir, tables_dir,cta_genes_file_p
         cta_genes_all = cta_genes_df["Family member"].unique().tolist()
     else:
         cta_genes_all = cta_genes_fixed
+
+    # subset to tumor epithelial (adjust labels if needed)
+
+    if project_name in ["hgsoc_tumors", "mtab_tumors"]:
+
+        adata = adata[adata.obs["celltype_leiden_res_1.0"].str.contains("tumor|epithelial", case=False, na=False)].copy()
     
+    if adata.n_obs == 0:
+        print("No tumor/epithelial cells found after subsetting, skipping CTA analysis")
+        return []
+
     cta_genes_in = []
     gene_stats = []
 
     for g in cta_genes_all:
-        if g not in adata.raw.var_names:
+        if g not in adata.var_names:
             continue
         else:
             cta_genes_in.append(g)
 
-        vals = adata.raw[:, g].X
+        vals = adata[:, g].X
         if hasattr(vals, "toarray"):
             vals = vals.toarray().flatten()
         else:
             vals = vals.flatten()
 
-        frac = np.mean(vals > 0)
+        frac = np.mean(vals > 0.1)
         mean_expr = np.mean(vals)
 
         gene_stats.append({"gene": g, "fraction_expressing": frac, "mean_expression": mean_expr})
+    
+    print("CTA genes used:", len(cta_genes_in))
+
+    if len(cta_genes_in) > 0:
+        sc.tl.score_genes(adata, gene_list=cta_genes_in, score_name="CTA_score")
+        sc.pl.umap(adata, color="CTA_score", cmap="Purples", title = f"{project_name} \n CTA Score", frameon=False, save=f"{project_name}_CTA_score_umap.png")
+        sc.pl.umap(adata, color="CTA_score", cmap="Purples", vmin=-0.05, vmax=0.05, title=f"{project_name} \n CTA Score", frameon=False, save=f"{project_name}_CTA_score_umap_2.png")
+    else:
+        print("No CTA genes found in dataset")
 
     df_stats = pd.DataFrame(gene_stats)
     df_stats.to_csv(os.path.join(cta_tables_save_dir, f"{project_name}_cta_gene_stats.csv"), index=False)
 
-    df_expr = sc.get.obs_df(adata, keys=[groupby] + cta_genes_in, use_raw=True)
+    df_expr = sc.get.obs_df(adata, keys=[groupby] + cta_genes_in, use_raw=False)
     df_mean = df_expr.groupby(groupby).mean()
     df_mean.to_csv(os.path.join(cta_tables_save_dir, f"{project_name}_cta_mean_expression.csv"))
 
     df_frac = df_expr.copy()
     for g in cta_genes_in:
-        df_frac[g] = df_frac[g] > 0
+        df_frac[g] = df_frac[g] > 0.1
 
     df_frac = df_frac.groupby(groupby).mean()
     df_frac.to_csv(os.path.join(cta_tables_save_dir, f"{project_name}_cta_fraction_expression.csv"))
@@ -163,14 +182,20 @@ def show_cta_genes(project_name, adata, figures_dir, tables_dir,cta_genes_file_p
     df_long = df_expr.melt(id_vars=groupby, var_name="gene", value_name="expression")
     df_long.to_csv(os.path.join(cta_tables_save_dir, f"{project_name}_cta_long_format.csv"), index=False)
 
+    cta_genes_plot = df_stats[df_stats["fraction_expressing"] > 0]["gene"].tolist()
+    if len(cta_genes_plot) == 0:
+        print("No genes passed filter, using all detected CTA genes")
+        cta_genes_plot = cta_genes_in
     
-    cta_genes_plot  = cta_genes_in
-    #cta_genes_plot  = [g for g in cta_genes_in if g in adata.var_names]
-   
-    print("Final CTA genes:", cta_genes_plot)
 
-    sc.pl.dotplot(adata, var_names=cta_genes_plot, groupby=groupby, cmap="Purples", use_raw=True, standard_scale=None, title=f"{project_name} CTA genes", save=f"{project_name}_cta_dotplot.png")
+    print("Final CTA genes:", cta_genes_plot)
+    if len(cta_genes_plot) > 0:
+        sc.pl.dotplot(adata, var_names=cta_genes_plot, groupby=groupby, cmap="Purples", use_raw=False, standard_scale="var", dot_min=0.01, smallest_dot=10, title=f"{project_name} CTA genes", save=f"{project_name}_cta_dotplot.png")
+    else:
+        print("Skipping dotplot: no CTA genes available")
+
+   
     sc.pl.umap(adata, color=[groupby], frameon=False, save=f"{project_name}_{groupby}_umap.png")
-    sc.pl.umap(adata, color= cta_genes_plot, use_raw=True, ncols=3, cmap="Purples", vmax="p99", frameon=False, save=f"{project_name}_cta_umap.png")
+    sc.pl.umap(adata, color=cta_genes_plot, use_raw=False, ncols=3, cmap="Purples", vmax="p99", frameon=False, save=f"{project_name}_cta_umap.png")
 
     return cta_genes_plot

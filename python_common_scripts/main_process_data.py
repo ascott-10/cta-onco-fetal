@@ -53,14 +53,67 @@ def run_process_pipeline(project_name, paths, project_cfg, global_cfg, samples_t
     else:
         existing_palettes = {}
 
-    if project_name in ["fetal_gonad"]:
+    if project_name in ["fetal_gonad","hgsoc_tumors"]:
 
         original_original_data_dir = os.path.join(paths["ORIGINAL_ORIGINAL_DATA_DIR"])
         original_data_dir = os.path.join(paths["ORIGINAL_DATA_DIR"])
+        raw_data_dir = os.path.join(paths["RAW_DATA_DIR"])
         sample_meta_path = os.path.join(paths["PROJECT_DIR"], project_cfg["sample_meta_filename"])
 
         gse_list = project_cfg["gse_list"]
         sample_list = project_cfg["sample_list"]
+
+    if project_name in ["hgsoc_tumors"]:
+
+        cell_type_mappings_hsoc_tumors = project_cfg["cell_type_mappings"]
+
+        for gse_id, sample_id in zip(gse_list, sample_list):
+
+            adata_init_path = os.path.join(paths["RAW_DATA_DIR"], f"{sample_id}_init.h5ad")
+            adata_filt_path = os.path.join(paths["RAW_DATA_DIR"], f"{sample_id}_before_qc.h5ad")
+            adata_qc_path = os.path.join(paths["RAW_DATA_DIR"], f"{sample_id}_after_hvg.h5ad")
+            adata_ranked_path = os.path.join(paths["RAW_DATA_DIR"], f"{sample_id}_ranked.h5ad")
+            adata_annotated_path = os.path.join(paths["WORKING_ADATA_DIR"], f"{sample_id}_annotated.h5ad")
+
+            
+            if os.path.exists(adata_qc_path):
+                adata_qc = sc.read_h5ad(adata_qc_path)
+            else:
+                if os.path.exists(adata_filt_path):
+                    adata_filtered = sc.read_h5ad(adata_filt_path)
+                else:
+                    if os.path.exists(adata_init_path):
+                        adata_init = sc.read_h5ad(adata_init_path)
+                    else:
+                        adata_init = import_raw_data_h5_gsm(project_name, gse_id, original_data_dir, adata_init_path, sample_meta_path)
+
+                    adata_filtered = filter_data(sample_id, adata_init, adata_filt_path, important_genes, paths["QC_SAVE_DIR"], full_filter=0.05, relaxed_filter=0.02)
+                adata_qc = run_qc(sample_id, adata_filtered, adata_qc_path, paths["QC_SAVE_DIR"], cell_cycle_genes_file_path)
+
+            
+
+            adata_ranked, leiden_cols, leiden_cols_titles, celltype_cols = get_ranked_genes(adata_qc, adata_ranked_path, sample_id, json_annotations_path = cell_type_mappings_hsoc_tumors, leiden_res_list = leiden_res_list, tables_dir= paths["TABLES_DIR"],figures_dir=paths["FIGURES_DIR"], always_rank=True)
+
+            all_cols = cols_to_plot + leiden_cols + celltype_cols
+            plot_cols = cols_to_plot + celltype_cols
+            plot_titles = (cols_to_plot_titles + [f"Predicted Cell Type \n Leiden Resolution {c.replace('celltype_leiden_res_', '')}" for c in celltype_cols])
+            
+            adata_annotated, all_palettes = build_palettes(adata_ranked, adata_annotated_path, all_cols,existing_palettes)
+
+        
+            plot_umaps(adata_annotated, adata_annotated_path, sample_id,plot_cols, plot_titles, leiden_cols,leiden_cols_titles,figures_dir=paths["FIGURES_DIR"])
+
+            with open(palette_path, "w") as f:
+                json.dump(all_palettes, f, indent=2)
+            
+            adata_annotated.write(adata_annotated_path)
+
+            cta_genes_list = show_cta_genes(sample_id, adata_annotated, figures_dir=paths["FIGURES_DIR"], tables_dir=paths["TABLES_DIR"], cta_genes_file_path = cta_genes_file_path, groupby = "celltype_leiden_res_1.0", cta_genes_fixed=None)
+        
+            adata_annotated.write(adata_annotated_path)
+
+    if project_name in ["fetal_gonad"]:
+
         group_list = project_cfg["group_list"]
 
         adata_male = []
@@ -237,12 +290,12 @@ def run_process_pipeline(project_name, paths, project_cfg, global_cfg, samples_t
             
             if os.path.exists(adata_annotated_path):
                 adata_annotated = sc.read_h5ad(adata_annotated_path)      
-                print(adata_annotated.obs.columns)
             else:
+                continue
                 
-                adata_annotated = run_full_annotation_pipeline(subproject_name,adata_current.copy(), adata_annotated_path, leiden_res_list,json_annotations_path, palette_path,cols_to_plot,cols_to_plot_titles,tables_dir=paths["TABLES_DIR"],figures_dir=paths["FIGURES_DIR"],palette="tab10")
-                print(adata_annotated.obs.columns)
-            show_cta_genes(subproject_name, adata_annotated, figures_dir=paths["FIGURES_DIR"], tables_dir=paths["TABLES_DIR"],json_path = global_cfg["json_annotations_path"], groupby = "celltype_leiden_res_1.0")
+            adata_annotated = run_full_annotation_pipeline(subproject_name,adata_current.copy(), adata_annotated_path, leiden_res_list,json_annotations_path, palette_path,cols_to_plot,cols_to_plot_titles,tables_dir=paths["TABLES_DIR"],figures_dir=paths["FIGURES_DIR"],palette="tab10")
+            print(adata_annotated.obs.columns)
+            show_cta_genes(subproject_name, adata_annotated, figures_dir=paths["FIGURES_DIR"], tables_dir=paths["TABLES_DIR"], cta_genes_file_path = cta_genes_file_path, groupby = "celltype_leiden_res_1.0", cta_genes_fixed=None)
             
     
       

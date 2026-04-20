@@ -16,6 +16,7 @@ FEMALE_CANCER_ANNOTATION_FILE_PATH = os.path.join(REFERENCE_DIR, "markers", "cm2
 
 ENSEMBL_TO_HGNC_MAP = os.path.join(REFERENCE_DIR, "ensembl_to_hgnc.csv")
 CELL_TYPE_MAPPINGS = os.path.join(REFERENCE_DIR, "JSON", "cell_type_genes_mappings.json")
+
 ADATA_PALETTE_MAP = os.path.join(REFERENCE_DIR, "JSON", "adata_palettes.json")
 
 GENE_MAP_FILE_PATH = os.path.join(REFERENCE_DIR, "gencode_v45_ensembl_to_hgnc.tsv")
@@ -93,14 +94,17 @@ PROJECT_CONFIG = {
         
     },
 
-    "ovarian_cancer_ccca": {
-        "sample_list": ['Nath2021','Olalekan2021','Olbrecht2021','Qian2020','Regner2021','Shih2018','Tang-Huau2018','Zhang2019', 'Zhang2022'],
+    "hgsoc_tumors": {
+        "sample_list": ['Tumor_T59', 'Tumor_T61', 'Tumor_T76', 'Tumor_T89', 'Tumor_T90'],
+        "gse_list": ['GSM4675273_T59', 'GSM4675274_T76', 'GSM4675275_T77', 'GSM4675276_T89', 'GSM4675277_T90'],
         "sample_col": "sample_id",
-        "plot": {"obs_cols": ["sample_id"],
-             "obs_titles": ["Sample"],
+        "sample_meta_cols": ['sample_id', 'gse_id', 'tissue', 'diagnosis', 'tumor_stage', 'tumor_grade', 'chemotherapy_response'],
+        "sample_meta_filename": "hgsoc_tumors_sample_metadata.csv",
+        "plot": {"obs_cols": ['sample_id', 'tumor_stage','chemotherapy_response'],
+             "obs_titles": ["Sample", "Tumor Stage", "Chemotherapy Response"],
              },
         "processing_type": "10x",
-        "cell_markers_file_path": FEMALE_CANCER_ANNOTATION_FILE_PATH,
+        "cell_type_mappings": os.path.join(REFERENCE_DIR, "JSON", "cell_type_genes_mappings_hgsoc_tumors.json")
     },
 
      

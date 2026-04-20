@@ -1,0 +1,10 @@
+sample_id,gse_id,tissue,diagnosis,tumor_stage,tumor_grade,chemotherapy_response
+Tumor_T59,GSM4675273_T59,omentum,HGSOC,IV,3,resistant
+Tumor_T61,GSM4675274_T76,omentum,HGSOC,IIIc,3,refractory
+Tumor_T76,GSM4675275_T77,omentum,HGSOC,IVb,3,resistant
+Tumor_T89,GSM4675276_T89,omentum,HGSOC,IV,3,sensitive
+Tumor_T90,GSM4675277_T90,omentum,HGSOC,IVa,3,sensitive
+
+
+
+
