@@ -41,6 +41,8 @@ def filter_data_embryos_mixed(project_name, adata_init, adata_filt_path, importa
 
     adata = adata_init.copy()
 
+    print("cells before filter", adata.n_obs)
+
     adata.obs["nonzero_counts"] = np.array((adata.X > 0).sum(axis=1)).flatten()  # Because original data was CPM or TPM:
     adata.var["mt"] = adata.var_names.str.upper().str.startswith("MT-") # mitochondrial genes
     adata.var["ribo"] = adata.var_names.str.startswith(("RPS", "RPL")) # ribosomal genes
@@ -77,6 +79,8 @@ def filter_data_embryos_mixed(project_name, adata_init, adata_filt_path, importa
 
     # Apply this final, combined mask to the data just once
     adata = adata[:, final_gene_mask].copy()
+
+    print("cells after filter", adata.n_obs)
 
     
 
@@ -183,6 +187,8 @@ def run_qc_embryos_mixed(project_name, adata_filtered, adata_qc_path, important_
     # UMAP
     sc.tl.umap(adata)
 
+    print("final cell counts", adata.n_obs)
+
     adata.write(adata_qc_path)
     
     return adata
@@ -191,6 +197,8 @@ def filter_data(project_name, adata_init, adata_filt_path, important_genes, qc_s
 
     violin_dir = os.path.join(qc_save_dir, "violin")
     scatter_dir = os.path.join(qc_save_dir, "scatter")
+
+    print("cell before qc", adata.n_obs)
 
     os.makedirs(qc_save_dir, exist_ok=True)
     os.makedirs(violin_dir, exist_ok=True)
@@ -247,6 +255,8 @@ def filter_data(project_name, adata_init, adata_filt_path, important_genes, qc_s
     final_gene_mask = genes_expressed_mask | important_genes_mask
     adata = adata[:, final_gene_mask].copy()
 
+    print("cell after qc", adata.n_obs)
+
    
     adata.write(adata_filt_path)
 
@@ -268,7 +278,25 @@ def run_qc(project_name, adata_filtered, adata_qc_path, qc_save_dir, cell_cycle_
     if "sample_id" not in adata.obs:
         adata.obs["sample_id"] = adata.obs["dataset"].astype(str)
 
-    # Remove doublets FIRST
+
+    adata.obs["doublet_score"] = np.nan
+    adata.obs["predicted_doublet"] = False
+
+    for sample in adata.obs["sample_id"].dropna().unique():
+        idx = adata.obs["sample_id"] == sample
+        adata_sub = adata[idx].copy()
+
+        try:
+            sc.pp.scrublet(adata_sub, expected_doublet_rate=0.06)
+
+            adata.obs.loc[idx, "doublet_score"] = adata_sub.obs["doublet_score"].values
+            adata.obs.loc[idx, "predicted_doublet"] = adata_sub.obs["predicted_doublet"].values
+
+        except Exception as e:
+            print(f"Scrublet failed for sample {sample}: {e}")
+            continue
+
+
     if "predicted_doublet" in adata.obs:
         adata = adata[~adata.obs["predicted_doublet"]].copy()
 
